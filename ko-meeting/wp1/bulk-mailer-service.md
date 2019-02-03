@@ -1,4 +1,4 @@
-# Outlier detection
+# Bulk mailer
 
 **DO**: Insee
 
