@@ -1,6 +1,6 @@
 # I3S ESSnet - Description of the ARC service
 
-This document describes in detail the 'ARC' service developed by Insee. This service implements extended functionalities for integrating administrative data into statistical processes. The description is organized according to the AAA (Attractiveness, Achievability, Affordability) framework defined by the "Sharing Common Functionalities" ESSnet.
+This document describes in detail the 'ARC' service developed by Insee. This service implements extended functionalities for integrating administrative data into statistical processes. The description is organized according to the AAA (Attractiveness, Achievability, Affordability) framework defined by the “Sharing Common Functionalities” ESSnet.
 
 # Attractiveness
 
@@ -22,22 +22,22 @@ The Generic Statistical Business Processes Model (GSBPM 2018) presents the proce
 
 ![GSBPM mapping](gspbm.png)
 
-The main functionalities of the ARC application related to the data processing life cycle are linked to the GSBPM "Process" step, and more precisely to elementary treatments necessary to integrate data, engage basic cleaning and editing tasks, but also transformation operations that are necessary to convert raw data into a statistical database compliant with statistical concepts and units. This is mainly related to sub-processes going from "5.1 - Integrate data" to "5.5 - Derive new variable and units":
+The main functionalities of the ARC application related to the data processing life cycle are linked to the GSBPM “Process” step, and more precisely to elementary treatments necessary to integrate data, engage basic cleaning and editing tasks, but also transformation operations that are necessary to convert raw data into a statistical database compliant with statistical concepts and units. This is mainly related to sub-processes going from “5.1 - Integrate data” to “5.5 - Derive new variable and units”:
 
-  - Sub-process "5.1 - Integrate data" is related to data integration from one or more sources. According to GSBPM, the input data can be from a mixture of external or internal data sources, and a variety of collection modes, including extracts of administrative data. The result is a set of linked data. ARC is dedicated to combining data from multiple sources or combining multiples files from a same kind of data source, in order to create an integrated database.
-  - Sub-process "5.2 - Classify and code" is also covered by ARC, as it includes coding routines to convert initial variable codes to a pre-determined classification scheme.
-  - Sub-process "5.3 - Review and validate" examines data to try to identify potential problems, errors and discrepancies such as outliers, item non-response and miscoding. The ARC user can create testing and validating rules, which will be applied to the data with detection of actual or potential errors. According to GBSPM, treatments in sub-process 5.3 are only dedicated to discrepancy and error detection, while effective data editing is done in sub-process 5.4.
-  - Sub-process "5.4 - Edit and impute" convers a variety of updates, often using a rule-based approach. In ARC, data editing is mainly related to filtering and basic imputation. Functionalities include  the determination of whether to add or change data, changing data values, and flagging data as changed in the process phase.
-  - Sub-process "5.5 - Derive new variables and units" derives data for variables and units that are not explicitly provided in the collection, but are needed to deliver the required outputs. Through user defined rules, ARC may derive new variables by applying arithmetic formulae to one or more of the variables that are already present in the dataset, or applying different model assumptions. 
+  - Sub-process “5.1 - Integrate data” is related to data integration from one or more sources. According to GSBPM, the input data can be from a mixture of external or internal data sources, and a variety of collection modes, including extracts of administrative data. The result is a set of linked data. ARC is dedicated to combining data from multiple sources or combining multiples files from a same kind of data source, in order to create an integrated database.
+  - Sub-process “5.2 - Classify and code” is also covered by ARC, as it includes coding routines to convert initial variable codes to a pre-determined classification scheme.
+  - Sub-process “5.3 - Review and validate” examines data to try to identify potential problems, errors and discrepancies such as outliers, item non-response and miscoding. The ARC user can create testing and validating rules, which will be applied to the data with detection of actual or potential errors. According to GBSPM, treatments in sub-process 5.3 are only dedicated to discrepancy and error detection, while effective data editing is done in sub-process 5.4.
+  - Sub-process “5.4 - Edit and impute” convers a variety of updates, often using a rule-based approach. In ARC, data editing is mainly related to filtering and basic imputation. Functionalities include  the determination of whether to add or change data, changing data values, and flagging data as changed in the process phase.
+  - Sub-process “5.5 - Derive new variables and units” derives data for variables and units that are not explicitly provided in the collection, but are needed to deliver the required outputs. Through user defined rules, ARC may derive new variables by applying arithmetic formulae to one or more of the variables that are already present in the dataset, or applying different model assumptions. 
     
-Previously to theses steps, ARC is also built to host raw data files that have been collected and deliver environment for storing large data collection before being processed. It thus can be used as a collection tool according to GBSPM sub-process "4.4 - Finalise collection", loading the collected data and metadata into a suitable electronic environment for further processing.
+Previously to theses steps, ARC is also built to host raw data files that have been collected and deliver environment for storing large data collection before being processed. It thus can be used as a collection tool according to GBSPM sub-process “4.4 - Finalise collection”, loading the collected data and metadata into a suitable electronic environment for further processing.
 
-Because it includes sandbox creation and testing procedures of user rules, ARC application is also  compliant with GSBPM subprocesses dedicated to "2.5 - design processing" and "3.6 - test statistical business process".
+Because it includes sandbox creation and testing procedures of user rules, ARC application is also  compliant with GSBPM subprocesses dedicated to “2.5 - design processing” and “3.6 - test statistical business process”.
 
-  - "2.5 - design processing" can include specification of routines for coding, editing, imputing, estimating, integrating, validating and finalizing data sets.
-  - "3.6 - test statistical business process", which includes activities to manage a pilot the statistical business process, including testing processing rules on data.
+  - “2.5 - design processing” can include specification of routines for coding, editing, imputing, estimating, integrating, validating and finalizing data sets.
+  - “3.6 - test statistical business process”, which includes activities to manage a pilot the statistical business process, including testing processing rules on data.
 
-If the ARC service is selected by the I3S ESSNet, new developments will be engaged to add functionalities that will expand the GSBPM coverage of the service to the sub-processes 5.7 ("Calculate aggregates") and 6.2 ("Validate output"), with the ability to use aggregations to perform advanced controls, filtering, or formatting, and also produce indicators and counts (see below, "iteration 3: add an aggregate module").
+If the ARC service is selected by the I3S ESSNet, new developments will be engaged to add functionalities that will expand the GSBPM coverage of the service to the sub-processes 5.7 (“Calculate aggregates”) and 6.2 (“Validate output”), with the ability to use aggregations to perform advanced controls, filtering, or formatting, and also produce indicators and counts (see below, “iteration 3: add an aggregate module”).
 
 ### Features and functional description
 
@@ -45,7 +45,7 @@ If the ARC service is selected by the I3S ESSNet, new developments will be engag
 
 The ARC software includes functions of configuration and execution for file processing pipelines.
 
-The processing of a file in ARC is materialized by a sequential execution of elementary services which are also called "processing modules". These modules are instantiable in disjoint execution environments called "sandboxes".
+The processing of a file in ARC is materialized by a sequential execution of elementary services which are also called “processing modules”. These modules are instantiable in disjoint execution environments called “sandboxes”.
 
 The choice, the scheduling, or the internal operations of the modules are based on user written rules defined for the chosen sandbox. ARC therefore allows the user to experiment with different processing rules for identical files in different sandboxes.
 
@@ -67,7 +67,7 @@ ARC currently supports two types of metadata:
 | ---------------- | --------- | ------------------------- | ----------- | ----------- |
 | Synchronize | optional non-parallel | 1 | Rebuild the database and file system in a consistent state with the database. <br> Execute file replays or delete commands. <br> Copy the rules of the configuration space into the sandbox of execution so that they are taken into account in the execution of the subsequent modules |
 | Register | mandatory parallel | 3 | Register a set of input files and update the file system | 4.4 |
-| Identify | mandatory parallel | 4 | Apply the rules of the module to determine the "category" of the files. <br> The rules written by the users have a global input key called "category". <br> This key identifies the different chains of treatments. The category and the sandbox determines which rule sets to apply to the file when processing the subsequent modules | 5.2 |
+| Identify | mandatory parallel | 4 | Apply the rules of the module to determine the “category” of the files. <br> The rules written by the users have a global input key called “category”. <br> This key identifies the different chains of treatments. The category and the sandbox determines which rule sets to apply to the file when processing the subsequent modules | 5.2 |
 | Load | mandatory parallel | 5 | Apply the rules of the module to instantiate the proper file reader to load the data without transformation in the database. <br> Store the file hierarchy of structured files as XML for the subsequent modules| 5.1 |
 | Structure | optional parallel | >5 | Flatten the previously loaded structured data consistently. Apply the rules of the module for advanced structuration features | 5.1 |
 | Control | optional parallel | >5 | Apply the correction and control rules | 5.3 |
@@ -117,13 +117,13 @@ ARC processes files in parallel. The application was originally designed to hand
 
 ARC consists of a Java web application (Java 8, Tomcat 8), a Java processing server (Java 8), and a PostgreSQL database (version 9.6).
 
-The "synchronize" Java module handles the rebuilds and the upgrades of the database according to the version of the Java code.
+The “synchronize” Java module handles the rebuilds and the upgrades of the database according to the version of the Java code.
 
 ARC has already been containerized with Docker. This way to deploy ARC will be supplied as part of the I3S project.
 
 ## Stakeholder commitment
 
-Three instances of the ARC application are running in production within the Insee information system on employment and income (called "SIERA"). The main instance loads every month the 2.5 millions of income files declared by the French companies conformant to a XML format called "DSN". The other instances are used monthly to load large data files into the information system. ARC is currently under study to be deployed for the SIERA future projects and for other Insee information systems.
+Three instances of the ARC application are running in production within the Insee information system on employment and income (called “SIERA”). The main instance loads every month the 2.5 millions of income files declared by the French companies conformant to a XML format called “DSN”. The other instances are used monthly to load large data files into the information system. ARC is currently under study to be deployed for the SIERA future projects and for other Insee information systems.
 
 The internal Insee community around ARC is fairly active and its functional base is evolving at the rate of a [major version per year since 2016] (# Status-of-software). The ARC application is maintained in production by a maintenance team of 2 developers. The SIERA project team and a dedicated expert technically help the other projects to reuse ARC
 
@@ -147,6 +147,7 @@ The ARC application has been used in production statistical processes for nearly
 | v4 | Quality iteration | Sep 2018 | Jan 2019 | 1. Refactoring of the java classes and models <br> 2. The processing chain is no longer static but configurable by the user |
 
 <small> 1. The integration of 2.5 million complex XML files of up to 200 MB takes 5 days of processing </small>
+
 <small> 2. The parallel integration of 2 files of 50 GB of data (uncompressed) or 50 million lines and 150 columns takes 10h without flat file to XML restructuration. The integration of a single file takes 8h. </small>
 
 ### Alignment with CSPA
