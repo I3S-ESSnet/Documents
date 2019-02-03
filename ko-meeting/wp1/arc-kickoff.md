@@ -139,8 +139,8 @@ Insee would mobilize 1.5 developers to integrate ARC in the ESSNET I3S project f
 
 The ARC application has been used in production statistical processes for nearly 3 years; several instances of ARC have been deployed since June 2016 in Insee IT system. The application has been strengthened year after year, through a continuous quality improvement process. 
 
-| Version name | Purpose of the version | Start date | Release date| Features implemented |
-| ------- | --- | ----- | ---- | ---- | -- |
+| Version name | Purpose of the version | Start date | Release date | Features implemented |
+| ------- | --- | ----- | ---- | ---- |
 | v1-DSN | Monthly formatting of 2.5 million XML employee files | Jan 2015 | Jun 2016 | 1. Full pipeline for XML files <br> 2. Optimized performance on massive flows of small files <sup> 1 </sup> |
 | v2-CTS | Multisource hub for large files (50 million lines, 500 columns) | Mar 2017 | Nov 2017 | 1. Delimited flat and key-value type files loader<br> 2. Structuration feature for flat and key-value type files <br> 3. Parallel modules execution by file |
 | v3-CTS | Performance on all file types | Jan 2017 | Aug 2018 | 1. Isolation of file pipelines <br> 2. Optimized performance on large files <sup> 2 </sup> |
