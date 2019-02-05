@@ -78,3 +78,22 @@ The main features (or macro-functionalities) of Pogues are:
     - Manage variables;
   - View the web questionnaire produced by the back-office chain;
   - Save a questionnaire.
+
+### Technologies used
+
+  - Web application: JavaScript ES6, HTML 5 and CSS3.
+  - JavaScript libraries: The React and Bootstrap libraries are used. The Pogues application also uses the [Redux](http://redux.js.org/) framework.
+  - JavaScript dependency management: [npm](https://www.npmjs.com/)
+  - Persistence: a database ensures the persistence of JSON data to save the questionnaire being edited in Pogues. The user can thus interrupt his work and resume it later. Communication with this database is via web services.
+  - Exchange with the back office: ReST web services.
+
+### Examples
+
+The following screenshots give examples of questions as defined in the Pogues UI and their correspondence in the generated web questionnaire.
+
+|   |  In Pogues | Generated |
+|---|:-:|:-:|
+| Multiple choice | ![Multiple choice in Pogues](multiple-choice1-pogues.png) | ![Multiple choice generate](multiple-choice1-eno.png) |
+| Table | ![Table in Pogues](tab1-pogues.png) | ![Table generated](tab1-eno.png) |
+
+For an example of a complete questionnaire, and to test the application, please visit the [Pogues demo platform](http://pogues.scfe.eu/rmspogfo/#/questionnaire/i6vw21).
