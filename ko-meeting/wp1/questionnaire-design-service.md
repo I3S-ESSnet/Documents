@@ -26,7 +26,13 @@ The process of creating a questionnaire is thus divided into several blocks (see
   - a back-office chain to manage the persistence of the Pogues specifications as well as the communication with the RMéS repository, and to invoke Eno for the generation of the questionnaire.
   - the Eno generator itself, which is available in two packagings: web service and application on the command line.
 
-The generated questionnaires, which are in XForms format, are run on the collection platform by the [Orbeon Server](http://www.orbeon.com/) engine.
+The generated questionnaires can be of serveral types:
+
+  - web forms in XForms format, ready to run on servers like the [Orbeon Server](http://www.orbeon.com/) engine (the possibility of running the forms on clients with libraries like [XSLTForms](http://www.agencexml.com/xsltforms.htm) has not been tested).
+  - paper questionnaires in PDF.
+  - questionnaire specifications in desktop format (Open Document), which describe precisely the questionnaire and can thus be used to implement them in formats that are not directly supported (e.g. Blaise).
+  - (in development) JavaScript/React components to include in a client application.
+  
 
 It should be noted that the Pogues application is open source. Developments are conducted on the [GitHub](https://github.com/InseeFr/Pogues) software development platform.
 
@@ -53,3 +59,22 @@ A *collected variable* refers to a statistical variable collected in the questio
 An *external variable* refers to a variable not collected in the questionnaire, but useful for personalization. For example, it can be a date to display in the wording of a question. External variables are attached to the questionnaire.
 
 A *calculated variable* is a variable calculated from other variables, including other calculated variables. The calculated variables are attached to the questionnaire.
+
+### Pogues main functionalities
+
+The Pogues user interface is an application that aims to allow a questionnaire designer to be able to specify his questionnaire (both questionnaire semantics and ergonomics) and then visualize the web or paper questionnaire immediately.
+
+The main features (or macro-functionalities) of Pogues are:
+
+  - Authenticate a user;
+  - Manage a questionnaire (create a questionnaire, edit an existing questionnaire);
+  - Manage the structure of the questionnaire (sequences and questions);
+  - For each sequence or question:
+    - Manage the declarations;
+    - Manage redirects;
+    - Manage controls;
+  - For each question:
+    - Manage answers;
+    - Manage variables;
+  - View the web questionnaire produced by the back-office chain;
+  - Save a questionnaire.
