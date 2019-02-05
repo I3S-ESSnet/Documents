@@ -1,4 +1,4 @@
-# Bulk mailer
+# Names entity recognition service
 
 **DO**: Insee
 
