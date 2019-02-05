@@ -17,3 +17,39 @@
 **Risks**: -
 
 **Description**: As part of the overhaul of its survey data collection platform, Insee has invested important resources during the last few years in the development of a visual questionnaire design tool, named Pogues. With this tool, the survey managers can very quickly design their questionnaires in a full WYSIWYG way, and export the result as DDI or PDF. Pogues was created as a companion tool of the Eno questionnaire generation service that was successfully proposed for reuse in the SCFE ESSnet. It is already available under different packagings, including a containerized version. Note that Pogues could also be seen as a Web questionnaire visualisation service (number 10 in the SCFE list).
+
+Eno and Pogues are part of a very complete ecosystem that also contains various back-office services, a platform for collecting survey data from generated questionnaires, and a metadata repository. (RMéS) allowing the management of the DDI descriptions of the questionnaires or their constituents (variables, code lists, etc.). In order to avoid any technical dependency that would hinder the possibilities of reuse of Eno and Pogues, all the links between the different components have been implemented as web services.
+
+The process of creating a questionnaire is thus divided into several blocks (see diagram below), in particular:
+
+  - the graphical interface for specifying a questionnaire: Pogues (object of the service).
+  - a back-office chain to manage the persistence of the Pogues specifications as well as the communication with the RMéS repository, and to invoke Eno for the generation of the questionnaire.
+  - the Eno generator itself, which is available in two packagings: web service and application on the command line.
+
+The generated questionnaires, which are in XForms format, are run on the collection platform by the [Orbeon Server](http://www.orbeon.com/) engine.
+
+It should be noted that the Pogues application is open source. Developments are conducted on the [GitHub](https://github.com/InseeFr/Pogues) software development platform.
+
+![The Pogues ecosystem](pogues-ecosystem.png)
+
+### Description of a questionnaire
+
+The purpose of this literary presentation of the questionnaire object is not to be exhaustive but is rather as an aid to understanding the features of the Pogues application.
+
+A *questionnaire* is composed of one to several so-called sequences of level 1. Each level 1 sequence can contain one to several so-called sequence level 2 sequences. It is not envisaged to go to a level of greater depth. Each sequence (level 1 or 2) can contain 0 to several *questions*.
+
+A sequence or a question can contain 0 to several declarations, 0 to several controls and 0 to several redirects.
+
+A *declaration* is a neutral term designating a textual element of the questionnaire accompanying a sequence or a question (other than a question wording, response modalities ...). A declaration can be of type: comment, instruction, help, or warning.
+
+A *control* allows, according to the expression of a condition, to control the quality of the input in the questionnaire generated. It is characterized by a condition on one (or more) variable(s), an error message and a criticality level.
+
+A *redirection* allows, according to the expression of a condition, to hide or to display certain sequences or questions of the questionnaire. It is composed of a condition on one (or more) variable(s), a target (sequence or question) to jump to if the condition is verified and / or another target if the condition is not verified.
+
+In addition, a question must have one to several *answers*. An answer can be of different types (numeric, text, date, list of modalities) and take different forms of presentation (drop-down list, checkbox, radio button, auto-completion, table).
+
+A *collected variable* refers to a statistical variable collected in the questionnaire for the purpose of the survey. A response is associated with a collected variable.
+
+An *external variable* refers to a variable not collected in the questionnaire, but useful for personalization. For example, it can be a date to display in the wording of a question. External variables are attached to the questionnaire.
+
+A *calculated variable* is a variable calculated from other variables, including other calculated variables. The calculated variables are attached to the questionnaire.
