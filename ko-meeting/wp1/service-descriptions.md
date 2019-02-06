@@ -11,5 +11,5 @@ Click on the following links to access to the service descriptions:
   - [Bulk mailer](bulk-mailer-service.md)
   - [Named entity recognition](ner-service.md)
   - [Generalized data loader](data-loader-service.md)
-  - [Dataset catalog](SCB%20-%20Service%20Description%20PX-Web.md)
+  - [Dataset catalog](SCB%20-%20Service%20description%20Dataset%20catalog.md)
   - [PX web](SCB%20-%20Service%20Description%20PX-Web.md)
