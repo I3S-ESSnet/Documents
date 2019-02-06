@@ -1,4 +1,9 @@
 # Service Description of Dataset catalog
+
+**DO**: Statistics Sweden
+
+**RO**: Istat
+
 Statistics Sweden are currently in the design phase of creating a service called the Data Set Catalogue. The ambition with the service is to serve as a GSIM based, cross process and cross survey data catalogue. For each data set registered within the catalogue the following is stored:
 - pointers to the physical location of the data points
 - links to metadata for each used data structure

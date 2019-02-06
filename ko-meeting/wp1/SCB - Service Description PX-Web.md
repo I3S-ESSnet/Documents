@@ -1,5 +1,9 @@
 # Service Description of PX-Web
 
+**DO**: Statistics Sweden
+
+**RO**: Istat
+
 PX-Web used for publishing statistics in a database at the web and is since 1 January 2016 free of charge for Swedish government agencies and municipalities, international NSI:s and international organizations of statistics. [Examples](https://www.scb.se/sv_/PC-Axis/Programs/PX-Web/PX-Web-examples/)
 
 A shared service for dissemination of statistics would be created by transforming the currently used closed source solution to an open source solution. The transformation would include adapting to open standards such as .NET Core and HTML5 as well as assuring that the service can be used in cloud and/or containerized environments.
