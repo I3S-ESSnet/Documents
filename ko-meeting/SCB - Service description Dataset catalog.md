@@ -13,6 +13,8 @@ Objectives:
 - Simplified fulfillment of GDPR and other data protection regulations.
 - Consistency between consumers though the concept of steady states.
 
+Statistics Sweden will continue the development of this service after the project has ended. If there are other parties interested in contributing to the project we will also set up a platform for continued development in a collaborative form
+
 ## Detailed functionalities mapped to the GSBPM
 The data set catalog is a building block that is process agnostic.
 
