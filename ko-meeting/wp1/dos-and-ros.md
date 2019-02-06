@@ -2,13 +2,15 @@
 
 ## Service Developing Organizations and Re-using Organizations
 
-Here is a synthetic view of DOs and ROs, as indicated in the submission:
+The following table presents a synthetic view of DOs and ROs, as indicated in the submission.
+
+*Nota bene:* the service descriptions are available [here](service-descriptions.md).
 
   
 |   | INE | Insee | Istat | SCB | SSB |
 |---|:-:|:-:|:-:|:-:|:-:|
 | Record linking | RO | RO | DO |   |   |
-| Microdata access<sup>1</sup> |   |   | RO |   |   |
+| Microdata access <sup>1</sup> |   |   | RO |   |   |
 | ARC |   | DO | (DO) |   | (DO) |
 | Error correction |   |   | DO |   |   |
 | Questionnaire design |   | DO | RO |   |   |
@@ -19,4 +21,4 @@ Here is a synthetic view of DOs and ROs, as indicated in the submission:
 | Dataset Catalog |   |   | RO | DO |   |
 | PX web |   |   | RO | DO |   |
 
-<small>1. This service is developed by Statistics Canada</small>
+<sup>1</sup> This service is developed by Statistics Canada.
