@@ -89,11 +89,26 @@ The main features (or macro-functionalities) of Pogues are:
 
 ### Examples
 
-The following screenshots give examples of questions as defined in the Pogues UI and their correspondence in the generated web questionnaire.
+The following screenshots give examples of questions as specified in the Pogues UI and their correspondence in the generated web questionnaire.
 
-|   |  In Pogues | Generated |
-|---|:-:|:-:|
-| Multiple choice | ![Multiple choice in Pogues](multiple-choice1-pogues.png) | ![Multiple choice generate](multiple-choice1-eno.png) |
-| Table | ![Table in Pogues](tab1-pogues.png) | ![Table generated](tab1-eno.png) |
+#### Multiple choice question
+
+  - In Pogues
+
+  ![Multiple choice in Pogues](multiple-choice1-pogues.png)
+
+  - Generated
+
+  ![Multiple choice generate](multiple-choice1-eno.png)
+
+#### Table
+
+  - In Pogues
+
+  ![Table in Pogues](tab1-pogues.png)
+
+  - Generated
+
+  ![Table generated](tab1-eno.png)
 
 For an example of a complete questionnaire, and to test the application, please visit the [Pogues demo platform](http://pogues.scfe.eu/rmspogfo/#/questionnaire/i6vw21).
