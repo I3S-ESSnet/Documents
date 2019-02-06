@@ -1,6 +1,8 @@
-# I3S kick-off meeting - Service Developing Organizations and Re-using Organizations
+# I3S kick-off meeting
 
-Here is a synthetic view of DOs and ROs:
+## Service Developing Organizations and Re-using Organizations
+
+Here is a synthetic view of DOs and ROs, as indicated in the submission:
 
   
 |   | INE | Insee | Istat | SCB | SSB |
