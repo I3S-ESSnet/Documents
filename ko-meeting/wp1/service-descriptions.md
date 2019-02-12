@@ -4,7 +4,7 @@ Click on the following links to access to the service descriptions:
 
   - [Record linking](record-linking-service.md)
   - [Microdata access](microdata-access-service.md)
-  - [ARC](arc-kickoff.md) (previously: Content data validation)
+  - [ARC](arc-kickoff.md) (previously: Content data validation), [presentation](https://healermikado.github.io/presentation_arc_essnet/)
   - [Error correction](error-correction-service.md)
   - [Questionnaire design](questionnaire-design-service.md)
   - [Outlier detection](outlier-detection-service.md)
