@@ -1,4 +1,4 @@
-# I3S Service re-uses
+# I3S Service evaluations
 
 ## Survey results
 
@@ -30,7 +30,7 @@ Achievable/Affordable: No, Some, Very
 | ARC | V/N |   |   |   | V/S |
 | Questionnaire design |   |   | V/V |   |   |
 | Outlier detection |   |   |   | S/S |   |
-| Generalized data loader |   |   | V/V | S/S |   |
+| Generalized data loader |   | V/V |   | S/S |   |
 | Dataset catalogue |   |   | V/V |   | S/S |
 | PX-web |   |   |   |   | V/V |
 

@@ -14,4 +14,4 @@ Click on the following links to access to the service descriptions:
   - [Dataset catalog](SCB%20-%20Service%20description%20Dataset%20catalog.md)
   - [PX web](SCB%20-%20Service%20Description%20PX-Web.md)
 
-Service AAA evaluations for development end re-use are available [here](service-aaa.md]
+Service AAA evaluations for development end re-use are available [here](service-aaa.md)
