@@ -12,8 +12,8 @@
 
 ### The winners
 
-![Services selected](service-selected.jpg)
+![Services selected](services-selected.jpg)
 
 ## The glorious contenders
 
-![Services not selected](service-not-selected.jpg)
+![Services not selected](services-not-selected.jpg)
