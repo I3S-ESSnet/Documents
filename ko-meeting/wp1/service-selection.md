@@ -1,10 +1,19 @@
 # I3S kick-off meeting
 
-## Results of service selection
+## Service selection
 
+### Final results
 
 | Service | Order | DOs | ROs |
 |---|:-:|:-:|:-:|
 | PX-web | 1 | SCB | INE (draft), SSB (final) |
-| Record linking | 2 | Istat | Insee |
-| ARC | 3 | Insee (and SSB for VTL) | Istat |
+| ARC | 2 | Insee (and SSB for VTL) | Istat |
+| Record linking | 3 | Istat | Insee |
+
+### The winners
+
+![Services selected)[service-selected.jpg]
+
+## The glorious contenders
+
+![Services not selected)[service-not-selected.jpg]
