@@ -20,6 +20,8 @@
   - test phases of WP2
   - post-analysis of a reuse case that worked
   - testimonies of users
+  - report on "service market" in MSW workshop
+  - post-mortem analysis of an example of failure?
 
 ### Suggestions / expectations for Roma hackathon
 
