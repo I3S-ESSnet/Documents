@@ -1,4 +1,6 @@
-# I3S kick-off meeting - Service descriptions
+# I3S kick-off meeting
+
+## Service descriptions
 
 Click on the following links to access to the service descriptions:
 
@@ -14,5 +16,6 @@ Click on the following links to access to the service descriptions:
   - [Dataset catalog](dataset-catalog-service.md)
   - [PX web](px-web-service.md)
 
-Service re-use intentions as indicated in the submission are [here](service-reuse.md).
+Service re-use intentions as indicated in the submission are [here](dos-and-ros.md).
+
 Service AAA evaluations for development and re-use are available [here](service-aaa.md).
