@@ -6,15 +6,17 @@
 
 | What? | Who? | When? | Notes |
 |---|:-:|:-:|:-:|
-| blueprint, or more exactly to have the work environment for the Hackathon | Norway, Insee (Frédéric), Romain, Sweden | M6 | Contenairize environment on a laptop, perhaps in a virtual machine for those who use Windows with docker and docker compose, java, dotNet core |
+|Create a simple VirtualBox with Docker, Docker compose and build-tools for the hackathon | SSB, INSEE (Frédéric), Romain | M6 | |
+| Howto guide, using the Virtual machine.  | Norway, Insee (Frédéric), Romain, Sweden | M6 | How we should do development: Git, Build chains, etc |
 
 
 ### Suggestions / expectations for Roma hackathon
 
-Publish the code in public repository
-But for Roma hackathon it more cautious to bring code on the laptop
+Established a Slack team for I3S. Can be used for chat, and video conference. (bit.ly/i3s-slack). This will be used to organize task etc.
 
-Create a rocket chat or slack channel in order to organize the tasks ==> Trygve will send the link (bit.ly/i3s-slack)
+Pre-requisite
 
-To have a build chain : Maven and Java
-But the only thing necessary for the Hackathon participant is to have Virtual Box on 
+* Ideally publish candidate service code to public repository
+
+More here:
+https://ssbno-my.sharepoint.com/:p:/g/personal/jfo_ssb_no/EXLU_7wlx5JCq3AWP73Vp7MBIjaUEYNEv_X5n0fV5UYh4w?e=QuP76b
