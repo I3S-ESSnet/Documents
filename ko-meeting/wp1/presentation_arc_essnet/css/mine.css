@@ -1,0 +1,18 @@
+.red{
+	color:red !important;
+}
+
+.blue{
+	color : blue !important;
+}
+
+.green{
+	color : green !important;
+}
+
+
+.important{
+	font-size:  1.5em !important;
+	text-decoration: underline !important;
+	font-weight: bold !important;
+}

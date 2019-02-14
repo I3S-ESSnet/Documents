@@ -1,0 +1,189 @@
+<!doctype html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+	<title>Arc essnet</title>
+
+	<link rel="stylesheet" href="css/reveal.css">
+	<link rel="stylesheet" href="css/mine.css">
+	<link rel="stylesheet" href="css/theme/black.css">
+
+	<!-- Theme used for syntax highlighting of code -->
+	<link rel="stylesheet" href="lib/css/zenburn.css">
+
+	<!-- Printing and PDF exports -->
+	<script>
+		var link = document.createElement('link');
+		link.rel = 'stylesheet';
+		link.type = 'text/css';
+		link.href = window.location.search.match(/print-pdf/gi) ? 'css/print/pdf.css'
+			: 'css/print/paper.css';
+		document.getElementsByTagName('head')[0].appendChild(link);
+	</script>
+</head>
+
+<body>
+	<div class="reveal">
+		<div class="slides">
+
+			<section>
+
+				<h1>
+					Acquisition Reception Controls (ARC)
+				</h1>
+				<h4>
+					I3S ESSnet kickoff meeting </h4>
+				<h4>February 11th-12th-13th</h4>
+				<h4>Paris, France</h4>
+
+
+			</section>
+
+			<section>
+				<h2>Administrative data analysis workflow</h2>
+				<img src="img/workflow.png" alt="Administrative data analysis workflow" class="plain" style="width :80%">
+			</section>
+
+
+			<section>
+				<h2>Arc workflow at Insee</h2>
+				<img src="img/Insee workflow.png" alt="Insee workflow" class="plain" style="width :90%">
+			</section>
+
+
+			<section>
+				<h2>Main Features</h2>
+				<ul>
+					<li class="fragment"> User-defined rules <span class="fragment">(currently based on SQL)</span></li>
+					<li class="fragment">Optimized <span class="fragment">(multi-threading, database parallelization)</span></li>
+					<li class="fragment">Built in sandbox <span class="fragment">(Design process and tests)</span></li>
+					<li class="fragment">
+						Multi-module process
+						<table class="fragment">
+							<tbody>
+								<tr>
+									<th>Register</th>
+									<td>Finalise collection</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>Identify</th>
+									<td>Classify and code</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>Load</th>
+									<td>Integrate data</td>
+									<td></td>
+								</tr>
+								<tr>
+									<th>Structure</th>
+									<td>Integrate data</td>
+									<td>optional</td>
+								</tr>
+								<tr>
+									<th>Control</th>
+									<td>Review and validate</td>
+									<td>optional</td>
+								</tr>
+								<tr>
+									<th>Filter</th>
+									<td>Edit and impute</td>
+									<td>optional</td>
+								</tr>
+								<tr>
+									<th>Format</th>
+									<td>Derive new variables and units</td>
+									<td>optional</td>
+								</tr>
+							</tbody>
+						</table>
+					</li>
+				</ul>
+			</section>
+			<section>
+				<h2>GSBPM mapping</h2>
+				<img src="img/GSBPM2.png" alt="GSBPM mapping" class="plain" style="width :70%">
+			</section>
+			<section>
+				<section>
+					<h2>Architecture</h2>
+					<p>Common 3-tier application</p>
+					<ul>
+						<li class="fragment">J2E application</li>
+						<ul>
+							<li class="fragment">Java 8</li>
+							<li class="fragment">Struts 2</li>
+						</ul>
+						<li class="fragment">PostgreSQL database</li>
+					</ul>
+
+				</section>
+
+				<section>
+					<h3>Containerisation (docker) ongoing</h3>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h1>Thank you for your attention</h1>
+				</section>
+			</section>
+
+			<section>
+				<section>
+					<h2>Zoom on service</h2>
+					<img src="img/service_explication.png" alt="Zomm on service workflow" class="plain" style="width :50%">
+				</section>
+
+				<section>
+						<h2>Class diagramm</h2>
+						<img src="img/class_diagram.png" alt="Class diagram of services classes" class="plain" style="width :120%">
+					</section>
+
+			</section>
+
+		</div>
+	</div>
+
+	<script src="lib/js/head.min.js"></script>
+	<script src="js/reveal.js"></script>
+
+	<script>
+		// More info about config & dependencies:
+		// - https://github.com/hakimel/reveal.js#configuration
+		// - https://github.com/hakimel/reveal.js#dependencies
+		Reveal.initialize({
+			width: "90%",
+			height: "90%",
+			margin: 0,
+			minScale: 1,
+			maxScale: 1,
+			mouseWheel: true,
+			slideNumber: true,
+			slideNumber: 'c/t' ,
+			history: true,
+
+			dependencies: [{
+				src: 'plugin/markdown/marked.js'
+			}, {
+				src: 'plugin/markdown/markdown.js'
+			}, {
+				src: 'plugin/notes/notes.js',
+				async: true
+			}, {
+				src: 'plugin/highlight/highlight.js',
+				async: true,
+				callback: function () {
+					hljs.initHighlightingOnLoad();
+				}
+			}]
+		});
+	</script>
+</body>
+
+</html>
