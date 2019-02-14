@@ -14,6 +14,6 @@
 
 ![Services selected](services-selected.jpg)
 
-## The glorious contenders
+### The glorious contenders
 
 ![Services not selected](services-not-selected.jpg)
