@@ -24,7 +24,7 @@ The second day was dedicated to the selection of services that will be developed
 
 | Time  | Title | Presenter | Comments |
 |:--|:--|:--|:--|
-| 9:00-10:30 | [Presentation of services](wp1/service-presentations.md) | All | 15 minutes by service including questions |
+| 9:00-10:30 | [Presentation of services](wp1/service-descriptions.md) | All | 15 minutes by service including questions |
 | 10:30-11:00 | Coffee break |  |   |
 | 11:00-12:15 | Presentation of services | All | Second part |
 | 12:15-13:30 | Lunch break |  |   |
