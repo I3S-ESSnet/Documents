@@ -4,7 +4,7 @@
 
 ### AAA for DOs
 
-Achievable/Affordable: No, Some, Very
+Achievable/Affordable: Some, Very
 
 |   | Insee | Istat | SCB |
 |---|:-:|:-:|:-:|
@@ -25,9 +25,9 @@ Achievable/Affordable: No, Some, Very
 
 |   | INE | Insee | Istat | SCB | SSB |
 |---|:-:|:-:|:-:|:-:|:-:|
-| Record linking | S/N | S/V |   | S/S |   |
+| Record linking | S/S | S/V |   | S/S |   |
 | Microdata access |   | S/S | V/V | S/S |   |
-| ARC | V/N |   |   |   | V/S |
+| ARC | V/S |   |   |   | V/S |
 | Questionnaire design |   |   | V/V |   |   |
 | Outlier detection |   |   |   | S/S |   |
 | Generalized data loader |   | V/V |   | S/S |   |
