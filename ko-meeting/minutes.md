@@ -110,7 +110,56 @@ a success story, to deliver the message to whom, what kind of newsletter...
 
 **Work package 2**
 
+* Planning in detail (end feb/start of mars)  VC (Jakob check with Taeke)
+* Setup google-drive documents and share plus share prezi
+* Setup the general structure of the documents
+* During hackathon in Rome
+	* Share guidance-document if applicable
+	* Monitor the development services
+	* Try to capture scenarios during the sprint for the cookbook
+		* Translate the scenarios to the cookbook and create interactive guidance in prezi plus video
+* In May deliver draft of cookbook
+* Test the current output during modernstats world workshop
+* Deliver draft of arch guidance (july)
+* Between july and december - add guidance and scenarios based on experience and the work done in WP1 and WP3
+* Align deliverables and deliver draft versions in dec 2019
+* Setup indicators for the test in M13
+* M13 - test the deliverables using developers and architects that are not part of the work and get feedback (making use of environment from WP3)
+* M14 Align WP2 deliverables with all other WPs 
+* M13-M18 continued work on adding guidance, cookbook scenarios and interactive guidance
+* M18 Align deliverables and deliver Drafts
+* M19 Perform second test on deliverables 
+
+
 **Work package 3**
+
+| What? | Who? | When? | Notes |
+|---|:-:|:-:|:-:|
+|Create a simple VirtualBox with Docker, Docker compose and build-tools for the hackathon | SSB, INSEE (Frédéric), Romain | M6 | |
+| Howto guide, using the Virtual machine.  | Norway, Insee (Frédéric), Romain, Sweden | M6 | How we should do development: Git, Build chains, etc |
+
 
 **Work package 4**
 
+| What? | Who? | When? | Notes |
+|---|:-:|:-:|:-:|
+| Success story of reuse of PX-web | INE | April |  |
+| Success story on cookbook | SCB/INE/Insee | December |  |
+| Success story on open software development | INE/Insee | December |  |
+| Success story on co-development of PX-web | INE/SCB/SSB | February 2020 |  |
+
+Ideas of success stories:
+  - JDmetra (methodology, re-use, center of excellence)
+  - tau-Argus / mu-Argus
+  - co-development Istat / Insee
+  - working stories on reuse cases (ex: INE reuse of PX-web in April)
+  - test phases of WP2
+  - post-analysis of a reuse case that worked
+  - testimonies of end users or participants to ESSnet project, or associated colleagues
+  - report on "service market" in MSW workshop
+  - post-mortem analysis of an example of failure?
+
+
+Future success stories: sustainability
+
+**Work package 5**
