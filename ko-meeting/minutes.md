@@ -47,7 +47,6 @@ Questions and remarks:
 
 ### WP3 presentation
 
-### WP3 presentation
 
 ### WP4 presentation
 
@@ -62,6 +61,24 @@ a success story, to deliver the message to whom, what kind of newsletter...
 * WARNING: make the distinction between WP4 and WP5
 
 ### Second day: selecting reusable services
+
+**Discussion:**
+
+* Many services are almost achievable, but the costs are very different
+* Not a lot of NSIs in the ESSNet, we could make a last check with the community before validation
+* Some services are complementary, there is an architecture question to cope with
+* Wish to have more time (or ressources) in the project because many services are interesting; difficult to justify the assessment we are trying to do.
+* The ressources are different for each country, so achievability and affordability are different for each country
+* Analogy with Monopoly strategies in order to define our strategy
+* What should be the first chosen service, the most or the less mature ? And the last chosen service, the less mature ?
+* If budget is a constraint, choose affordability
+* If we plan to adapt budget, choose achievability
+* Insee is working on ARC, Istat is working on Outlier detection, Statistics Sweden is working on PX-Web
+* Named Entity Recongnition is high in attractiveness, but not in achievability. In 6 month the situation and the cost will be clearer.
+* How do we define success ? is it to deploy in production ?
+* There could be also implementations outside of this group. During the workshop in June, it will be possible to discuss with other countries
+* There can be some money from SDMX - VTL, but it will be on individual ground
+
 
 **Final results**
 
