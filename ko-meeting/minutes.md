@@ -60,3 +60,21 @@ a success story, to deliver the message to whom, what kind of newsletter...
 * Good candidates for WP4: jDemetra+, Eno, questionaire from WP4 SCFE
 * We could have a visual identity
 * WARNING: make the distinction between WP4 and WP5
+
+### Second day: selecting reusable services
+
+**Final results**
+
+| Service | Order | DOs | ROs |
+|---|:-:|:-:|:-:|
+| PX-web | 1 | SCB | INE (draft), SSB (final) |
+| ARC | 2 | Insee (and SSB for VTL) | Istat |
+| Record linking | 3 | Istat | Insee |
+
+**The winners**
+
+![Services selected](wp1/services-selected.jpg)
+
+**The glorious contenders**
+
+![Services not selected](wp1/services-not-selected.jpg)
