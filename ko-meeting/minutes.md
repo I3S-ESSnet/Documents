@@ -30,7 +30,7 @@ no, it is different from SCFE1, containerizing is important but not exactly link
 * WP4 should provide success stories and not so successful stories. Real stories provide much experience on what are the main difficulties.
 * The catalogue is not yet an appstore, we have not already a lot of experience in putting services in the catalogue. With more experiments will come more feedbacks.
 
-### WP1 - presentation
+### WP1 presentation
 
 Questions and remarks:
 * Ror evaluation each DO will have to evaluate its own development regarding the 3 A dimensions, and ROs will evaluate at least 3 services for reuse.
@@ -38,3 +38,11 @@ Questions and remarks:
 * Some services in the list are costly to reuse, or even not possible to reuse. Some could be merged (for example: Data loader and Content validation).
 * How to know the desire for the services ? It has been evaluated for some during SCFE1, it is the first A dimension (Attractivity)
 * If the service has already an implementation in the CSPA catalogue, it can't be chosen another time for another implementation because it brings nothing in GSBPM coverage.
+
+### WP2 presentation
+
+Questions and remarks:
+* the architectural pattern could be a good starting point. What was developed in the architectural pattern Working Group was very theoretical, I3S is a good opportuity to test the patterns
+* WP3 looks a lot like a blueprint for WP2. There is a lot of things from WP3 wich could enrich WP2.
+
+### WP3 presentation
