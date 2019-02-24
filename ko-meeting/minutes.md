@@ -46,3 +46,17 @@ Questions and remarks:
 * WP3 looks a lot like a blueprint for WP2. There is a lot of things from WP3 wich could enrich WP2.
 
 ### WP3 presentation
+
+### WP3 presentation
+
+### WP4 presentation
+
+Questions and remarks:
+* The goal of the communication is to communicate on success stories. To start we should share about what we consider
+a success story, to deliver the message to whom, what kind of newsletter...
+* A metodology for this WP could be: 1. what is a success story, or a real story ? 2. to focus on which aspects of implementing services ? 3. format : newsletter, hackathon, videos
+* LOS ESSNet, hacktahon PLOSH, articles in Digicom Newsletter could be taken as examples
+* A hacktahon for WP4 ? In order to work on communication kits, make videos, for example interviewing non IT people (DG ...)
+* Good candidates for WP4: jDemetra+, Eno, questionaire from WP4 SCFE
+* We could have a visual identity
+* WARNING: make the distinction between WP4 and WP5
