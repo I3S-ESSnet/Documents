@@ -32,6 +32,24 @@ no, it is different from SCFE1, containerizing is important but not exactly link
 
 ### WP1 presentation
 
+The objectives of this WP are to develop and reuse 3 to 5 new services from the list established in the ESSnet SCFE, with the selection criteria being:
+* Select services from the “Top 10” services referenced in the CROS portal document
+* The project has an objective to cover GSBPM level 1 processes. Therefore, selected
+services should apply those criteria.
+
+The list of possible services is:
+1. Record linking
+2. Microdata access (confidentiality on the fly)
+3. Content data validation
+4. Error correction
+5. Questionnaire design
+6. Outlier detection
+7. Bulk mailer
+8. Named-entity recognition
+9. Generalized data loader
+10. DataSetCatalog
+11. PX-Web
+
 Questions and remarks:
 * Ror evaluation each DO will have to evaluate its own development regarding the 3 A dimensions, and ROs will evaluate at least 3 services for reuse.
 * The methodology developed in WP4 of SCFE1 has been put in a EU Survey, now it is usable by everybody.
@@ -41,14 +59,26 @@ Questions and remarks:
 
 ### WP2 presentation
 
+This work package will study, explore and describe the different architecture possibilities for integrating services (e.g. orchestration, publish/subscribe, point-to-point, adapters, containers). NSI have different as-is situations and different goals that the to-be architecture should align with. A list of real life examples in NSIs where the situation and goals differs will be selected and guidance will be provided to show the effect of choosing different integration patterns. Examples of goals that the architecture should align with could be stronger data and metadata governance or agile production processes. These examples should be the foundation of the architectural discussion.
+
+Other features that are expected in real situations are for instance capabilities for:
+- Logging
+- Containerization
+- Authorisation
+- Status monitoring
+- Service scaling
+
 Questions and remarks:
 * the architectural pattern could be a good starting point. What was developed in the architectural pattern Working Group was very theoretical, I3S is a good opportuity to test the patterns
 * WP3 looks a lot like a blueprint for WP2. There is a lot of things from WP3 wich could enrich WP2.
 
 ### WP3 presentation
 
+Based on the work done in WP2, and using modern application architecture patterns we want to create a blueprint for a reference runtime environment for modern, shareable services following CSPA standards and principles using containers. This work package will describe the basic infrastructure needed, and implement a cloud instance for the needs of the ESSnet. The infrastructure will be documented as code, which will give to its users the opportunity to version it, and fork it. Typical products implementing this pattern would be Ansible Playbook or Terraform. Using the “infrastructure as a code” model will enable NSIs to easily create their own modern infrastructure on their premises. There will also be provided, as part of this WP a simple container-based platform using a cloud infrastructure, which will allow to validate the blueprint and to perform functional tests on the services developed in WP1, as well as validate their packaging and installation. Retro-fitted, and modularized existing services will also be tested on the platform, either on premise or on the public cloud instance.
 
 ### WP4 presentation
+
+Based on the work in other work packages, and gathering information from other NSIs member of the ESS, this WP will aim at building stories of successful use and reuse of CSPA services, building on others' experience and lessons learnt to foster further and wider adoptions in the ESS. It will present these stories and other results through different means in different existing fora of the ESS (e.g. working groups, task forces, workshops) and organise its own meeting. Different tools will be used to create or present the stories, amongst which surveys and interviews.
 
 Questions and remarks:
 * The goal of the communication is to communicate on success stories. To start we should share about what we consider
