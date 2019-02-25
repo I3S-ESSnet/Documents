@@ -90,6 +90,10 @@ a success story, to deliver the message to whom, what kind of newsletter...
 * We could have a visual identity
 * WARNING: make the distinction between WP4 and WP5
 
+### WP5 presentation
+
+The aim of Work Package 5 is mainly to make sure that the project meets its expectations in terms of schedule and outputs, and to oversee the communication activities in relation with the other work packages, and in particular with Work Package 4. During the two years of the project, meetings and videoconferences will be organised where the ongoing tasks, deliverables and open questions will be discussed between the project members.
+
 ### Second day: selecting reusable services
 
 **Discussion:**
