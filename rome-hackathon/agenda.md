@@ -3,9 +3,11 @@
 
 ## Monday 20 May
 
-Morning: introduction, follow up of the work done, agenda and organization of the week.
+Morning: introduction, update on the work done, agenda and organization of the week.
 
-Afternoon: discussion on the architecture and process models for ARC and Relais.
+Afternoon:
+  * discussion on the architecture and process models for ARC and Relais,
+  * methodological and other high-level topics.
 
 
 ## Tuesday 21 May
