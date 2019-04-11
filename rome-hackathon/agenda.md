@@ -16,7 +16,11 @@ Afternoon (resp. Romain):
 
 Morning (resp. Jakob):
   * brainstorming on the technologies and services for the WP3 platform.
-
+  * Create a "shortlist" of CSPA-features that can be partially or fully implemented by using cloud-capabilities/technologies.
+  * List pros/cons by implementing these features by using cloud-capabilities
+  * Prioritize between technologies for featues that can be implemented using multiple cloud technologies 
+  * Describe how the different services could be implemented by using cloud platforms/technologies
+  * Setup prioritized plan for implementations 
 
 Afternoon (resp. Mauro):
   * application of the morning results to the Relais example.
