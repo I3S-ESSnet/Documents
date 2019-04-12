@@ -19,7 +19,7 @@
   - working stories on reuse cases (ex: INE reuse of PX-web in April)
   - test phases of WP2
   - post-analysis of a reuse case that worked
-  - testimonies of users
+  - testimonies of end users or participants to ESSnet project, or associated colleagues
   - report on "service market" in MSW workshop
   - post-mortem analysis of an example of failure?
 
