@@ -9,8 +9,10 @@ Morning (resp. Benoît):
   * explore more in detail ARC and Relais (short live demos)
 
 Afternoon (resp. Romain):
-  * discussion on the architecture and process models for ARC and Relais,
-  * methodological and other high-level topics.
+  * ARC Relais integration
+  * Presentation of methodo and use case for Relais
+  * Requirements for reuse, generally and more specifically for ARC and Relais
+  * Sharing algorithms (Matjaz Jug) 
 
 ## Tuesday 21 May
 

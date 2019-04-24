@@ -19,6 +19,6 @@ Participants: Trygve, Rune, Romain
 
 ## Actions
 
-- [ ] Romain: Ask Franck to create repos for WP3 and Rome Hackatahon
-- [ ] Romain: Ask Juliette for the plans around the INSEE platform
+- [x] Romain: Ask Franck to create repos for WP3 and Rome Hackatahon
+- [x] Romain: Ask Juliette for the plans around the INSEE platform
 - [ ] Trygve: Ask Franck for how the most practical way of paying for a simple cloud platform would be
