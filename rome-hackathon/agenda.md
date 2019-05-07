@@ -44,14 +44,11 @@ Three hackathon threads:
   * Track 3: success stories (resp. António)
 
   
-## Friday 24 May afternoon (resp. Franck)
+## Friday 24 May afternoon 
 
-Conclusions of the workshop:
+Conclusions of the workshop and next steps (resp. Franck):
 
   * Pitches of the three threads (30 minutes by thread, each thread rapporteur to prepare 15 minutes presentation)
-
-Next steps:
-
   * Unece MSW workshop
   * Toulouse hackathon
   * Roadmap
