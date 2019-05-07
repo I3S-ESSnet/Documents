@@ -18,6 +18,7 @@ Afternoon (resp. Romain):
 ## Tuesday 21 May
 
 Morning (resp. Jakob):
+  * Presentation on CSPA work from Toulouse [Document](https://docs.google.com/document/d/1hsAT8BRDf5bqp44k3Xus2l2pgUJji9Sp079dzCd9thw/edit?usp=sharing) 
   * Brainstorming on the technologies and services for the WP3 platform.
   * Create a "shortlist" of CSPA-features that can be partially or fully implemented by using cloud-capabilities/technologies.
   * List pros/cons by implementing these features by using cloud-capabilities
