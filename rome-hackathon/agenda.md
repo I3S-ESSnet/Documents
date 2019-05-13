@@ -20,7 +20,7 @@
 
 ## Tuesday 21 May
 
-**10:00 - 13:00 Morning Session** (resp. Jakob):
+**10:00 - 13:00 Morning Session** (resp. Jakob)
 
   * [Presentation](https://docs.google.com/presentation/d/1G2zPbshQqxjHTGBRYfZUckXi5aqOfX9SGtOsG-MVJUI/edit?usp=sharing) on CSPA work from Toulouse [Document](https://docs.google.com/document/d/1hsAT8BRDf5bqp44k3Xus2l2pgUJji9Sp079dzCd9thw/edit?usp=sharing) 
   * Brainstorming on the technologies and services for the WP3 platform. Identify capabilities needed in the platform
