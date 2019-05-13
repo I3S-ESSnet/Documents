@@ -3,7 +3,7 @@
 
 ## Monday 20 May
 
-Morning (resp. Benoît), starts at 10:00:
+**10:00 - 13:00 Morning Session** (resp. Benoît)
 
   * Introduction
   * Update on the work done (each WP leader to prepare short presentation)
@@ -11,7 +11,7 @@ Morning (resp. Benoît), starts at 10:00:
   * Explore more in detail ARC and Relais (short live demos)
   * First discussion on ARC-Relais integration (with Laura)
 
-Afternoon (resp. Romain):
+**14:30 - 17:30 Afternoon Session** (resp. Romain):
 
   * ARC Relais integration
   * Presentation of methodology and use case for Relais
@@ -20,20 +20,21 @@ Afternoon (resp. Romain):
 
 ## Tuesday 21 May
 
-Morning (resp. Jakob):
+**10:00 - 13:00 Morning Session** (resp. Jakob):
 
   * [Presentation](https://docs.google.com/presentation/d/1G2zPbshQqxjHTGBRYfZUckXi5aqOfX9SGtOsG-MVJUI/edit?usp=sharing) on CSPA work from Toulouse [Document](https://docs.google.com/document/d/1hsAT8BRDf5bqp44k3Xus2l2pgUJji9Sp079dzCd9thw/edit?usp=sharing) 
-  * Brainstorming on the technologies and services for the WP3 platform. Identify capabilities needed in the platform.
+  * Brainstorming on the technologies and services for the WP3 platform. Identify capabilities needed in the platform
   * Map the result of the brainstorming with a "shortlist" of CSPA-features (scalability, security, sandboxing ...) that can be partially or fully implemented by using cloud-capabilities/technologies.
   * List pros/cons by implementing these features by using cloud-capabilities
   * Prioritize between technologies for features that can be implemented using multiple cloud technologies 
   * Describe how the different services could be implemented by using cloud platforms/technologies (cookbook with examples)
-  * Setup prioritized plan for implementations. Output : a collaborative platforms (perhaps a digital one) with votes on capabilities. 
+  * Setup prioritized plan for implementations. Output: a collaborative platforms (perhaps a digital one) with votes on capabilities
 
-Afternoon (resp. Mauro; to discuss: split in two groups or not):
+**14:30 - 17:30 Afternoon Session** (resp. Mauro; to discuss: split in two groups or not)
 
-  * Presentation of the Relais architecture. Application of the morning results to the Relais example.
-  * Presentation of the ARC architecture. Application of the morning results to the ARC example.
+  * Description of a statistical service generalized architecture
+  * Presentation of the Relais TO-BE architecture and live demo of the first set of implemented functionalities. Application of the morning results to the Relais example.
+  * Presentation of the ARC architecture. Application of the morning results to the ARC example
   * First elements for an unified architecture
 
 ## Wednesday 22 May to Friday 24 May morning
@@ -47,7 +48,7 @@ Three hackathon threads:
   
 ## Friday 24 May afternoon 
 
-Conclusions of the workshop and next steps (resp. Franck), ends at 16:00 or 16:30:
+**14:30 - 16:00 Closing Session** (resp. Franck)
 
   * Pitches of the three threads (30 minutes by thread, each thread rapporteur to prepare 15 minutes presentation, if necessary the pitches can be done during the morning)
   * Overview of Eurostat projects (Luca Gramaglia)
