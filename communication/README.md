@@ -2,7 +2,7 @@
 
 ## Presentations
 
-The [slides.html](slides.html) can be used as a template to make simple presentations using [Reveal](https://revealjs.com/) and Markdown.
+The [slides.html](slides.html) can be used as a template to make simple presentations using [Reveal](https://revealjs.com/) and Markdown. The rendering of this template can be seen [here](https://i3s-essnet.github.io/Documents/communication/slides.html).
 
 The Markdown code can be entered directly in the HTML file or in the specific [slides.md](slides.md) Markdown file. The example HTML file demonstrates both options. Also, various possibilities are shown for slides separators (new lines, dashes...), but these are just examples (*NB*: on Windows, it may be necessary to replace `\n` by `\r\n` in separator regular expressions).
 
