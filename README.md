@@ -1,4 +1,4 @@
-<img align="right" src="img/i3s-logo.png" alt="I3S logo"/>
+<img align="right" src="communication/i3s-logo.png" alt="I3S logo"/>
 
 # I3S ESSnet
 
