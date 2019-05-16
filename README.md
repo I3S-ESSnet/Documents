@@ -1,4 +1,5 @@
-<img align="right" src="img/i3s-logo.png" alt="I3S logo"/>
+<img align="right" src="communication/i3s-logo.png" alt="I3S logo"/>
+
 # I3S ESSnet
 
 The Implementing Shared Statistical Services ESSnet aims at fostering the development and reuse of statistical services accross the ESS.
