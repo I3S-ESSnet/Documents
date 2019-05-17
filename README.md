@@ -11,5 +11,6 @@ The following documents and pages are available:
   * Meetings
     * [Kick-off meeting](ko-meeting/index.md)
 	* [Rome hackathon](rome-hackathon/agenda.md)
+	* Other [meeting notes](meeting-notes/README.md)
   * Work packages
     * [WP1](wp1/README.md)
