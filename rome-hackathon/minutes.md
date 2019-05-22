@@ -1,4 +1,4 @@
-# I3S Roma Hackathon
+ï»¿# I3S Roma Hackathon
 
 ## Minutes
 
@@ -64,7 +64,7 @@ functionalities has been done.
 
 **PX-Web:**
   * SCB has done an initial internal planning and harmonization with SSB
-  * INE has tried PX-web current version, checked requirements to run the upcoming ”open” version and assessed the impact on adapting existing dissemination chain
+  * INE has tried PX-web current version, checked requirements to run the upcoming "open" version and assessed the impact on adapting existing dissemination chain
 
 **Intentions for this hackathon:**
   * share the activities and the results achieved
@@ -118,22 +118,22 @@ have been delivered and validated.
 The March reporting and April reporting can be found on Github.
 
 The next deliverables are:
-  * D1.2 Service 1 – July 2019
-  * D5.2 Monitoring report 2 – July 2019
-  * D3.2 Package container for Service 1 – August 2019
-  * D1.4 Service 2 – November 2019
+  * D1.2 Service 1 â€“ July 2019
+  * D5.2 Monitoring report 2 â€“ July 2019
+  * D3.2 Package container for Service 1 â€“ August 2019
+  * D1.4 Service 2 â€“ November 2019
   * D5.3 Intermediary report - November 2019
-  * D3.3 Package container for Sevice 2 – December 2019
+  * D3.3 Package container for Sevice 2 â€“ December 2019
 
 By the end of April, the consumed human ressources are 100 days, whereas the total ressources for the project is 900 days.
 
 The possible events where a communication could be done are:
   * UNECE ModernStats World Workshop 2019, Geneva, June 26-28
-  * SDMX Global Conférence 2019, Budapest, September 16-19
+  * SDMX Global ConfÃ©rence 2019, Budapest, September 16-19
   * ICES 2020, New Orleans, June 15-18
-  * ISI 2021, The Hague, July 11–15
+  * ISI 2021, The Hague, July 11â€“15
   * Eurostat meetings (IT WG, DIME/ITDG)
-  * (ISA² Share and Reuse 2019, Bucharest, June 11)
+  * (ISAÂ² Share and Reuse 2019, Bucharest, June 11)
 
 
 ### Relais demonstration
