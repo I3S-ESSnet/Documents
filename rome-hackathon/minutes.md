@@ -78,7 +78,7 @@ functionalities has been done.
 The deliverable of M6, "Cookbook on integration and use", is just a draft for the moment (it could be uploaded as such
 in CROS platform)
 The first deliverable will be an interactive report/guidance with examples. The version 0.01 has been done
-from Software & ?? recommandations and the M6 deliverable.
+from Software & integration architecture recommandations and the M6 deliverable.
 
 Next steps :
   * continue creating the structure in architectural recommendations
