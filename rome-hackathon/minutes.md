@@ -63,7 +63,8 @@ The description of the main functionalities and data model have been delivered.
 functionalities has been done.
 
 **PX-Web:**
-...
+  * SCB has done an initial internal planning and harmonization with SSB
+  * INE has tried PX-web current version, checked requirements to run the upcoming ”open” version and assessed the impact on adapting existing dissemination chain
 
 **Intentions for this hackathon:**
   * share the activities and the results achieved
