@@ -47,35 +47,63 @@
     <div class="reveal">
       <div class="slides">
         <section>
+		  <h1>Track One debrief</h1>
+		  <h2>Rome hackathon - may 2019</h2>
+        </section>
+        <section>
+		  <h1>The Team</h1>
+		  <ul>
+				<li>The italian team!</li>
+				<li>Henrick</li>
+				<li>Rüne <img src="https://img.icons8.com/color/48/000000/superman.png"></li>
+				<li>Trygve</li>
+				<li>Rémi <img src="https://img.icons8.com/color/48/000000/batman.png"></li>
+				<li>Romain</li>
+		  </ul>
+        </section>
+        <section>
           <section>
-            <h1>Track One debrief</h1>
+            <h1>The plan</h1>
+            <img
+              src="https://resizing.flixster.com/BsQS9ynWtLc8wa2eSDOD3OYrZCY=/206x305/v1.bTsxMjA5ODEzOTtqOzE4MDUwOzEyMDA7OTAwOzEyMDA"
+            />
           </section>
           <section>
-            <h1>Team</h1>
             <ul>
-              <li>The italian team!</li>
-              <li>Henrick</li>
-              <li>Rüne</li>
-              <li>Trygve</li>
-              <li>Rémi</li>
-              <li>Romain</li>
+              <li>
+                Dockerize the IS2 application:
+                <ul>
+                  <li>a first container for the Spring Boot application</li>
+                  <li>a second one for the database</li>
+                </ul>
+              </li>
+              <li>Deploy both containers in a calm and orderly fashion</li>
             </ul>
           </section>
         </section>
         <section>
           <section>
-            <h1>The plan</h1>
+            <h1>The execution</h1>
           </section>
           <section>
-            <p>Dockerize the IS2 application:</p>
-            <ul>
-              <li>a first container for the Spring Boot application</li>
-              <li>a second one for the database</li>
-            </ul>
-            <p>Deploy both containers in a calm and orderly fashion</p>
+            <p>
+              Containerization of both the DB and the application was done quite
+              quickly...
+            </p>
+            <p>...having the two containers talk to each other was not.</p>
           </section>
           <section>
-            <h1></h1>
+            <p>We needed to update the way the app reach the database</p>
+            <p>
+              Using Docker compose, we need to configure the composition of
+              containers in order for the application to wait for the DB to be
+              ready
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>The results</h1>
           </section>
         </section>
       </div>
