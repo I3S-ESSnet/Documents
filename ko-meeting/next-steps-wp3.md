@@ -17,3 +17,6 @@ Established a Slack team for I3S. Can be used for chat, and video conference. (b
 Pre-requisite
 
 * Ideally publish candidate service code to public repository
+
+More here:
+https://ssbno-my.sharepoint.com/:p:/g/personal/jfo_ssb_no/EXLU_7wlx5JCq3AWP73Vp7MBIjaUEYNEv_X5n0fV5UYh4w?e=QuP76b
