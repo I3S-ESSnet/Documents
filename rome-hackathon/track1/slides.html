@@ -47,19 +47,25 @@
     <div class="reveal">
       <div class="slides">
         <section>
-		  <h1>Track One debrief</h1>
-		  <h2>Rome hackathon - may 2019</h2>
+          <h1>Track One debrief</h1>
+          <h2>Rome hackathon - may 2019</h2>
         </section>
         <section>
-		  <h1>The Team</h1>
-		  <ul>
-				<li>The italian team!</li>
-				<li>Henrick</li>
-				<li>Rüne <img src="https://img.icons8.com/color/48/000000/superman.png"></li>
-				<li>Trygve</li>
-				<li>Rémi <img src="https://img.icons8.com/color/48/000000/batman.png"></li>
-				<li>Romain</li>
-		  </ul>
+          <h1>The Team</h1>
+          <ul>
+            <li>The italian team!</li>
+            <li>Henrick</li>
+            <li>
+              Rüne
+              <img src="https://img.icons8.com/color/48/000000/superman.png" />
+            </li>
+            <li>Trygve</li>
+            <li>
+              Rémi
+              <img src="https://img.icons8.com/color/48/000000/batman.png" />
+            </li>
+            <li>Romain</li>
+          </ul>
         </section>
         <section>
           <section>
@@ -77,7 +83,14 @@
                   <li>a second one for the database</li>
                 </ul>
               </li>
-              <li>Deploy both containers in a calm and orderly fashion</li>
+              <li>
+                Deploy both containers in a calm and orderly fashion:
+                <ul>
+                  <li>
+                    Target platforms could be Compose, a cloud provider, etc.
+                  </li>
+                </ul>
+              </li>
             </ul>
           </section>
         </section>
@@ -86,26 +99,92 @@
             <h1>The execution</h1>
           </section>
           <section>
-            <p>
-              Containerization of both the DB and the application was done quite
-              quickly...
-            </p>
-            <p>...having the two containers talk to each other was not.</p>
+            <ul>
+              <li>
+                Containerization of both the DB and the application was done
+                quite quickly...
+              </li>
+              <li>...having the two containers talk to each other was not.</li>
+            </ul>
           </section>
           <section>
-            <p>We needed to update the way the app reach the database</p>
-            <p>
-              Using Docker compose, we need to configure the composition of
-              containers in order for the application to wait for the DB to be
-              ready
-            </p>
+            <ul>
+              <li>We needed to update the way the app reach the database</li>
+              <li>
+                Using Docker compose, we need to configure the composition of
+                containers in order for the application to wait for the DB to be
+                ready
+              </li>
+            </ul>
           </section>
         </section>
         <section>
           <section>
             <h1>The results</h1>
           </section>
+          <section>
+            <h2>We manage!</h2>
+            <ul>
+              <li>to deploy using Docker compose</li>
+              <li>to deploy on the DCOS Insee platform</li>
+              <li>in both cases using images pushed to Docker Hub</li>
+              <li>
+                also as a by product, to update the version of Spring boot
+              </li>
+            </ul>
+            <p>
+              Everything is
+              <a href="https://github.com/I3S-ESSnet/is2">on GitHub!</a>
+            </p>
+          </section>
+          <section>
+            <p>Demo time!</p>
+            <p>
+              <img src="https://img.icons8.com/color/96/000000/r2-d2.png" />
+            </p>
+          </section>
         </section>
+        <section>
+          <section>
+            <h1>The aftermath</h1>
+          </section>
+          <section>
+            <h2>Things to do</h2>
+            <ul>
+              <li>integrate the Spring boot update to the code base</li>
+              <li>deploy on a cloud provider, using K8s</li>
+              <li>document the work and the lessons learned for WP3?</li>
+            </ul>
+          </section>
+          <section>
+            <h2>Outstanding questions</h2>
+            <ul>
+              <li>
+                Initial target was Relais, we ended up with IS2
+                <ul>
+                  <li>Relais to be proposed as a standalone service ?</li>
+                </ul>
+              </li>
+              <li>
+                ARC was already dockerized before the hackathon
+                <ul>
+                  <li>
+                    Compare the work done ? Extract some common elements /
+                    guide?
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+		</section>
+		<section>
+			<h1>Thank you!</h1>
+			<p>
+				<img src="https://img.icons8.com/color/96/000000/pizza.png">
+				<img src="https://img.icons8.com/color/96/000000/italy.png">
+				<img src="https://img.icons8.com/color/96/000000/coliseum.png">
+			</p>
+		</section>
       </div>
     </div>
 
