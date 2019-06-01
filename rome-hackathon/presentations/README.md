@@ -6,6 +6,8 @@
 
   * [ARC and Relais integration](arc-relais-integration.pdf)
 
+  * [Statistical service architecture](rome-wp1-architecture.pptx)
+
   * [PX-web presentation](pxweb-presentation.html)
 
 [WP2 status update](rome-wp2-status-update.pdf)
