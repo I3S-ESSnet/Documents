@@ -12,8 +12,8 @@ The following documents are available:
 
     * [Track 1](track1/slides.html)
 
-    * [Track 2](track1/slides.html)
+    * [Track 2](track2/slides.html)
 
-    * Track 3 [report](track1/slides.html) and questionnaire project ([v1](track3/wp4-questionnaire-1.docx), [v2](track3/wp4-questionnaire-2.docx))
+    * Track 3 [report](track3/slides.html) and questionnaire project ([v1](track3/wp4-questionnaire-1.docx), [v2](track3/wp4-questionnaire-2.docx))
 
   * Meeting [minutes](minutes.md)
