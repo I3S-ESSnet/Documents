@@ -11,3 +11,5 @@
 [WP2 status update](rome-wp2-status-update.pdf)
 
 [WP5 status update](rome-wp5-status-update.html)
+
+Next steps: [Toulouse hackathon](toulouse.html)

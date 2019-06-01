@@ -10,7 +10,8 @@ The following documents and pages are available:
 
   * Meetings
     * [Kick-off meeting](ko-meeting/index.md)
-	* [Rome hackathon](rome-hackathon/agenda.md)
+	* [Rome hackathon](rome-hackathon/README.md)
 	* Other [meeting notes](meeting-notes/README.md)
   * Work packages
     * [WP1](wp1/README.md)
+	* [WP2](wp2/README.md)
