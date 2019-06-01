@@ -10,6 +10,8 @@
 
   * [PX-web presentation](pxweb-presentation.html)
 
+  * [Sharing algorithms](rome-wp1-sharing-algorithms.pptx)
+
 [WP2 status update](rome-wp2-status-update.pdf)
 
 [WP5 status update](rome-wp5-status-update.html)
