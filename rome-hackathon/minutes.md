@@ -229,18 +229,18 @@ The discussion proposed a first sketch of a statistical architectural pattern fo
 ### Description of a statistical service generalized architecture
 
 The objectives of a statistical service is to perform the following tasks:
-  * 1.	Upload and manage input data, to provide initial data to process
-  * 2.	Parameters and variables settings
-  * 3.	Run method
-  * 4.	Analyse output
+  * Upload and manage input data, to provide initial data to process
+  * Parameters and variables settings
+  * Run method
+  * Analyse output
 
 Seen as such, a statistical service can be mapped to GSIM by using the objects "Business Function", "Business Process" and "Process step".
 
-Image "GeneralizedArchitectureStatisticalService_BusinessLayer.png"
+![Business layer](presentations/GeneralizedArchitectureStatisticalService_BusinessLayer.png)
 
 And at application level :
 
-Image "GeneralizedArchitectureStatisticalService_ApplicationLayer.png"
+![Application layer](presentations/GeneralizedArchitectureStatisticalService_ApplicationLayer.png)
 
 ### Conclusion of thread 1
 
