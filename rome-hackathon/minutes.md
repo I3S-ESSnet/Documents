@@ -262,6 +262,24 @@ Next steps:
 
 ### Conclusion of thread 2
 
+The objective is to agree on how to integrate VTL in ARC.
+
+There is an existing norwegian VTL-tool. The french use cases will be :
+  * use VTL as a formal language to express rules
+  * use VTL for data validation
+
+The general context is to use VTL to express rules and execute them in web questionnaires and for administrative sources (GSBPM phase: data collection).
+
+At logical level:
+  * analysis of the requirements in CSPA terms
+  * express the controls in VTL
+  * execute the controls in VTL
+
+At technical level:
+  * coding the grammar
+  * coding the connector
+  * coding the React control
+
 ### Conclusion of thread 3
 
 The questionnaire for analysing the main incentives and impediments for sharing has been validated.
