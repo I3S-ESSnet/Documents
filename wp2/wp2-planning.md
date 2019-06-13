@@ -11,7 +11,7 @@
 |Translate the scenarios to the cookbook |![90%](http://progressed.io/bar/90)||SCB|
 |Build first draft of cookbook based on materials from hackaton |![100%](http://progressed.io/bar/100)||SCB|
 |Deliver draft of cookbook in May |![100%](http://progressed.io/bar/100)||SCB|
-|Work on architectural recomendations |![0%](http://progressed.io/bar/0)||SCB|
+|Work on architectural recomendations |![15%](http://progressed.io/bar/15)||SCB|
 |Work on interactive guidence |![0%](http://progressed.io/bar/0)||SCB|
 |Test the current output during modernstats world workshop |![0%](http://progressed.io/bar/0)||SCB|
 |Deliver draft of arch guidance in July |![0%](http://progressed.io/bar/0)||SCB|
