@@ -6,9 +6,9 @@
 |:--|:--|:--|:--|
 |Planning in detail (end feb/start of mars) VC|![60%](http://progressed.io/bar/30)|Set date for VC|SCB,ISTAT,INSEE,SSB|
 |Setup google-drive documents and share plus share prezi|![80%](http://progressed.io/bar/20)||SCB|
-|Setup the general structure of the documents|![90%](http://progressed.io/bar/90)||SCB|
+|Setup the general structure of the documents|![60%](http://progressed.io/bar/60)||SCB|
 |During hackathon in Rome try to capture materials for scenarios in cookbook |![100%](http://progressed.io/bar/100)||SCB|
-|Translate the scenarios to the cookbook |![100%](http://progressed.io/bar/100)||SCB|
+|Translate the scenarios to the cookbook |![90%](http://progressed.io/bar/90)||SCB|
 |Build first draft of cookbook based on materials from hackaton |![100%](http://progressed.io/bar/100)||SCB|
 |Deliver draft of cookbook in May |![100%](http://progressed.io/bar/100)||SCB|
 |Work on architectural recomendations |![0%](http://progressed.io/bar/0)||SCB|
