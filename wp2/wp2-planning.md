@@ -14,7 +14,7 @@
 |Work on architectural recomendations |![15%](http://progressed.io/bar/15)||SCB|
 |Work on interactive guidence |![0%](http://progressed.io/bar/0)||SCB|
 |Test the current output during modernstats world workshop |![0%](http://progressed.io/bar/0)||SCB|
-|Deliver draft of arch guidance in July |![0%](http://progressed.io/bar/0)||SCB|
+|Deliver draft of arch guidance in July |![100%](http://progressed.io/bar/100)||SCB|
 |VC with WP2 members in August|![0%](http://progressed.io/bar/0)||SCB,ISTAT,INSEE,SSB|
 |Between july and december - add guidance and scenarios based on experience and the work done in WP1 and WP3 |![0%](http://progressed.io/bar/0)||SCB|
 | Align deliverables and deliver draft versions in dec 2019 |![0%](http://progressed.io/bar/0)||SCB|
