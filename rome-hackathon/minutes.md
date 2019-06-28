@@ -2,7 +2,6 @@
 
 ## Minutes
 
-
 ### Agenda
 
 **Monday 20 May, morning session**
