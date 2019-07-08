@@ -8,8 +8,11 @@ There is an informal monthly reporting for the internal needs of the project. Th
 
   * [March 2019](2019-03.md)
   * [April 2019](2019-04.md)
+  * [May 2019](2019-05.md)
+  * [June 2019](2019-06.md)
+  * [July 2019](2019-07.md)
 
 
 ## Official reporting
 
-The project's deliverable include quarterly progress reports, which are published on the CROS Portal site.
+The project's deliverable include quarterly progress reports, which are published on the [CROS Portal site](https://ec.europa.eu/eurostat/cros/content/implementing-shared-statistical-services).
