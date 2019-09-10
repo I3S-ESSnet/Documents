@@ -22,6 +22,8 @@ Possible themes:  architecture, development, communication
 
 **14:30 - 17:30 Afternoon Session**
 
+**19h30 - Social dinner**
+
 
 ## Wednesday 15 January
 
@@ -35,6 +37,8 @@ Intermezzo. Ideas:
 
   * workshop on the articulation of I3S work and Unece standards (CSPA, CSDA, GSIM, GAMSO…)
   * fill the CSPA catalogue for I3S services
+
+**18h00 - Visit of Toulouse**
 
 
 ## Thursday 16 January: technical tracks
