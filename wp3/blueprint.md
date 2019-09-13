@@ -34,12 +34,13 @@ For test purposes it should be sufficient to use a standard Docker installation 
 ## IS2 example
 During the Rome hackathon the Istat application IS2 was containerized. IS2 is a standard Java, Spring Boot web application with a MySQL database. https://github.com/mecdcme/is2
 
-We forked the application to the I3S repository https://github.com/I3S-ESSnet/is2 and created Dockerfiles for the database and application.
+We forked the application to the I3S repository https://github.com/I3S-ESSnet/is2 and created [Dockerfiles](https://docs.docker.com/engine/reference/builder/) for the database and application.
 
 Database containerization
 The `db.Dockerfile` is very simple. The initdb script was already in the existing repository.
 
-```FROM mysql:8.0
+```Dockerfile
+FROM mysql:8.0
 ENV MYSQL_ROOT_PASSWORD root
 ENV MYSQL_DATABSE IS2
 COPY ./db/is2.sql /docker-entrypoint-initdb.d/
@@ -47,14 +48,16 @@ COPY ./db/is2.sql /docker-entrypoint-initdb.d/
 
 With this dockerfile, we can create and run the dockerimage like this:
 
-```$ docker build -t i3sessnet/is2-mysql . -f db.Dockerfile
-$ docker run -p 3306:3306 i3sessnet/is2-mysql
+```Shell
+docker build -t i3sessnet/is2-mysql . -f db.Dockerfile
+docker run -p 3306:3306 i3sessnet/is2-mysql
 ```
 
 ## Application containerization
-For the application we take advantage of the multi-stage build feature in Docker.  With this app.Dockerfile we both build the IS2 application with maven AND we create the docker image
+For the application we take advantage of the [multi-stage build feature in Docker](https://docs.docker.com/develop/develop-images/multistage-build/).  With this app.Dockerfile we both build the IS2 application with maven AND we create the docker image
 
-```FROM maven:3.6-jdk-8-alpine AS build
+```Dockerfile
+FROM maven:3.6-jdk-8-alpine AS build
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 RUN mvn -f /usr/src/app/pom.xml clean package
@@ -69,14 +72,16 @@ ENTRYPOINT ["java","-jar","/usr/app/is2.jar"]
 
 With this dockerfile, we can create and run the dockerimage like this:
 
-```$ docker build -t i3sessnet/is2 . -f app.Dockerfile
-$ docker run -p 8080:8080 i3sessnet/is2
+```Shell
+docker build -t i3sessnet/is2 . -f app.Dockerfile
+docker run -p 8080:8080 i3sessnet/is2
 ```
 
 ## Docker Compose
-The IS2 application is now a multi-container application. To run these two containers and enable them to talk to each other we use Docker Compose. The docker-compose.yml file looks like this:
+The IS2 application is now a multi-container application. To run these two containers and enable them to talk to each other we use [Docker Compose](https://docs.docker.com/compose/). The docker-compose.yml file looks like this:
 
-```version: '3'
+```YAML
+version: '3'
 services:
   app:
     image: i3sessnet/is2:latest
@@ -93,18 +98,21 @@ allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezo
     command: mysqld --default-authentication-plugin=mysql_native_password
 ```
 
-One note on the strange looking entrypoint. The current application will crash if there is no database present at startup.  Even if there is a depends_on relation between the services, the application will not wait for the database. With this wait-for we can force the application to wait for a period of time.
+One note on the strange looking entrypoint. The current application will crash if there is no database present at startup.  Even if there is a depends_on relation between the services, the application will not wait for the database. With this [wait-for](https://github.com/eficode/wait-for) we can force the application to wait for a period of time.
 
 Start both containers with this single command:
 
-```$ docker-compose up```
+```Shell
+docker-compose up
+```
 
 ## Continuous integration
 
 ### Travis CI
 With open-source applications on Github there are many free tools for doing continuous integration. We set up Travis CI for building both docker images.
 
-```.travis.yml
+.travis.yml
+```YAML
 language: java
 services:
 - docker
