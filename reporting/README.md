@@ -11,6 +11,8 @@ There is an informal monthly reporting for the internal needs of the project. Th
   * [May 2019](2019-05.md)
   * [June 2019](2019-06.md)
   * [July 2019](2019-07.md)
+  * [August 2019](2019-08.md)
+  * [September 2019](2019-09.md)
 
 
 ## Official reporting

@@ -1,4 +1,4 @@
-<img align="right" src="communication/i3s-logo.png" alt="I3S logo"/>
+<img align="right" src="communication/i3s-logo-1-small.png" alt="I3S logo"/>
 
 # I3S ESSnet
 
@@ -10,8 +10,9 @@ The following documents and pages are available:
 
   * Meetings
     * [Kick-off meeting](ko-meeting/index.md)
-	* [Rome hackathon](rome-hackathon/README.md)
-	* Other [meeting notes](meeting-notes/README.md)
+    * [Rome hackathon](rome-hackathon/README.md)
+    * [Toulouse hackathon](toulouse-hackathon/README.md)
+    * Other [meeting notes](meeting-notes/README.md)
   * Work packages
     * [WP1](wp1/README.md)
-	* [WP2](wp2/README.md)
+    * [WP2](wp2/README.md)
