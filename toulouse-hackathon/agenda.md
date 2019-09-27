@@ -73,6 +73,7 @@ Technical tracks continued.
 | SCB 1 | x | x | x | x | x |
 | SSB 1 | x | x | x | x | x |
 | SSB 2 | x | x | x | x | x |
+| Antόnio  | x | x | x | x | x |
 | Benoît | x | x | x | x | x |
 | Franck | x | x | x | x | x |
 | Manuel | x | x | x | x | x |
