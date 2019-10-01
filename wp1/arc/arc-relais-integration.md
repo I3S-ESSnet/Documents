@@ -22,4 +22,12 @@ ARC terminology is more specific: 'Norm family' means 'Target data model', 'Norm
 
 Both applications are Java-based. Tomcat 8.5 is used in both cases. The database is different: MySQL for ARC and PostgreSQL for RELAIS. Tests made during the workshop show that porting RELAIS to PostgreSQL seems feasible.
 
+#### Existing architecture
+
+##### ARC
+
+![ARC architecture](https://raw.githubusercontent.com/I3S-ESSnet/Documents/master/wp1/arc/img/arc-architecture.png)
+
+##### Relais
+
 ## Integration scenarios
