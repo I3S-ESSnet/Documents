@@ -30,4 +30,8 @@ Both applications are Java-based. Tomcat 8.5 is used in both cases. The database
 
 ##### Relais
 
+![Relais architecture](https://raw.githubusercontent.com/I3S-ESSnet/Documents/master/wp1/arc/img/relais-architecture.png)
+
+##### Relais
+
 ## Integration scenarios
