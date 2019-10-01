@@ -26,9 +26,15 @@ node "Batch \n <$java>" as BATCH {
         [Java engine] as JAVA_ENGINE
         [R engine] as R_ENGINE
     }
+
     package Runtimes as RUNTIMES {
         [Java runtime] as JAVA_RUNTIME
-        [R runtime]
+        [R runtime] as R_RUNTIME
+    }
+
+    package "Statistical packages" as IMPL {
+        [Relais] as R_RELAIS
+        [Selemix] as R_SELEMIX
     }
 }
 
@@ -48,13 +54,18 @@ WB <-down-> DATA_DB
 WB <-down-> METADATA_DB
 WB -> BATCH
 
-JAVA_ENGINE -down-> JAVA_RUNTIME: invoke
+R_ENGINE -down-> R_RUNTIME: invoke
 
-JAVA_ENGINE <-> DATA_DB
-JAVA_ENGINE <-> METADATA_DB
+JAVA_ENGINE <-down-> DATA_DB
+JAVA_ENGINE <-down-> METADATA_DB
+
+R_RUNTIME -down-> R_RELAIS
 
 ' Notes --------
 note left of User: User execute a business function
-
+note right of WB: Workbench invokes the batch layer
+note left of ENGINES: Batch processor selects the engine
+note right of ENGINES: An engine collect the data
+note left of RUNTIMES: A runtime executes the proper statistical functions
 
 @enduml
