@@ -1,0 +1,71 @@
+@startuml
+' Relais application architecture
+'
+' Using:
+' - https://github.com/rabelenda/cicon-plantuml-sprites/blob/master/sprites-list.md for icons
+' - http://plantuml.com/en/creole for formatting
+
+!define SPRITESURL https://raw.githubusercontent.com/rabelenda/cicon-plantuml-sprites/v1.0/sprites
+!includeurl SPRITESURL/tomcat.puml
+!includeurl SPRITESURL/postgresql.puml
+!includeurl SPRITESURL/java.puml
+!includeurl SPRITESURL/mysql.puml
+
+title __**Relais architecture**__
+
+' Users ----------
+:User:
+
+' Nodes ----------
+node "Workbench \n <$tomcat> <$java>" as WB {
+
+}
+
+node "Batch \n <$java>" as BATCH {
+    package Engines AS ENGINES {
+        [Java engine] as JAVA_ENGINE
+        [R engine] as R_ENGINE
+    }
+
+    package Runtimes as RUNTIMES {
+        [Java runtime] as JAVA_RUNTIME
+        [R runtime] as R_RUNTIME
+    }
+
+    package "Statistical packages" as IMPL {
+        [Relais] as R_RELAIS
+        [Selemix] as R_SELEMIX
+    }
+}
+
+' Databases ----------
+database "Relais Data \n <$mysql>" as DATA_DB {
+
+}
+
+database "Relais Metadata \n <$mysql>" as METADATA_DB {
+
+}
+
+' Links ----------
+User -down-> WB
+
+WB <-down-> DATA_DB
+WB <-down-> METADATA_DB
+WB -> BATCH
+
+R_ENGINE -down-> R_RUNTIME: invoke
+
+JAVA_ENGINE <-down-> DATA_DB
+JAVA_ENGINE <-down-> METADATA_DB
+
+R_RUNTIME -down-> R_RELAIS
+
+' Notes --------
+note left of User: User execute a business function
+note right of WB: Workbench invokes the batch layer
+note left of ENGINES: Batch processor selects the engine
+note right of ENGINES: An engine collect the data
+note left of RUNTIMES: A runtime executes the proper statistical functions
+
+@enduml

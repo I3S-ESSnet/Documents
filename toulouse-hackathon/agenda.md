@@ -58,3 +58,27 @@ Technical tracks continued.
   * Next steps, continued (each WP leader to prepare a presentation)
   * Next hackathon
   * Roadmap
+
+
+## Participants
+
+| Participants | Monday | Tuesday | Wednesday | Thursday | Friday |
+|---|:-:|:-:|:-:|:-:|:-:|
+| Istat 1 | x | x | x | x | x |
+| Istat 2 | x | x | x | x | x |
+| Istat 3 | x | x | x | x | x |
+| Jakob | x | x | x | x | x |
+| Hakim | x | x | x | x | x |
+| Henrik | x | x | x | x | x |
+| SCB 1 | x | x | x | x | x |
+| SSB 1 | x | x | x | x | x |
+| SSB 2 | x | x | x | x | x |
+| Antόnio  | x | x | x | x | x |
+| Benoît | x | x | x | x | x |
+| Franck | x | x | x | x | x |
+| Manuel | x | x | x | x | x |
+| Nicolas |   | x | x | x |   |
+| Romain | x | x | x | x | x |
+| Hadrien |   | x | x | x |   |
+| CBS 1 | x | x | x | x | x |
+| CBS 2 | x | x | x | x | x |

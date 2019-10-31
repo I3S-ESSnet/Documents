@@ -1,0 +1,70 @@
+@startuml
+
+' ARC application architecture
+'
+' Using:
+' - https://github.com/rabelenda/cicon-plantuml-sprites/blob/master/sprites-list.md for icons
+' - http://plantuml.com/en/creole for formatting
+
+!define SPRITESURL https://raw.githubusercontent.com/rabelenda/cicon-plantuml-sprites/v1.0/sprites
+!includeurl SPRITESURL/tomcat.puml
+!includeurl SPRITESURL/postgresql.puml
+!includeurl SPRITESURL/java.puml
+
+title __**ARC architecture**__
+
+' Users ----------
+:User:
+
+' nodes ----------
+node "ARC-WEB (aka the workbench)\n <$tomcat> <$java>" as ARCWEB {
+}
+
+node "ARC-WS\n <$tomcat> <$java>" as ARCWS {
+}
+
+node "ARC-BATCH\n <$java>" as ARCBATCH {
+}
+
+' database ----------
+database "ARC-Metadata\n <$postgresql>" as METADB {
+}
+
+database "ARC-Data\n <$postgresql>" as DATADB {
+}
+
+' folder ----------
+folder "Shared file system" as SFS
+
+' notes ----------
+note left of DATADB #99FF99: Multiple sandbox schemas\n and one production schema
+note left of METADB #99FF99: One ARC schema
+
+' client apps ----------
+agent "Client application" as CLIENT
+ 
+' links ----------
+User ..up..> ARCWEB: Uses
+CLIENT -up-> ARCWS: Export data
+
+ARCWEB -up-> METADB: *
+ARCWS -up-> METADB: *
+ARCBATCH -up-> METADB: *
+
+ARCWEB -up-> DATADB: *
+ARCWS -up-> DATADB: *
+ARCBATCH -up-> DATADB: *
+
+ARCWEB -down-> SFS: export, load, deposit after upload
+ARCBATCH -down-> SFS: load
+
+legend
+    Shortcuts:
+        * jdbc via tcp
+    Versions:
+        - PostgreSQL 11.5
+        - Java 8
+        - Tomcat 8
+endlegend
+
+@enduml
