@@ -1,0 +1,27 @@
+@startuml
+
+box "Providers"
+participant "Refigeo (1)" as REFIGEO
+participant "Data providers" as PROVIDERS
+end box
+
+box "BPE team"
+participant "Offline processing" as OFFLINE_PROCESSING
+participant "BPE Application" as BPE_APP
+database BPE_DB
+end box
+
+box "SNDIP"
+participant SNDIP
+end box
+
+REFIGEO -> OFFLINE_PROCESSING: Provides current year geographical data
+PROVIDERS -> OFFLINE_PROCESSING: Provide facilities data
+OFFLINE_PROCESSING -> OFFLINE_PROCESSING: Geographical data processing
+SNDIP -> BPE_DB: Init database with previous year data
+
+legend
+(1) Insee internal geographical repository
+end legend
+
+@enduml
