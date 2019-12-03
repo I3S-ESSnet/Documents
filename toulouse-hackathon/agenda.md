@@ -71,8 +71,8 @@ Technical tracks continued.
 | Hakim | x | x | x | x | x |
 | Henrik | x | x | x | x | x |
 | Patrik | x | x | x | x | x |
-| SSB 1 | x | x | x | x | x |
-| SSB 2 | x | x | x | x | x |
+| Trygve | x | x | x | x | x |
+| Rune | x | x | x | x | x |
 | Antόnio  | x | x | x | x | x |
 | Benoît | x | x | x | x | x |
 | Franck | x | x | x | x | x |
