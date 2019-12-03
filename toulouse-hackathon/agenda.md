@@ -16,7 +16,7 @@
 
 ## Tuesday 14 January: technical tracks
 
-Possible themes:  architecture, development, communication
+Possible themes:  architecture (http://tiny.cc/archtoulouse), development, communication
 
 **10:00 - 13:00 Morning Session**
 
