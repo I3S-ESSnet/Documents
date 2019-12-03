@@ -70,7 +70,7 @@ Technical tracks continued.
 | Jakob | x | x | x | x | x |
 | Hakim | x | x | x | x | x |
 | Henrik | x | x | x | x | x |
-| SCB 1 | x | x | x | x | x |
+| Patrik | x | x | x | x | x |
 | SSB 1 | x | x | x | x | x |
 | SSB 2 | x | x | x | x | x |
 | Antόnio  | x | x | x | x | x |
