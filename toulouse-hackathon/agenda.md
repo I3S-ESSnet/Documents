@@ -16,7 +16,7 @@
 
 ## Tuesday 14 January: technical tracks
 
-Possible themes:  architecture, development, communication
+Possible themes:  architecture (http://tiny.cc/archtoulouse), development, communication
 
 **10:00 - 13:00 Morning Session**
 
@@ -70,9 +70,9 @@ Technical tracks continued.
 | Jakob | x | x | x | x | x |
 | Hakim | x | x | x | x | x |
 | Henrik | x | x | x | x | x |
-| SCB 1 | x | x | x | x | x |
-| SSB 1 | x | x | x | x | x |
-| SSB 2 | x | x | x | x | x |
+| Patrik | x | x | x | x | x |
+| Trygve | x | x | x | x | x |
+| Rune | x | x | x | x | x |
 | Antόnio  | x | x | x | x | x |
 | Benoît | x | x | x | x | x |
 | Franck | x | x | x | x | x |
