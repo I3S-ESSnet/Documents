@@ -1,0 +1,42 @@
+@startuml
+
+title "ARC and Relais integration"
+
+' Users ----------
+:User:
+
+' Nodes ----------
+node "IS2" as IS2 {
+    package "Relais" as RELAIS {
+
+    }
+
+}
+
+node "ARC" as ARC {
+    package "ARC WS" as ARC_WS {
+
+    }
+}
+
+' Databases ----------
+database "Data"  as DATA_DB {
+
+}
+
+database "Metadata" as META_DB {
+
+}
+
+' Links ----------
+:User: .> IS2
+
+IS2 -> ARC_WS
+
+RELAIS -down-> DATA_DB
+RELAIS -down-> META_DB
+
+ARC -down-> DATA_DB
+ARC -down-> META_DB
+
+@enduml
