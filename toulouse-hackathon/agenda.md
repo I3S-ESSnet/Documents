@@ -49,6 +49,7 @@ Intermezzo. Ideas:
   * presentation on notebooks (Norway)
   * paper for Q2020 (Benoît)
   * feedback on the most recent deliverables
+  * specification of delivery slips for software deliverables
 
 **18h00 - Visit of Toulouse**
 
@@ -78,9 +79,9 @@ Technical tracks continued.
 
 | Participants | Monday | Tuesday | Wednesday | Thursday | Friday |
 |---|:-:|:-:|:-:|:-:|:-:|
-| Claudio | x | x | x | x | x |
+| Giuseppina | x | x | x | x | x |
 | Mauro | x | x | x | x | x |
-| Francesco |   | x | x | x | x |
+| Francesco |   |   | x | x | x |
 | Marco | x | x | x |   |   |
 | Jakob | x | x | x | x | x |
 | Hakim | x | x | x | x | x |
