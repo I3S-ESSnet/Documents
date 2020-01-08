@@ -44,12 +44,13 @@ Technical tracks continued.
 
 Intermezzo. Ideas:
 
-  * workshop on the articulation of I3S work and Unece standards (CSPA, CSDA, GSIM, GAMSO…)
+  * articulation of I3S work and Unece standards (CSPA, CSDA, GSIM, GAMSO…)
   * fill the CSPA catalogue for I3S services
   * presentation on notebooks (Norway)
   * paper for Q2020 (Benoît)
   * feedback on the most recent deliverables
   * specification of delivery slips for software deliverables
+  * demonstration of VTL developments
 
 **18h00 - Visit of Toulouse**
 
