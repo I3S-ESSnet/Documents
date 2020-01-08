@@ -99,5 +99,5 @@ Technical tracks continued.
 | Hadrien |   | x | x | x |   |
 | Jelger | x | x | x | x | x |
 | Vincent | x | x | x | x | x |
-| Pierre | x | x | x | x | x |
-| Mihai | x | x | x | x | x |
+| Pierre | x | x | x | x |   |
+| Mihai |   |   | x | x |   |
