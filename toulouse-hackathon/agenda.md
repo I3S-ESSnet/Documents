@@ -93,9 +93,8 @@ Technical tracks continued.
 | Antόnio | x | x | x | x | x |
 | Benoît | x | x | x | x | x |
 | Franck | x | x | x | x | x |
-| Laurence |   | x | x |  |   |
 | Manuel | x | x | x | x | x |
-| Nicolas | x | x | x | x |   |
+| Nicolas | x | x | x |   |   |
 | Romain | x | x | x | x | x |
 | Hadrien |   | x | x | x |   |
 | Jelger | x | x | x | x | x |
