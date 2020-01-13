@@ -104,3 +104,23 @@ Participants: Vincent, Rune, Patrik, Romain, Mauro, Franck, Hadrien
   * Begin to discuss the workshop in Lisbon agenda
 
 Participants: Pedro, Pierre, Hakim, Marco, Benoît
+
+### Objectives of the hackathon
+
+  * Draft deliverables reingeneering
+  * Feedbacks on the Relais wrokbench
+  * Database integration into the cloud
+  * CSPA implementation in architecture (WP2) documents
+  * Feedbacks on WP2 contents (and good level of details)
+  * Ideas on cookbook
+  * Platforms running
+  * Stable version of the 
+  * Diagrams to put in WP2 document
+  * Enough information in order to make promotion at CBS
+  * How to contribute
+  * See something real, tangible
+  * Draft for the Sinder
+  * Planning for the second part of the project
+  * Agree on the boundaries between WP2 and WP3
+  * Have two services able to talk to each others
+  * Intermediary report, minutes ...
