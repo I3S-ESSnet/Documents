@@ -81,6 +81,8 @@ Questions/remarks :
 
 **Track 1: Architecture**
 
+Arcitecture guidance, cookbook and interactive guidance. Discussion on the scope, the structure, the content and the overlap between WP2 and WP3.
+
 **Track 2: Development**
 
 **Track 3: Communication**
