@@ -83,10 +83,24 @@ Questions/remarks :
 
 Arcitecture guidance, cookbook and interactive guidance. Discussion on the scope, the structure, the content and the overlap between WP2 and WP3.
 
+Participants: Jelger, Jakob, Hendryk, Manu, Giusepina, Trygve.
+
 **Track 2: Development**
 
   * ARC/IS2 integration (resume work on data model, build the interface to the database)
   * VTL tools (operators, date and time, refactoring and naming, documentation, design for non scalar operators)
   * PXWeb cloud deployment (and also with ARC/IS2)
 
+Participants: Vincent, Rune, Patrik, Romain, Mauro, Franck, Hadrien
+
 **Track 3: Communication**
+
+  * Finalize jDemetra+ flyer
+  * Start ARC flyer and video script
+  * Finalize Relais flyer
+  * Start PxWeb flyer
+  * Finalize the Guildelines on success stories"
+  * Analyse survey first results - start sinder; complet communication kit; feedbacks to DIME-ITDG
+  * Begin to discuss the workshop in Lisbon agenda
+
+Participants: Pedro, Pierre, Hakim, Marco, Benoît
