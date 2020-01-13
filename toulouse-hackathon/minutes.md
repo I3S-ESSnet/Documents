@@ -66,7 +66,11 @@ Questions/remarks :
 ### WP4
 
 Questions/remarks :
-
+  * We should have a feedback on the survey in the next DIME/ITDG meeting.
+  * The catalogue should adress some problems, mainly the problem of promoting the existing services. Should the catalogue be enriched with something more personal (video ...).
+  * There is a need to explain what are the standards and what they mean.
+  * The lack of knowledge about services is surprising and raises the question of how we communicate in the CSPA community. That's why we think the messages should be different for different targets.
+  * Propose to have a special section on sharing services during NTTS ?
 
 ### WP5
 
