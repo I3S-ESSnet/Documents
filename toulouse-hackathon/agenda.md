@@ -6,7 +6,7 @@
 **10:00 - 13:00 Morning Session**
 
   * Welcome and introduction
-  * Update on the work done: work packages 1, 2 and 3
+  * Update on the work done: work packages 1, [2](https://docs.google.com/presentation/d/1ybKbRisbygkkIiGdSDICVmU06kBk3Z-Tvv9E9GjJQgo/edit?usp=sharing) and 3
 
 Each work package leader will present the work done so far and describe the deliverables produced, with a focus on the most recent ones. Since some participants will be new to the project, presentations have to include a high-level description of the work package content and goals. Presenters should aim for one-hour presentations, including questions.
 
