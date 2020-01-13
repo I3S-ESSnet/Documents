@@ -90,7 +90,7 @@ Technical tracks continued.
 | Patrik | x | x | x | x | x |
 | Trygve | x | x | x | x | x |
 | Rune | x | x | x | x | x |
-| Antόnio | x | x | x | x | x |
+| Pedro | x | x | x | x | x |
 | Benoît | x | x | x | x | x |
 | Franck | x | x | x | x | x |
 | Manuel | x | x | x | x | x |
