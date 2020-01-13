@@ -114,7 +114,7 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
   * Feedbacks on WP2 contents (and good level of details)
   * Ideas on cookbook
   * Platforms running
-  * Stable version of the 
+  * Stable version of the VTL tools
   * Diagrams to put in WP2 document
   * Enough information in order to make promotion at CBS
   * How to contribute
