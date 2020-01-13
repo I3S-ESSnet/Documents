@@ -16,3 +16,4 @@ The following documents and pages are available:
   * Work packages
     * [WP1](wp1/README.md)
     * [WP2](wp2/README.md)
+    * [WP3](wp3/README.md)
