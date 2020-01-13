@@ -58,6 +58,9 @@ Questions/remarks :
 ### WP3
 
 Questions/remarks :
+  * If you use a provider, lock you into it. This locking question has to be adressed. Notice that Google App Engine allows you to deploy plain containers. At CBS, there is a move toward Cloud Foundry, supposed to be provider independant (CBS contribution welcome on the subject).
+  * Question of the Database : in the container ? Database of the provider ?
+  * CI and automatic reporting is a plus for transparence and confidence. In general, it is a good thing to have everything open (bad example : opensource but on a repository not visible for people without identifier and password)
 
 
 ### WP4
