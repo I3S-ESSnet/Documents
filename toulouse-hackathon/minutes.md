@@ -85,4 +85,8 @@ Arcitecture guidance, cookbook and interactive guidance. Discussion on the scope
 
 **Track 2: Development**
 
+  * ARC/IS2 integration (resume work on data model, build the interface to the database)
+  * VTL tools
+  * PXWeb cloud deployment (and also with ARC/IS2)
+
 **Track 3: Communication**
