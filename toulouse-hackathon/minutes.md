@@ -75,3 +75,12 @@ Questions/remarks :
 ### WP5
 
 Questions/remarks :
+
+
+### Presentation of the tracks
+
+**Track 1: Architecture**
+
+**Track 2: Development**
+
+**Track 3: Communication**
