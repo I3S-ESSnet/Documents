@@ -48,7 +48,7 @@ Questions/remarks :
 ### WP2
 
 Questions/remarks :
-  * The D2.1 (Architecture recommendations) has the more overlap with the blueprint work, should we separate more theses 2 deliverables or merge the two deliverables ?
+  * The D2.2 (Cookbook) has the more overlap with the blueprint work, should we separate more theses 2 deliverables or merge the two deliverables ?
   * D2.3 will feed WP4, and could be reused for example in UNECE works.
   * The 4 layers in "What" could be linked with Domain Driven Design.
   * Proposition to have a hackathon, at least 2 days, on the example services (where are implemented the features).
