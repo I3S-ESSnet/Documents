@@ -2,7 +2,6 @@
 
 ## Minutes
 
-
 ### Agenda
 
 **Monday 20 May, morning session**
@@ -136,14 +135,61 @@ The possible events where a communication could be done are:
   * (ISA² Share and Reuse 2019, Bucharest, June 11)
 
 
-### Relais demonstration
-
 ### Arc and Relais integration
 
+ARC is a "service implements extended functionalities for integrating administrative data into statistical processes".
+"RELAIS (REcord Linkage At IStat) is a toolkit providing a set of techniques for dealing with record linkage projects."
+
+Integration points at the business level :
+  * during the integration phase of ARC, use Relais to link two sources
+  * at the end of the main ARC process, after validation and editing
+Integration points at the technical level :
+  * ARC calls a Relais service through the wire for performing the linkage
+  * ARC uses a set of Relais methods via Java modules
+
+The work hypothesis is that data exchange between ARC and RELAIS is performed by a data model translator
+service. Following this approach, we could combine and harmonize the following process steps and related modules of ARC and RELAIS :
+  * Data loading [ARC]
+  * Data coding [ARC]
+  * Data editing and imputation [ARC]
+  * Derive new variables and units (temporary simple data model) [ARC]
+  * Probabilistic record linkage [Relais]
+    * search space reduction
+    * selection of thresholds
+    * definition of match, possible match, unmatch subsets
+  * Derive new variables and units (complex final data model) [ARC]
+
+  
 ### Presentation of the methodology and use-cases of Relais
+
+It dates back to 2006. Istat needed a tools for probabilistic record linking. RL process is divided into several steps, and different methods are available for each steps.
 
 ### Presentation on sharing algorithm
 
+Presentation by Matjaz Jug from Statistics Netherland (SN).
+
+The benefits of sharing algorithm are many : transparency, productivity, security, multi-domain approach, standardization and 
+innovation.
+
+CBS has a data strategy based on 4 architectural patterns :
+  * external data collected and copied to SN
+  * SN data/algorithm copied to external partner
+  * data connected/processed virtually
+  * data/algorithm makes roundtrip
+
+When there are a lot of partners and legal constraints, it is necessary to establish a scalable technical and governance framework which can combine access-restricted data from multiple entities in a privacy-preserving manner.
+
+Answers can be given by the MIT project OPAL :
+  * Move the algorithm to the data. Performing algorithm-execution on data at the location of the data repository means that raw data never leaves its repository, and access to it is controlled by the repository owner. Only aggregate answers or "Safe Answers" are returned.
+  * Algorithms must be open. Algorithms must be openly published, studied and vetted by experts to be “safe” from violating privacy requirements and other needs stemming from the context of their use.
+  * Data is always in an encrypted state. Data must be in an encrypted state while being transmitted and during computation.
+
+Another interesting approach is the UN Global Platform Methods Store, with an algorithm pipeline :
+  * Identification & Scoping
+  * Data Exploration & Algorithm Development
+  * Algorithm Publication & Consumption
+
+  
 ### Features in the WP3 platform
 
 The discussion is on features of WP3 platform but also on the links between WP2 and WP3.
@@ -182,15 +228,86 @@ The discussion proposed a first sketch of a statistical architectural pattern fo
 ### Description of a statistical service generalized architecture
 
 The objectives of a statistical service is to perform the following tasks:
-  * 1.	Upload and manage input data, to provide initial data to process
-  * 2.	Parameters and variables settings
-  * 3.	Run method
-  * 4.	Analyse output
+  * Upload and manage input data, to provide initial data to process
+  * Parameters and variables settings
+  * Run method
+  * Analyse output
 
 Seen as such, a statistical service can be mapped to GSIM by using the objects "Business Function", "Business Process" and "Process step".
 
-Image "GeneralizedArchitectureStatisticalService_BusinessLayer.png"
+![Business layer](presentations/GeneralizedArchitectureStatisticalService_BusinessLayer.png)
 
 And at application level :
 
-Image "GeneralizedArchitectureStatisticalService_ApplicationLayer.png"
+![Application layer](presentations/GeneralizedArchitectureStatisticalService_ApplicationLayer.png)
+
+### Conclusion of thread 1
+
+Work planned :
+  * Dockerize the IS2 application: a first container for the Spring Boot application, a second one for the database
+  * Deploy both containers: the target platforms could be Compose, a cloud provider, etc.
+
+Work done:
+  * deployment using Docker compose
+  * deployment on the DCOS Insee platform
+  * in both cases using images pushed to Docker Hub
+  * also as a by product, update of the version of Spring boot
+  * everything is on GitHub and on Docker hub
+
+Next steps:
+  * integrate the Spring boot update to the code base
+  * deploy on a cloud provider, using Kubernetes
+  * document the work and the lessons learned for WP3
+
+### Conclusion of thread 2
+
+The objective is to agree on how to integrate VTL in ARC.
+
+There is an existing norwegian VTL-tool. The french use cases will be :
+  * use VTL as a formal language to express rules
+  * use VTL for data validation
+
+The general context is to use VTL to express rules and execute them in web questionnaires and for administrative sources (GSBPM phase: data collection).
+
+At logical level:
+  * analysis of the requirements in CSPA terms
+  * express the controls in VTL
+  * execute the controls in VTL
+
+At technical level:
+  * coding the grammar
+  * coding the connector
+  * coding the React control
+
+### Conclusion of thread 3
+
+The questionnaire for analysing the main incentives and impediments for sharing has been validated.
+
+A first version of a all-in-one poster has been proposed. This poster is exploring the questions : how to break
+barriers from not reuse to reuse ? how to promote from not share to share ?
+
+Content of a communication kit:
+  * Selected success stories could be: JDemetra+ and PX-web…
+  * Story about lessons learnt: Eno
+  * Include interviews with: software or service producers, software users
+  * With linked stories to graphic presentations at management, production dept., dev. teams)
+  * Make a Poster for conferences
+  * ... and a world map of reusing
+
+Options for wideo presentations:
+  * Share on YouTube
+  * How? Create a new channel? Reuse an existing channel?
+  * Use PowToon?
+  * Use Prezi?
+
+### Eurostat projects
+
+  * Business case for Eurostat: lots of input data as files, multiple file formats, high number of potentially big files to process
+  * Two CONVAL stacks: Oracle/WebLogics and Open source (Tomcat/Postgres). Predefined Docker images. Standalone intaller is being phased out.
+  * Plans for VTL 2: 5 iterations (defined by list of operators), planned until mid-2020. Usable product after iteration 2.
+  * Developement of the VRM (Validation Rule Manager)
+  * VTL: considerable input from Istat and Banca d'Italia
+  * work in Norway, Poland, Finland, Italie, and the BCE (BIRD project, mostly for validation)
+  * VTL / SDMX integration: tweak the SDMX IM in order to adapt it to VTL, and replace the transformation part of SDMX with VTL. That would be in SDMX 3.0 since it requires changes in the IM. Target is end of 2020.
+  * Creation of a standard validation report structure (building on a proposal of the Validation ESSnet, spearheaded by CBS). Will be structured as an SDMX MSD.
+  * Bringing it all together: standardization vs development community; central banking vs statistical community; SDMX community vs the rest of the world.

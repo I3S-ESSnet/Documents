@@ -1,5 +1,15 @@
 # I3S ESSnet - Communication material
 
+## Logo
+
+The I3S logo is available in two variants and three sizes:
+
+| Variant | Small | Medium | Large |
+|:--- |:---:|:---:|:---:|
+| Variant 1 | ![Logo 1 small](i3s-logo-1-small.png "Logo 1 small") | ![Logo 1 medium](i3s-logo-1-medium.png "Logo 1 medium") | ![Logo 1 large](i3s-logo-1-large.png "Logo 1 large") |
+| Variant 2 | ![Logo 2 small](i3s-logo-2-small.png "Logo 2 small") | ![Logo 2 medium](i3s-logo-2-medium.png "Logo 2 medium") | ![Logo 2 large](i3s-logo-2-large.png "Logo 2 large") |
+
+
 ## Presentations
 
 The [slides.html](slides.html) can be used as a template to make simple presentations using [Reveal](https://revealjs.com/) and Markdown. The rendering of this template can be seen [here](https://i3s-essnet.github.io/Documents/communication/slides.html).
@@ -9,3 +19,4 @@ The Markdown code can be entered directly in the HTML file or in the specific [s
 More information on using Markdown in Reveal can be found in the [documentation](https://github.com/hakimel/reveal.js#markdown). Of course, it is also possible to use [usual Reveal markup](https://github.com/hakimel/reveal.js#instructions) in the HTML file.
 
 To use the presentation template, copy [slides.html](slides.html) and optionally [slides.md](slides.md) to the desired location and start editing. *NB*: prefer Firefox when editing external Mardown locally, as Chrome [does not allow](http://www.chrome-allow-file-access-from-file.com/) file access (to slides.md) from file (slides.html).
+
