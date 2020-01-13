@@ -37,6 +37,12 @@ Friday - conclusion
 ### WP1
 
 Questions/remarks :
+  * The objective of the WP is finally to reuse, that is also a deliverable of the WP.
+  * Each collect service has its own data model, the dissemination service has to disseminate to different clients in different formats, but in the middle the analysis service needs to have an unique model / format (subject for WP2)
+  * The discussion on the guidelines on best practices will take place on Wednesday
+  * Deliverables : first service (ARC) has been delivered (discussion on the format to come), the containerisation au the second service has been delivered (PxWeb in Windows implementation)
+  * What about PXWeb ? The code is here (and opensource; tests need to be delivered) but there is no delivery slip for it. The use case has to be defined.
+  * What is the exact name of the deliverable ? The number in Sygma is only for Eurostat, the name on CROS is the right name.
 
 
 ### WP2
