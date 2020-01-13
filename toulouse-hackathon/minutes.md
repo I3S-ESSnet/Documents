@@ -53,3 +53,18 @@ Questions/remarks :
   * The 4 layers in "What" could be linked with Domain Driven Design.
   * Proposition to have a hackathon, at least 2 days, on the example services (where are implemented the features).
   * What is the target audience for the video ? Not only in the ESS, can be more open (but not for the statistics offworld), the target should be the CSPA community.
+
+
+### WP3
+
+Questions/remarks :
+
+
+### WP4
+
+Questions/remarks :
+
+
+### WP5
+
+Questions/remarks :
