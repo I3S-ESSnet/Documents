@@ -12,10 +12,12 @@ Monday - consortium meeting
     * Objectives of the hackathon
     * Presentation of the technical tracks and constitution of the groups
     * Content and organization of the "Intermezzo" session
+
 Tuesday, Wednesday morning, and Thursday - technical tracks
   * Architecture
   * Development
   * Communication
+
 Wednesday afternoon - intermezzo ideas
   * articulation of I3S work and Unece standards (CSPA, CSDA, GSIM, GAMSO…)
   * fill the CSPA catalogue for I3S services
@@ -24,6 +26,7 @@ Wednesday afternoon - intermezzo ideas
   * feedback on the most recent deliverables
   * specification of delivery slips for software deliverables
   * demonstration of VTL developments
+
 Friday - conclusion
   * Reports from the technical tracks
   * Next steps
