@@ -5,7 +5,7 @@
 
 The morning begins with a welcome by the Toulouse Regional Director. Then the main points of the agenda are reviewed :
 
-Monday - consortium meeting
+**Monday - consortium meeting**
   * Welcome and introduction
   * Update on the work done in each WP
   * Agenda and organization of the week
@@ -13,12 +13,12 @@ Monday - consortium meeting
     * Presentation of the technical tracks and constitution of the groups
     * Content and organization of the "Intermezzo" session
 
-Tuesday, Wednesday morning, and Thursday - technical tracks
+**Tuesday, Wednesday morning, and Thursday - technical tracks**
   * Architecture
   * Development
   * Communication
 
-Wednesday afternoon - intermezzo ideas
+**Wednesday afternoon - intermezzo ideas**
   * articulation of I3S work and Unece standards (CSPA, CSDA, GSIM, GAMSO…)
   * fill the CSPA catalogue for I3S services
   * presentation on notebooks (Norway)
@@ -27,7 +27,7 @@ Wednesday afternoon - intermezzo ideas
   * specification of delivery slips for software deliverables
   * demonstration of VTL developments
 
-Friday - conclusion
+**Friday - conclusion**
   * Reports from the technical tracks
   * Next steps
   * Finalization of intermediary report
