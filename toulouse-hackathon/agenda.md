@@ -23,7 +23,7 @@ Each work package leader will present the work done so far and describe the deli
 
 Three tracks in parallel:
   * [Architecture](http://tiny.cc/archtoulouse) (resp. Jakob)
-  * Development (resp. Romain)
+  * [Development](http://tiny.cc/toulouse-dev) (resp. Romain)
   * Communication (resp. Pedro)
 
 **10:00 - 13:00 Morning Session**
