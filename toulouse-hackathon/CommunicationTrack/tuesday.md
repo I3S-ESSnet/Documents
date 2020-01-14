@@ -14,7 +14,7 @@
 
 Proposition for a flyer template (with propositions of questions in order to help filling the different parts):
   * Header (What is the name of the service ? Who is the source of the service ?)
-  * Service description: history (How long has it been used ? Is it used in other NSIs ?), functionalities (Which problem is solved ?), architecture
+  * Service description: history (How long has it been used ? Is it used in other NSIs ? What have been the incentives to develop and use this service ?), functionalities (Which problem is solved ?), architecture (Is it possible to relate to the GSBPM ?)
   * Conditions of using
   * Documentation and additional resources, link to the Catalogue (What is the channel to obtain the service ? Is a manuel available ? Is there any help desk ?)
   * Future development
