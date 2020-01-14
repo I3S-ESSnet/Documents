@@ -21,3 +21,11 @@ Proposition for a flyer template (with propositions of questions in order to hel
   * License
   * Contact (Does the possibility to provide feedbacks on the service exist ? Is there a user group ? Is it possible to contribute to the development of the service ?)
   
+
+Work planned for tomorrow:
+  * Analyze the survey result and find how to reopen the survey for the non-respondent
+  * Start the discussion on the Lisbon workshop
+
+Work for Thursday:
+  * Lisbon workshop
+  * The Sinder
