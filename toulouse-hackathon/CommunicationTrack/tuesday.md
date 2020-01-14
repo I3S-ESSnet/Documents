@@ -1,7 +1,7 @@
 
 ## Communication track - work done on Tuesday
 
-  * First presentation of the jDemetra+ flyer and first feedbacks
+  * First presentation of the jDemetra+ flyer and first feedbacks (add more links, to CROS portal for example; link to the Catalogue; information on the source of the service and the contacts, the channel to obtain the service)
   * Review of the guidelines to advertise a shared service success story and feedbacks
   * Discussion about the groups of targeted people and how to contact them, through DIME/ITDG, through Eurostat WG, through EABoard ... (for the groups at Eurostat see https://ec.europa.eu/eurostat/cros/node_en , "Groups" tab)
   * The guidelines are a list of questions, these questions could be combined into example templates. First templates could be defined using the first made flyers.
