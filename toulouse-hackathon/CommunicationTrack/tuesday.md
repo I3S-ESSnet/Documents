@@ -12,11 +12,11 @@
   * The flyers are deliverables for the ESSNet, they could be distributed during the workshop in Lisbon or any other communication event (for example the Q2020 conference). After the ESSNet, each country would be responsible for making evolve its own flyers if it think it is necessary.
 
 
-Proposition for a flyer template:
-  * Header
-  * Service description: history, functionalities, architecture
+Proposition for a flyer template (with propositions of questions in order to help filling the different parts):
+  * Header (What is the name of the service ? Who is the source of the service ?)
+  * Service description: history (How long has it been used ? Is it used in other NSIs ?), functionalities (Which problem is solved ?), architecture
   * Conditions of using
-  * Documentation and additional resources (link to the Catalogue)
+  * Documentation and additional resources, link to the Catalogue (What is the channel to obtain the service ? Is a manuel available ? Is there any help desk ?)
   * Future development
   * License
   * Contact
