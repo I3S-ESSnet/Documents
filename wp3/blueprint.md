@@ -30,6 +30,8 @@ For test purposes it should be sufficient to use a standard Docker installation 
 * Azure Kubernetes Service
 * Amazon EC2, Amason EKS.
 
+There is a plethora of other services that will ease the use of these public cloud vendors, like Pivotal's CloudFoundry, which will give you "serverless" functionality that can run on any of the large public cloud vendors. 
+
 ## Considerations
 
 ...
