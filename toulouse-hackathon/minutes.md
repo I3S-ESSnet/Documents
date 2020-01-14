@@ -19,13 +19,13 @@ The morning begins with a welcome by the Toulouse Regional Director. Then the ma
   * Communication
 
 **Wednesday afternoon - intermezzo ideas**
-  * articulation of I3S work and Unece standards (CSPA, CSDA, GSIM, GAMSO…)
-  * fill the CSPA catalogue for I3S services
-  * presentation on notebooks (Norway)
+  * articulation of I3S work and Unece standards (CSPA, CSDA, GSIM, GAMSO…) (Pina)
+  * fill the CSPA catalogue for I3S services (Pedro)
   * paper for Q2020 (Benoît)
-  * feedback on the most recent deliverables
-  * specification of delivery slips for software deliverables
-  * demonstration of VTL developments
+  * feedbacks on the most recent deliverables (D1.1, D2.1 and D2.2; Mauro and Jakob)
+  * specification of delivery slips for software deliverables (Pierre)
+  * demonstration of VTL developments (Hadrien and Nicolas)
+  * presentation on notebooks (Trygve)
 
 **Friday - conclusion**
   * Reports from the technical tracks
