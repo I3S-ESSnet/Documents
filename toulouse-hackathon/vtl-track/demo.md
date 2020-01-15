@@ -4,7 +4,7 @@
 
 Insee's questionnaire factory overview
 
-![stack overview][stack.png]
+![stack overview](stack.png)
 
 Specifying questions requires some script language (logic flow, variables)
 
@@ -22,6 +22,19 @@ For the transition:
   * Eno needs to translate XPath controls into VTL for Lunatic
   * We might need to translate from VTL to XPath for the current XFomrs platform
 
-## The editor
+*Nota bene:* our needs are limited to simple validation expressions on scalars.
+
+## VTL Tools in JavaScript
+
+  * Leverage on components generated from the formal grammar by Antlr
+  * Open source on Insee's [GitHub repository](https://github.com/InseeFr/VTL-Tools)
+  * Integration pipeline with [Travis-CI](https://travis-ci.org/InseeFr/VTL-Tools) and [Coveralls](https://coveralls.io/github/InseeFr/VTL-Tools)
+
+### The editor
+
+Inclusion of VTL in the [Lunatic editor](https://inseefr.github.io/Lunatic/editor).
+
+### The interpretor
 
 
+  * [Functional coverage](https://inseefr.github.io/VTL-Tools/en/coverage.html)
