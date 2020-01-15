@@ -7,3 +7,4 @@
   * and what about SDMX tools, every country use them. Do the NSI understand that ruse means that you install your own instance ? If yes we are missing something. Is it necessary to have a category "use a central tool"
   * seems difficult to reopen the survey for everybody ==> to make a live survey during the Lisbon workshop ?
   * main incentives for sharing AND reusing are : first ==> quality/standards, second ==> cost. The will to have a community of developers in an opensource approach does not appear.
+  * "differences in infrastructure make it complex or impossible" to reuse ==> could be a subject for the workshop
