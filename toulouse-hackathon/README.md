@@ -8,3 +8,4 @@ The following documents are available:
   * [Minutes](minutes.md) of the hackathon
   * Presentations
     * [VTL Tools](vtl-track/demo.md)
+    * [Notebook presentation](https://docs.google.com/presentation/d/1vPuNyi1rjM_QgfDtTHiOKxFH_I_sL0mMS4-yu_uC-L0/edit?usp=sharing)
