@@ -17,3 +17,4 @@ The following documents and pages are available:
     * [WP1](wp1/README.md)
     * [WP2](wp2/README.md)
     * [WP3](wp3/README.md)
+    * [WP4](wp4/README.md)
