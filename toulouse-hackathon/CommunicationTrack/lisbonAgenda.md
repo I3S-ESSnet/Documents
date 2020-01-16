@@ -8,7 +8,7 @@
 first day morning (9:00 to 12:30):
   * results of the ESSNet (all the morning)
 
-first day afternoon (14:00 to 17:30):
+first day afternoon "Beyond the ESSNet" (14:00 to 17:30):
   * icebreaker (30 minutes)
   * lessons learnt and open points in the ESSNet (and the survey) (30 minutes)
   * additional questions (and the answers) for the survey, not in plenary but in small groups (1 hour)
@@ -16,9 +16,10 @@ first day afternoon (14:00 to 17:30):
   * restitutions in plenary (15 minutes)
   
   
-second day morning:
+second day morning "CSPA session":
   * presentation of CSPA 2.0 (30 minutes)
   * the catalogue (30 minutes)
   * the Sinder (30 minutes)
   * coffee break
   
+second day afternoon:
