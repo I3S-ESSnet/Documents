@@ -124,3 +124,34 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
   * Agree on the boundaries between WP2 and WP3
   * Have two services able to talk to each others
   * Intermediary report, minutes ...
+
+## Intermezzi
+
+### Frameworks
+
+  * links between the standards, links between the deliverables of the ESSNet
+  * GSIM very important for modeling the statistical processes and define standard processes
+  * CSPA has a collection of principles, the other standards are frameworks. CSPA is more best practices and guidances, the other standards are more normative.
+  * The architecture guidelines delivered by the ESSNet must apply the CSPA principles, they also must consider the different GSBPM phasis and on lower level you have to refer to GSIM objects. It is how all the standards can be used in practical application.
+  * Architecture guidelines are more on a conceptual level, the Cookbook and the Blueprint are more on a physical and technical level.
+  * Then it is possible to talk of the lessons learnt in the real implementation of the standards.
+  * Future of CSPA. The next step is to have it endorsed by the CES (amongst all the UNECE standards as a all)
+  * GSIM is currently too detailed to be easily implemented, it should be simplified.
+  * The discussion has also covered the topic of feedbacks on deliverables
+  * The description of the architecture is rather static, work on the dynamic aspects should be done (roles).
+
+### CSPA Catalogue
+
+  * Hindrance for sharing and reusing: some countries don't know what is available for sharing
+  * Proposition to enhance the content of the Catalogue
+  * The owner of a service can modify it in the Catalogue. I3S could create/improve the information for Relais and PXWeb (and ARC ?)
+  * A country which reuses a service can click in the Catalogue in ordre to declare it.
+
+### Format of the delivery slip
+
+  * There needs to be snapshots
+  * Use labels in the github repository. Possible for the source code. For the containers, we can publish the dockerfiles and tag them.
+
+### Demonstation of VTL tool
+
+cf. in vtl-track on github
