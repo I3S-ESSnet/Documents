@@ -21,5 +21,8 @@ second day morning "CSPA session":
   * the catalogue (30 minutes)
   * the Sinder (30 minutes)
   * coffee break
+  * VTL presentation (1 hour)
   
-second day afternoon:
+second day afternoon "Practical session":
+  * Contenairisation for the dummies
+  * "I build my statistical process with the services in the Caatalogue", in small groups
