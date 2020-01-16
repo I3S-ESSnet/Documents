@@ -63,17 +63,26 @@ Technical tracks continued.
 
 ## Friday 17 January: conclusion (resp. Franck)
 
-**10:00 - 13:00 Morning Session**
+**9:30 - 12:30 Morning Session**
 
-  * Reports from the technical tracks
-  * Next steps (each WP leader to prepare a presentation)
+  * 9:30 - 11:00 Reports from the technical tracks
+    * Introduction
+    * Architecture: 20 minutes
+    * Development: 40 minutes
+    * Communication: 20 minutes
+  * 11h00 - 11h30 Coffee break
+  * 11h30 - 12h00 ESSnet next steps
+    * Service 3 (RELAIS)
+    * Virtual consortium meeting
+    * Rome mini-sprint?
+  * 12h00 - 12h30 Oslo hackathon
 
-**14:30 - 16:00 Closing Session**
+**13:30 - 15:30 Closing Session**
 
-  * Next steps, continued (each WP leader to prepare a presentation)
-  * Finalization of intermediary report
-  * Next hackathon
-  * Roadmap
+  * 13h30 - 14h00 Finalization of intermediary report
+  * 14h00 - 14h30 SSB presentation on notebooks
+  * 14h30 - 15h00 Feedback to Unece "Sharing Tools" group
+  * 15h00 - 15h30 Conclusion and farewell
 
 
 ## Participants
