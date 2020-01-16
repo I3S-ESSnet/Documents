@@ -1,7 +1,8 @@
 ## Lisbon workshop agenda
 
 
-2 or 3 days ?
+  * 2 or 3 days ?
+  * Who ? ESS or CSPA community ? It depends on the capacity of the room at INE. We need a big room for the plenary, and some smaller rooms for the small groups sessions.
 
 ### 2 days option
 
@@ -26,3 +27,10 @@ second day morning "CSPA session":
 second day afternoon "Practical session":
   * Contenairisation for the dummies
   * "I build my statistical process with the services in the Caatalogue", in small groups
+
+
+Other ideas taken in the Wiesbaden agenda:
+  * other NSIs presentation of one of their services
+  * session on architecture ?
+  * presnetation of the awesome list by CBS, what do you do with that ?
+  * opensource strategy of NSIs ?
