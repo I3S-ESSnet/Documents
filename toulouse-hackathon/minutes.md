@@ -178,7 +178,35 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
 
 ### Architecture track
 
+![Architecture guidances](I3S_Guidance_ExpandingCSPA.png)
+
 ### Dev track
+
+**Deployment sub-track:**
+  * originally, we should have worked on PXWeb deployment…
+  * ...but in fact we also worked on IS2
+  * we learned a few things about cloud tools
+  * and contributed back to the projects repo on GitHub
+
+**IS2 cloud deployment:**
+  * Creation of the infrastructure on GCP using Terraform
+    * Managed Postgres instance
+    * App engine instance
+    * Network, account & secrets management was done manuallly  =(
+  * Simplification of the Docker image in order to be platform independent
+    * Injection of properties
+  * Demo
+
+**Future works:**
+  * Deploy the ARC WS
+    * Some question on how to organise the container images
+  * Bundle the R dependencies of IS2 in the container / application
+  * Update the TF configuration to support more resources
+    * Network, service account
+  * Handle secrets properly
+    * Vault? KMS?
+  * Contribute back to WP3
+
 
 ### Com track
 
@@ -191,7 +219,7 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
   * License
   * Contact (Does the possibility to provide feedbacks on the service exist ? Is there a user group ? Is it possible to contribute to the development of the service ?)
 
-**Discussion on the Sinde:**
+**Discussion on the Sinder:**
   * Will it be a Catalogue app ? It can be an enhancement of the filters, for example to also propose a more user-friendly application
   * The first question is the GSBPM phases or subprocess, the first choice could presented as an image of the GSBPM
   * criterias in the Catalogue: license type is important (proprietary, free but proprietary, opensource "not viral", opensource "viral")
@@ -283,11 +311,6 @@ in Lisbon
   * a track on the feedbacks on UNECE level
 
 **UNECE feedbacks:**
-
-  * Expanding the guidances
-  
-![Architecture guidances](I3S_Guidance_ExpandingCSPA.png)
-  
   * Insee contacts UNECE, and organises a videoconference with UNECE and WP2
   * Discussion with the french representative in the SG DIME/ITDG on how to communicate about the results of the ESSNet
   * If ideas about the Sharing Tools Group, send them to Stats Sweden
