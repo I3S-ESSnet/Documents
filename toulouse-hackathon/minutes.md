@@ -182,6 +182,15 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
 
 ### Com track
 
+**Proposition for a flyer template** (with propositions of questions in order to help filling the different parts):
+  * Header with logo, and possibly the receiver (What is the name of the service ? Who is the source of the service ?)
+  * Service description: history (How long has it been used ? Is it used in other NSIs ? What have been the incentives to develop and use this service ?), functionalities (Which problem is solved ?), architecture (Is it possible to relate to the GSBPM ?)
+  * Conditions of using
+  * Documentation and additional resources, link to the Catalogue (What is the channel to obtain the service ? Is a manual available ? Is there any help desk ? What is the level of technical support ? Is there any support for day to day operation ? Is there some tool/demo app to evaluate/try the service ?)
+  * Future development
+  * License
+  * Contact (Does the possibility to provide feedbacks on the service exist ? Is there a user group ? Is it possible to contribute to the development of the service ?)
+
 **Discussion on the Sinde:**
   * Will it be a Catalogue app ? It can be an enhancement of the filters, for example to also propose a more user-friendly application
   * The first question is the GSBPM phases or subprocess, the first choice could presented as an image of the GSBPM
