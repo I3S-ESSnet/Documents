@@ -173,3 +173,55 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
   * Integration pipeline with [Travis-CI](https://travis-ci.org/InseeFr/VTL-Tools) and [Coveralls](https://coveralls.io/github/InseeFr/VTL-Tools)
   * Inclusion of VTL in the [Lunatic editor](https://inseefr.github.io/Lunatic/editor)
   * The interpretor: [Functional coverage](https://inseefr.github.io/VTL-Tools/en/coverage.html)
+
+## Tracks reports
+
+### Architecture track
+
+### Dev track
+
+### Com track
+
+**Discussion on the Sinde:**
+  * Will it be a Catalogue app ? It can be an enhancement of the filters, for example to also propose a more user-friendly application
+  * The first question is the GSBPM phases or subprocess, the first choice could presented as an image of the GSBPM
+  * criterias in the Catalogue: license type is important (proprietary, free but proprietary, opensource "not viral", opensource "viral")
+  * in the Sinder we only show tool with "final" in status and "implementation" in type of document
+  * technology criteria: java/dotNet/JS/R/other
+  * for methodology, it is difficult to build a decision tree in order to precise what is searched for, perhaps could we just propose standard/non standard ?
+  * allow people to add questions in the Catalogue so that these questions can be used by the Sinder ?
+
+
+**First try for Lisbon agenda:**
+
+first day morning (9:00 to 12:30):
+  * results of the ESSNet (all the morning)
+
+first day afternoon "Beyond the ESSNet" (14:00 to 17:30):
+  * icebreaker (30 minutes)
+  * lessons learnt and open points in the ESSNet (and the survey) (30 minutes)
+  * additional questions (and the answers) for the survey, not in plenary but in small groups (1 hour)
+  * coffee break
+  * restitutions in plenary (15 minutes)
+    
+second day morning "CSPA session":
+  * presentation of CSPA 2.0 (30 minutes)
+  * the catalogue (30 minutes)
+  * the Sinder (30 minutes)
+  * coffee break
+  * VTL presentation (1 hour)
+  
+second day afternoon "Practical session":
+  * Contenairisation for the dummies
+  * "I build my statistical process with the services in the Caatalogue", in small groups
+
+
+Other ideas for the Lisbon workshop:
+  * session on architecture ?
+  * presentation of the awesome list by CBS, what do you do with that ?
+  * opensource strategy of NSIs ?
+  * a practical session on the IS2 Workbench
+  * target audience : managers ? developers ? architects ? In Wiesbaden the audience was very mixed, we could do the same
+in Lisbon
+  * "more than contenairisation for dummies": "cloud for dummies"
+  * presentations by services owners and users
