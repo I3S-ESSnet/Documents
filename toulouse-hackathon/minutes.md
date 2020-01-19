@@ -288,6 +288,6 @@ in Lisbon
   
 ![Architecture guidances](I3S_Guidance_ExpandingCSPA.png)
   
-  * Insee contacts Taekke, and organises a videoconference with UNECE and WP2
-  * discuss with the french representative in the SG DIME/ITDG how to communicate about the results of the ESSNet
-  * if ideas about the Sharing Tools Group, send them to Jakob
+  * Insee contacts UNECE, and organises a videoconference with UNECE and WP2
+  * Discussion with the french representative in the SG DIME/ITDG on how to communicate about the results of the ESSNet
+  * If ideas about the Sharing Tools Group, send them to Stats Sweden
