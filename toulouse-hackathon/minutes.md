@@ -234,3 +234,55 @@ Other ideas for the Lisbon workshop:
 in Lisbon
   * "more than contenairisation for dummies": "cloud for dummies"
   * presentations by services owners and users
+
+## Hackathon results and next steps
+
+**Objectives:**
+  * Draft deliverables reingeneering ==> Done
+  * Feedbacks on the Relais wrokbench ==> Done
+  * Database integration into the cloud ==> Done
+  * CSPA implementation in architecture (WP2) documents ==> Done
+  * Feedbacks on WP2 contents (and good level of details) ==> Done
+  * Ideas on cookbook ==> Still pending
+  * Platforms running ==> Done
+  * Stable version of the VTL tools ==> Still pending
+  * Diagrams to put in WP2 document ==> Done
+  * Enough information in order to make promotion at CBS ==> Done
+  * How to contribute ==> Done
+  * See something real, tangible ==> Done
+  * Draft for the Sinder ==> Done
+  * Planning for the second part of the project ==> Done
+  * Agree on the boundaries between WP2 and WP3 ==> Done
+  * Have two services able to talk to each others ==> Still pending
+  * Intermediary report, minutes ... ==> Almost done
+
+
+**Next steps:**
+  * redo the delivery of service 1
+  * redo the delivery of the contenairisation of service 1
+  * do the delivery of service 2 (for the end of the month)
+  * do the delivery of the contenairisation of service 2 (for the end of the month)
+  * service 3 for March
+  * reuse report template (resp.:Insee)
+  * each reuse organisation begins write the reuse reports
+  * for WP2, final versions are for M24
+  * WP3: guidelines (draft) for M14
+  * next virtual meeting: May or June
+  * for WP1: a mini sprint in Roma on integration of Relais and ARC, and a subject on VTL
+
+**Oslo meeting:**
+  * official period is August
+  * have the Lison Workshop in January 2021 ? Check with Eurostat and INE
+  * ==> date of Oslo meeting: week of 31st of August 2020
+  * invite Finland people (for the geospatial ESSNet) ==> an intermezzo ?
+  * a kind of final meeting for I3S
+  * focus on the reuse cases of the service
+  * a track on the example service for the Cookbook
+  * a track on finalising WP1
+  * a track on preparing Lisbon
+  * a track on the feedbacks on UNECE level
+
+***UNECE feedbacks:*** link in the agenda
+  * Insee contacts Taekke, and organises a videoconference with UNECE and WP2
+  * discuss with the french representative in the SG DIME/ITDG how to communicate about the results of the ESSNet
+  * if ideas about the Sharing Tools Group, send them to Jakob
