@@ -8,6 +8,10 @@
 
 ### Report version
 
+### Report date
+
+### Contact mail
+
 ## Service reused
 
 ### Publisher
@@ -15,6 +19,10 @@
 ### Name
 
 ### Version
+
+### Main functionalities
+
+### Links (code, documentation...)
 
 ## Service reuse
 
