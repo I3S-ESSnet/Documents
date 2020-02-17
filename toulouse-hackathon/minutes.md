@@ -40,7 +40,7 @@ Questions/remarks :
   * The objective of the WP is finally to reuse, that is also a deliverable of the WP.
   * Each collect service has its own data model, the dissemination service has to disseminate to different clients in different formats, but in the middle the analysis service needs to have an unique model / format (subject for WP2)
   * The discussion on the guidelines on best practices will take place on Wednesday
-  * Deliverables : first service (ARC) has been delivered (discussion on the format to come), the containerisation au the second service has been delivered (PxWeb in Windows implementation)
+  * Deliverables : first service (ARC) has been delivered (discussion on the format to come), the containerisation of the second service has been delivered (PxWeb in Windows implementation)
   * What about PXWeb ? The code is here (and opensource; tests need to be delivered) but there is no delivery slip for it. The use case has to be defined.
   * What is the exact name of the deliverable ? The number in Sygma is only for Eurostat, the name on CROS is the right name.
 
@@ -58,7 +58,7 @@ Questions/remarks :
 ### WP3
 
 Questions/remarks :
-  * If you use a provider, lock you into it. This locking question has to be adressed. Notice that Google App Engine allows you to deploy plain containers. At CBS, there is a move toward Cloud Foundry, supposed to be provider independant (CBS contribution welcome on the subject).
+  * If you use a provider, it locks you into it. This locking question has to be adressed. Notice that Google App Engine allows you to deploy plain containers. At CBS, there is a move toward Cloud Foundry, supposed to be provider independant (CBS contribution welcome on the subject).
   * Question of the Database : in the container ? Database of the provider ?
   * CI and automatic reporting is a plus for transparence and confidence. In general, it is a good thing to have everything open (bad example : opensource but on a repository not visible for people without identifier and password)
 
@@ -74,7 +74,7 @@ Questions/remarks :
 
 ### WP5
 
-Questions/remarks :
+No question.
 
 
 ### Presentation of the tracks
@@ -83,7 +83,7 @@ Questions/remarks :
 
 Arcitecture guidance, cookbook and interactive guidance. Discussion on the scope, the structure, the content and the overlap between WP2 and WP3.
 
-Participants: Jelger, Jakob, Hendryk, Manu, Giusepina, Trygve.
+Participants: Jelger, Jakob, Hendryk, Giusepina, Trygve.
 
 **Track 2: Development**
 
@@ -91,7 +91,7 @@ Participants: Jelger, Jakob, Hendryk, Manu, Giusepina, Trygve.
   * VTL tools (operators, date and time, refactoring and naming, documentation, design for non scalar operators)
   * PXWeb cloud deployment (and also with ARC/IS2)
 
-Participants: Vincent, Rune, Patrik, Romain, Mauro, Franck, Hadrien
+Participants: Vincent, Rune, Patrik, Romain, Mauro, Manu, Franck, Hadrien
 
 **Track 3: Communication**
 
@@ -99,7 +99,7 @@ Participants: Vincent, Rune, Patrik, Romain, Mauro, Franck, Hadrien
   * Start ARC flyer and video script
   * Finalize Relais flyer
   * Start PxWeb flyer
-  * Finalize the Guildelines on success stories"
+  * Finalize the Guildelines on success stories
   * Analyse survey first results - start sinder; complet communication kit; feedbacks to DIME-ITDG
   * Begin to discuss the workshop in Lisbon agenda
 
@@ -131,7 +131,7 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
 
   * links between the standards, links between the deliverables of the ESSNet
   * GSIM very important for modeling the statistical processes and define standard processes
-  * CSPA has a collection of principles, the other standards are frameworks. CSPA is more best practices and guidances, the other standards are more normative.
+  * CSPA has a collection of principles, the other standards are frameworks. CSPA is more about best practices and guidances, the other standards are more normative.
   * The architecture guidelines delivered by the ESSNet must apply the CSPA principles, they also must consider the different GSBPM phasis and on lower level you have to refer to GSIM objects. It is how all the standards can be used in practical application.
   * Architecture guidelines are more on a conceptual level, the Cookbook and the Blueprint are more on a physical and technical level.
   * Then it is possible to talk of the lessons learnt in the real implementation of the standards.
@@ -164,7 +164,7 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
     * A JavaScript VTL interpretor for the rendering next generation of CAPI questionnaires
   * For the transition:
     * Eno needs to translate XPath controls into VTL for Lunatic
-    * We might need to translate from VTL to XPath for the current XFomrs platform
+    * We might need to translate from VTL to XPath for the current XForms platform
 
 **VTL Tools in JavaScript**
 
@@ -203,7 +203,7 @@ Participants: Pedro, Pierre, Hakim, Marco, Benoît
   * Bundle the R dependencies of IS2 in the container / application
   * Update the TF configuration to support more resources
     * Network, service account
-  * Handle secrets properly
+  * Handle secret properly
     * Vault? KMS?
   * Contribute back to WP3
 
@@ -250,7 +250,7 @@ second day morning "CSPA session":
   
 second day afternoon "Practical session":
   * Contenairisation for the dummies
-  * "I build my statistical process with the services in the Caatalogue", in small groups
+  * "I build my statistical process with the services in the Catalogue", in small groups
 
 
 Other ideas for the Lisbon workshop:
@@ -292,7 +292,7 @@ in Lisbon
   * do the delivery of the contenairisation of service 2 (for the end of the month)
   * service 3 for March
   * reuse report template (resp.:Insee)
-  * each reuse organisation begins write the reuse reports
+  * each reuse organisation begins to write the reuse reports
   * for WP2, final versions are for M24
   * WP3: guidelines (draft) for M14
   * next virtual meeting: May or June

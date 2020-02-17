@@ -21,6 +21,10 @@ In order to do that, it is necessary to:
 
 A lot of continuous integration tools exist, we'll focus on Travis CI.
 
+### Setting up Travis
+
+
+
 ## Code quality
 
 When measuring software quality, [many dimensions](https://en.wikipedia.org/wiki/Software_quality#Measurement) must be taken into account. Most of the time, assessing those dimensions is done with the help of a dedicated set of tools, essentially [static code analysers](https://en.wikipedia.org/wiki/List_of_tools_for_static_code_analysis), sometimes using cloud based services (like [Codeclimate](https://codeclimate.com/) or [Sonarcloud](https://sonarcloud.io/)).
@@ -40,3 +44,9 @@ Language(s) supported by Sonarcloud --> https://sonarcloud.io/documentation/anal
 ### How to set up ?
 
 Getting started is easy, and [described in few lines in the official documentation](https://sonarcloud.io/documentation/integrations/github/).
+
+## A word on continuous delivery / deployment
+
+Often you will hear the term CI/CD - the conjunction of continuous integration with continuous delivery or deployment. This second expression is describing the natural continuation of CI: after having build and test your software, you could be confident that it is ready to be delivered to users, so this part is also automated.
+
+What is the difference between one and the other "d" ? When doing continuous __delivery__ the software is delivered to whatever system or team responsible for its deployment, whereas in continuous __deployment__ the package is directly deployed, in staging and / or production environment.s
