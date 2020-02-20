@@ -29,9 +29,15 @@ The set up is straightforward as given by the [official documentation](https://d
 
 One of the key requisite is that you have owner permissions for the GitHub project your want to run on Travis. You only need to log into Travis CI site using your GitHub credentials.
 
-Then, configuring your build and test is easy as describing it in a .travis.yaml file. A [simple yet complete example can be found in the ARC repository](https://github.com/InseeFr/ARC/blob/master/.travis.yml).
+Then, configuring your build and test is easy as describing it in a .travis.yaml file. A [simple yet complete example can be found in the ARC repository](https://github.com/InseeFr/ARC/blob/master/.travis.yml) or [in the IS2 project repo](https://github.com/mecdcme/is2/blob/master/.travis.yml).
 
-The `script` command gives the command to run when building a new version of the code. In the above example, Maven is used for this purpose, ARC being a Java project.
+The base properties to be set are `language` and `script`.
+
+The `language` property is self explanatory: it tells Travis which language is the build target for your application.
+
+The `script` property gives the command to run when building a new version of the code. In the above examples, Maven is used for this purpose, ARC being a Java project.
+
+Some additional properties are available, like `jdk` - for choosing the proper Java runtime for a Java application.
 
 For more complex use cases you'll need to refer to the [documentation](https://docs.travis-ci.com/).
 
