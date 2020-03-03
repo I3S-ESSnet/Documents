@@ -51,11 +51,15 @@ This guide will focus on how to set up, configure and use Sonarcloud from a GitH
 
 Before starting you need to check if [your main language is supported by Sonarcloud](https://sonarcloud.io/documentation/analysis/supported-languages/).
 
-### How to set up ?
+### How to set it up ?
 
 Getting started is easy, and [described in few lines in the official documentation](https://sonarcloud.io/documentation/integrations/github/).
 
---> authentication
+Some key points:
+
+- in order to authenticate from Travis to Sonar, you will need to encrypt the Sonar secret [using a special command line](https://docs.travis-ci.com/user/encryption-keys/#usage) ;
+- the `script` key in Travis configuration should be modified to run the code analysis ;
+- a basic working configuration will be given by the Sonarcloud website when setting up a project. :smiley: :thumbsup:
 
 ## A word on continuous delivery / deployment
 
