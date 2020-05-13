@@ -6,6 +6,8 @@
 
 "Cattle: Arrays of more than two servers, that are built using automated tools, and are designed for failure, where no one, two, or even three servers are irreplaceable. Typically, during failure events no human intervention is required as the array exhibits attributes of “routing around failures” by restarting failed servers or replicating data through strategies like triple replication or erasure coding. Examples include web server arrays, multi-master datastores such as Cassandra clusters, multiple racks of gear put together in clusters, and just about anything that is load-balanced and multi-master."
 
+"... systems are designed for failure ..." also applies for Pets, however they are "... sysems that require "special handling" ..."
+
 Reference: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/
 
 
