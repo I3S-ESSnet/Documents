@@ -1,6 +1,34 @@
 # Protecting your source code
 
 ..
+
+
+## Security by obscurity
+
+..
+
+## Scanning code
+
+..
+
+## Utilizing GitHub and DependaBot 
+
+..
+
+## Scanning containers
+
+..
+
+## Utilizing tools like 
+
+..
+
+## Strategies for sealing secrets
+
+..
+
+## Appendix
+
 ## Quality level checklist
 * Consider authentication requirements for exposed endpoints
 * Consider encryption of data "at rest" based on classification levels, and at least encryption with the key provided by the service provider
@@ -28,27 +56,3 @@
 * Ensure that the logs are available for privileged users (how?)
 * Ensure that the logs are backed up
 * Ensure that you log at the appropriate level and context
-
-## Security by obscurity
-
-..
-
-## Scanning code
-
-..
-
-## Utilizing GitHub and DependaBot 
-
-..
-
-## Scanning containers
-
-..
-
-## Utilizing tools like 
-
-..
-
-## Strategies for sealing secrets
-
-..
