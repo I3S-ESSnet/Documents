@@ -18,10 +18,21 @@ Reference: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-c
 ## Centralized or desentralized data
 
 ..
+[Clarification: We are not talking about blockchain?]
+??
+* reduce (no) single point of failure
+* liveliness
+
 
 ## Bottlenecks
-
 ..
+
+Consider if bottlenecks is resolvable through refactoring before considering
+* Horizontally scaling of service
+* Increase resource allocation for component
+
+### Identifying bottlenecks
+Key performance indicators (tecnical): request/sec, latency, request duration, cpu-time, memory usage, heap usage, garbage collection etc. One should also consider external metrics like business metrics.
 
 ## Sessions and state
 
