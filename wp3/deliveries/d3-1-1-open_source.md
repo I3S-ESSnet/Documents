@@ -3,6 +3,15 @@ The use of open source provides greater freedom to choose both products and tech
 
 Sharing code nationally and internationally improve quality and encourage reuse of code across organizations and borders.  
 
+
+* Technology not enough for rapid change
+* Culture, and specifically sharing culture contributes speed
+* Open source is what is now contributing Innovation
+* Open Source is more than reusing code GitHub
+* Focus on internal and external sharing
+* Transparency rather than closed
+* Transparency promotes quality
+
 ## Open Source makes your software better
 
 ..
