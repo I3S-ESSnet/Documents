@@ -7,6 +7,12 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 
 ..
 
+* TCO - Total Cost of Ownership
+* change cost
+* reusability
+* competence and recruitment (the future)
+* showing your work (transparancies, governmental services), including publuc trust
+
 ## Brief history of Open Source
 
 ..
