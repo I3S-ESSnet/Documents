@@ -46,40 +46,39 @@ There is a plethora of other services that will ease the use of these public clo
 ## Container examples
 
 ### IS2 example
-During the Rome hackathon the Istat application IS2 was containerized. IS2 is a standard Java, Spring Boot web application with a MySQL database. https://github.com/mecdcme/is2
+During the Rome hackathon the Istat application IS2 was containerized. IS2 is a standard Java, Spring Boot web application with a PostgrSQL database. https://github.com/mecdcme/is2
 
-We forked the application to the I3S repository https://github.com/I3S-ESSnet/is2 and created [Dockerfiles](https://docs.docker.com/engine/reference/builder/) for the database and application.
+We forked the application and created [Dockerfiles](https://docs.docker.com/engine/reference/builder/) for the database and application.
 
 Database containerization
 The `db.Dockerfile` is very simple. The initdb script was already in the existing repository.
 
 ```Dockerfile
-FROM mysql:8.0
-ENV MYSQL_ROOT_PASSWORD root
-ENV MYSQL_DATABSE IS2
-COPY ./db/is2.sql /docker-entrypoint-initdb.d/
+FROM postgres:11
+COPY ./db/is2-postgres.sql /docker-entrypoint-initdb.d/
 ```
 
 With this dockerfile, we can create and run the dockerimage like this:
 
 ```Shell
-docker build -t i3sessnet/is2-mysql . -f db.Dockerfile
-docker run -p 3306:3306 i3sessnet/is2-mysql
+docker build -t mecdcme/is2-postgres . -f db.Dockerfile
+docker run -p 5432:5432 mecdcme/is2-postgres
 ```
 
 ### Application containerization
 For the application we take advantage of the [multi-stage build feature in Docker](https://docs.docker.com/develop/develop-images/multistage-build/).  With this app.Dockerfile we both build the IS2 application with maven AND we create the docker image
 
 ```Dockerfile
-FROM maven:3.6-jdk-8-alpine AS build
+FROM maven:3.6-jdk-11 AS build
 COPY src /usr/src/app/src
 COPY pom.xml /usr/src/app
 RUN mvn -f /usr/src/app/pom.xml clean package
-FROM openjdk:8-jdk-alpine
-ENV SPRING_JPA_PROPERTIES_HIBERNATE_DIALECT org.hibernate.dialect.MySQLDialect
-ENV SPRING_DATASOURCE_URL jdbc:mysql://localhost:3306/IS2?allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+
+FROM openjdk:11-jdk-slim
 COPY --from=build /usr/src/app/target/is2.jar /usr/app/is2.jar
-COPY wait-for /usr/app/wait-for
+RUN mkdir -p /usr/app/is2/RScripts
+COPY RScripts /usr/app/is2/RScripts
+
 EXPOSE 8080
 ENTRYPOINT ["java","-jar","/usr/app/is2.jar"]
 ```
@@ -87,8 +86,8 @@ ENTRYPOINT ["java","-jar","/usr/app/is2.jar"]
 With this dockerfile, we can create and run the dockerimage like this:
 
 ```Shell
-docker build -t i3sessnet/is2 . -f app.Dockerfile
-docker run -p 8080:8080 i3sessnet/is2
+docker build -t mecdcme/is2 .
+docker run -p 8080:8080 mecdcme/is2 
 ```
 
 ### Docker Compose
@@ -98,21 +97,29 @@ The IS2 application is now a multi-container application. To run these two conta
 version: '3'
 services:
   app:
-    image: i3sessnet/is2:latest
-    entrypoint: ["/usr/app/wait-for", "--timeout=60", "db:3306", "--", "java", "-jar", "/usr/app/is2.jar"]
+    image: mecdcme/is2:latest
     ports:
       - 8080:8080
     environment:
-      - SPRING_DATASOURCE_URL=jdbc:mysql://db:3306/IS2?
-allowPublicKeyRetrieval=true&useSSL=false&useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC&autoReconnect=true
+      - SPRING_DATASOURCE_URL=jdbc:postgresql://db:5432/postgres?currentSchema=is2
+      - SPRING_DATASOURCE_USERNAME=postgres
+      - SPRING_DATASOURCE_PASSWORD=postgres
+      - SPRING_DATASOURCE_DRIVERCLASSNAME=org.postgresql.Driver
+      - SPRING_DATASOURCE_PLATFORM=postgresql
     depends_on:
       - db
+    restart: always
   db:
-    image: i3sessnet/is2-mysql:latest
-    command: mysqld --default-authentication-plugin=mysql_native_password
+    image: mecdcme/is2-postgres:latest
+    environment:
+      - POSTGRES_PASSWORD=postgres
+  adminer:
+    image: adminer
+    restart: always
+    ports:
+      - 8081:8080
 ```
 
-One note on the strange looking entrypoint. The current application will crash if there is no database present at startup.  Even if there is a depends_on relation between the services, the application will not wait for the database. With this [wait-for](https://github.com/eficode/wait-for) we can force the application to wait for a period of time.
 
 Start both containers with this single command:
 
@@ -123,22 +130,27 @@ docker-compose up
 ### Continuous integration
 
 #### Travis CI
-With open-source applications on Github there are many free tools for doing continuous integration. We set up Travis CI for building both docker images.
+With open-source applications on Github there are many free tools for doing continuous integration. We set up Travis CI for building the application.
 
 .travis.yml
 ```YAML
 language: java
-services:
-- docker
-before_install:
-- docker build -t i3sessnet/is2 -f app.Dockerfile .
-- docker build -t i3sessnet/is2-mysql -f db.Dockerfile .
+jdk: openjdk11
+
+addons: 
+  sonarcloud:
+    organisation: "mecdcme"
+    token:
+      secure: ***
+
+script:
+  - mvn clean org.jacoco:jacoco-maven-plugin:prepare-agent install sonar:sonar -Dsonar.projectKey=mecdcme_is2
 ```
 
-Results at https://travis-ci.org/I3S-ESSnet/is2
+Results at https://travis-ci.org/github/mecdcme/is2
 
 #### Dockerhub
-Docker also offer a free service for open source prosjects. We have set up automatic building of images on Dockerhub https://cloud.docker.com/u/i3sessnet/
+Docker also offer a free service for open source prosjects. We have set up automatic building of images on Dockerhub https://cloud.docker.com/u/mecdcme/
 
 ### PxWeb Example
 
