@@ -23,6 +23,7 @@ Reference: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-c
 * reduce (no) single point of failure
 * liveliness
 
+![alt text](decentralized_pattern "Decentralized pattern")
 
 ## Bottlenecks
 ..
