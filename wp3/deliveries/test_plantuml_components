@@ -1,0 +1,28 @@
+@startuml
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+
+LAYOUT_TOP_DOWN
+'LAYOUT_WITH_LEGEND
+
+Container(workbench,"Workbench","notebook","blabla")
+Container(language,"Information modeling","modeling language","blabla")
+Container(storagebrowser,"Browsing data storage","","")
+Container(model2schema,"Model transformation","Transforming model to schema","")
+Container(services,"Process services","Process oriented services","")
+
+Container_Boundary(c0, "Data storage") {
+  Container_Boundary(c1,"API") {
+    Container(transfer,"Web services","")  
+    Container(querylanguage, "Query language","")
+  }
+  Container(schema,"Schema","","")
+  Container(security,"Security","","")
+  Container(transaction,"Transaction","","")
+  Container(index,"Index","","")
+  Container(streams,"Streams","","")
+  Container(localtrans,"Local transactions","","Saga??")
+  Container(datastorage1,"Data storage","","")
+  Container(datastorage2,"Data storage","","")
+  Container(datastorage3,"Data storage","","")
+}
+@enduml
