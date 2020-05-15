@@ -25,6 +25,8 @@ Reference: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-c
 
 ![alt text](decentralized_pattern.PNG "Decentralized pattern")
 
+![alt text](decentralized_pattern2.png "Decentralized pattern")
+
 ## Bottlenecks
 ..
 
