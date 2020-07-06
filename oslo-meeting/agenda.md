@@ -1,6 +1,6 @@
 # I3S ESSnet "Oslo" meeting draft agenda
 
-The meeting will be organized in six sessions during at most 150 minutes
+The meeting will be organized in six sessions during at most 150 minutes. The overall focus will be on re-use and communication.
  
 ## Day 1
  
