@@ -1,6 +1,6 @@
 # I3S ESSnet "Oslo" meeting draft agenda
 
-The meeting will be organized in six sessions during at most 150 minutes (the ending times given below correspond to this maximum). The overall focus will be on re-use and communication. A specific interview on multi-organization open oource collaboration will take place on Tuesday morning.
+The meeting will be organized in six sessions during at most 150 minutes (the ending times given below correspond to this maximum). The overall focus will be on re-use and communication. A specific interview on multi-organization open source collaboration will take place on Tuesday morning.
  
 ## Day 1, August 31st
  
@@ -24,7 +24,7 @@ The meeting will be organized in six sessions during at most 150 minutes (the en
  * Reuse - NO
  * Communication - PT
 
-### (11:00-12:00) Specific session on multi-organization open oource collaboration
+### (11:00-12:00) Specific session on multi-organization open source collaboration
 
 ### (14:00-16:30) Session 4 - Relais (resp. IT)
 
