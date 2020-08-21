@@ -48,4 +48,5 @@ An interview on multi-organization open source collaboration will take place in 
  
 ### [14:00-16:30] Session 9 - Wrapping (resp. FR)
 
+ * Contribution to the Unece ModernStats World Virtual Workshop - All 
  * Conclusions, next steps, etc. - All
