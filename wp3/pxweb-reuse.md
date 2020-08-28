@@ -27,8 +27,15 @@ PxWeb 2019
 ### Main functionalities
 
 ### Links (code, documentation...)
-* https://github.com/statisticssweden/PxWeb
-* https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/
+
+* Souce code
+   * https://github.com/statisticssweden/PxWeb
+* Documentation
+  * https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/
+*  Presentations at last PX meetings
+   * 2019: https://www.scb.se/PxMeeting2019
+   * 2018: https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/international-px-meeting/
+
 
 ## Service reuse
 
@@ -86,14 +93,18 @@ As mentioned we already had close relations with the Nordics NSOs (NSIs?) from w
 
 There is also an annual "International PX meeting" (prev. Pc-Axis reference group meeting) that we attend.
 
-(picture)
+![PX meeting locations last 28 years](px-meetings.png)
+[Welcome presentation 2019](https://www.scb.se/contentassets/c6c00c769d874282a5188eace748820b/1-201909xx-welcome-asaarrhenscb.pdf)
+
 
 In the meeting in Copenhagen 2014 we announced that we would switch to PxWeb.
 
 From arround 2015 the Norwegian og Swedish developers have had weekly short Google Hangouts every friday. These meetings contain
 
 * information sharing, what we are working on locally
-* problem solving, eg. performance issues
+* discussion of new features
+* problem solving, eg. bugs, performance issues
+* feedback from users on the forum
 
 There has also been a few trips to in SCBs offices in Örebro and Stockholm and visits from SCB to our offices in Oslo and Kongsvinger.
 Some of these meetings have been pure technical where we do big code merges.
@@ -111,6 +122,74 @@ To play safe we split the launch in to parts
 #### As-Is and To-Do architectures
 
 #### Technical details
+
+##### JSON-stat
+One of our other contributions to PxWeb has been implementation of the  JSON-stat Dataset output format. I was the format we chose for our first api i 2013 and both JSON-stat v1.2 and 2.0 are available in PxWeb.
+
+* https://json-stat.org/
+
+In the future we like to improve this implementation with more metadata and also implement JSON-stat Collections
+
+Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
+```javascript
+{
+    "class": "dataset",
+    "label": "03013: Consumer Price Index, by contents and month",
+    "source": "Statistics Norway",
+    "updated": "2020-08-10T06:00:00Z",
+    "id": [
+        "ContentsCode",
+        "Tid"
+    ],
+    "size": [
+        1,
+        1
+    ],
+    "dimension": {
+        "ContentsCode": {
+            "label": "contents",
+            "category": {
+                "index": {
+                    "Tolvmanedersendring": 0
+                },
+                "label": {
+                    "Tolvmanedersendring": "12-month rate (per cent)"
+                },
+                "unit": {
+                    "Tolvmanedersendring": {
+                        "base": "per cent",
+                        "decimals": 1
+                    }
+                }
+            }
+        },
+        "Tid": {
+            "label": "month",
+            "category": {
+                "index": {
+                    "2020M07": 0
+                },
+                "label": {
+                    "2020M07": "2020M07"
+                }
+            }
+        }
+    },
+    "value": [
+        1.3
+    ],
+    "role": {
+        "time": [
+            "Tid"
+        ],
+        "metric": [
+            "ContentsCode"
+        ]
+    },
+    "version": "2.0"
+}
+```
+
 
 #### Organizational impact
 
