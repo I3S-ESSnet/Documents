@@ -4,28 +4,22 @@
 
 ### Reporting organization
 Statistics Norway (SSB)
-
 ### Unit
-702 IT-Architecture,
-
+702 IT-Architecture
 ### Report version
 v0.0.1
-
 ### Report date
-
 ### Contact mail
 
 ## Service reused
-PxWeb? Yes?
 
 ### Publisher
-Statistics Sweden
+Statistics Sweden (SCB)
 ### Name
 PxWeb
 ### Version
 PxWeb 2019
 ### Main functionalities
-
 ### Links (code, documentation...)
 
 * Souce code
@@ -36,13 +30,9 @@ PxWeb 2019
    * 2019: https://www.scb.se/PxMeeting2019
    * 2018: https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/international-px-meeting/
 
-
 ## Service reuse
-
 ### Context
-
 ### Business case
-
 > Issue to address, problems with current solution (or lack of), etc.
 
 PxWeb comes from the PC-Axis
@@ -65,7 +55,6 @@ However our Statbank struggled to keep up with technical debt and around 2014 we
 ### Service reuse
 
 #### General description
-
 There were many reasons for us to choose PxWeb but these are some of the main ones.
 
 ##### Open source
@@ -112,17 +101,14 @@ Some of these meetings have been pure technical where we do big code merges.
 To get most out out the collaboration the social element is key.
 
 #### Launch
-
 To play safe we split the launch in to parts
-* PxWebApi was launched in May 2016 as a new application http://www.byranettet.ssb.no/Artikler/1462283193.31
-* PxWeb was launched in January 2018 replacing our StatbankWeb http://www.byranettet.ssb.no/Artikler/1515166535.33
+* PxWebApi was launched in May 2016 as a new application
+* PxWeb was launched in January 2018 replacing our StatbankWeb
 
-
+![PxWebApi launch 2016](pxwebapi-launch.jpg)
 
 #### As-Is and To-Do architectures
-
 #### Technical details
-
 ##### JSON-stat
 One of our other contributions to PxWeb has been implementation of the  JSON-stat Dataset output format. I was the format we chose for our first api i 2013 and both JSON-stat v1.2 and 2.0 are available in PxWeb.
 
@@ -192,21 +178,15 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 
 
 #### Organizational impact
-
 > Integration of the service in the process flow.
-
 #### Project management
-
 #### Other aspects (e.g. financial)
-
 #### Results achieved
 
 ## Lessons learned
 
 ### Problems encountered
-
 ### Missing functionalities
-
 ### General feedback
 
 ## Conclusions and next steps
