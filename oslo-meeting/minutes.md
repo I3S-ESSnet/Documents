@@ -122,3 +122,10 @@ Questions :
 
 Reuse of PXWeb :
 cf. https://github.com/I3S-ESSnet/Documents/blob/master/wp3/pxweb-reuse.md
+
+Pina : for all type of surveys or for specific ones ? For disseminating data
+
+Main lesson learned from reuse : the collaboration that allows not to create everything from scratch, the feedbacks on the database structure
+
+Video on PXWeb in Norway : ask the communication department, contact Pedro in order to have the questions for the interview (for next month), then have text available in order to make translations
+
