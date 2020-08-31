@@ -35,5 +35,6 @@ ModernStat Workshop, deadline in septembre.
 Discussion at the end of the meeting.
 Ohter ideas ? 
 
-
+## Questions
+For the next hackathon : multi-located ? yes, it is a possibility.
 
