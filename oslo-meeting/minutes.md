@@ -1,6 +1,8 @@
 # Oslo meeting - minutes
 
-## Deliverables
+## WP5 presentation
+
+### Deliverables
 
 Resubmit D1.2.1, ARC Service because things have evolved since the last submission, and see with Pierre.
 
@@ -17,24 +19,27 @@ Deliverable 1.5, Guidelines and best practise, have a discussion around the docu
 Possible overlaps with other deliverables (architecture).
 Focusing the guideline on the experience and practise of integrating and reusing
 
-## Budget
+### Budget
 
 Staff cost ; Sweden around 100%
 
 Subcontract :
-### Insee
+#### Insee
 ==> security audits for ARC, Relais and PXWeb, for Relais and PXWeb tell Insee when the code will be stable
-### Istat
+#### Istat
 a consultant , Relais is a little bit monolithic, the idea of the subcontracting is to break Relais in smaller pieces (so for security audit : wait another few months), so subcontract is about Relais architecture. Not all the budget will be used (check how this budget can be reused)
-### Norway
+#### Norway
 most of the money is still not used, plan to use it for the Google platform
 
-## Communication actions
+### Communication actions
 What do we do for NTTS ? Deadline for abstract in november.
 ModernStat Workshop, deadline in septembre.
 Discussion at the end of the meeting.
 Ohter ideas ? 
 
-## Questions
+### Questions
 For the next hackathon : multi-located ? yes, it is a possibility.
+
+## Lisbon workshop
+
 
