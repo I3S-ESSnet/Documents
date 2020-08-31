@@ -129,3 +129,12 @@ Main lesson learned from reuse : the collaboration that allows not to create eve
 
 Video on PXWeb in Norway : ask the communication department, contact Pedro in order to have the questions for the interview (for next month), then have text available in order to make translations
 
+## Architecture
+
+RT : for the management, focus more on cost, in order to make understand the interest of sharing
+
+FC : it is at the good level for the management, could have more feedbakcs from manager. JE : the document is for architects who have to discuss with managers
+
+RT : to be seen online, or to be used for a presentation in a workshop ? JE : many options, could be for a presentation, could be filmed, do it on your own and navigate and focus on what you want ==> it is the main idea of this deliverable, having online/remote workshops (==> also a possibility for an interactive session in Lisbon)
+
+RT : link parts of the presentation to the document ? JE : absolutely
