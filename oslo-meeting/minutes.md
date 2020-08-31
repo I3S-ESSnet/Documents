@@ -27,4 +27,13 @@ Subcontract :
 ### Istat
 a consultant , Relais is a little bit monolithic, the idea of the subcontracting is to break Relais in smaller pieces (so for security audit : wait another few months), so subcontract is about Relais architecture. Not all the budget will be used (check how this budget can be reused)
 ### Norway
+most of the money is still not used, plan to use it for the Google platform
+
+## Communication actions
+What do we do for NTTS ? Deadline for abstract in november.
+ModernStat Workshop, deadline in septembre.
+Discussion at the end of the meeting.
+Ohter ideas ? 
+
+
 
