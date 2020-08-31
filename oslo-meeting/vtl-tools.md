@@ -27,9 +27,13 @@ Editor and rule manager
 
 ### Banks
 
-BIRD platform
+#### ECB
 
-Banca d'Italia
+[BIRD tools](https://www.ecb.europa.eu/stats/ecb_statistics/co-operation_and_standards/reporting/html/bird_dedicated.en.html). VTL is used for validation and transformations: details on the [methodology](https://www.ecb.europa.eu/stats/ecb_statistics/co-operation_and_standards/reporting/html/bird_methodology.en.html) page. Some unlicensed code on https://github.com/DGSbird, but current work seems to happen in the [Eclipse Free Bird](https://projects.eclipse.org/projects/technology.efbt) project (see also https://www.eclipse.org/efbt/index.html).
+
+#### Banca d'Italia
+
+[VTL E&E](https://vpinna80.github.io/VTL/), mostly Java, R packaging and Jupyter notebook, EUPL 1.2 
 
 ### Other NSIs
 
