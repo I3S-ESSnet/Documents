@@ -20,3 +20,11 @@ Focusing the guideline on the experience and practise of integrating and reusing
 ## Budget
 
 Staff cost ; Sweden around 100%
+
+Subcontract :
+### Insee
+==> security audits for ARC, Relais and PXWeb, for Relais and PXWeb tell Insee when the code will be stable
+### Istat
+a consultant , Relais is a little bit monolithic, the idea of the subcontracting is to break Relais in smaller pieces (so for security audit : wait another few months), so subcontract is about Relais architecture. Not all the budget will be used (check how this budget can be reused)
+### Norway
+
