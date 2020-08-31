@@ -36,6 +36,10 @@ An interview on multi-organization open source collaboration will take place in 
  * Reuse - FR
  * Communication - PT
 
+### [15:30-16:30] Session 3bis - Discussion on the architecture presentation.
+
+Based on SCB's [presentation](https://miro.com/app/board/o9J_kx6qd9A=/).
+
 ## Day 3, September 2nd
  
 ### [10:00-11:30] Session 7 - Relais (resp. IT)
