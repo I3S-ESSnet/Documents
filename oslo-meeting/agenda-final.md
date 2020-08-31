@@ -24,7 +24,7 @@ An interview on multi-organization open source collaboration will take place in 
 
 ### [10:00-11:00] Session 4 - ARC (resp. FR)
 
- * Presentation of advancement - FR
+ * [Presentation](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/H1t_OfXXP) of advancement - FR
  * Reuse - IT
  * Communication - PT
 
@@ -41,7 +41,7 @@ An interview on multi-organization open source collaboration will take place in 
 ### [10:00-11:30] Session 7 - Relais (resp. IT)
 
  * Presentation of advancement - IT
- * Reuse - FR
+ * [Reuse](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/H19sdPG7w#/) - FR
  * Communication - PT
 
 ### [11:30-12:30] Session 8 - Service deployment (resp. NO)
