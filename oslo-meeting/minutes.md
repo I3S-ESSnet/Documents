@@ -131,6 +131,9 @@ Video on PXWeb in Norway : ask the communication department, contact Pedro in or
 
 ## Architecture
 
+https://docs.google.com/document/d/1V154mfO4pkOXuNOljZeN2V80DoxmtZnTvA-Q3UO2Y6o/edit
+
+
 RT : for the management, focus more on cost, in order to make understand the interest of sharing
 
 FC : it is at the good level for the management, could have more feedbakcs from manager. JE : the document is for architects who have to discuss with managers
