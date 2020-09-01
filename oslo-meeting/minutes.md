@@ -222,3 +222,22 @@ Communication
 * At least a flyer
 * a tutorial for the developers (for the users : tutorial on the language is the job of Eurostat) ==> Istat as beta users abd codevelopers of a tutorial on Trevas
 
+## Discussion on various points.
+
+Communication for ARC : a flyer is almost finished, a video will be made on the cooperation ARC-Relais (Manuel Soulier + quelqu'un d'Istat) ==> propose a list questions for the interview (4-5 minutes), see with Pedro
+
+### Year-end Hackathon
+
+subjects :
+* to push on the work on architecture, the cookbook and the examples (part of the architecture work)
+* finish the deliverables
+* to precise what we want to achieve with the Lisbon workshop
+* ARC-Relais integration
+* the platform (including deployment)
+
+organisation : an orevall linking framework based on the presentation of architecture
+
+duration : 5 days ?
+
+where : at Istat all travels and seminaires are cancelled until the end of the year, the same in every country ?
+
