@@ -164,3 +164,19 @@ Questions and remarks :
 Reuse test with the "Division for acquisition of administrative data and integration of sources" at Istat.
 Two administrative sources have been used on the collect and check input phases. The process has been redesigned according to the ARC model.
 
+## Interview on multi-organization open source collaboration
+
+Norway strategy : all the code written is on github, use of opensrouce software as much as possible. Huge problem with vendor lockers from before, another is the use of proprietary Cloud. How we should approach opensrouce development in a community like I3S ? How the code should be created ? Choice of a liberal licence in order not to be a problem for the people using the code.
+
+Sweden strategy : 3 parts. For softwares used internally, no strategy about opensource but things are changing. The statistics on the site are always opensource in CCBy. For the softwares developped : it is case by case.
+
+Istat strategy : before a lot of lockings with vendors. Istat policy is not to publish all developped software in opensource, but for example, in project like I3S the strategy is to publish everything in opensource. No corporate github account, each developer has its own. It is thanks to project sucah as I3S that IStat use more and more collaborative tools.
+
+
+Linagora question : what is the maturity level of your organisation on the question of opensoruce compliance ?
+
+France : a few years ago, Insee began to publish opensource software. But the organisation was decided bottom-up, now things are changing, a strategy on the organisation is beginnign to be defined. Not first level of maturity, perhaps second one.
+
+Norway : under ?%. Using os, creating os, creating a community about that. Creating opensource increase the quality of code. Pretty mature, policy in place, licences chosen, (? the difficult point is community)
+
+Sweden : less mature than Norway, different stages of maturity in staff, IT people quite familiar with the concepts, struggling with the practical questions. Code opensource : mainly PXWeb. When speaking about opendata, the institute is very mature, this is potential for opensource strategy.
