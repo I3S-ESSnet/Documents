@@ -216,4 +216,4 @@ Questions :
 * we have to find a way to organize the adoption of VTL in the ESS community, this requires the possibility to give feedbacks on the language
 * How to handle the version of the VTL code ? For now, we don't. There is a development by Eurostat for this functionality.
 
-
+TO add VTL Tool to scope (the javascript engine) : Norway ==> OK, Sweden ==> OK, Istat ==> OK
