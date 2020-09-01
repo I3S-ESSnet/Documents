@@ -9,7 +9,6 @@ An interview on multi-organization open source collaboration will take place in 
 ### [10:00-12:30] Session 1 - Introduction (resp. FR)
 
  * Consortium meeting (amendment, deliverables, etc.) - FR
- * Organization of year-end hackathon - All
  * Organization of Lisbon workshop - PT with all
 
 ### [14:00-15:30] Session 2 - PXweb (resp. SE)
@@ -36,21 +35,26 @@ An interview on multi-organization open source collaboration will take place in 
  * Reuse - FR
  * Communication - PT
 
-### [15:30-16:30] Session 3bis - Discussion on the architecture presentation.
+### [15:30-16:30] Session 7 - Discussion on various points.
 
-Based on SCB's [presentation](https://miro.com/app/board/o9J_kx6qd9A=/).
+ * Debrief on MOOSC - All
+ * Organization of year-end hackathon - All
+ * Communication on ARC - FR with all
 
 ## Day 3, September 2nd
  
-### [10:00-11:30] Session 7 - Relais (resp. IT)
+### [10:00-11:00] Session 8 - Relais (resp. IT)
 
  * Presentation of advancement - IT
  * [Reuse](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/H19sdPG7w#/) - FR
  * Communication - PT
 
-### [11:30-12:30] Session 8 - Service deployment (resp. NO)
+### [11:00-11:30] Session 9 - Lisbon workshop (resp. PT)
 
-### [14:00-16:30] Session 9 - Wrapping (resp. FR)
+### [11:30-12:30] Session 10 - Service deployment (resp. NO)
 
- * Contribution to the Unece ModernStats World Virtual Workshop - All 
+### [14:00-16:30] Session 11 - Wrapping (resp. FR)
+
+ * Contribution to the Unece ModernStats World Virtual Workshop - All
+ * Discussion on the architecture [presentation](https://miro.com/app/board/o9J_kx6qd9A=/) - All
  * Conclusions, next steps, etc. - All
