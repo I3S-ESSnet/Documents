@@ -202,3 +202,5 @@ Linagora : let's say you all agree to let eurostat lead your co-innovation commu
 France and Istat : not sure it is possible.
 Istat : in the case of IS2, the software has been created in the context of Eurostat (an ESSNet)
 Sweden : not sure to understand the complexity of the subject. Linagora : the question is if all of us want to have Eurostat on the copyright.
+
+Next steps : summarize the interviews and the same time analyse the code to see if there is compliance action to undertake. If there is compliance breaches, first estimation of the worload to correct will be given. A scenario for a general organisation will be also delivered.
