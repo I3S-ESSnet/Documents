@@ -57,7 +57,13 @@ Open source
 
 #### Use  case
 
+- **Crabe**: Splitting sample of housing or people to edit pollster tour.
+- **Downstream surveys**: Receive household collected data, treat them thanks to control rules and produce statistical tables.
+
 #### Demo
+
+- **JavaScript Tools**: New feat: first implementation on dataset (to build questionnaire with loops) 
+- **Java Tools**: First `Crabe` steps with Trevas
 
 ### R Tools
 
