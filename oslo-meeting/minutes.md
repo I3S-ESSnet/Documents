@@ -184,3 +184,14 @@ Sweden : less mature than Norway, different stages of maturity in staff, IT peop
 IStat : maturity level is quite low, it depends on the skills of colleagues. Starting to put the code on github, but many different repository. Not a good awareness on the management level, no process defined for producing opensource. Like in Sweden, prbms with practical questions. Not yet in the mindset of the whole institute.
 
 Summary : Istat ==> level 1, Sweden and France ==> level 2, Norway ==> level 3
+
+A parenthesis on compliance. Content of the mission : have a look at the code and provide recommandation regarding the property state. For user part, compliance is mainly copyright respect and licences compatibility. As a producer, copyright respect (respect of the contributions of the developers). There is also the organisation, some don't allow opensource and even co-innovation licences.
+
+A questionnaire for auto-evaluation : yes, the first question is about your perception of maturity, and then "do you allow us to evaluate your maturity". 2 more questions : "do you have any private venture partners who reuse the code, whith whom you share the code ?", "do you have subcontractors for developing the code ?"
+
+Subcontract :
+Norway : consultants who write code, ownership of the code to StatNorway, and the consultant have to produce opensouce code. Some projects with other entities, but don't have to produce opensource because of the partners
+Sweden : not different from Norway.
+Istat : subcontractors, so Istat owner of the code, have to be cuatious sometimes because the code remains teh property of the company and only the finished product is owned by Istat. No partners, but work with entities like agencies wich are interested in the service of Istat.
+
+Linagora question : first idea of the role of each one of us in term of legalship, contribution to the roadmap ?
