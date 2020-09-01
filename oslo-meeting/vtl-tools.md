@@ -63,8 +63,8 @@ Open source
 
 ### Use case
 
-- **Crabe**: Splitting samples of dwellings or households in order to allocate lists of units to field agents.
-- **Downstream surveys**: Receive collected data on households, process them according to control rules and produce statistical tables.
+- **Crabe**: splitting samples of dwellings or households in order to allocate lists of units to field agents.
+- **Survey downstream**: process data collected on households according to control rules to produce statistical tables.
 
 ### Demo
 
