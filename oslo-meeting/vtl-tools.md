@@ -55,16 +55,18 @@ Open source
 
 [Trevas](https://github.com/InseeFr/Trevas)
 
-#### Use  case
-
-- **Crabe**: Splitting sample of housing or people to edit pollster tour.
-- **Downstream surveys**: Receive household collected data, treat them thanks to control rules and produce statistical tables.
-
-#### Demo
-
-- **JavaScript Tools**: New feat: first implementation on dataset (to build questionnaire with loops) 
-- **Java Tools**: First `Crabe` steps with Trevas
-
 ### R Tools
 
 [darkr](https://github.com/romaintailhurat/darkr)
+
+## Reuse
+
+### Use case
+
+- **Crabe**: Splitting samples of dwellings or households in order to allocate lists of units to field agents.
+- **Downstream surveys**: Receive collected data on households, process them according to control rules and produce statistical tables.
+
+### Demo
+
+- **JavaScript Tools**: first implementation on datasets to build questionnaires with loops (new feature) 
+- **Java Tools**: first `Crabe` steps with Trevas
