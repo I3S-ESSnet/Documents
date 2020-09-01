@@ -195,3 +195,4 @@ Sweden : not different from Norway.
 Istat : subcontractors, so Istat owner of the code, have to be cuatious sometimes because the code remains teh property of the company and only the finished product is owned by Istat. No partners, but work with entities like agencies wich are interested in the service of Istat.
 
 Linagora question : first idea of the role of each one of us in term of legalship, contribution to the roadmap ?
+Trygve : this is a tricky part of opensource, the choice of the licence has an impact on the legal question. Question for the community : collaborate on an existing code or fork it ? The hard part is to decide a governance for the project.
