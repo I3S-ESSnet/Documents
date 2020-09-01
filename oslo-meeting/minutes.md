@@ -179,4 +179,8 @@ France : a few years ago, Insee began to publish opensource software. But the or
 
 Norway : under ?%. Using os, creating os, creating a community about that. Creating opensource increase the quality of code. Pretty mature, policy in place, licences chosen, (? the difficult point is community)
 
-Sweden : less mature than Norway, different stages of maturity in staff, IT people quite familiar with the concepts, struggling with the practical questions. Code opensource : mainly PXWeb. When speaking about opendata, the institute is very mature, this is potential for opensource strategy.
+Sweden : less mature than Norway, different stages of maturity in staff, IT people quite familiar with the concepts, struggling with the practical questions (who is responsible for the code, for fixing bugs ...). Code opensource : mainly PXWeb. When speaking about opendata, the institute is very mature, this is potential for opensource strategy.
+
+IStat : maturity level is quite low, it depends on the skills of colleagues. Starting to put the code on github, but many different repository. Not a good awareness on the management level, no process defined for producing opensource. Like in Sweden, prbms with practical questions. Not yet in the mindset of the whole institute.
+
+Summary : Istat ==> level 1, Sweden and France ==> level 2, Norway ==> level 3
