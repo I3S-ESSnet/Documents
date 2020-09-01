@@ -204,3 +204,16 @@ Istat : in the case of IS2, the software has been created in the context of Euro
 Sweden : not sure to understand the complexity of the subject. Linagora : the question is if all of us want to have Eurostat on the copyright.
 
 Next steps : summarize the interviews and the same time analyse the code to see if there is compliance action to undertake. If there is compliance breaches, first estimation of the worload to correct will be given. A scenario for a general organisation will be also delivered.
+
+## VTL presentation
+
+Presentation at : https://github.com/I3S-ESSnet/Documents/blob/master/oslo-meeting/vtl-tools.md
+
+### Reuse
+
+Questions :
+* Use VTL for questionnaire logic, is it the first implementation ? Probably a first yes (but for now, a simple one). In fact there was a first description of the questionnaire logic, before VTL was available, and it used an adhoc language.
+* we have to find a way to organize the adoption of VTL in the ESS community, this requires the possibility to give feedbacks on the language
+* How to handle the version of the VTL code ? For now, we don't. There is a development by Eurostat for this functionality.
+
+
