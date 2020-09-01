@@ -158,3 +158,9 @@ Questions and remarks :
 * link between ARC and IS2 ? It will be a good thing to have a standalone ARC for heavy production, but it will also a good thing to have ARC intergated into IS2 in order to be used directly by statistical expert. We can see that there arer two business cases here.
 * adding functionality in IS2 is currently a beta feature. Istat want to have a roadmap for fianlizing this functionalityt by the end of the EssNet.
 * Have some effort been made for configuring the database and chosse the database engine (other than Postgresql for example) ? Not yet, an objective for ARC was to be able to load huge amounts of data, so the use of database is very optimized and sopecific to PostgreSQL. So if it is needed to use another database engine or to load another kind of data sources, it will require a lot of developments.
+
+### Reuse case
+
+Reuse test with the "Division for acquisition of administrative data and integration of sources" at Istat.
+Two administrative sources have been used on the collect and check input phases. The process has been redesigned according to the ARC model.
+
