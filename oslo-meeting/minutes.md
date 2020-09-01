@@ -196,3 +196,9 @@ Istat : subcontractors, so Istat owner of the code, have to be cuatious sometime
 
 Linagora question : first idea of the role of each one of us in term of legalship, contribution to the roadmap ?
 Trygve : this is a tricky part of opensource, the choice of the licence has an impact on the legal question. Question for the community : collaborate on an existing code or fork it ? The hard part is to decide a governance for the project.
+Istat: the main pbm is the management of the project, the capacity to have people contributing for a long period.
+
+Linagora : let's say you all agree to let eurostat lead your co-innovation community, would you all agree to transfer your intellectual property rights in a non-exclusive way to Eurostat ? In order to allow Eurostat with the same rights as you on the code ?
+France and Istat : not sure it is possible.
+Istat : in the case of IS2, the software has been created in the context of Eurostat (an ESSNet)
+Sweden : not sure to understand the complexity of the subject. Linagora : the question is if all of us want to have Eurostat on the copyright.
