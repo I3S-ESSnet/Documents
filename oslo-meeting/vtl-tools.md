@@ -2,6 +2,13 @@
 
 ## Reminder about VTL
 
+Developed by a task force of the SDMX ITWG starting from 2013: v1 in 2015, v2 in 2018
+
+Covering validation and transformation of statistical data sets of all kind (unit, dimensional, qualitative, quantitative...)
+
+Based on a simple data model using common features of GSIM, SDMX and DDI.
+
+Endorsed by Eurostat as part of the ESS.VIP Validation, but not an ESS standard yet.
 
 ## Recent developments on VTL
 
@@ -46,6 +53,8 @@ Poland, Italy: VTL -> SQL translators
 Generation from grammar via ANTLR
 
 Open source
+
+Development driven by use cases
 
 ### JavaScript Tools
 

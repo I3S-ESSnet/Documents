@@ -32,7 +32,7 @@ An interview on multi-organization open source collaboration will take place in 
 
 ### [14:00-15:30] Session 6 - VTL Tools (resp. FR)
 
- * Presentation of advancement - FR
+ * [Presentation](vtl-tools.md) of advancement - FR
  * Reuse - FR
  * Communication - PT
 
