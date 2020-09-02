@@ -241,3 +241,22 @@ duration : 5 days ?
 
 where : at Istat all travels and seminaires are cancelled until the end of the year, the same in every country ?
 
+## Relais
+
+Work done:
+* porting to PostgreSAL
+* internationalization : now italina and english
+* data load : possible to load data from both file and database
+* test reports, quality reports, docker images
+* performance improved, more than 50% faster
+
+Work in progress:
+* currently both probabilistic and deterministic approaches in the software, the process has been splitted in steps
+* service functionalities: creation of search space, batch process, quality indicators for assessment of record linkage process
+* bugs fixing
+* improvement of the performance of the record linkage algorithms (Java parallel stream, Apache Spark)
+
+Next steps:
+* documentation : update of architectural documentation, new user guide, tutorial
+* modular architecture: new client with VueJs, Spring cloud data flow
+* improvement of ARC and RELAIS integration
