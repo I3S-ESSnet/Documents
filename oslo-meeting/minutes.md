@@ -42,32 +42,18 @@ For the next hackathon : multi-located ? yes, it is a possibility.
 
 ## Lisbon workshop
 
-TO extend to more participants, who will pay ? 
-The UNECE was willing to help with the budget for inviting people
-if it is a CSPA event.
-Jakob : is this offer always on the table ?
+The objective is to invite beyond the ESS, but there is the question of the budget. The UNECE was willing to help with the budget for inviting people if it is a CSPA event. It is necessary to check that this offer is always on the table. The ESSNet on its own doesn't have the budget for inviting 50 people. We can plan to invite some influencers, the others will have to pay for their participation.
 
-Romain : we need to be as large as possible ==> ESS and CSPA
+Due to the pandemic situtation we must think about different solutions for the organisation and have a B plan : physical meeting, virtual, mixed meeting : physical and virtual, streaming of the presentation, having chat.
 
-Italy : invite the IT DG members ?
+We plan to have a 2.5 or 3 days meeting, so we need very interactive sessions (technical and non technical).
 
-We don't have the budget for inviting 50 people
-we can plan to invite some influencers, the others
-will have to pay for their participation
 
-A mixed meeting : physical and virtual ? streaming possible ?
-having chat ?
-Due to the high volatility of the situation, we need a B plan
-
-==> 1. invite beyond the ESS
 
 just to present the results
 also continue on working together and planning for the future
 
-Sweden : if we choose 3 days we need very interactive sessions
 
-Italy : if the audience is really large, we can have different sessions
-not only technical sessions
 
 ==> 2.5 days workshop
 1st half day : consortium meeting and the result of the ESSNet
