@@ -4,9 +4,9 @@
 
 Developed by a task force of the SDMX ITWG starting from 2013: v1 in 2015, v2 in 2018
 
-Covering validation and transformation of statistical data sets of all kind (unit, dimensional, qualitative, quantitative...)
+Covering validation and transformation of statistical data sets of all kind (unit, dimensional, qualitative, quantitative, survey, registers, micro and macro...)
 
-Based on a simple data model using common features of GSIM, SDMX and DDI.
+Based on a simple data model using common features of GSIM, SDMX and DDI. Data sets made of rows (data points) and columns (components: identifiers, measures, attributes)
 
 Endorsed by Eurostat as part of the ESS.VIP Validation, but not an ESS standard yet.
 
