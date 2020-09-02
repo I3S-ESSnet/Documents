@@ -294,3 +294,7 @@ Ideas:
 Abstract for the 10th of September
 
 Same contributions for NTTS ?
+
+## Other next steps
+
+An intermediary meeting in october ? 2 hours.
