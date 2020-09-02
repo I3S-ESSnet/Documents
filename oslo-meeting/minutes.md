@@ -204,3 +204,40 @@ Istat : in the case of IS2, the software has been created in the context of Euro
 Sweden : not sure to understand the complexity of the subject. Linagora : the question is if all of us want to have Eurostat on the copyright.
 
 Next steps : summarize the interviews and the same time analyse the code to see if there is compliance action to undertake. If there is compliance breaches, first estimation of the worload to correct will be given. A scenario for a general organisation will be also delivered.
+
+## VTL presentation
+
+Presentation at : https://github.com/I3S-ESSnet/Documents/blob/master/oslo-meeting/vtl-tools.md
+
+### Reuse
+
+Questions :
+* Use VTL for questionnaire logic, is it the first implementation ? Probably a first yes (but for now, a simple one). In fact there was a first description of the questionnaire logic, before VTL was available, and it used an adhoc language.
+* we have to find a way to organize the adoption of VTL in the ESS community, this requires the possibility to give feedbacks on the language
+* How to handle the version of the VTL code ? For now, we don't. There is a development by Eurostat for this functionality.
+
+TO add VTL Tool to scope : Norway ==> OK, Sweden ==> OK, Istat ==> OK
+
+Communication
+* At least a flyer
+* a tutorial for the developers (for the users : tutorial on the language is the job of Eurostat) ==> Istat as beta users abd codevelopers of a tutorial on Trevas
+
+## Discussion on various points.
+
+Communication for ARC : a flyer is almost finished, a video will be made on the cooperation ARC-Relais (Manuel Soulier + quelqu'un d'Istat) ==> propose a list questions for the interview (4-5 minutes), see with Pedro
+
+### Year-end Hackathon
+
+subjects :
+* to push on the work on architecture, the cookbook and the examples (part of the architecture work)
+* finish the deliverables
+* to precise what we want to achieve with the Lisbon workshop
+* ARC-Relais integration
+* the platform (including deployment)
+
+organisation : an orevall linking framework based on the presentation of architecture
+
+duration : 5 days ?
+
+where : at Istat all travels and seminaires are cancelled until the end of the year, the same in every country ?
+
