@@ -55,6 +55,6 @@ An interview on multi-organization open source collaboration will take place in 
 
 ### [14:00-16:30] Session 11 - Wrapping (resp. FR)
 
- * Contribution to the Unece ModernStats World Virtual Workshop - All
+ * Contribution to NTTS 2021 and the Unece ModernStats World Virtual Workshop - All
  * Discussion on the architecture [presentation](https://miro.com/app/board/o9J_kx6qd9A=/) - All
  * Conclusions, next steps, etc. - All
