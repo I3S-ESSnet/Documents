@@ -245,3 +245,32 @@ contact the organisation team to discuss what is possible
 H-track : softwares, frameworks and tools, specific topic : reusing tools and services
 
 Can we have a specific session ?
+
+
+## Service deployment
+
+Work done:
+* routines for containerization
+* provisioning of infrastructure using Terraform
+* establish project on Azure
+* establish project on Google Cloud Platform
+* work on Terraform is still in progress
+
+Next steps:
+* formalizing the infrastructure for MS Azure and GCP
+* Complementing WP2 documentation
+* What type of workflow is necessary for a cloud native platform ?
+* a study and a blueprint using GitOps
+* Strategy and techniques: canary deployment, secret handling
+
+WP3 challenges:
+* organization of code and documentation
+* things are constantly evolving, the addition of GitOps is a useful addition
+* Billing and IAM
+
+Discussion:
+* what is delivered in WP2 is just a draft regarding service mesh, so important more important to have a focus on ease of use or documentation
+* first provide blueprint (develop it more around high-level principles, not specific technology because things are constantly evolving)
+* Question reusersWhen and how can I install my application on the platform ? Right now it depends, several way of doing the deployment, first way simply using the docker image and deploy it, but the idea is to provide more tools and services for deployment
+* we have to decide what is exactly the deliverable for the platform
+
