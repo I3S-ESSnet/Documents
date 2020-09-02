@@ -47,11 +47,10 @@ The objective is to invite beyond the ESS, but there is the question of the budg
 Due to the pandemic situtation we must think about different solutions for the organisation and have a B plan : physical meeting, virtual, mixed meeting : physical and virtual, streaming of the presentation, having chat.
 
 We plan to have a 2.5 or 3 days meeting, so we need very interactive sessions (technical and non technical).
-
-1st half day (monday 26/4 morning): consortium meeting with Eurostat about the results of the ESSNet and planning for the future
-2nd half day: presentation of the results of the ESSNet to the audience of the workshop, lessons learnt and open points
-1-1.5 days of mixed presentations and interactive sessions
-last half day: a service market and contributions for people coming from outside the consortium
+* 1st half day (monday 26/4 morning): consortium meeting with Eurostat about the results of the ESSNet and planning for the future
+* 2nd half day: presentation of the results of the ESSNet to the audience of the workshop, lessons learnt and open points
+* 1-1.5 days of mixed presentations and interactive sessions
+* last half day: a service market and contributions for people coming from outside the consortium
 
 Ideas of presentation/interacive sessions:
 * a discussion on the requirements that make it easier to reuse a service or implement sharable services or put it in practise
@@ -240,5 +239,9 @@ The work of evaluating the RELAIS record linkage (the probabilistic and the dete
 ## NTTS
 
 Deadline : 15th of october
+
 contact the organisation team to discuss what is possible
+
 H-track : softwares, frameworks and tools, specific topic : reusing tools and services
+
+Can we have a specific session ?
