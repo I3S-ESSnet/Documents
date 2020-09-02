@@ -273,4 +273,4 @@ Discussion:
 * first provide blueprint (develop it more around high-level principles, not specific technology because things are constantly evolving)
 * Question reusersWhen and how can I install my application on the platform ? Right now it depends, several way of doing the deployment, first way simply using the docker image and deploy it, but the idea is to provide more tools and services for deployment
 * we have to decide what is exactly the deliverable for the platform
-
+* there is two goals in WP3, we want to have a platform for the ESSNet and we want to provide other institutes a blueprint of what could be a platform. Also a third goal : a more permanent offer for the ESS, what happens on the 21st of May 2021 ? Do we shut down the platform or do we offer a platform for the ESS ?
