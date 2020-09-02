@@ -48,43 +48,19 @@ Due to the pandemic situtation we must think about different solutions for the o
 
 We plan to have a 2.5 or 3 days meeting, so we need very interactive sessions (technical and non technical).
 
+1st half day (monday 26/4 morning): consortium meeting with Eurostat about the results of the ESSNet and planning for the future
+2nd half day: presentation of the results of the ESSNet to the audience of the workshop, lessons learnt and open points
+1-1.5 days of mixed presentations and interactive sessions
+last half day: a service market and contributions for people coming from outside the consortium
 
-
-just to present the results
-also continue on working together and planning for the future
-
-
-
-==> 2.5 days workshop
-1st half day : consortium meeting and the result of the ESSNet
-1 day of presentations
-1 day of practical thing
-half day for a service market and contributions for people coming from
-outside the consortium
-monday 26/4
-
-******************
-
-adding a discussion on the requirements that make it easier
-to reuse a service or implement sharable services or put it
-in practise
-
-*********************************
-
-2nd half day :
-presentation of the results, general presentation, not the details
-lessons learnt and open points
-interactive session on the survey
-
-2nd half day presentations :
-details of the result of the project
-1. architecture ==> with an interactive session
-2. session on reuses
-3. interactive sessions on ?
-last. Sinder
-
-bring your own data in PXWeb or Relais
-bring your own app in the platform
+Ideas of presentation/interacive sessions:
+* a discussion on the requirements that make it easier to reuse a service or implement sharable services or put it in practise
+* interactive session on the survey
+* architecture with an interactive session
+* session on reuses
+* Sinder
+* bring your own data in PXWeb or Relais
+* bring your own app in the platform
 
 ## PXWeb presentation
 
@@ -260,3 +236,9 @@ The actual BPE linkage requires 3 specific variables with determined name and co
 The statisticians are aware of the BPE linkage limits and feel that using RELAIS is a good opportunity to enhance the BPE linkage and the quality of the final database. A preliminary study document had been written in september 2019. A proof of concept to reuse RELAIS for BPE linkage has started on march 2020. Most of the technical problems had been exposed at the “16 June 2020: Istat-Insee mini-hackathon” and cleared shortly after.
 
 The work of evaluating the RELAIS record linkage (the probabilistic and the deterministic one) is in progress. The evaluation of the statistician workflow should occur at the end of 2020 and the use case tested still must be defined.
+
+## NTTS
+
+Deadline : 15th of october
+contact the organisation team to discuss what is possible
+H-track : softwares, frameworks and tools, specific topic : reusing tools and services
