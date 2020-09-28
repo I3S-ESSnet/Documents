@@ -117,11 +117,10 @@ Two administrative sources have been used on the collect and check input phases.
 
 ## Interview on multi-organization open source collaboration
 
-Norway strategy : all the code written is on github, use of opensrouce software as much as possible. Huge problem with vendor lockers from before, another is the use of proprietary Cloud. How we should approach opensrouce development in a community like I3S ? How the code should be created ? Choice of a liberal licence in order not to be a problem for the people using the code.
-
-Sweden strategy : 3 parts. For softwares used internally, no strategy about opensource but things are changing. The statistics on the site are always opensource in CCBy. For the softwares developped : it is case by case.
-
-Istat strategy : before a lot of lockings with vendors. Istat policy is not to publish all developped software in opensource, but for example, in project like I3S the strategy is to publish everything in opensource. No corporate github account, each developer has its own. It is thanks to project sucah as I3S that IStat use more and more collaborative tools.
+National strategies:
+* Norway: all the written code is on github, opensource softwares are used as much as possible. There are huge problems with vendor lockers. Proprietary Clouds could cause the same situation. How should we approach opensource development in a community like I3S ? How the code should be created ? A liberal licence is chosen in order not to be a problem for the people using the code.
+* Sweden: for the softwares used internally, there is no strategy about opensource but things are changing. The statistics on the site are always opensource (in CCBy). For the developped softwares, it is a case by case choice.
+* Istat: there were a lot of lockings with vendors. Istat policy is not to publish all developped software in opensource, but for example, in project like I3S the strategy is to publish everything in opensource. No corporate github account, each developer has its own. It is thanks to project sucah as I3S that IStat use more and more collaborative tools.
 
 
 Linagora question : what is the maturity level of your organisation on the question of opensoruce compliance ?
