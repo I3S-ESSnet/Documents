@@ -16,13 +16,14 @@
 (Relais is a little bit monolithic, the idea of the subcontracting is to break Relais in smaller pieces, then subcontracting is about Relais architecture. Not all the budget will be used), Norway (most of the money is still not used, plan to use it for the Google platform)
 
 ### Communication actions
-What do we do for NTTS ? Deadline for abstract in november.
-ModernStat Workshop, deadline in septembre.
-Discussion at the end of the meeting.
-Ohter ideas ? 
 
-### Questions
-For the next hackathon : multi-located ? yes, it is a possibility.
+In the near future, there are 2 conferences:
+* NTTS, the deadline for abstract is in november.
+* ModernStat Workshop, the deadline for abstract is in september.
+
+### Other topics
+
+Will the next hackathon be multi-located ? Yes, it is a possibility.
 
 ## Lisbon workshop
 
