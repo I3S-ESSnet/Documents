@@ -29,7 +29,7 @@ Will the next hackathon be multi-located ? Yes, it is a possibility.
 
 The objective is to invite beyond the ESS, but there is the question of the budget. The UNECE was willing to help with the budget for inviting people if it is a CSPA event. It is necessary to check that this offer is always on the table. The ESSNet on its own doesn't have the budget for inviting 50 people. We can plan to invite some influencers, the others will have to pay for their participation.
 
-Due to the pandemic situtation we must think about different solutions for the organisation and have a B plan : physical meeting, virtual, mixed meeting : physical and virtual, streaming of the presentation, having chat.
+Due to the pandemic situtation we must think about different solutions for the organisation and have a B plan: physical meeting, virtual, mixed meeting, physical and virtual, streaming of the presentation, having chat...
 
 We plan to have a 2.5 or 3 days meeting, so we need very interactive sessions (technical and non technical).
 * 1st half day (monday 26/4 morning): consortium meeting with Eurostat about the results of the ESSNet and planning for the future
@@ -37,7 +37,7 @@ We plan to have a 2.5 or 3 days meeting, so we need very interactive sessions (t
 * 1-1.5 days of mixed presentations and interactive sessions
 * last half day: a service market and contributions for people coming from outside the consortium
 
-Ideas of presentation/interacive sessions:
+Ideas of presentation/interactive sessions:
 * a discussion on the requirements that make it easier to reuse a service or implement sharable services or put it in practise
 * interactive session on the survey
 * architecture with an interactive session
