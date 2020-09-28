@@ -78,7 +78,7 @@ Reuse of PXWeb: cf. https://github.com/I3S-ESSnet/Documents/blob/master/wp3/pxwe
 
 Main lessons learned from reuse: the collaboration that allows not to create everything from scratch, the feedbacks on the database structure.
 
-Video on PXWeb in Norway : ask the communication department, contact Pedro in order to have the questions for the interview (for next month), then have text available in order to make translations
+A video on PXWeb will be made by the communication department of the Norway institute. INE and INSEE will send the questions for the interview.
 
 ## Architecture
 
