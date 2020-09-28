@@ -53,18 +53,30 @@ Objectives:
 * adapt it to open standards such as .NET Core and HTML5
 * contenairize it
 
-PX-WEb fulfills the CSPA following features:
-* F1. Documentation
-* F2. Internationalization
-....
+PX-Web fulfils the following CSPA features:
+F1. Documentation
+F2. Internationalization
+F6. Security solutions
+F8. Sandboxing for exploration(Demo)
 
-The 2020 version is openSource. New features in summer 2020: Web-API, .Net Core.
+In the near future the following CSPA features will be implemented:
+F3. Open Source
+F9. Containerization
+
+Work done so far:
+* Version 2020 v1 Maj 2020 OpenSource & containerized.
+* PX.Plattform upgraded to .Net Standard
+* PXWebComparer - The testing application.
+* PX.Web-API presentation layer not done.
+
+Roadmap:
+* PX.Web-API (presentationlayer) moved to beginning of 2021
+* PX.Web Nextgen Planned to start after summer 2020 is moved to summer 2021
+* Next PX.Web 2020 v2 planed release date dec 2020 (WCAG)
 
 Reuse of PXWeb: cf. https://github.com/I3S-ESSnet/Documents/blob/master/wp3/pxweb-reuse.md
 
-Pina : for all type of surveys or for specific ones ? For disseminating data
-
-Main lesson learned from reuse : the collaboration that allows not to create everything from scratch, the feedbacks on the database structure
+Main lessons learned from reuse: the collaboration that allows not to create everything from scratch, the feedbacks on the database structure.
 
 Video on PXWeb in Norway : ask the communication department, contact Pedro in order to have the questions for the interview (for next month), then have text available in order to make translations
 
