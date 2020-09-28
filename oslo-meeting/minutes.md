@@ -11,15 +11,9 @@
 
 ### Budget
 
-Staff cost ; Sweden around 100%
-
-Subcontract :
-#### Insee
-==> security audits for ARC, Relais and PXWeb, for Relais and PXWeb tell Insee when the code will be stable
-#### Istat
-a consultant , Relais is a little bit monolithic, the idea of the subcontracting is to break Relais in smaller pieces (so for security audit : wait another few months), so subcontract is about Relais architecture. Not all the budget will be used (check how this budget can be reused)
-#### Norway
-most of the money is still not used, plan to use it for the Google platform
+* The staff cost for Sweden is around 100%. A transfer from other parts of the budget is proposed.
+* Subcontracting: Insee (security audits for ARC, Relais and PXWeb ; for Relais and PXWeb it is necessary to tell Insee when the code is stable), Istat
+(Relais is a little bit monolithic, the idea of the subcontracting is to break Relais in smaller pieces, then subcontracting is about Relais architecture. Not all the budget will be used), Norway (most of the money is still not used, plan to use it for the Google platform)
 
 ### Communication actions
 What do we do for NTTS ? Deadline for abstract in november.
