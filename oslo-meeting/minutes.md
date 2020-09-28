@@ -48,26 +48,19 @@ Ideas of presentation/interactive sessions:
 
 ## PXWeb presentation
 
-Objectives :
+Objectives:
 * publish PX-Web as a shared service
 * adapt it to open standards such as .NET Core and HTML5
 * contenairize it
 
-PX-WEb fulfills the CSPA features :
+PX-WEb fulfills the CSPA following features:
 * F1. Documentation
 * F2. Internationalization
 ....
 
-V2020 : OpenSource
-Summe 2020 : Web-API .Net Core
+The 2020 version is openSource. New features in summer 2020: Web-API, .Net Core.
 
-Questions :
-* FC : the version of April 2021 will be the one delivered for the end of the ESSNet. Hakim : it will be the API on .NEt Core
-* TF : how do this change the initial packaging ?
-* Pina : the one officially use ? 2020 v1
-
-Reuse of PXWeb :
-cf. https://github.com/I3S-ESSnet/Documents/blob/master/wp3/pxweb-reuse.md
+Reuse of PXWeb: cf. https://github.com/I3S-ESSnet/Documents/blob/master/wp3/pxweb-reuse.md
 
 Pina : for all type of surveys or for specific ones ? For disseminating data
 
