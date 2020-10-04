@@ -115,6 +115,11 @@ Questions and remarks :
 Reuse test with the "Division for acquisition of administrative data and integration of sources" at Istat.
 Two administrative sources have been used on the collect and check input phases. The process has been redesigned according to the ARC model.
 
+### Communication
+
+* A flyer is almost finished.
+* A video will be made on the cooperation ARC-Relais (Manuel Soulier and somebody from Istat). INE and Insee will propose a list questions for the interview.
+
 ## Interview on multi-organization open source collaboration
 
 National strategies:
@@ -160,24 +165,18 @@ All partners agree on adding VTL Tools to the scope of I3S.
 * At least a flyer
 * a tutorial for the developers (for the users: a tutorial on the language is on the scope of Eurostat). Istat will be beta user abd codeveloper of a tutorial on Trevas.
 
-## Discussion on various points.
+## Year-end Hackathon
 
-Communication for ARC : a flyer is almost finished, a video will be made on the cooperation ARC-Relais (Manuel Soulier + quelqu'un d'Istat) ==> propose a list questions for the interview (4-5 minutes), see with Pedro
-
-### Year-end Hackathon
-
-subjects :
-* to push on the work on architecture, the cookbook and the examples (part of the architecture work)
+Possible subjects:
+* the work on architecture, the cookbook and the examples (part of the architecture work)
 * finish the deliverables
 * to precise what we want to achieve with the Lisbon workshop
 * ARC-Relais integration
 * the platform (including deployment)
 
-organisation : an orevall linking framework based on the presentation of architecture
+Duration: 5 days ?
 
-duration : 5 days ?
-
-where : at Istat all travels and seminaires are cancelled until the end of the year, the same in every country ?
+Where: at Istat, all travels and seminaires are cancelled until the end of the year, it is more or less the same in every country.
 
 ## Relais
 
@@ -235,11 +234,11 @@ WP3 challenges:
 * Billing and IAM
 
 Discussion:
-* what is delivered in WP2 is just a draft regarding service mesh, so important more important to have a focus on ease of use or documentation
-* first provide blueprint (develop it more around high-level principles, not specific technology because things are constantly evolving)
-* Question reusersWhen and how can I install my application on the platform ? Right now it depends, several way of doing the deployment, first way simply using the docker image and deploy it, but the idea is to provide more tools and services for deployment
+* what is delivered in WP2 is just a draft regarding the service mesh, it is important to have a focus on ease of use or on documentation
+* first provide blueprint (develop it more around high-level principles, not specific technologies because things are constantly evolving)
+* Question interesting reusers: When and how can I install my application on the platform ? Right now it depends, there are several ways of doing the deployment, a first way is simply using the docker image and deploy it, but the idea is to provide more tools and services for deployment
 * we have to decide what is exactly the deliverable for the platform
-* there is two goals in WP3, we want to have a platform for the ESSNet and we want to provide other institutes a blueprint of what could be a platform. Also a third goal : a more permanent offer for the ESS, what happens on the 21st of May 2021 ? Do we shut down the platform or do we offer a platform for the ESS ?
+* there is two goals in WP3, we want to have a platform for the ESSNet and we want to provide other institutes a blueprint of what could be a platform. Is there also a third goal: a more permanent offer for the ESS, what happens on the 21st of May 2021 ? Do we shut down the platform or do we offer a platform for the ESS ?
 
 ## NTTS
 
