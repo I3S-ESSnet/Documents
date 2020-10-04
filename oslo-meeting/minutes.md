@@ -150,17 +150,15 @@ Next steps: summarize the interviews, analyse the code to see if there is compli
 Presentation at : https://github.com/I3S-ESSnet/Documents/blob/master/oslo-meeting/vtl-tools.md
 
 ### Reuse
-
-Questions :
-* Use VTL for questionnaire logic, is it the first implementation ? Probably a first yes (but for now, a simple one). In fact there was a first description of the questionnaire logic, before VTL was available, and it used an adhoc language.
-* we have to find a way to organize the adoption of VTL in the ESS community, this requires the possibility to give feedbacks on the language
+* Is it the first implementation of VTL for the logic of a questionnaire ? Probably yes, but for now it is a simple one. There was a first description of a questionnaire logic, before VTL was available, but it used an adhoc language.
+* We have to find a way to organize the adoption of VTL in the ESS community, this requires the possibility to give feedbacks on the language.
 * How to handle the version of the VTL code ? For now, we don't. There is a development by Eurostat for this functionality.
 
-TO add VTL Tool to scope : Norway ==> OK, Sweden ==> OK, Istat ==> OK
+All partners agree on adding VTL Tools to the scope of I3S.
 
-Communication
+### Communication
 * At least a flyer
-* a tutorial for the developers (for the users : tutorial on the language is the job of Eurostat) ==> Istat as beta users abd codevelopers of a tutorial on Trevas
+* a tutorial for the developers (for the users: a tutorial on the language is on the scope of Eurostat). Istat will be beta user abd codeveloper of a tutorial on Trevas.
 
 ## Discussion on various points.
 
