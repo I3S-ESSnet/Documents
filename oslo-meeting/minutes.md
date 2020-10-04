@@ -171,9 +171,9 @@ Where: at Istat, all travels and seminaires are cancelled until the end of the y
 ## Relais
 
 Work done:
-* porting to PostgreSAL
-* internationalization : now italina and english
-* data load : possible to load data from both file and database
+* porting to PostgreSQL
+* internationalization: now in italian and english
+* data load: possible to load data from both files and databases
 * test reports, quality reports, docker images
 * performance improved, more than 50% faster
 
@@ -184,7 +184,7 @@ Work in progress:
 * improvement of the performance of the record linkage algorithms (Java parallel stream, Apache Spark)
 
 Next steps:
-* documentation : update of architectural documentation, new user guide, tutorial
+* documentation: update of architectural documentation, new user guide, tutorial
 * modular architecture: new client with VueJs, Spring cloud data flow
 * improvement of ARC and RELAIS integration
 
@@ -192,11 +192,11 @@ Next steps:
 
 https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/H19sdPG7w#/
 
-INSEE choosed RELAIS to redesign the linkage process of the BPE application. This application build a important database for INSEE called permanent facilities database (BPE). The permanent facilities database is used to track and keep up to date what community facilities are available on the french territory for a given year. The concept of community facilities is broad and data must be collected each year from several data providers.
+INSEE choosed RELAIS to redesign the linkage process of the BPE application. This application builds an important database for INSEE called "Permanent facilities database" (BPE). The Permanent facilities database is used to track and keep up to date what community facilities which are available on the french territory for a given year. The concept of community facilities is broad and data must be collected each year from several data providers.
 
-BPE use linkage for data consolidation. The BPE statisticians use the BPE application to finalize the integration of the files of the year in the BPE database. To do so, the BPE application proceed and report the result of a linkage between the new year datafile and the previous year datafile. The goal of this linkage is to know what facilities must be kept, deleted of created.
+BPE use linkage for data consolidation. The BPE statisticians use the BPE application to finalize the integration of the files of the year in the BPE database. To do so, the BPE application proceed and report the result of a linkage between the new year datafile and the previous year datafile. The goal of this linkage is to know what facilities must be kept, deleted or created.
 
-The actual BPE linkage requires 3 specific variables with determined name and concept (idsource as facility identifier, typequ : type of facility, adresse1 as the facility location. As a consequence, the statisticians have to rework each of input files to create the required variable with the right name and content. The others variables of the files which could give extra information on the linkage cannot be used. The algorithm is not suitable for all of the provided datasources as sometimes, a variable is missing or other most valuable variables cannot be used.
+The actual BPE linkage requires 3 specific variables with determined name and concept (idsource as facility identifier, typequ: type of facility, adresse1 as the facility location). As a consequence, the statisticians have to rework each of input files to create the required variable with the right name and content. The others variables of the files which could give extra information on the linkage cannot be used. The algorithm is not suitable for all of the provided datasources as sometimes, a variable is missing or other most valuable variables cannot be used.
 
 The statisticians are aware of the BPE linkage limits and feel that using RELAIS is a good opportunity to enhance the BPE linkage and the quality of the final database. A preliminary study document had been written in september 2019. A proof of concept to reuse RELAIS for BPE linkage has started on march 2020. Most of the technical problems had been exposed at the “16 June 2020: Istat-Insee mini-hackathon” and cleared shortly after.
 
