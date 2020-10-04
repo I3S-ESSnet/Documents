@@ -213,17 +213,6 @@ The statisticians are aware of the BPE linkage limits and feel that using RELAIS
 
 The work of evaluating the RELAIS record linkage (the probabilistic and the deterministic one) is in progress. The evaluation of the statistician workflow should occur at the end of 2020 and the use case tested still must be defined.
 
-## NTTS
-
-Deadline : 15th of october
-
-contact the organisation team to discuss what is possible
-
-H-track : softwares, frameworks and tools, specific topic : reusing tools and services
-
-Can we have a specific session ?
-
-
 ## Service deployment
 
 Work done:
@@ -255,23 +244,25 @@ Discussion:
 ## NTTS
 
 https://ec.europa.eu/eurostat/cros/content/ntts-conferences_en
+Deadline for abstracts: 15th of october
+Tracks: softwares, frameworks and tools, specific topic: reusing tools and services
 
-Organize next week a meeting to discuss what we want to submit (no dedicated session for us we have to submit papers), we have to make individual contribution
+It is not possible to have a specific session. We have to make individual contributions. It is necessary to organize a meeting next week in order to discuss what we want to submit.
 
 ## Modernstat world workshop
 
 https://statswiki.unece.org/display/MWW2/ModernStats+World+Virtual+Workshop+2020
 
-Ideas:
-* Communication work, during "the new development" session, about the principles of the communication; (Pedro, Insee)
-* Architecture; (Jakob)
-* Relais-ARC;
+Ideas of presentations:
+* Communication, during "the new development" session, about the principles of the communication (Pedro, Insee)
+* Architecture (Jakob)
+* Relais-ARC
 * Service deployment
 
-Abstract for the 10th of September
+Abstract for the 10th of September.
 
-Same contributions for NTTS ?
+Can we make the same contributions for NTTS ?
 
 ## Other next steps
 
-An intermediary meeting in october ? 2 hours.
+There will be an intermediary meeting in october (duration: 2 hours).
