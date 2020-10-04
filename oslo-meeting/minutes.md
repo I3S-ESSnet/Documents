@@ -118,22 +118,15 @@ Two administrative sources have been used on the collect and check input phases.
 ## Interview on multi-organization open source collaboration
 
 National strategies:
-* Norway: all the written code is on github, opensource softwares are used as much as possible. There are huge problems with vendor lockers. Proprietary Clouds could cause the same situation. How should we approach opensource development in a community like I3S ? How the code should be created ? A liberal licence is chosen in order not to be a problem for the people using the code.
-* Sweden: for the softwares used internally, there is no strategy about opensource but things are changing. The statistics on the site are always opensource (in CCBy). For the developped softwares, it is a case by case choice.
-* Istat: there were a lot of lockings with vendors. Istat policy is not to publish all developped software in opensource, but for example, in project like I3S the strategy is to publish everything in opensource. No corporate github account, each developer has its own. It is thanks to project sucah as I3S that IStat use more and more collaborative tools.
+* Norway: all the written code is on github, opensource softwares are used as much as possible. There are huge problems with vendor lockers. Proprietary Clouds could cause the same situation. How should we approach opensource development in a community like I3S ? How the code should be created ? A liberal licence is chosen in order not to be a problem for the people using the code. The NSI is using opensource softwares, is developing opensource softwares and creating a community around this developments. Creating opensource increases the quality of the code. A policy is defined, licences have been chosen. The most difficult point is the community.
+* Sweden: for the softwares used internally, there is no strategy about opensource but things are changing. The statistics on the site are always opensource (in CCBy). For the developped softwares, it is a case by case choice. There are different stages of maturity in the staff. IT people are quite familiar with the concepts, but are struggling with the practical questions (who is responsible for the core, for fixing bugs ...). Regarding developing opensource softwares, there is mainly PXWeb.
+* Istat: there were a lot of lockings with vendors. Istat policy is not to publish all developped software in opensource, but for example, in project like I3S the strategy is to publish everything in opensource. No corporate github account, each developer has its own. It is thanks to project such as I3S that IStat use more and more collaborative tools. Globally, the maturity level is quite low, it depends on the skills of the staff. Istat started to put the code on github, but there are many different repositories. At the management level, there is not a good awareness of the subject, no process has been defined for producing opensource. Like in Sweden, there are problems with practical questions.
+* Insee : a few years ago, Insee began to publish opensource software. But the organisation was decided bottom-up. Now things are changing, a strategy on the organisation is beginning to be defined. Insee is not at the first level of maturity, perhaps at the second one.
 
-
-Linagora question : what is the maturity level of your organisation on the question of opensoruce compliance ?
-
-France : a few years ago, Insee began to publish opensource software. But the organisation was decided bottom-up, now things are changing, a strategy on the organisation is beginnign to be defined. Not first level of maturity, perhaps second one.
-
-Norway : under ?%. Using os, creating os, creating a community about that. Creating opensource increase the quality of code. Pretty mature, policy in place, licences chosen, (? the difficult point is community)
-
-Sweden : less mature than Norway, different stages of maturity in staff, IT people quite familiar with the concepts, struggling with the practical questions (who is responsible for the code, for fixing bugs ...). Code opensource : mainly PXWeb. When speaking about opendata, the institute is very mature, this is potential for opensource strategy.
-
-IStat : maturity level is quite low, it depends on the skills of colleagues. Starting to put the code on github, but many different repository. Not a good awareness on the management level, no process defined for producing opensource. Like in Sweden, prbms with practical questions. Not yet in the mindset of the whole institute.
-
-Summary : Istat ==> level 1, Sweden and France ==> level 2, Norway ==> level 3
+Summary of the level of maturity :
+* Level 1 : Istat
+* Level 2 : Sweden and France
+* Level 3 : Norway
 
 A parenthesis on compliance. Content of the mission : have a look at the code and provide recommandation regarding the property state. For user part, compliance is mainly copyright respect and licences compatibility. As a producer, copyright respect (respect of the contributions of the developers). There is also the organisation, some don't allow opensource and even co-innovation licences.
 
