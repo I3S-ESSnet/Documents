@@ -76,7 +76,7 @@ Roadmap:
 
 Reuse of PXWeb: cf. https://github.com/I3S-ESSnet/Documents/blob/master/wp3/pxweb-reuse.md
 
-Main lessons learned from reuse: the collaboration that allows not to create everything from scratch, the feedbacks on the database structure.
+Main lessons learned from reuse: the collaboration allows not to create everything from scratch, the feedbacks about the database structure.
 
 A video on PXWeb will be made by the communication department of the Norway institute. INE and INSEE will send the questions for the interview.
 
@@ -84,14 +84,7 @@ A video on PXWeb will be made by the communication department of the Norway inst
 
 https://docs.google.com/document/d/1V154mfO4pkOXuNOljZeN2V80DoxmtZnTvA-Q3UO2Y6o/edit
 
-
-RT : for the management, focus more on cost, in order to make understand the interest of sharing
-
-FC : it is at the good level for the management, could have more feedbakcs from manager. JE : the document is for architects who have to discuss with managers
-
-RT : to be seen online, or to be used for a presentation in a workshop ? JE : many options, could be for a presentation, could be filmed, do it on your own and navigate and focus on what you want ==> it is the main idea of this deliverable, having online/remote workshops (==> also a possibility for an interactive session in Lisbon)
-
-RT : link parts of the presentation to the document ? JE : absolutely
+The document is considered to be at the good level for architects who have to discuss with the managers. So, it will be interesting to have more feedbacks from managers about it. It is suggested to focus more on costs in order to make understand the interest of sharing. The document may be used in many ways, it can be seen online or used for a presentation in a workshop, it could be filmed ... it is the main idea of this deliverable.
 
 ## ARC
 
