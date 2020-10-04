@@ -121,32 +121,29 @@ National strategies:
 * Norway: all the written code is on github, opensource softwares are used as much as possible. There are huge problems with vendor lockers. Proprietary Clouds could cause the same situation. How should we approach opensource development in a community like I3S ? How the code should be created ? A liberal licence is chosen in order not to be a problem for the people using the code. The NSI is using opensource softwares, is developing opensource softwares and creating a community around this developments. Creating opensource increases the quality of the code. A policy is defined, licences have been chosen. The most difficult point is the community.
 * Sweden: for the softwares used internally, there is no strategy about opensource but things are changing. The statistics on the site are always opensource (in CCBy). For the developped softwares, it is a case by case choice. There are different stages of maturity in the staff. IT people are quite familiar with the concepts, but are struggling with the practical questions (who is responsible for the core, for fixing bugs ...). Regarding developing opensource softwares, there is mainly PXWeb.
 * Istat: there were a lot of lockings with vendors. Istat policy is not to publish all developped software in opensource, but for example, in project like I3S the strategy is to publish everything in opensource. No corporate github account, each developer has its own. It is thanks to project such as I3S that IStat use more and more collaborative tools. Globally, the maturity level is quite low, it depends on the skills of the staff. Istat started to put the code on github, but there are many different repositories. At the management level, there is not a good awareness of the subject, no process has been defined for producing opensource. Like in Sweden, there are problems with practical questions.
-* Insee : a few years ago, Insee began to publish opensource software. But the organisation was decided bottom-up. Now things are changing, a strategy on the organisation is beginning to be defined. Insee is not at the first level of maturity, perhaps at the second one.
+* Insee: a few years ago, Insee began to publish opensource software. But the organisation was decided bottom-up. Now things are changing, a strategy on the organisation is beginning to be defined. Insee is not at the first level of maturity, perhaps at the second one.
 
 Summary of the level of maturity :
-* Level 1 : Istat
-* Level 2 : Sweden and France
-* Level 3 : Norway
+* Level 1: Istat
+* Level 2: Sweden and France
+* Level 3: Norway
 
-A parenthesis on compliance. Content of the mission : have a look at the code and provide recommandation regarding the property state. For user part, compliance is mainly copyright respect and licences compatibility. As a producer, copyright respect (respect of the contributions of the developers). There is also the organisation, some don't allow opensource and even co-innovation licences.
+A parenthesis on compliance: the Linagora mission will have a look at the code and provide recommandation regarding the property state ; for the users compliance is mainly a question of copyright respect and licences compatibility ; for the producers, compliance is mainly a question of copyright respect (respect of the contributions of the developers).
 
-A questionnaire for auto-evaluation : yes, the first question is about your perception of maturity, and then "do you allow us to evaluate your maturity". 2 more questions : "do you have any private venture partners who reuse the code, whith whom you share the code ?", "do you have subcontractors for developing the code ?"
+In order to make an auto-evaluation you have to answer these questions: 
+* what is your perception of your maturity ?
+* do you have any private venture partners who reuse the code, whith whom do you share the code ?
+* do you have subcontractors for developing the code ?
 
-Subcontract :
-Norway : consultants who write code, ownership of the code to StatNorway, and the consultant have to produce opensouce code. Some projects with other entities, but don't have to produce opensource because of the partners
-Sweden : not different from Norway.
-Istat : subcontractors, so Istat owner of the code, have to be cuatious sometimes because the code remains teh property of the company and only the finished product is owned by Istat. No partners, but work with entities like agencies wich are interested in the service of Istat.
+Subcontracting:
+* Norway: there are consultants who write code, StatNorway has the ownership of the code, the consultants have to produce opensouce code. There are some projects with other entities, but these projects don't produce opensource because of the partners.
+* Sweden: same situation as Norway.
+* Istat: there are subcontractors, Istat owns of the code. The NSI has to be cautious, because sometimes the code remains the property of the company and only the finished product is owned by Istat. No partners, but there are some projects with entities like agencies wich are interested in the services of Istat.
 
-Linagora question : first idea of the role of each one of us in term of legalship, contribution to the roadmap ?
-Trygve : this is a tricky part of opensource, the choice of the licence has an impact on the legal question. Question for the community : collaborate on an existing code or fork it ? The hard part is to decide a governance for the project.
-Istat: the main pbm is the management of the project, the capacity to have people contributing for a long period.
+Linagora question: let's say you all agree to let eurostat lead your co-innovation community, would you all agree to transfer your intellectual property rights in a non-exclusive way to Eurostat ? In order to allow Eurostat to have the same rights as you on the code ?
+It is not easy for NSIs to give the answer to this question.
 
-Linagora : let's say you all agree to let eurostat lead your co-innovation community, would you all agree to transfer your intellectual property rights in a non-exclusive way to Eurostat ? In order to allow Eurostat with the same rights as you on the code ?
-France and Istat : not sure it is possible.
-Istat : in the case of IS2, the software has been created in the context of Eurostat (an ESSNet)
-Sweden : not sure to understand the complexity of the subject. Linagora : the question is if all of us want to have Eurostat on the copyright.
-
-Next steps : summarize the interviews and the same time analyse the code to see if there is compliance action to undertake. If there is compliance breaches, first estimation of the worload to correct will be given. A scenario for a general organisation will be also delivered.
+Next steps: summarize the interviews, analyse the code to see if there is compliance actions to undertake. If there is compliance breaches, a first estimation of the worload to correct them will be given. A scenario for a general organisation will be also delivered.
 
 ## VTL presentation
 
