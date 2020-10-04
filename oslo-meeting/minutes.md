@@ -90,23 +90,20 @@ The document is considered to be at the good level for architects who have to di
 
 Presentation at : https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/H1t_OfXXP#/
 
-ESSNET core engine version is now the same as the INSEE ARC core engine production version. The deployment of the ARC essnet version in INSEE production is planned for the end of the year.
+The ESSNet core engine version is now the same as the INSEE ARC core engine production version. The deployment of the ARC ESSNet version in INSEE production is planned for the end of the year. ARC is more and more reused in INSEE. ESSNET helps a lot for that as it gives more visibility to the applications involved in the project. I3S helps ARC to enhance the quality, the performance and the documentation of the application. These are important points for the business decision makers.
 
-ARC is more and more reused in INSEE. ESSNET helps a lot for that as it gives more visibility to the applications involved in the project. I3S helps ARC to enhance the quality, the performance and the documentation of the application. These are important points for the business decision makers.
-
-ARC REST webservices to execute ARC modules have been developped in august. These webservices were were the needer for an internal ARC reuse case for the Insee project SIRENE4. This will also allow to finalize the ARC-IS2 integration for november. A further step will be to test the data and workflow sharing between ARC and Relais.
+ARC REST webservices to execute ARC modules have been developped in August. These webservices were needed for an internal ARC reuse case for the Insee project SIRENE4. This will also allow to finalize the ARC-IS2 integration for November. A further step will be to test the data and workflow sharing between ARC and Relais.
 
 An ARC Tutorial has been written after the 16/06 virtual hackathon to present the ARC concepts and how to proceed with simple csv files : https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/rJzPiJp3U
 
 Questions and remarks :
-* link between ARC and IS2 ? It will be a good thing to have a standalone ARC for heavy production, but it will also a good thing to have ARC intergated into IS2 in order to be used directly by statistical expert. We can see that there arer two business cases here.
-* adding functionality in IS2 is currently a beta feature. Istat want to have a roadmap for fianlizing this functionalityt by the end of the EssNet.
-* Have some effort been made for configuring the database and chosse the database engine (other than Postgresql for example) ? Not yet, an objective for ARC was to be able to load huge amounts of data, so the use of database is very optimized and sopecific to PostgreSQL. So if it is needed to use another database engine or to load another kind of data sources, it will require a lot of developments.
+* What is the link between ARC and IS2 ? It will be a good thing to have a standalone ARC for heavy production, but it will also be a good thing to have ARC integrated into IS2 in order to be used directly by statistical expert. We can see that there arer two business cases here.
+* Adding functionality in IS2 is currently a beta feature. Istat wants to have a roadmap for finalizing this functionality by the end of the ESSNet.
+* Have some efforts been made for configuring the database and choose the database engine (other than Postgresql for example) ? Not yet, an objective for ARC was to be able to load huge amounts of data, so the use of database is very optimized and specific to PostgreSQL. If it is needed to use another database engine or to load another kind of data sources, it will require a lot of developments.
 
 ### Reuse case
 
-Reuse test with the "Division for acquisition of administrative data and integration of sources" at Istat.
-Two administrative sources have been used on the collect and check input phases. The process has been redesigned according to the ARC model.
+Reuse test with the "Division for acquisition of administrative data and integration of sources" at Istat. Two administrative sources have been used on the collect and check input phases. The process has been redesigned according to the ARC model.
 
 ### Communication
 
