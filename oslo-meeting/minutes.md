@@ -256,7 +256,7 @@ Can we make the same contributions for NTTS ?
 
 There will be an intermediary meeting in october (duration: 2 hours).
 
-## Action plan
+## Actions plan
 
  * All
    * Finalize next hackathon organisation
