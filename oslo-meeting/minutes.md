@@ -5,7 +5,7 @@
 ### Deliverables
 
 * It is necessary to resubmit D1.2.1 (ARC Service) because things have evolved since the last submission.
-* D2.1: the final version is planned for M24, but the last months will be necessary to really finalize it. Same situation for the Cookbook. The communication deliverable will be more like a draft by the end of the year.
+* D2.1: the final version is planned for M28. Same situation for the Cookbook. The communication deliverable will be more like a draft by the end of the year.
 * D3.1.1 (blueprint): it is currently a draft, some elements have been delivered on github (part documentation, part code). Now final is planned for M28, but it will be a good thing to begin to deploy the services before M27.
 * D1.5 (Guidelines and best practise): it is necessary to have a discussion around the document in order to move forward (during this hackathon and the next one). There is a possible overlap with other deliverables (especially the deliverable on architecture). It is intended to focus the guidelines on the experience and practise of integrating and reusing.
 
