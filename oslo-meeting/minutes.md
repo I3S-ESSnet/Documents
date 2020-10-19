@@ -264,8 +264,8 @@ There will be an intermediary meeting in october (duration: 2 hours).
    * Input for the UNECE Workshop
 
  * Sweden
-   * D2.1 (Guidelines) and Cookbook, final in M24.
-   * Communication deliverable, draft in M24
+   * D2.1 (Guidelines) and Cookbook, final in M27.
+   * Communication deliverable, draft in M27
 
  * Norway
    * Deploy the services on the platform before M27
