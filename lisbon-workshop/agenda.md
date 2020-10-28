@@ -6,7 +6,7 @@
 
 The consortium will present the project's result to Eurostat
 
-Also finalization of the workshop's organization
+Also finalization of the workshop's organization (proceeding notes,etc.)
 
 ### [14:00-17:00] Session 1 - ESSnet results
 
@@ -14,18 +14,40 @@ General presentations about the ESSnet and its results
 
 ## Day 2, April 27th
 
-Detailed presentations on the main deliverables. Each session will consist of a presentation followed by a more hands-on activity (tutorial, "bring your own use case", etc.)
+### [10:00-12:30] Session 2 - Detailed presentations on the main deliverables
+
+Each session will consist of a presentation followed by a more hands-on activity (tutorial, "bring your own use case", etc.). Might have to be organized in parallel tracks.
+
+### [14:00-17:00] Session 3 - CSPA session (find a better name?)
+
+  * presentation of CSPA 2.0 (30 minutes)
+  * the catalogue (30 minutes)
+  * the Sinder (30 minutes)
+  * coffee break
+  * discussion on the requirements that make it easier to reuse a service or implement sharable services or put it in practice
+  * VTL presentation (1 hour)
 
 ## Day 3, April 28th
  
-### Morning
+### [10:00-12:30] Session 4 - Interactive sessions
 
-Interactive sessions (foot voting, breakout groups, etc.)
+  * foot voting, breakout groups, etc.
+  * Contenairisation for dummies
+  * architecture with an interactive session
+  * "I build my statistical process with the services in the Catalogue", in small groups
 
-### Afternoon
+### [10:00-12:30] Session 5 - “More hands-on"
 
-External inputs (requires call for contributions)
+  * bring your own data in PXWeb or Relais
+  * bring your own app in the platform
+  * practical session on the IS2 Workbench
+  * external inputs (requires call for contributions)
+  * sustainability / what next?
+  * market place
 
-Sustainability / What next?
+## Other ideas
 
-Market place
+  * presentation of the awesome list by CBS?
+  * opensource strategy of NSIs?
+  * more than "contenairisation for dummies": "cloud for dummies"
+  * presentations by services owners and users
