@@ -8,17 +8,17 @@ The consortium will present the project's result to Eurostat
 
 Also finalization of the workshop's organization (proceeding notes,etc.)
 
-### [14:00-17:00] Session 1 - ESSnet results
+### [14:00-17:00] Session 1 - ESSnet results (resp. FR)
 
 General presentations about the ESSnet and its results
 
 ## Day 2, April 27th
 
-### [10:00-12:30] Session 2 - Detailed presentations on the main deliverables
+### [10:00-12:30] Session 2 - Detailed presentations on the main deliverables (resp. PT)
 
 Each session will consist of a presentation followed by a more hands-on activity (tutorial, "bring your own use case", etc.). Might have to be organized in parallel tracks.
 
-### [14:00-17:00] Session 3 - CSPA session (find a better name?)
+### [14:00-17:00] Session 3 - CSPA session (find a better name?) (resp. SE)
 
   * presentation of CSPA 2.0 (30 minutes)
   * the catalogue (30 minutes)
@@ -29,14 +29,14 @@ Each session will consist of a presentation followed by a more hands-on activity
 
 ## Day 3, April 28th
  
-### [10:00-12:30] Session 4 - Interactive sessions
+### [10:00-12:30] Session 4 - Interactive sessions (resp. IT)
 
   * foot voting, breakout groups, etc.
   * Contenairisation for dummies
   * architecture with an interactive session
   * "I build my statistical process with the services in the Catalogue", in small groups
 
-### [10:00-12:30] Session 5 - “More hands-on"
+### [14:00-17:00] Session 5 - “More hands-on" (resp. NO)
 
   * bring your own data in PXWeb or Relais
   * bring your own app in the platform
@@ -48,6 +48,6 @@ Each session will consist of a presentation followed by a more hands-on activity
 ## Other ideas
 
   * presentation of the awesome list by CBS?
-  * opensource strategy of NSIs?
-  * more than "contenairisation for dummies": "cloud for dummies"
+  * open source strategy of NSIs?
+  * more than "containerisation for dummies": "cloud for dummies"
   * presentations by services owners and users
