@@ -7,6 +7,7 @@ The meeting will be virtual and organized in three mornings from 13 to 15 Januar
  
 ### Track 1 - Development of test services (resp. SE)
 
+TODO SE to specify test services
 
 ### Track 2 - Service reuse (resp. IT)
 
@@ -15,9 +16,16 @@ The meeting will be virtual and organized in three mornings from 13 to 15 Januar
 
 ### Consortium meeting (resp. FR)
 
+  * Budget consumption
+  * Deliverables
+  * Service re-use: NO to report on recent activity
+  * Organize for NTTS (if paper accepted)
+
 
 ## Day 3, January 15th, 9:00-12:30
  
 ### Track 1 - Deployment of test services (resp. NO)
 
 ### Track 2 - Lisbon meeting (resp. PT)
+
+Based on meetings of the organizing committee
