@@ -18,8 +18,8 @@ TODO SE to specify test services
 
   * Budget consumption
   * Deliverables
-  * Service re-use: NO to report on recent activity
   * Organize for NTTS (if paper accepted)
+  * Project wrap-up and follow-up
 
 
 ## Day 3, January 15th, 9:00-12:30
