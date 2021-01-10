@@ -11,6 +11,9 @@ TODO SE to specify test services
 
 ### Track 2 - Service reuse (resp. IT)
 
+  * PXweb reuse: state of play (NO)
+  * ARC reuse: state of play (IT)
+  * Relais reuse: state of play (FR)
 
 ## Day 2, January 14th, 9:00-12:30
 
