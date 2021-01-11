@@ -13,6 +13,7 @@ The following documents and pages are available:
     * [Rome hackathon](rome-hackathon/README.md)
     * [Toulouse hackathon](toulouse-hackathon/README.md)
     * ["Oslo" virtual meeting](oslo-meeting/README.md)
+    * ["Paris" virtual meeting](paris-meeting/README.md)
     * Other [meeting notes](meeting-notes/README.md)
   * Work packages
     * [WP1](wp1/README.md)

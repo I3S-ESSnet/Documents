@@ -21,17 +21,19 @@ TODO SE to specify test services
   * ARC reuse: state of play (IT)
   * Relais reuse: state of play (FR)
 
-## Day 2, January 14th, 9:00-12:30
+
+## Day 2, January 14th, 9:30-12:30
 
 ### Consortium meeting (resp. FR)
 
+  * Results of Wednesday tracks
   * Budget consumption
   * Deliverables
   * Organize for NTTS (if paper accepted)
   * Project wrap-up and follow-up
 
 
-## Day 3, January 15th, 9:00-12:30
+## Day 3, January 15th, 9:30-12:30
  
 ### Track 1 - Deployment of test services (resp. NO)
 
@@ -43,3 +45,4 @@ Based on meetings of the organizing committee
   * Discussion and improvements on the agenda
   * Definition of concrete actions for each item
 
+### Meeting conclusions (resp. FR)
