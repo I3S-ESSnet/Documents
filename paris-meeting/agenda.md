@@ -2,8 +2,14 @@
 
 The meeting will be virtual and organized in three mornings from 13 to 15 January 2021. The main topics of the meeting will be: service re-use, service deployment and communication.
 
- 
+
 ## Day 1, January 13th, 9:00-12:30
+
+### Meeting kick-off
+
+  * Meeting intro, overview of agenda (FR)
+  * Presentation of Wednesday and Friday tracks (SE, IT, NO, PT)
+  * Distribution of attendees in tracks
  
 ### Track 1 - Development of test services (resp. SE)
 
@@ -32,3 +38,8 @@ TODO SE to specify test services
 ### Track 2 - Lisbon meeting (resp. PT)
 
 Based on meetings of the organizing committee
+
+  * Presentation of the [draft agenda](../lisbon-worksop/agenda.md)
+  * Discussion and improvements on the agenda
+  * Definition of concrete actions for each item
+
