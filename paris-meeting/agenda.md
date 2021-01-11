@@ -39,7 +39,7 @@ TODO SE to specify test services
 
 Based on meetings of the organizing committee
 
-  * Presentation of the [draft agenda](../lisbon-worksop/agenda.md)
+  * Presentation of the [draft agenda](../lisbon-workshop/agenda.md)
   * Discussion and improvements on the agenda
   * Definition of concrete actions for each item
 
