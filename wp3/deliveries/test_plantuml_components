@@ -1,0 +1,33 @@
+@startuml "Container pattern"
+!includeurl https://raw.githubusercontent.com/RicardoNiepel/C4-PlantUML/master/C4_Container.puml
+
+'LAYOUT_TOP_DOWN
+LAYOUT_LEFT_RIGHT
+LAYOUT_WITH_LEGEND()
+
+title Container pattern
+
+Container_Boundary(c1, "Data storage") {
+  Container_Boundary(c2,"API") {
+    Container(transfer,"Web services","Web services for data transfer","blabla")  
+    Container(querylanguage, "Query language","Query data and metadata in data storage","blabla")
+  }
+  Container(schema,"Schema","Schema for data storage","blabla")
+  Container(security,"Security","Security components","For securing dataplattform, encryption access control etc")
+  Container(transaction,"Transaction","Transaction handling with services","blabla")
+  Container(index,"Index","Index components","blabla")
+  Container(streams,"Streams","Components for handling data streams","blabla")
+  Container(localtrans,"Local transactions","Not sure what this is!!","Saga??")
+  Container(datastorage1,"Data storage","Data storage components fit for purpose","blabla")
+  Container(datastorage2,"Data storage","Data storage components fit for purpose","blabla")
+  Container(datastorage3,"Data storage","Data storage components fit for purpose","blabla")
+}
+
+Container_Boundary(c0, "Applications") {
+  Container(workbench,"Workbench","notebook","End user components for handling data and business functions")
+  Container(language,"Information modeling","Modeling language for data and metadata","blabla")
+  Container(storagebrowser,"Browsing data storage","Components for accessing data and metadata","blabla")
+  Container(model2schema,"Model transformation","Transforming model to schema","blabla")
+  Container(services,"Process services","Process oriented services","blabla")
+}
+@enduml
