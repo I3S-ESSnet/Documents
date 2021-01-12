@@ -33,7 +33,7 @@ See also the [Slack channel](https://i3s-essnet.slack.com/archives/CSDHL7YPM)
 ### Track 2 - Service reuse (resp. IT)
 
   * PXweb reuse: state of play (NO)
-  * ARC reuse: state of play, see [draft reuse report](../../wp1/arc/ARC reuse deliverable_Jan2021.docx) (IT)
+  * ARC reuse: state of play, see [draft reuse report](../wp1/arc/ARC reuse deliverable_Jan2021.docx) (IT)
   * VTL tools: state of play (FR)
   * Relais reuse: state of play (FR)
 
