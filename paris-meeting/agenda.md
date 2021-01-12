@@ -26,7 +26,8 @@ Starting off with two connected services in dire need of a third to handle dual 
   * ErrorLocalization - a service for flagging answers as faulty based on rule set
 
 Preparations can be made, development environment described in [dedicated repository](https://github.com/I3S-ESSnet/ExampleServices)
-Se also the [Slack channel]: (https://i3s-essnet.slack.com/archives/CSDHL7YPM)
+
+See also the [Slack channel](https://i3s-essnet.slack.com/archives/CSDHL7YPM)
 
 
 ### Track 2 - Service reuse (resp. IT)
