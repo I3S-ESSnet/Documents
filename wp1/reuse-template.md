@@ -30,15 +30,25 @@
 
 ### Business case
 
-### Service usage
+Issue to address, problems with current solution (or lack of), etc.
 
-#### Description
+### Service reuse
+
+#### General description
+
+#### As-Is and To-Do architectures
 
 #### Technical details
 
 #### Organizational impact
 
+Integration of the service in the process flow.
+
+#### Project management
+
 #### Other aspects (e.g. financial)
+
+#### Results achieved
 
 ## Lessons learned
 
@@ -48,4 +58,4 @@
 
 ### General feedback
 
-## Conclusions
+## Conclusions and next steps
