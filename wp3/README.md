@@ -2,7 +2,7 @@
 
 ## Blueprint 
 
-[Blueprint (draft)](blueprint.md)
+[Blueprint (draft)](deliveries/d3-1-1-blueprint.md)
 
 This directory is used to store various materials used and produced by the WP3 team.
 
