@@ -1,6 +1,6 @@
 # Implementing Shared Statistical Services - Reuse Report
 
-## Introduction
+## 1. Introduction
 
 ### Reporting organization
 Statistics Norway (SSB)
@@ -11,7 +11,7 @@ v0.0.1
 ### Report date
 ### Contact mail
 
-## Service reused
+## 2. Service reused
 
 ### Publisher
 Statistics Sweden (SCB)
@@ -30,7 +30,7 @@ PxWeb 2019
    * 2019: https://www.scb.se/PxMeeting2019
    * 2018: https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/international-px-meeting/
 
-## Service reuse
+## 3. Service reuse
 ### Context
 ### Business case
 > Issue to address, problems with current solution (or lack of), etc.
@@ -184,9 +184,11 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 #### Results achieved
 
 ## Lessons learned
+## 4. Lessons learned
 
 ### Problems encountered
 ### Missing functionalities
 ### General feedback
 
 ## Conclusions and next steps
+## 5. Conclusions and next steps
