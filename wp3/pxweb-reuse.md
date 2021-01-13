@@ -53,6 +53,9 @@ We also made our first pubic API for Statbank in 2013 based on some of these .Ne
 
 However our Statbank struggled to keep up with technical debt and around 2014 we looked to do some upgrading and decided to make the switch to PxWeb.
 
+- [ ] Move the previous paragraphs to Context chapter?
+- [ ] Explain business case more , in SSB everybody has to disimiant thought Statbank
+
 ### Service reuse
 
 #### General description
@@ -186,16 +189,20 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 
 #### Organizational impact
 > Integration of the service in the process flow.
+
 #### Project management
 #### Other aspects (e.g. financial)
 #### Results achieved
 
-## Lessons learned
+- [ ] opensourcing
+- [ ] plattform independent libraries
+
 ## 4. Lessons learned
 
 ### Problems encountered
+- [ ] containerizing windows web applications
 ### Missing functionalities
 ### General feedback
+- [ ] learning cloud and container technologies
 
-## Conclusions and next steps
 ## 5. Conclusions and next steps
