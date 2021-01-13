@@ -27,6 +27,7 @@ PxWeb 2019
 * Documentation
   * https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/
 *  Presentations at last PX meetings
+   * 2020: https://www.scb.se/px-meeting-2020
    * 2019: https://www.scb.se/PxMeeting2019
    * 2018: https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/international-px-meeting/
 
