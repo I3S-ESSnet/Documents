@@ -109,6 +109,12 @@ To play safe we split the launch in to parts
 ![PxWebApi launch 2016](pxwebapi-launch.jpg)
 
 #### As-Is and To-Do architectures
+
+![PxWeb future](pxweb-tobe-arch.png)
+[PxWeb 2020 presentation](https://www.scb.se/globalassets/vara-tjanster/px-programmen/pxweb_2020v2_micke-petros.pdf)
+
+- [ ] expand on this
+
 #### Technical details
 ##### JSON-stat
 One of our other contributions to PxWeb has been implementation of the  JSON-stat Dataset output format. I was the format we chose for our first api i 2013 and both JSON-stat v1.2 and 2.0 are available in PxWeb.
