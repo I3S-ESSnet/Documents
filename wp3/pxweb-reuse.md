@@ -54,7 +54,7 @@ We also made our first pubic API for Statbank in 2013 based on some of these .Ne
 However our Statbank struggled to keep up with technical debt and around 2014 we looked to do some upgrading and decided to make the switch to PxWeb.
 
 - [ ] Move the previous paragraphs to Context chapter?
-- [ ] Explain business case more , in SSB everybody has to disimiant thought Statbank
+- [ ] Explain business case more, in SSB everybody has to disiminate throught the Statbank
 
 ### Service reuse
 
