@@ -44,6 +44,7 @@ See also the [Slack channel](https://i3s-essnet.slack.com/archives/CSDHL7YPM)
 ### Consortium meeting (resp. FR)
 
   * Results of Wednesday tracks
+  * Overview of work packages
   * Budget consumption
   * Deliverables
   * Organization for NTTS
