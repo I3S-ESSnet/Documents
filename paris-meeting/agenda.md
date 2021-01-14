@@ -46,7 +46,7 @@ See also the [Slack channel](https://i3s-essnet.slack.com/archives/CSDHL7YPM)
   * Results of Wednesday tracks
   * Budget consumption
   * Deliverables
-  * Organize for NTTS (if paper accepted)
+  * Organization for NTTS
   * Project wrap-up and follow-up
 
 
