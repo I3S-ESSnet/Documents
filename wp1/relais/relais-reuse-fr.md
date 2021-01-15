@@ -137,6 +137,7 @@ The "Equipement initialization" component would be processed by RELAIS
 
 #### Project management
 
+* focus on the REUSE organization ?
 
 #### Other aspects (e.g. financial)
 
@@ -167,7 +168,8 @@ The "Equipement initialization" component would be processed by RELAIS
 - is2 workbench is such a good idea for the stasticians work
 
 - great collaboration with ISTAT to continue if possible
-
+    - important that the producer is avalaible for feedbacks, enhancements, technical and methodologic supports
+ 
 ## Conclusions and next steps
 - discuss with ISTAT and contribute to cover the missing functionalities ?
 - implement a chain of deterministic linkages which looks like the old BPE application process
