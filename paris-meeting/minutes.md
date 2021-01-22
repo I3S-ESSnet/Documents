@@ -142,3 +142,52 @@ What messages do we want to give about sharing services :
 Franck, Mauro and Jakob will collaborate in preparing the presentation, Pedro will be the reader.
 
 
+## Day 3
+
+### Deployment session
+
+Reproducing the method for deploying IS2 and ARC, the services developed during the workshop have been successfully deployed. Some difficulties were encountered, they will be documented.
+
+## Lisbon workshop
+
+Miro dashboard : https://miro.com/app/board/o9J_lb4VPS0=/
+
+Physical or digital ?
+* if physical: 3 days.
+  * First morning: consortium meeting. First afternoon: whole presentation of the results of the project + special topics
+  * Second morning: topic on statistical services. Second afternoon: architecture
+  * Third morning: Cloud and containers. Third afternoon: communication.
+* if digital : one morning and three afternoon
+
+Considering the pandemic situation, it is decided to make a virtual workshop:
+* First morning: consortium meeting. First afternoon: whole presentation of the results of the project + special topics
+* Second afternoon: topic on architecture, an introductory presentation and then discussion groups
+* Third afternoon: joint topic on Services and Cloud, an introductory presentation then discussion groups
+
+Possible roadmap for organizing the workshop:
+* publish on github the agenda decided during the Paris workshop
+* give deadline to session chairmen for providing the introductory presentation of each afternoon
+* describe the organisation of the discussion groups (managers, statistician and architects, developers)
+* find who will make the two special topic presentations
+* determine the list of people to who send the invitation for the Workshop
+* send the invitation in february
+* book the webconference sessions
+
+## Conclusion
+
+
+* Lot of work done, now we have to concentrate on documentation and deliverables
+* Work on service reuse report (Istat pilot)
+* Work on the Services Cookbook (Sweden pilot)
+* Preparation of NTTS (preparation crew, Pedro reviewer) (program received)
+* Lisbon: it will be virtual, the agenda has be adapted (consortium meeting ; results of the ESSNet ; two sessions on Architecture then Services and Cloud, each with discussion groups by profiles)
+* Questions on the after-project
+* We agree on our mains takeways:
+  * Reusing services works concretely (the plug and play promise)
+  * Open source forster collaboration for development and deployment
+* Lots of questions on what strategy to adopt to push these ideas
+  * top down: lobby ESS governance (mainly DIME-ITDG)
+  * bottom up: set up communities, bi-/multi-lateral MOUs
+* Have to liaise back with the MOS
+  * "Sharing tools" activity stopped
+  * Propose a new activity, or project for 2022?
