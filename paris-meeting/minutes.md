@@ -49,5 +49,20 @@ More specifications are needed if we want to communicate about the results. It i
 
 ## Track 2
 
+3 reuse cases :
+* The **PXWeb** reuse case is interesting but too general, it has to be precised.
+* **ARC** reuse case, demonstration of ARC in I2S workbench
+* Meeting with Insee colleagues who want to reuse **Relais** at Insee
+
+Eurostat will opensource the VTL editor they are developing, the aimed licence is EUPL.
+
+Lot of progress has been made on the Trevas VTL engine. A video on Trevas can be found here: http://krmes.info/videos/Trevas-demo.mkv. It is now working with Spark, it is planned to deploy it on a kubernetes cluster.
+
+Thanks to the deployathon, it has been possible to gain experience on deploying on a public Cloud like (GCP), to do it properly you have to be completely in an Infra as code logic, and for this you need different competences from those needed for pre-cloud resources.
+
+## Consortium meeting
+
+### WP1
+
 
 
