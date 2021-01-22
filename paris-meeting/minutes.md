@@ -160,8 +160,8 @@ Physical or digital ?
 * if digital : one morning and three afternoon
 
 Considering the pandemic situation, it is decided to make a virtual workshop:
-* First morning: consortium meeting. First afternoon: whole presentation of the results of the project + special topics
-* Second afternoon: topic on architecture, an introductory presentation and then discussion groups
+* First morning: consortium meeting. First afternoon: whole presentation of the results of the project + special topic: "Fostering the cooperation"
+* Second afternoon: topic on architecture, an introductory presentation and then discussion groups + special topic: "Service integration (VTL ...)"
 * Third afternoon: joint topic on Services and Cloud, an introductory presentation then discussion groups
 
 Possible roadmap for organizing the workshop:
