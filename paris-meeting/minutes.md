@@ -88,6 +88,42 @@ The flyers have to be updated because they were intended for a physical meeting,
 
 The changes made in the budget have been presented.
 
+### Deliverables and next steps
+
+Actions for all WP leaders: 
+* D5.1.5 Intermediary report 2, October 2020 : each WP leader has to update update the 1st report (see attachment), before end of january
+* D5.5 Monitory report 4, January : each WP leader has to fill in the january monthly report, before end of january
+ 
+Actions for WP1 leader:
+* D1.2.2 Report on reuse of Service 1: May. Before May contact Manu for completing the document
+* D1.3.2 Report on reuse of Service 2: May. Before May contact Istat (!) for completing the document
+* D1.4.2 Report on reuse of Service 3: May. Before May contact Rune for completing the document
+* D1.5 Guidelines on best practices, May : send a draft version before the end of january
+ 
+Actions for WP2 leader:
+* D2.1 Software and integration architecture recomendations, May : send a draft version before the end of february
+* D2.2 Cookbook on integration & use, May : send a draft version before the end of february
+* D2.3.1 Interactive report/guidance with examples: May
+* D2.3.2 Presentation on services and integration methods: May. 2.3.1 and 2.3.2 are very similar, it is aimed to do something simple
+ 
+Actions for WP3 leader:
+* D3.1.1 Blueprint for the platform, including technology stack, March : the documentation (guidance high level principle, exploiting documentation)
+* D3.1.2 Cloud platform implementing the blueprint, April : make a delivery slip like those for the service deliverables
+* D3.3 Report on lessons learned, May : send a draft version before the end of february
+ 
+Actions for WP4 leader:
+* D4.1 Communication package on how to move to a service based architecture, May : will contain the survey, with the main elements about the results (cf. UNECE presentation) and the Sinder transformed into a specification for the CSPA catalogue. Send a draft version before the end of february.
+* D4.2 Success stories, May : ARC and PXWeb videos to be provided
+* D4.3 Lisbon Workshop, May : possible roadmap
+** publish on github the agenda decided during the Paris workshop
+** give deadline to session chairmen for providing the introductory presentation of each afternoon
+** describe the organisation of the discussion groups (managers, statistician and architects, developers)
+** find who will make the two special topic presentations
+** determine the list of people to who send the invitation for the Workshop
+** send the invitation in february
+** book the webconference sessions
+
+
 ### NTTS presentation
 
 Jakob will make the wrapping with his interactive presentation. We have to determine in which session we are and then decide which points we want to communicate. The topic could be "Track H. Frameworks, software and tools" (see NTTS program : https://www.conference-service.com/NTTS2021/documents/NTTS%202021%20topics_final.pdf)
