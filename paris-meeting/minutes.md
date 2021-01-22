@@ -43,3 +43,11 @@ At the starting point, the code list (countries) is hard coded in the two servic
 
 Goal : create a Codelist service and make changes to CAWI and Error Localization to use the REST CodeList service.
 
+Marco and Trygve worked on the Error Localisation service, in  java, Romain and Benoît on the Codelist Service in Python, and Patrick and Jon on CAWI in .NetCore.
+
+More specifications are needed if we want to communicate about the results. It is also necessary to be able to run the services on one computer and to create Docker images to make easily a demonstration.
+
+## Track 2
+
+
+
