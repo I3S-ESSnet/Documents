@@ -12,3 +12,4 @@ Overall goal is further development of IS2 and integration of additional functio
   * Improve process and provenance metadata capture
   * Implement distributed treatments for big data
   * Integrate more functionalities (e.g. VTL transformations)
+  * Access control and securing
