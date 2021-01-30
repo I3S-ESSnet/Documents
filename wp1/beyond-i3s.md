@@ -13,3 +13,6 @@ Overall goal is further development of IS2 and integration of additional functio
   * Implement distributed treatments for big data
   * Integrate more functionalities (e.g. VTL transformations)
   * Access control and securing
+  * Internationalization and translations
+  * Documentation
+  * Promotion
