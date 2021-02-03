@@ -194,7 +194,7 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 #### Other aspects (e.g. financial)
 #### Results achieved
 
-- [ ] opensourcing
+- [ ] opensourcing - I3S facilitator for "speeding" the process
 - [ ] plattform independent libraries
 
 ## 4. Lessons learned
