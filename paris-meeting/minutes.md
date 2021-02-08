@@ -114,14 +114,6 @@ Actions for WP3 leader:
 Actions for WP4 leader:
 * D4.1 Communication package on how to move to a service based architecture (May): will contain the survey, with the main elements about the results (cf. UNECE presentation) and the Sinder transformed into a specification for the CSPA catalogue. Send a draft version before the end of February.
 * D4.2 Success stories (May): ARC and PXWeb videos to be provided
-* D4.3 Lisbon Workshop (May): possible roadmap
-  * publish [on GitHub](https://github.com/I3S-ESSnet/Documents/blob/master/lisbon-workshop/agenda.md) the agenda decided during the Paris workshop
-  * give deadline to session chairmen for providing the introductory presentation of each afternoon
-  * describe the organisation of the discussion groups (managers, statistician and architects, developers)
-  * find who will make the two special topic presentations
-  * determine the list of people to whom we send the invitation for the Workshop
-  * send the invitation in February
-  * book the webconference sessions
 
 
 ### NTTS presentation
