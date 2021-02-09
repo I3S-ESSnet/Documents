@@ -16,3 +16,17 @@ Overall goal is further development of IS2 and integration of additional functio
   * Internationalization and translations
   * Documentation
   * Promotion
+
+### Architecture
+
+IS2 is seen as an workbench for the statistician, integrating functionalities covered by ARC, Relais and Trevas. The workbench allows for:
+
+  * The design of the process: sequencing steps, tuning parameters and testing execution on data extracts
+  * Launching of the process, once specified, on (potentially big) real data
+
+This perspective goes beyond the initial scope of IS2, so the current architecture does not necessarily address in an optimal way questions like data architcture, security, metadata capture, etc.
+
+In order to propose improvements of the IS2 architecture, it is suggested to:
+  * Document precisely the current architecture and its shortcomings (Manu, March 12)
+  * Document relevant architecture solutions in particular for data storage and exchange (Romain, March 12)
+  * Organize a Istat-Insee meeting to discuss the documents, potentially involving other I3s partners (Franck, second half of March) 
