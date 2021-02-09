@@ -3,7 +3,7 @@
 This document lists the possibilities of collaboration between I3S consortiumm members after the end of the project.
 
 
-## IS2
+## Development of IS2
 
 Overall goal is further development of IS2 and integration of additional functionalities.
 
@@ -29,4 +29,9 @@ This perspective goes beyond the initial scope of IS2, so the current architectu
 In order to propose improvements of the IS2 architecture, it is suggested to:
   * Document precisely the current architecture and its shortcomings (Manu, March 12)
   * Document relevant architecture solutions in particular for data storage and exchange (Romain, March 12)
+  * Describe a scenario involving the combination of treatments with ARC, Relais and Trevas applied to voluminous data (Franck, March 12)
   * Organize a Istat-Insee meeting to discuss the documents, potentially involving other I3s partners (Franck, second half of March) 
+
+## Methodological support
+
+For example, support regarding the processing of administrative sources using ARC, or for record linkage with Relais.
