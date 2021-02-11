@@ -244,7 +244,15 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 #### Organizational impact
 > Integration of the service in the process flow.
 
+The main organizational impact is rather technical. Our previous application (from Statitics Denmark) and PxWeb are rather similar from an enduser standpoint. So our gratest benefit was removal of technical dept. Secondly moving to more modern technology made it easier to further develop our website.  
+
 #### Project management
+As mentioned in the [general description](#launch) we split the launch in two. 
+Both launches was done by our small team of developers already responsible for the entire Statbank solution.
+They have long experience working as a Scrum team, and for the first launch it was just a matter of prioritizing the new tasks in the current workflow.
+
+For the second lauch the team was included in a larger project (Kostra). The team had the task of finalizing PxWeb two months prior the main prosject lauch, which they did. The main project was large with three seperate developer teams and a deadline that could not be moved. 
+
 #### Other aspects (e.g. financial)
 #### Results achieved
 
