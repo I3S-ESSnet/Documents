@@ -88,7 +88,7 @@ Starting august 2019 PxWeb is completely open source at https://github.com/stati
 ##### Puplic API
 PxWeb contains a standalone server called PxWebApi. This was very interesting for us since with this we could expose all the contents of our Statbank. PxWebApi supports custom queries several output formats.
 
-...
+[Documentation and video examples](https://www.ssb.no/en/omssb/tjenester-og-verktoy/api/px-api)
 
 ##### Modern Tech
 In 2014 PxWeb was still "modern tech" especially compared to our old  solution. Today ASP.NET Web Forms is not so modern, but all of the libraries the webapplication is depending on has in 2020 been ported to the conform to .NET Standard 2.0 and the next generation PxWeb and PxWebApi application are being developed.
