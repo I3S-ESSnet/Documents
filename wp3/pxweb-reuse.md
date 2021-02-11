@@ -32,10 +32,8 @@ PxWeb 2019
    * 2018: https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/international-px-meeting/
 
 ## 3. Service reuse
-### Context
-### Business case
-> Issue to address, problems with current solution (or lack of), etc.
 
+### Context
 PxWeb comes from the PC-Axis
 
 > "For the 1990 Swedish Population Census PC-Axis was developed"
@@ -53,8 +51,15 @@ We also made our first pubic API for Statbank in 2013 based on some of these .Ne
 
 However our Statbank struggled to keep up with technical debt and around 2014 we looked to do some upgrading and decided to make the switch to PxWeb.
 
-- [ ] Move the previous paragraphs to Context chapter?
-- [ ] Explain business case more, in SSB everybody has to disiminate throught the Statbank
+### Business case
+> Issue to address, problems with current solution (or lack of), etc.
+
+- [x] Move the previous paragraphs to Context chapter?
+- [x] Explain business case more, in SSB everybody has to disiminate throught the Statbank
+
+In Statistics Norway we have a disimitation policy that says every table/dataset should be made availible in the Statbank. This requires that the statistical departments provide a minimum of metadata and it makes data easier to find knowing that everything is in the Statbank. On the other hand having a central/common(?) solutions like this demands smooth operation and no bottlenecks. 
+
+We also like to provide as much as possible through public APIs as open data.
 
 ### Service reuse
 
