@@ -92,7 +92,7 @@ As mentioned we already had close relations with the Nordics NSOs (NSIs?) from w
 There is also an annual "International PX meeting" (prev. Pc-Axis reference group meeting) that we attend.
 
 ![PX meeting locations last 28 years](px-meetings.png)
-[Welcome presentation 2019](https://www.scb.se/contentassets/c6c00c769d874282a5188eace748820b/1-201909xx-welcome-asaarrhenscb.pdf)
+Source: [Welcome presentation 2019](https://www.scb.se/contentassets/c6c00c769d874282a5188eace748820b/1-201909xx-welcome-asaarrhenscb.pdf)
 
 
 In the meeting in Copenhagen 2014 we announced that we would switch to PxWeb.
@@ -119,7 +119,7 @@ To play safe we split the launch in to parts
 #### As-Is and To-Do architectures
 
 ![PxWeb future](pxweb-tobe-arch.png)
-[PxWeb 2020 presentation](https://www.scb.se/globalassets/vara-tjanster/px-programmen/pxweb_2020v2_micke-petros.pdf)
+Source: [PxWeb 2020 presentation](https://www.scb.se/globalassets/vara-tjanster/px-programmen/pxweb_2020v2_micke-petros.pdf)
 
 - [ ] expand on this
 
