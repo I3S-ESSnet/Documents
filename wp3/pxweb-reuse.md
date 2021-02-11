@@ -55,9 +55,9 @@ In march 2001 we launched our public Statbank service. This was an Oracle databa
 
 Our Statbank has been a success ever since. After at complete rewrite of the ssb.no website in 2013 the Stabank is the only "channel" to disseminate tables/datasets.
 
-Back in 2011 Statistics Sweden (SCB) developed the .Net version of PxWeb. The solution was split up in severel components and SSB contributed with a .Net implementation of the SQL connector to CNMM. The soruce code was hosted in subversion at Assembla.com
+Back in 2011 Statistics Sweden (SCB) developed the .Net version of PxWeb. The solution was split up in severel libraries and SSB contributed with a .Net implementation of the SQL connector to CNMM. The soruce code was hosted in subversion at Assembla.com
 
-We also made our first pubic API for Statbank in 2013 based on some of these .Net components. But this API only exposed a small part of the Statbank.
+We also made our first pubic API for Statbank in 2013 based on some of these .Net libraries. But this API only exposed a small part of the Statbank.
 
 However our Statbank struggled to keep up with technical debt and around 2014 we looked to do some upgrading and decided to make the switch to PxWeb.
 
@@ -91,10 +91,10 @@ PxWeb contains a standalone server called PxWebApi. This was very interesting fo
 ...
 
 ##### Modern Tech
-In 2014 PxWeb was still "modern tech" especially compared to our old  solution. Today ASP.NET Web Forms is not so modern, but all of the components the webapplication is depending on has in 2020 been ported to the conform to .NET Standard 2.0 and the next generation PxWeb and PxWebApi application are being developed.
+In 2014 PxWeb was still "modern tech" especially compared to our old  solution. Today ASP.NET Web Forms is not so modern, but all of the libraries the webapplication is depending on has in 2020 been ported to the conform to .NET Standard 2.0 and the next generation PxWeb and PxWebApi application are being developed.
 
 ##### Collaboration
-As mentioned we already had close relations with the Nordics NSOs (NSIs?) from working with the CNMM and the .Net components. We also realised that
+As mentioned we already had close relations with the Nordics NSOs (NSIs?) from working with the CNMM and the .Net libraries. We also realised that
 
 * it's very difficult to create a complete web solution from scratch when you have few developers
 * it's much easier to build and customise something that already exists
@@ -128,10 +128,49 @@ To play safe we split the launch in to parts
 
 #### As-Is and To-Do architectures
 
+- [x] expand on this
+
+During 2020 all the PxFramework libraries in the illustration below where ported to .Net Standard 2.0 and published on NuGet https://www.nuget.org/profiles/pc-axis 
+
 ![PxWeb future](pxweb-tobe-arch.png)
 Source: [PxWeb 2020 presentation](https://www.scb.se/globalassets/vara-tjanster/px-programmen/pxweb_2020v2_micke-petros.pdf)
 
-- [ ] expand on this
+The nice thing about having the libraries in .Net Standard 2.0 is that they can be used in both Windows-only and cross-platform framworks.
+
+* .Net Framwork 4.6+
+* .Net Core 2.0+
+* .Net 5
+
+This was the first step in making PxWeb a cross-platform web application.
+
+The current PxWeb ASP.NET application (2020 v2, released 18. January 2021) is still using .Net Framework 4.6 which is a Windows-only platform, but the libraries are .Net standard.
+
+A cross-platform ASP.NET Core version of the PxWebApi application was planned for 2020 in Statistics Sweden but has been postponed.
+
+The source code for each library is also availible at https://github.com/statisticssweden/ 
+
+Complete list of .Net Standard 2.0 libraries:
+* PCAxis.Common
+* PCAxis.Core
+* PCAxis.Encryption
+* PCAxis.Excel
+* PCAxis.Html5Table
+* PCAxis.Menu
+* PCAxis.Menu.MsSqlDatamodelMenu
+* PCAxis.Menu.OracleDatamodelMenu
+* PCAxis.Metadata
+* PCAxis.PX.Core
+* PCAxis.PxExtend
+* PCAxis.Query
+* PCAxis.Sdmx
+* PCAxis.Serializers.JsonStat
+* PCAxis.Serializers.JsonStat2
+* PCAxis.Sql
+* PX.Serializers.Json
+* PXWeb.SavedQuery.MsSql
+* PXWeb.SavedQuery.Oracle
+
+
 
 #### Technical details
 ##### JSON-stat
@@ -209,8 +248,8 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 #### Other aspects (e.g. financial)
 #### Results achieved
 
-- [ ] opensourcing - I3S facilitator for "speeding" the process
-- [ ] plattform independent libraries
+- [x] opensourcing - I3S facilitator for "speeding" the process
+- [x] cross-plattform libraries
 
 To focus on the achievments during this I3S project we would mention these
 
@@ -220,34 +259,8 @@ During 2019 and 2020 Statistics Norway took the leed role in making PxWeb meet t
 ##### Open Source
 PxWeb was made open source under the Apache 2.0 licence in August 2019. It's avilible at https://github.com/statisticssweden/PxWeb
 
-##### Platform independence
-During 2020 all the PxFramework components mentioned in [As-Is and To-Do architectures](#as-is-and-to-do-architectures) where ported to .Net Standard 2.0 and published on NuGet https://www.nuget.org/profiles/pc-axis 
-
-The source code for each component is also availible at https://github.com/statisticssweden/ 
-
-Complete list of .Net Standard 2.0 components:
-* PCAxis.Common
-* PCAxis.Core
-* PCAxis.Encryption
-* PCAxis.Excel
-* PCAxis.Html5Table
-* PCAxis.Menu
-* PCAxis.Menu.MsSqlDatamodelMenu
-* PCAxis.Menu.OracleDatamodelMenu
-* PCAxis.Metadata
-* PCAxis.PX.Core
-* PCAxis.PxExtend
-* PCAxis.Query
-* PCAxis.Sdmx
-* PCAxis.Serializers.JsonStat
-* PCAxis.Serializers.JsonStat2
-* PCAxis.Sql
-* PX.Serializers.Json
-* PXWeb.SavedQuery.MsSql
-* PXWeb.SavedQuery.Oracle
-
-This was the first step in making PxWeb a platform independent web application.
-The actual PxWeb ASP.NET application is still
+##### Cross-platform
+During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architectures](#as-is-and-to-do-architectures) where ported to .Net Standard 2.0 and published on NuGet https://www.nuget.org/profiles/pc-axis 
 
 ## 4. Lessons learned
 
