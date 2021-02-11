@@ -211,6 +211,13 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 - [ ] opensourcing - I3S facilitator for "speeding" the process
 - [ ] plattform independent libraries
 
+To focus on the achievments during this I3S project we would mention these
+
+##### Web Content Accessibility Guidelines (WCAG)
+During 2019 and 2020 Statistics Norway took the leed role in making PxWeb meet the WCAG 2.0 requirements. Most of this was made availible i PxWeb 2020 v2 and more is comming in the next version.
+
+
+
 ## 4. Lessons learned
 
 ### Problems encountered
