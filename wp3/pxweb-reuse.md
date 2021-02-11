@@ -7,7 +7,7 @@ Statistics Norway (SSB)
 ### Unit
 702 IT-Architecture
 ### Report version
-v0.0.1
+v0.0.2
 ### Report date
 ### Contact mail
 
