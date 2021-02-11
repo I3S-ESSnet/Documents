@@ -19,7 +19,7 @@ Statistics Sweden (SCB)
 ### Name
 PxWeb
 ### Version
-PxWeb 2019
+PxWeb 2020
 
 ### Main functionalities
 PxWeb is used for publishing statistics in a database on the web. The PxWeb application consists of two parts:
