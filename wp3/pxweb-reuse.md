@@ -19,9 +19,18 @@ Statistics Sweden (SCB)
 PxWeb
 ### Version
 PxWeb 2019
-### Main functionalities
-### Links (code, documentation...)
 
+### Main functionalities
+PxWeb is used for publishing statistics in a database on the web. The PxWeb application consists of two parts:
+
+* **Administration interface** - The Administration interface is used by PX-Web administrators to manage and maintain their PX-Web installation.
+* **User interface** - The User interface is the part of the application that is exposed to the end users, the actual dissemination application.
+
+The statistical data that should be disseminated could either be stored in PX file located locally on
+the Web server or remote in a SQL server in a database having the Common Nordic Meta Model.
+PX-Web is also able to combine the two types of data sources.
+
+### Links (code, documentation...)
 * Souce code
    * https://github.com/statisticssweden/PxWeb
 * Documentation
