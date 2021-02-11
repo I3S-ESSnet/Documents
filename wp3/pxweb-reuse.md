@@ -215,9 +215,39 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 To focus on the achievments during this I3S project we would mention these
 
 ##### Web Content Accessibility Guidelines (WCAG)
-During 2019 and 2020 Statistics Norway took the leed role in making PxWeb meet the WCAG 2.0 requirements. Most of this was made availible i PxWeb 2020 v2 and more is comming in the next version.
+During 2019 and 2020 Statistics Norway took the leed role in making PxWeb meet the WCAG 2.0 requirements. Most of this was made availible i PxWeb 2020 v2 and more is comming in future versions.
 
+##### Open Source
+PxWeb was made open source under the Apache 2.0 licence in August 2019. It's avilible at https://github.com/statisticssweden/PxWeb
 
+##### Platform independence
+During 2020 all the PxFramework components mentioned in [As-Is and To-Do architectures](#as-is-and-to-do-architectures) where ported to .Net Standard 2.0 and published on NuGet https://www.nuget.org/profiles/pc-axis 
+
+The source code for each component is also availible at https://github.com/statisticssweden/ 
+
+Complete list of .Net Standard 2.0 components:
+* PCAxis.Common
+* PCAxis.Core
+* PCAxis.Encryption
+* PCAxis.Excel
+* PCAxis.Html5Table
+* PCAxis.Menu
+* PCAxis.Menu.MsSqlDatamodelMenu
+* PCAxis.Menu.OracleDatamodelMenu
+* PCAxis.Metadata
+* PCAxis.PX.Core
+* PCAxis.PxExtend
+* PCAxis.Query
+* PCAxis.Sdmx
+* PCAxis.Serializers.JsonStat
+* PCAxis.Serializers.JsonStat2
+* PCAxis.Sql
+* PX.Serializers.Json
+* PXWeb.SavedQuery.MsSql
+* PXWeb.SavedQuery.Oracle
+
+This was the first step in making PxWeb a platform independent web application.
+The actual PxWeb ASP.NET application is still
 
 ## 4. Lessons learned
 
