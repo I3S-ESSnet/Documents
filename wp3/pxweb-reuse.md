@@ -9,6 +9,7 @@ Statistics Norway (SSB)
 ### Report version
 v0.0.2
 ### Report date
+
 ### Contact mail
 
 ## 2. Service reused
@@ -84,15 +85,15 @@ Regardless we would probably not have chosen PxWeb without access to the source 
 
 Starting august 2019 PxWeb is completely open source at https://github.com/statisticssweden/PxWeb
 
-#### Puplic API
+##### Puplic API
 PxWeb contains a standalone server called PxWebApi. This was very interesting for us since with this we could expose all the contents of our Statbank. PxWebApi supports custom queries several output formats.
 
 ...
 
-#### Modern Tech
+##### Modern Tech
 In 2014 PxWeb was still "modern tech" especially compared to our old  solution. Today ASP.NET Web Forms is not so modern, but all of the components the webapplication is depending on has in 2020 been ported to the conform to .NET Standard 2.0 and the next generation PxWeb and PxWebApi application are being developed.
 
-#### Collaboration
+##### Collaboration
 As mentioned we already had close relations with the Nordics NSOs (NSIs?) from working with the CNMM and the .Net components. We also realised that
 
 * it's very difficult to create a complete web solution from scratch when you have few developers
@@ -118,7 +119,7 @@ Some of these meetings have been pure technical where we do big code merges.
 
 To get most out out the collaboration the social element is key.
 
-#### Launch
+##### Launch
 To play safe we split the launch in to parts
 * PxWebApi was launched in May 2016 as a new application
 * PxWeb was launched in January 2018 replacing our StatbankWeb
