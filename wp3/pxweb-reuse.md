@@ -5,7 +5,7 @@
 ### Reporting organization
 Statistics Norway (SSB)
 ### Unit
-702 IT-Architecture
+702 Division for IT-Architecture
 ### Report version
 v0.0.2
 ### Report date
@@ -273,7 +273,7 @@ During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architec
 ## 4. Lessons learned
 
 ### Problems encountered
-- [ ] containerizing windows web applications. (Maybe this is material for the Blueprint?)
+- [ ] containerizing legacy windows web applications. (Maybe this is material for the Blueprint?)
 ### Missing functionalities
 ### General feedback
 - [ ] learning cloud and container technologies. (Maybe this is material for the Blueprint?)
