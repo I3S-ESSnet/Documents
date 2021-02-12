@@ -9,7 +9,7 @@ Statistics Norway (SSB)
 ### Report version
 v0.0.2
 ### Report date
-
+2021-01-12
 ### Contact mail
 
 ## 2. Service reused
@@ -63,9 +63,6 @@ However our Statbank struggled to keep up with technical debt and around 2014 we
 
 ### Business case
 > Issue to address, problems with current solution (or lack of), etc.
-
-- [x] Move the previous paragraphs to Context chapter?
-- [x] Explain business case more, in SSB everybody has to disiminate throught the Statbank
 
 In Statistics Norway we have a disimitation policy that says every table/dataset should be made availible in the Statbank. This requires that the statistical departments provide a minimum of metadata and it makes data easier to find knowing that everything is in the Statbank. On the other hand having a central/common(?) solutions like this demands smooth operation and no bottlenecks. 
 
@@ -128,8 +125,6 @@ To play safe we split the launch in to parts
 
 #### As-Is and To-Do architectures
 
-- [x] expand on this
-
 During 2020 all the PxFramework libraries in the illustration below where ported to .Net Standard 2.0 and published on NuGet https://www.nuget.org/profiles/pc-axis 
 
 ![PxWeb future](pxweb-tobe-arch.png)
@@ -169,7 +164,6 @@ Complete list of .Net Standard 2.0 libraries:
 * PX.Serializers.Json
 * PXWeb.SavedQuery.MsSql
 * PXWeb.SavedQuery.Oracle
-
 
 
 #### Technical details
@@ -256,9 +250,6 @@ For the second lauch the team was included in a larger project (Kostra). The tea
 #### Other aspects (e.g. financial)
 #### Results achieved
 
-- [x] opensourcing - I3S facilitator for "speeding" the process
-- [x] cross-plattform libraries
-
 To focus on the achievments during this I3S project we would mention these
 
 ##### Web Content Accessibility Guidelines (WCAG)
@@ -273,10 +264,8 @@ During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architec
 ## 4. Lessons learned
 
 ### Problems encountered
-- [ ] containerizing legacy windows web applications. (Maybe this is material for the Blueprint?)
 ### Missing functionalities
 ### General feedback
-- [ ] learning cloud and container technologies. (Maybe this is material for the Blueprint?)
 
 ## 5. Conclusions and next steps
 
