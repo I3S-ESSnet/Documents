@@ -279,3 +279,9 @@ During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architec
 - [ ] learning cloud and container technologies. (Maybe this is material for the Blueprint?)
 
 ## 5. Conclusions and next steps
+
+Containarizing and packaging existing monolithic applications have some particular challenges. The ability to handle scaleability (pets vs. cattle) is hard, since it's a single application where all the functionality is rolled into one piece of software. Still, the ability to provision an instance of PxWeb (with all it's functionality), by using containers is very easy, and will make it a lot easier to test the solution, without having to install it on a server.
+
+#### Next steps
+
+PxWeb could be split up into more discrete funcitonal pieces that would make it easier to take advantage of modern cloud based infrastructure. 
