@@ -273,9 +273,9 @@ During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architec
 ## 4. Lessons learned
 
 ### Problems encountered
-- [ ] containerizing windows web applications
+- [ ] containerizing windows web applications. (Maybe this is material for the Blueprint?)
 ### Missing functionalities
 ### General feedback
-- [ ] learning cloud and container technologies
+- [ ] learning cloud and container technologies. (Maybe this is material for the Blueprint?)
 
 ## 5. Conclusions and next steps
