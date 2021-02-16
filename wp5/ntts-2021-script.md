@@ -55,7 +55,11 @@ Duration: 2 minutes
 
 Words: 200
 
---> Franck
+The ESSnet has also specified innovative and standardized methods for the deployment of statistical services on cloud platforms. These include technologies like containerization or infrastructure as code, and covers functionalities like securization, scalability and platform-independance.
+
+Deploying services using these methods hugely improves the possibilities to share them, but it is also beneficial for internal use within statistical organization because it fosters industrialization, traceability and exploitability of services.
+
+All the software tools recommended by the ESSnet are open source, and they can in many cases replace expensive proprietary solutions.
 
 ## Conclusion
 
