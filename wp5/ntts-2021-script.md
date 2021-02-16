@@ -43,7 +43,11 @@ Words: 250
 
 ARC / Relais
 
---> Mauro
+One of the main goals of the I3S project is to develop, either from scratch or from existing components, new statistical services. In I3S we worked on ARC and RELAIS. 
+The ARC software (from the French: Acquisition - Réception - Contrôles), developed by INSEE, allows to receive data supplied by data providers, to control the compliance of the received files versus a predefined data model, and to transform input data into elementary statistical entities. ARC software enables the statistician to define and apply controls to the input data, to test them in a sandbox environment, and to put them into production without the support of IT experts.
+Relais (Record Linkag At IStat), developed by Istat, provides an integrated environment to solve a wide range of record linkage problems. The software has been implemented assuming that a record linkage process may result from the combination of different sub-phases to achieve the best data integration solution. The core logic in Relais includes a set of algorithms implemented in R and Java that allow to execute two different record linkage approaches.
+Both ARC and Relais have been re-designed according to CSPA principles and released as open-source software.
+Another important goal of the project is related to service reuse.  Insee was looking at enhancing the production process of its Permanent Database of Facilities, by reusing RELAIS, and in return Istat proposed to define a reuse scenario for Insee's data acquisition software ARC. This started an intense phase of cooperation on both software, resulting in important evolutions both on ARC and Relais to integrate them and enrich the capabilities provided by both.
 
 ## Deploying services
 
