@@ -21,11 +21,11 @@ Duration: 30 seconds max
 
 Words: 100
 
-Sharing services is always mentioned as a way of reducings costs and improve industrialization of the statistical production, but the it is often hampered by differences in architecture and techologies.
+Sharing services is always mentioned as a way of reducings costs and improve industrialization of the statistical production but has inpractice often been hampered by differences in architecture and techologies.
 
-I3S is for "Implementing Shared Statistical Services". It's an ESSnet focused on how to share services in practice between statistical organizations, based on standards and models developed by our commmunity.
+I3S stands for "Implementing Shared Statistical Services". It's an ESSnet focused on making sharing and reusing services practicel between statistical organizations, based on standards and models developed by our commmunity.
 
-France, Italy, Norway, Portugal and Sweden have worked together to produce concrete advice, guidelines, examples that can help other to reuse existing services or create reusable services. Aspects like architecture, service deployment or communication have been covered.
+France, Italy, Norway, Portugal and Sweden have worked together to produce concrete advice, guidelines and examples that can help others to reuse existing services and to create reusable services. Aspects such as architecture, service deployment and communication have been covered.
 
 ## Architecture
 
@@ -33,7 +33,9 @@ Duration: 2,5 minutes
 
 Words: 200
 
-Guidelines, principles
+To make sure that services are created in a way that makes them easy to integrate in other statistical organisations, we have the CSPA-standard that provides support for architects. But sharing and reusing services is often not the only goal for you architecture. It it quite common to also have other goals for your architecture such as moving from legacy to cloud or SOA technology, achieving better enterprise data management or enabling more agile business processes. Within the I3S project we build upon the CSPA standard and see how we can combine the goal of sharability with other commonly occuring goals for your architecture.
+
+The architecture guidance from the I3S project describe aspects and concepts around architecture and how these can be used and combined to create an architecture that allows for different goals to be achieved. The guidance also dives deeper by providing a cookbook on code-level that shows practical schoolbook-examples as well as examples from real situations where the guidance is being used. This makes the guidance more practical and useful for other roles such as developers.
 
 --> Jakob
 
