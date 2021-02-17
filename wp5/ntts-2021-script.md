@@ -79,7 +79,7 @@ Words: 100
 
 *Back to the conversation between Mauro and the IT manager*
 
-  * Open source communities (add something about prolonging collaboration based on Istat-Insee collaboration)
-  * How to learn more?
+So I3S produced all that and much more, but the most important is that during the project, we all worked as open source communities, and we want to continue like this even after the ESSnet ends. Because we think that it is a powerful way to drive the collaboration between statistical organisations towards better, shared services.
 
-(note: put the I3S logo(s) somewhere)
+  * Add something on how to learn more?
+
