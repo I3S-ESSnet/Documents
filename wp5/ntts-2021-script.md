@@ -48,7 +48,7 @@ Duration: 2,5 minutes
 Words: 250
 
 [frame 11]
-One of the main goals of the I3S project is to develop, either from scratch or from existing components, new statistical services. In I3S we worked on three services: PxWeb, ARC, RELAIS and VTL-tools. 
+One of the main goals of the I3S project is to develop, either from scratch or from existing components, new statistical services. In I3S we worked on four services: PxWeb, ARC, RELAIS and VTL-tools. 
 
 PxWeb
 The Px suite is a collection of programs developed for the distribution and processing of statistical tables. They offer diverse possibilities to distribute and edit even large statistical tables, and to change structures, combine tables, make calculations and convert into other file formats. PxWeb is a free web-based table distribution system for statistics producers. All Nordic Statistical Institutes use the PxWeb system.
@@ -70,9 +70,9 @@ Another important goal of the project is related to service reuse.  Insee was lo
 The close cooperation between ARC and Relais teams has resulted in a much higher level of quality and functionality of both services. They are now integrated in a common framework that could prefigure a future "statistician workbench" with shared user interface, process parameter definition, data access methods.
 
 [17 vtl1]
-Franck writes something awesome here
+During the ESSnet, we also developed tools for VTL, an SDMX language for validating and transforming data sets. These tools are also offered as open source shareable services.
 [18 vtl2]
-Even more awesome stuff here Franck
+There is an editor, a VTL engine for JavaScript that can be used in web clients, and also a Java Engine for server-side treatments, even on Big Data platforms.
 
 ## Deploying services
 
