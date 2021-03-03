@@ -4,7 +4,6 @@ Table of Contents
 =================
 
 * [Blueprint for I3S](#blueprint-for-i3s)
-* [Table of Contents](#table-of-contents)
   * [Background](#background)
     * [Why we need a different infrastructure platform](#why-we-need-a-different-infrastructure-platform)
   * [Providing services](#providing-services)
