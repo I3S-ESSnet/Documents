@@ -1,5 +1,33 @@
 # Blueprint for I3S
 
+Table of Contents
+=================
+
+* [Blueprint for I3S](#blueprint-for-i3s)
+  * [Background](#background)
+    * [Why we need a different infrastructure platform](#why-we-need-a-different-infrastructure-platform)
+  * [Containerization](#containerization)
+    * [Prerequisite](#prerequisite)
+  * [Environment](#environment)
+  * [Cloud](#cloud)
+  * [Considerations](#considerations)
+* [Appendix](#appendix)
+  * [Terraform examples](#terraform-examples)
+  * [Container examples](#container-examples)
+    * [IS2 example](#is2-example)
+    * [Application containerization](#application-containerization)
+    * [Docker Compose](#docker-compose)
+    * [Continuous integration](#continuous-integration)
+      * [Travis CI](#travis-ci)
+      * [Dockerhub](#dockerhub)
+    * [PxWeb Example](#pxweb-example)
+      * [Container](#container)
+      * [Continuous integration](#continuous-integration-1)
+        * [Travis CI](#travis-ci-1)
+      * [Pipeline](#pipeline)
+      * [Terraform](#terraform)
+
+
 ## Background
 Based on the work done in WP2, and using modern application architecture patterns we want to create a blueprint for a reference runtime environment for modern, sharable services following CSPA standards/principles using containers. It will not give any guidance on how to develop shared services, but will focus on the runtime environment for the services. This work package will describe the basic infrastructure needed, and implement a cloud instance for the needs of the ESSnet. The infrastructure will be documented as code, which will give to its users the opportunity to version it, and fork it. Typical products implementing this pattern would be Ansible Playbook or Terraform. Using the “infrastructure as a code” model will enable NSIs to easily create their own modern infrastructure on their premises. There will also be provided, as part of this WP a simple container-based platform using a cloud infrastructure, which will allow to validate the blueprint and to perform functional tests on the services developed in WP1, as well as validate their packaging and installation.
 
