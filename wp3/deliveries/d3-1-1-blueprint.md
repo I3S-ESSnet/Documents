@@ -10,6 +10,49 @@ Retro-fitted, and modularized existing services will also be tested on the platf
 ### Why we need a different infrastructure platform
 Traditional infrastructure is rigid, costly and not suited for supporting the rapid change in technology. Even with the advent of virtualization, and the ability to run hyper convergent infrastructure on premise, we tend to hit struggle with high complexity of our infrastructure, and high management cost of infrastructure. With high complexity, managing adequate security is also an issue. Containers hide some of this complexity, especially when it comes ot managing softare compatibility between software project, and cloud help us manage underlying infrastructure complexity by using managed infrastructure that can scale depending on the need of the organization.
 
+## Scaling capabilities for services
+
+"... something that can be destroyed or replaced at any time, then it's a member of the herd."
+
+"Pets: Servers or server pairs that are treated as indispensable or unique systems that can never be down. Typically they are manually built, managed, and “hand fed”. Examples include mainframes, solitary servers, HA loadbalancers/firewalls (active/active or active/passive), database systems designed as master/slave (active/passive), and so on."
+
+"Cattle: Arrays of more than two servers, that are built using automated tools, and are designed for failure, where no one, two, or even three servers are irreplaceable. Typically, during failure events no human intervention is required as the array exhibits attributes of “routing around failures” by restarting failed servers or replicating data through strategies like triple replication or erasure coding. Examples include web server arrays, multi-master datastores such as Cassandra clusters, multiple racks of gear put together in clusters, and just about anything that is load-balanced and multi-master."
+
+"... systems are designed for failure ..." also applies for Pets, however they are "... sysems that require "special handling" ..."
+
+Reference: http://cloudscaling.com/blog/cloud-computing/the-history-of-pets-vs-cattle/
+
+
+### On the discussion of state in services
+
+..
+
+### Centralized or desentralized data
+
+..
+[Clarification: We are not talking about blockchain?]
+??
+* reduce (no) single point of failure
+* liveliness
+
+![alt text](decentralized_pattern.PNG "Decentralized pattern")
+
+![alt text](decentralized_pattern2.png "Decentralized pattern")
+
+### Bottlenecks
+..
+
+Consider if bottlenecks is resolvable through refactoring before considering
+* Horizontally scaling of service
+* Increase resource allocation for component
+
+#### Identifying bottlenecks
+Key performance indicators (tecnical): request/sec, latency, request duration, cpu-time, memory usage, heap usage, garbage collection etc. One should also consider external metrics like business metrics.
+
+### Sessions and state
+
+..
+
 ## Containerization
 There are several container initiatives, but the one that has been there longest, and have the largest adoption is Docker.  The container format is being standardized as part of the OCI (Open Container Initiative). Containerization is basically a way of creating a small virtual computer, that contains only the virtualized hardware required for the application you want to run, so it works as a way of transporting services without your application having to know anything about the environment around it. This is also its greatest challenge. In WP2 there will be described a lot of architectural guidelines for how you should design your application to make it scalable, and secure, so this document will only reference that work. A container is basically a virtual machine, but with as little or as much as you need to be able to run your application.
 
