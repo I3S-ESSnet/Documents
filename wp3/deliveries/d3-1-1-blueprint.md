@@ -76,6 +76,54 @@ For test purposes it should be sufficient to use a standard Docker installation 
 
 There is a plethora of other services that will ease the use of these public cloud vendors, like Pivotal's CloudFoundry, which will give you "serverless" functionality that can run on any of the large public cloud vendors. 
 
+## Why Open Source matters
+The use of open source provides greater freedom to choose both products and technology that are right for your organization. It makes it easier to choose as little or as much as one needs at any given time. It also gives your organization the freedom to choose vendors and expertise in the market. 
+
+Sharing code nationally and internationally improve quality and encourage reuse of code across organizations and borders.  
+
+
+* Technology not enough for rapid change
+* Culture, and specifically sharing culture contributes speed
+* Open source is what is now contributing Innovation
+* Open Source is more than reusing code GitHub
+* Focus on internal and external sharing
+* Transparency rather than closed
+* Transparency promotes quality
+
+### Open Source makes your software better
+
+..
+
+* TCO - Total Cost of Ownership
+* change cost
+* reusability
+* competence and recruitment (the future)
+* showing your work (transparancies, governmental services), including publuc trust
+
+### Brief history of Open Source
+
+..
+
+### "Standing on the shoulders of giants"
+
+..
+
+### Culture
+
+..
+
+### Law & Order 
+
+..
+
+### Implications
+* The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing
+* In order to share code internationally, English should (must?) be used as a development language
+* Make sure that code is decomposed so that specific business logic is separated from the code that may be of general interest
+* When suspending all or part of the development, must your organization enure that you have the copyright to the code being developed and/or ensure that the source code can be shared under an open license
+* There may be reasons why one chooses products/solutions that are not open source, but then quality, scope and degree to which the product provides for strong links to the architecture must be assessed and documented
+
+
 ## Overall security
 The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in a cloud environment. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. 
 
