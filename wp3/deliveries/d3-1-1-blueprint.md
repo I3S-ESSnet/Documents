@@ -10,7 +10,9 @@ Retro-fitted, and modularized existing services will also be tested on the platf
 ### Why we need a different infrastructure platform
 Traditional infrastructure is rigid, costly and not suited for supporting the rapid change in technology. Even with the advent of virtualization, and the ability to run hyper convergent infrastructure on premise, we tend to hit struggle with high complexity of our infrastructure, and high management cost of infrastructure. With high complexity, managing adequate security is also an issue. Containers hide some of this complexity, especially when it comes ot managing softare compatibility between software project, and cloud help us manage underlying infrastructure complexity by using managed infrastructure that can scale depending on the need of the organization.
 
-## Scaling capabilities for services
+## Providing services
+
+### Scaling capabilities for services
 
 "... something that can be destroyed or replaced at any time, then it's a member of the herd."
 
@@ -53,7 +55,7 @@ Key performance indicators (tecnical): request/sec, latency, request duration, c
 
 ..
 
-## Containerization
+### Containerization
 There are several container initiatives, but the one that has been there longest, and have the largest adoption is Docker.  The container format is being standardized as part of the OCI (Open Container Initiative). Containerization is basically a way of creating a small virtual computer, that contains only the virtualized hardware required for the application you want to run, so it works as a way of transporting services without your application having to know anything about the environment around it. This is also its greatest challenge. In WP2 there will be described a lot of architectural guidelines for how you should design your application to make it scalable, and secure, so this document will only reference that work. A container is basically a virtual machine, but with as little or as much as you need to be able to run your application.
 
 ### Prerequisite
@@ -61,7 +63,7 @@ For starting to build services that you want to containerize, you will need a ma
 
 In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
 
-## Environment
+### Environment
 You can run Docker either on a Windows machine, or a Linux/Mac. Even .Net applications in containers are moving towards running on Linux host-systems (from .Net Core), so for minimal pain, you should set up your docker environment on a Linux machine, or in a virtual machine running Linux. 
 
 We provide pre-designed virtual environments which have Docker pre-installed which can be used to set up your environment
@@ -69,14 +71,15 @@ On premise
 
 For test purposes it should be sufficient to use a standard Docker installation for getting things up and running. For production quality runtime environments for containers and for container orchestration we recommend looking into products like Apache Mesos or RedHat OpenShift.
 
-## Cloud
+### Cloud
 * Google Cloud Kubernetes
 * Azure Kubernetes Service
 * Amazon EC2, Amason EKS.
 
 There is a plethora of other services that will ease the use of these public cloud vendors, like Pivotal's CloudFoundry, which will give you "serverless" functionality that can run on any of the large public cloud vendors. 
 
-## Why Open Source matters
+## Developing services
+### Why Open Source matters
 The use of open source provides greater freedom to choose both products and technology that are right for your organization. It makes it easier to choose as little or as much as one needs at any given time. It also gives your organization the freedom to choose vendors and expertise in the market. 
 
 Sharing code nationally and internationally improve quality and encourage reuse of code across organizations and borders.  
@@ -123,8 +126,8 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 * When suspending all or part of the development, must your organization enure that you have the copyright to the code being developed and/or ensure that the source code can be shared under an open license
 * There may be reasons why one chooses products/solutions that are not open source, but then quality, scope and degree to which the product provides for strong links to the architecture must be assessed and documented
 
-
-## Overall security
+## Security and logging
+### Overall security
 The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in a cloud environment. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. 
 
 ### Zero Trust
@@ -176,7 +179,7 @@ Secrets like passwords, certificates and keys are probably the hardest assets to
 
 Examples of tools is Secret Manager, Berglas and Sealed secrets. 
 
-## Protecting your source code
+### Protecting your source code
 
 ..
 
