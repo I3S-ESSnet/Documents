@@ -1,6 +1,6 @@
 # I3S ESSnet "Paris" meeting draft agenda
 
-The meeting will be virtual and organized in three mornings from 13 to 15 January 2021. The main topics of the meeting will be: service re-use, service deployment and communication.
+The meeting was virtual and organized in three mornings from 13 to 15 January 2021. The main topics of the meeting were: service re-use, service deployment and communication.
 
 
 ## Day 1, January 13th, 9:00-12:30
@@ -26,14 +26,17 @@ Starting off with two connected services in dire need of a third to handle dual 
   * ErrorLocalization - a service for flagging answers as faulty based on rule set
 
 Preparations can be made, development environment described in [dedicated repository](https://github.com/I3S-ESSnet/ExampleServices)
-Se also the [Slack channel]: (https://i3s-essnet.slack.com/archives/CSDHL7YPM)
+
+See also the [Slack channel](https://i3s-essnet.slack.com/archives/CSDHL7YPM)
 
 
 ### Track 2 - Service reuse (resp. IT)
 
-  * PXweb reuse: state of play (NO)
-  * ARC reuse: state of play (IT)
-  * Relais reuse: state of play (FR)
+  * PXweb reuse: state of play, see [draft reuse report](../wp3/pxweb-reuse.md) (NO)
+  * ARC reuse: state of play, see [draft reuse report](../wp1/arc/ARC reuse deliverable_Jan2021.docx) (IT)
+  * VTL tools: state of play, with [Trevas demo](http://krmes.info/videos/Trevas-demo.mkv) (FR)
+  * Relais reuse: state of play, see [draft reuse report](../wp1/relais/relais-reuse-fr.md) (FR)
+  * Relais reuse: potential new case (FR)
 
 
 ## Day 2, January 14th, 9:30-12:30
@@ -41,9 +44,10 @@ Se also the [Slack channel]: (https://i3s-essnet.slack.com/archives/CSDHL7YPM)
 ### Consortium meeting (resp. FR)
 
   * Results of Wednesday tracks
+  * Overview of work packages
   * Budget consumption
   * Deliverables
-  * Organize for NTTS (if paper accepted)
+  * Organization for NTTS
   * Project wrap-up and follow-up
 
 
