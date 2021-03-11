@@ -48,18 +48,31 @@ Table of Contents
     * [Security checklist](#security-checklist)
     * [Loggin checklist](#loggin-checklist)
 
+===
 
 ## Background
 Based on the deliverable related to the definition of integration and architecture guidelines in WP2, and using modern application architecture patterns we want to create a blueprint. The blueprint is describing a reference runtime environment for modern, sharable services following CSPA standards/principles using containers. However, it will not give any guidance on how to develop shared services, as the focus will be on the runtime environment for the services. The deliverable will describe the basic infrastructure needed, and implement a cloud instance for the needs of the ESSnet. The infrastructure will be documented as code, which will give to its users the opportunity to version it, and fork it. Typical products implementing this pattern would be Ansible Playbook or Terraform. One advantage with the “infrastructure as a code” model approach is that it enables NSIs to easily create their own modern infrastructure on their premises. As part of the deliverable we will provide a simple container-based platform using a cloud infrastructure, which will allow us to validate the blueprint and to perform functional tests on the services developed as deliverables in WP1 - Develop new services. This also enables the service developers to validate their packaging and installation.
 
 Retro-fitted, and modularized existing services will also be tested on the platform,either on premise or on the public cloud instance. This work package will also discuss components related security like IAM (Identity and Access Management), OAuth 2.0 and OPA (Open Policy Agent) for authentication and authorization, or Service Mesh for routing and secure service-to-service communication, for authentication and authorization. The blueprint also look into how these types of security components can be added to existing services. Containerization and orchestration technologies, including Kubernetes and Docker, will be the basis of the platform, and all other infrastructure components will be built with it or around it.
 
-### Why we need a different infrastructure platform
+## Why we need a different infrastructure platform
 Traditional infrastructure is rigid, costly and not suited for supporting the rapid change in technology and agile processes. Even with the advent of virtualization, and the ability to run hyper convergent infrastructure on premise, we tend to hit struggle with high complexity of our infrastructure, and high management cost of infrastructure. With high complexity, managing adequate security is also an issue. Containers hide some of this complexity, especially when it comes to managing software compatibility between software project. Implementing a cloud infrastructure help us manage underlying infrastructure complexity by using managed infrastructure that can scale depending on the need of the organization.
 
 ![I3S - WP3 - Structure deliverables - Skisse til konseptuell modell for blueprint](https://user-images.githubusercontent.com/47101258/109776463-e3e2c300-7c02-11eb-952a-67516a033e8e.jpg)
 
-To enable agile business processes, and support the implementation of reusable and shared services 
+The blueprint is describing an approach and patterns in order to support the implementation of reusable and shared services, and the capability of enabling agile processes for developing, implementing and govern business services.
+
+For enabling shared services on a cloud platform the following building blocks should be considered, and is a part of the implementaion of the bluprint:
+
+* Service provider - in the context of I3S the service provider delivers Infrastructure as a Service (IaaS) as the base platform for implementing business services and applications.  
+* Infrastructure-as-code - the capability to manage and provisioning the platform as machine-readable definitions, and should be managed through a version control system.  
+* Container platform - is the logical package mechanism for running services and applications, decoupled from the environment or platform it is running on.
+
+In addition to the above mentioned building blocks one need to establish the capability to enable security mechanisms, these are related to securing the platform, containers as well as services and applications. The monitoring, surveillance and logging building block is related to managing and govern the platform and services running on the platform. Considerations should be related to cost, scaling and general governance of the components.
+
+Service developers build services and applications to be implemented on a platform. These services and applications are deployed through build pipelines, enabling "Integrated Share Services for Statistiscs" to be exposed and consumed by service consumers. Source repos and infrastructure as code repos are used to keep track of changes and share code across projects and teams. 
+
+These building blocks and components are elaborated, described and rationalized further in the next chapters, and in the deliverable "Implementing the blueprint". 
 
 ## Providing services
 
