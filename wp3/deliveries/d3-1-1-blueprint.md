@@ -192,32 +192,30 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 
 ## Security and logging
 ### Overall security
-The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in a cloud environment. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. 
+The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in  cloud environments. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. The deliverable "Implementing the blueprint" describes the security components used in the implementation of the I3S platform. 
 
 ### Zero Trust
-Zero Trust, Zero Trust Network, or Zero Trust Architecture refer to security concepts and threat model that no longer assumes that actors, systems or services operating from within the security perimeter should be automatically trusted, and instead must verify anything and everything trying to connect to its systems before granting access.
+Zero Trust, Zero Trust Network, or Zero Trust Architecture refer to security concepts and threat models that does not assume that actors, systems or services operating from within the security perimeter should be automatically trusted. Instead it require that services must verify explicitly, use least privileged access and assume breaches before granting access to a service or application.
 
 Service mesh is often considered as an important infrastructure component for facilitating Zero Trust in a micro service architecture.
 
-References:
-- [What is a Zero Trust Architecture?](https://www.infradata.com/resources/what-is-a-zero-trust-architecture/)
-- [BeyondProd](https://cloud.google.com/security/beyondprod)
-- [BeyondCorp](https://cloud.google.com/beyondcorp)
-- [BeyondTrust](https://www.beyondtrust.com/blog/entry/why-zero-trust-is-an-unrealistic-security-model)
+~~References:~~
+~~- [What is a Zero Trust Architecture?](https://www.infradata.com/resources/what-is-a-zero-trust-architecture/)~~
+~~- [BeyondProd](https://cloud.google.com/security/beyondprod)~~
+~~- [BeyondCorp](https://cloud.google.com/beyondcorp)~~
+~~- [BeyondTrust](https://www.beyondtrust.com/blog/entry/why-zero-trust-is-an-unrealistic-security-model)~~
 
 ### Service Mesh
-In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services, often using a sidecar proxy.
+In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services, often using a sidecar proxy. Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
 
-Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
-
-References:
-- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)
-- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)
+~~References:~~
+~~- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)~~
+~~- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)~~
 
 ### User administration and authentication
 Authentication is the process of verifying a users identity.
 
-*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*
+~~*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*~~
 
 ### Authorization
 Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.
@@ -275,8 +273,12 @@ Examples of tools is Secret Manager, Berglas and Sealed secrets.
 
 
 ## Considerations
+This document describes the basic infrastructure neeed for implementing a cloud platform for the ESSnet, using modern application architecture patterns for building a platform for enabling "Integrated Shared Services for Statistics" following the CSPA standards and principles and the Integration and architecture guidelines delivered in WP2.
 
-...
+In the Implementation of blueprint we demonstrate how the infrastructure is documented as code, enabling NSIs to easily create their own modern infrastructure. The implementation shows the implementation of a container-based platform using cloud infrastructure and is validated and proved as I3S has deployed the services developed in WP1. This is also validated and proved as we have "Retro-fitted" and modularized PXweb and deployed it on the platform. 
+
+The blueprint gives an overall description of security issues related to establishing the platform and implementing services, however ...
+
 
 # Appendix
 
