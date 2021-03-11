@@ -72,9 +72,12 @@ In addition to the above mentioned building blocks one need to establish the cap
 
 Service developers build services and applications to be implemented on a platform. These services and applications are deployed through build pipelines, enabling "Integrated Share Services for Statistiscs" to be exposed and consumed by service consumers. Source repos and infrastructure as code repos are used to keep track of changes and share code across projects and teams. 
 
-These building blocks and components are elaborated, described and rationalized further in the next chapters, and in the deliverable "Implementing the blueprint". 
+These building blocks and components are elaborated, described and rationalized further in the next chapters, and proven and validated in the deliverable "Implementing the blueprint". 
 
 ## Providing services
+Shared and resuable services has several beneficial effects to NSIs, both from a business and technological perspective. Establishing the capability and environment for establishing shared services as some prerequisites, and considerations to be taken into account. 
+
+?? Discoverability, governance, deployment and collaboration, scalability and accessability, security capabilites. 
 
 ### Scaling capabilities for services
 
@@ -112,7 +115,7 @@ Consider if bottlenecks is resolvable through refactoring before considering
 * Horizontally scaling of service
 * Increase resource allocation for component
 
-#### Identifying bottlenecks
+Identifying bottlenecks
 Key performance indicators (tecnical): request/sec, latency, request duration, cpu-time, memory usage, heap usage, garbage collection etc. One should also consider external metrics like business metrics.
 
 ### Sessions and state
