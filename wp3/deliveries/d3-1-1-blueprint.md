@@ -190,14 +190,13 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 * When suspending all or part of the development, must your organization enure that you have the copyright to the code being developed and/or ensure that the source code can be shared under an open license
 * There may be reasons why one chooses products/solutions that are not open source, but then quality, scope and degree to which the product provides for strong links to the architecture must be assessed and documented
 
-## Security and logging
-### Overall security
+## Overall security and logging
 The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in  cloud environments. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. The deliverable "Implementing the blueprint" describes the security components used in the implementation of the I3S platform. 
 
-### Zero Trust
+### Zero Trust and Service Mesh
 Zero Trust, Zero Trust Network, or Zero Trust Architecture refer to security concepts and threat models that does not assume that actors, systems or services operating from within the security perimeter should be automatically trusted. Instead it require that services must verify explicitly, use least privileged access and assume breaches before granting access to a service or application.
 
-Service mesh is often considered as an important infrastructure component for facilitating Zero Trust in a micro service architecture.
+The zero trust concept would be a preferred concept for securing shared services, and especially for services shared across instituions and borders. Considerations when implementing a zero-trust concept for your services should be related to identification of who the users are and to what their actions should be during the session. Other issues would be related to traffic visibility and context for monitoring and verification of traffic across users, device, location and applications.
 
 ~~References:~~
 ~~- [What is a Zero Trust Architecture?](https://www.infradata.com/resources/what-is-a-zero-trust-architecture/)~~
@@ -205,22 +204,22 @@ Service mesh is often considered as an important infrastructure component for fa
 ~~- [BeyondCorp](https://cloud.google.com/beyondcorp)~~
 ~~- [BeyondTrust](https://www.beyondtrust.com/blog/entry/why-zero-trust-is-an-unrealistic-security-model)~~
 
-### Service Mesh
-In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services, often using a sidecar proxy. Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
+Service mesh is often considered as an important infrastructure component for facilitating Zero Trust in a micro service architecture.
+
+In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services. Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
 
 ~~References:~~
 ~~- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)~~
 ~~- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)~~
 
-### User administration and authentication
+### User administration, authentication and authorization
 Authentication is the process of verifying a users identity.
 
 ~~*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*~~
 
-### Authorization
 Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.
 
-Access control in applications running in BIP should be implemented using a role based access control system. But it is possible that Attribute based access control (ABAC) is used to some extent, especially when it comes to data ownership.
+~~Access control in applications running in BIP should be implemented using a role based access control system. But it is possible that Attribute based access control (ABAC) is used to some extent, especially when it comes to data ownership.~~
 
 ### Logging and Monitoring
 Logging is important in any security model for auditing and forensics.
@@ -236,41 +235,27 @@ The role of automated configuration management is to maintain systems in a desir
 
 Terraform, Ansible and declarative manifests for describing system and application state and GIT for change management and traceability is often used.
 
-### Managing secrets
+## Securing and protecting your source code
+
+### Strategies for sealing and managing secrets
 Secrets like passwords, certificates and keys are probably the hardest assets to manage in any system, but also the most important asset. Leaked keys can lead to unauthorized access to sensitive data and have severe consequences for the organizations trust, reputation and reliability.
 
 Examples of tools is Secret Manager, Berglas and Sealed secrets. 
 
-### Protecting your source code
-
-..
-
-
 ### Security by obscurity
-
-..
+"... hiding or concealing its security flaws".
 
 ### Scanning code
-
 ..
 
 ### Utilizing GitHub and DependaBot 
-
 ..
 
 ### Scanning containers
-
 ..
 
 ### Utilizing tools like 
-
 ..
-
-### Strategies for sealing secrets
-
-..
-
-
 
 ## Considerations
 This document describes the basic infrastructure neeed for implementing a cloud platform for the ESSnet, using modern application architecture patterns for building a platform for enabling "Integrated Shared Services for Statistics" following the CSPA standards and principles and the Integration and architecture guidelines delivered in WP2.
