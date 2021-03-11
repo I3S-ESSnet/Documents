@@ -122,11 +122,6 @@ Key performance indicators (tecnical): request/sec, latency, request duration, c
 ### Containerization
 There are several container initiatives, but the one that has been there longest, and have the largest adoption is Docker.  The container format is being standardized as part of the OCI (Open Container Initiative). Containerization is basically a way of creating a small virtual computer, that contains only the virtualized hardware required for the application you want to run, so it works as a way of transporting services without your application having to know anything about the environment around it. This is also its greatest challenge. In WP2 there will be described a lot of architectural guidelines for how you should design your application to make it scalable, and secure, so this document will only reference that work. A container is basically a virtual machine, but with as little or as much as you need to be able to run your application.
 
-### Prerequisite
-For starting to build services that you want to containerize, you will need a machine that can run Docker as a minimum, or a virtual machine that runs docker. There are also several online options for running containerized services. They greatly vary in price and functionality but can be used as a test for running simple services in the cloud (or on premise).
-
-In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
-
 ### Environment
 You can run Docker either on a Windows machine, or a Linux/Mac. Even .Net applications in containers are moving towards running on Linux host-systems (from .Net Core), so for minimal pain, you should set up your docker environment on a Linux machine, or in a virtual machine running Linux. 
 
@@ -141,6 +136,11 @@ For test purposes it should be sufficient to use a standard Docker installation 
 * Amazon EC2, Amason EKS.
 
 There is a plethora of other services that will ease the use of these public cloud vendors, like Pivotal's CloudFoundry, which will give you "serverless" functionality that can run on any of the large public cloud vendors. 
+
+### Prerequisite and considerations (WAS: Prerequisite)
+For starting to build services that you want to containerize, you will need a machine that can run Docker as a minimum, or a virtual machine that runs docker. There are also several online options for running containerized services. They greatly vary in price and functionality but can be used as a test for running simple services in the cloud (or on premise).
+
+In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
 
 ## Developing services
 ### Why Open Source matters
@@ -183,7 +183,7 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 
 ..
 
-### Implications
+### Prerequisite and considerations (WAS: Implications)
 * The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing
 * In order to share code internationally, English should (must?) be used as a development language
 * Make sure that code is decomposed so that specific business logic is separated from the code that may be of general interest
@@ -257,7 +257,10 @@ Examples of tools is Secret Manager, Berglas and Sealed secrets.
 ### Utilizing tools like 
 ..
 
-## Considerations
+### Prerequisite and considerations (WAS: Implications)
+Security ...
+
+## Concluding remarks
 This document describes the basic infrastructure neeed for implementing a cloud platform for the ESSnet, using modern application architecture patterns for building a platform for enabling "Integrated Shared Services for Statistics" following the CSPA standards and principles and the Integration and architecture guidelines delivered in WP2.
 
 In the Implementation of blueprint we demonstrate how the infrastructure is documented as code, enabling NSIs to easily create their own modern infrastructure. The implementation shows the implementation of a container-based platform using cloud infrastructure and is validated and proved as I3S has deployed the services developed in WP1. This is also validated and proved as we have "Retro-fitted" and modularized PXweb and deployed it on the platform. 
