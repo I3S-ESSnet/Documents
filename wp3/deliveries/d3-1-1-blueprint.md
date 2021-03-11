@@ -48,7 +48,7 @@ Table of Contents
     * [Security checklist](#security-checklist)
     * [Loggin checklist](#loggin-checklist)
 
-===
+---
 
 ## Background
 Based on the deliverable related to the definition of integration and architecture guidelines in WP2, and using modern application architecture patterns we want to create a blueprint. The blueprint is describing a reference runtime environment for modern, sharable services following CSPA standards/principles using containers. However, it will not give any guidance on how to develop shared services, as the focus will be on the runtime environment for the services. The deliverable will describe the basic infrastructure needed, and implement a cloud instance for the needs of the ESSnet. The infrastructure will be documented as code, which will give to its users the opportunity to version it, and fork it. Typical products implementing this pattern would be Ansible Playbook or Terraform. One advantage with the “infrastructure as a code” model approach is that it enables NSIs to easily create their own modern infrastructure on their premises. As part of the deliverable we will provide a simple container-based platform using a cloud infrastructure, which will allow us to validate the blueprint and to perform functional tests on the services developed as deliverables in WP1 - Develop new services. This also enables the service developers to validate their packaging and installation.
