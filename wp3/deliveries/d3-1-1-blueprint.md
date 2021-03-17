@@ -48,18 +48,36 @@ Table of Contents
     * [Security checklist](#security-checklist)
     * [Loggin checklist](#loggin-checklist)
 
+---
 
 ## Background
-Based on the work done in WP2, and using modern application architecture patterns we want to create a blueprint for a reference runtime environment for modern, sharable services following CSPA standards/principles using containers. It will not give any guidance on how to develop shared services, but will focus on the runtime environment for the services. This work package will describe the basic infrastructure needed, and implement a cloud instance for the needs of the ESSnet. The infrastructure will be documented as code, which will give to its users the opportunity to version it, and fork it. Typical products implementing this pattern would be Ansible Playbook or Terraform. Using the “infrastructure as a code” model will enable NSIs to easily create their own modern infrastructure on their premises. There will also be provided, as part of this WP a simple container-based platform using a cloud infrastructure, which will allow to validate the blueprint and to perform functional tests on the services developed in WP1, as well as validate their packaging and installation.
+Based on the deliverable related to the definition of integration and architecture guidelines in WP2, and using modern application architecture patterns we want to create a blueprint. The blueprint is describing a reference runtime environment for modern, sharable services following CSPA standards/principles using containers. However, it will not give any guidance on how to develop shared services, as the focus will be on the runtime environment for the services. The deliverable will describe the basic infrastructure needed, and implement a cloud instance for the needs of the ESSnet. The infrastructure will be documented as code, which will give to its users the opportunity to version it, and fork it. Typical products implementing this pattern would be Ansible Playbook or Terraform. One advantage with the “infrastructure as a code” model approach is that it enables NSIs to easily create their own modern infrastructure on their premises. As part of the deliverable we will provide a simple container-based platform using a cloud infrastructure, which will allow us to validate the blueprint and to perform functional tests on the services developed as deliverables in WP1 - Develop new services. This also enables the service developers to validate their packaging and installation.
 
-Retro-fitted, and modularized existing services will also be tested on the platform,either on premise or on the public cloud instance. This work package will also explore security components like IAM (Identity and Access Management), OAuth 2.0 and OPA (Open Policy Agent) for authentication and authorization, or Service Mesh for routing and secure service-to-service communication, for authentication and authorization. The WP will also look into how this type of security components can be added to existing services. Containerization and orchestration technologies, including Kubernetes and Docker, will be the basis of the platform, and all other infrastructure components will be built with it or around it.
+Retro-fitted, and modularized existing services will also be tested on the platform,either on premise or on the public cloud instance. This work package will also discuss components related security like IAM (Identity and Access Management), OAuth 2.0 and OPA (Open Policy Agent) for authentication and authorization, or Service Mesh for routing and secure service-to-service communication, for authentication and authorization. The blueprint also look into how these types of security components can be added to existing services. Containerization and orchestration technologies, including Kubernetes and Docker, will be the basis of the platform, and all other infrastructure components will be built with it or around it.
+
+## Why we need a different infrastructure platform
+Traditional infrastructure is rigid, costly and not suited for supporting the rapid change in technology and agile processes. Even with the advent of virtualization, and the ability to run hyper convergent infrastructure on premise, we tend to hit struggle with high complexity of our infrastructure, and high management cost of infrastructure. With high complexity, managing adequate security is also an issue. Containers hide some of this complexity, especially when it comes to managing software compatibility between software project. Implementing a cloud infrastructure help us manage underlying infrastructure complexity by using managed infrastructure that can scale depending on the need of the organization.
 
 ![I3S - WP3 - Structure deliverables - Skisse til konseptuell modell for blueprint](https://user-images.githubusercontent.com/47101258/109776463-e3e2c300-7c02-11eb-952a-67516a033e8e.jpg)
 
-### Why we need a different infrastructure platform
-Traditional infrastructure is rigid, costly and not suited for supporting the rapid change in technology. Even with the advent of virtualization, and the ability to run hyper convergent infrastructure on premise, we tend to hit struggle with high complexity of our infrastructure, and high management cost of infrastructure. With high complexity, managing adequate security is also an issue. Containers hide some of this complexity, especially when it comes ot managing softare compatibility between software project, and cloud help us manage underlying infrastructure complexity by using managed infrastructure that can scale depending on the need of the organization.
+The blueprint is describing an approach and patterns in order to support the implementation of reusable and shared services, and the capability of enabling agile processes for developing, implementing and govern business services.
+
+For enabling shared services on a cloud platform the following building blocks should be considered, and is a part of the implementaion of the bluprint:
+
+* Service provider - in the context of I3S the service provider delivers Infrastructure as a Service (IaaS) as the base platform for implementing business services and applications.  
+* Infrastructure-as-code - the capability to manage and provisioning the platform as machine-readable definitions, and should be managed through a version control system.  
+* Container platform - is the logical package mechanism for running services and applications, decoupled from the environment or platform it is running on.
+
+In addition to the above mentioned building blocks one need to establish the capability to enable security mechanisms, these are related to securing the platform, containers as well as services and applications. The monitoring, surveillance and logging building block is related to managing and govern the platform and services running on the platform. Considerations should be related to cost, scaling and general governance of the components.
+
+Service developers build services and applications to be implemented on a platform. These services and applications are deployed through build pipelines, enabling "Integrated Share Services for Statistiscs" to be exposed and consumed by service consumers. Source repos and infrastructure as code repos are used to keep track of changes and share code across projects and teams. 
+
+These building blocks and components are elaborated, described and rationalized further in the next chapters, and proven and validated in the deliverable "Implementing the blueprint". 
 
 ## Providing services
+Shared and resuable services has several beneficial effects to NSIs, both from a business and technological perspective. Establishing the capability and environment for establishing shared services as some prerequisites, and considerations to be taken into account. 
+
+?? Discoverability, governance, deployment and collaboration, scalability and accessability, security capabilites. 
 
 ### Scaling capabilities for services
 
@@ -97,7 +115,7 @@ Consider if bottlenecks is resolvable through refactoring before considering
 * Horizontally scaling of service
 * Increase resource allocation for component
 
-#### Identifying bottlenecks
+Identifying bottlenecks
 Key performance indicators (tecnical): request/sec, latency, request duration, cpu-time, memory usage, heap usage, garbage collection etc. One should also consider external metrics like business metrics.
 
 ### Sessions and state
@@ -106,11 +124,6 @@ Key performance indicators (tecnical): request/sec, latency, request duration, c
 
 ### Containerization
 There are several container initiatives, but the one that has been there longest, and have the largest adoption is Docker.  The container format is being standardized as part of the OCI (Open Container Initiative). Containerization is basically a way of creating a small virtual computer, that contains only the virtualized hardware required for the application you want to run, so it works as a way of transporting services without your application having to know anything about the environment around it. This is also its greatest challenge. In WP2 there will be described a lot of architectural guidelines for how you should design your application to make it scalable, and secure, so this document will only reference that work. A container is basically a virtual machine, but with as little or as much as you need to be able to run your application.
-
-### Prerequisite
-For starting to build services that you want to containerize, you will need a machine that can run Docker as a minimum, or a virtual machine that runs docker. There are also several online options for running containerized services. They greatly vary in price and functionality but can be used as a test for running simple services in the cloud (or on premise).
-
-In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
 
 ### Environment
 You can run Docker either on a Windows machine, or a Linux/Mac. Even .Net applications in containers are moving towards running on Linux host-systems (from .Net Core), so for minimal pain, you should set up your docker environment on a Linux machine, or in a virtual machine running Linux. 
@@ -126,6 +139,11 @@ For test purposes it should be sufficient to use a standard Docker installation 
 * Amazon EC2, Amason EKS.
 
 There is a plethora of other services that will ease the use of these public cloud vendors, like Pivotal's CloudFoundry, which will give you "serverless" functionality that can run on any of the large public cloud vendors. 
+
+### Prerequisite and considerations (WAS: Prerequisite)
+For starting to build services that you want to containerize, you will need a machine that can run Docker as a minimum, or a virtual machine that runs docker. There are also several online options for running containerized services. They greatly vary in price and functionality but can be used as a test for running simple services in the cloud (or on premise).
+
+In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
 
 ## Developing services
 ### Why Open Source matters
@@ -168,46 +186,43 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 
 ..
 
-### Implications
+### Prerequisite and considerations (WAS: Implications)
 * The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing
 * In order to share code internationally, English should (must?) be used as a development language
 * Make sure that code is decomposed so that specific business logic is separated from the code that may be of general interest
 * When suspending all or part of the development, must your organization enure that you have the copyright to the code being developed and/or ensure that the source code can be shared under an open license
 * There may be reasons why one chooses products/solutions that are not open source, but then quality, scope and degree to which the product provides for strong links to the architecture must be assessed and documented
 
-## Security and logging
-### Overall security
-The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in a cloud environment. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. 
+## Overall security and logging
+The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in  cloud environments. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. The deliverable "Implementing the blueprint" describes the security components used in the implementation of the I3S platform. 
 
-### Zero Trust
-Zero Trust, Zero Trust Network, or Zero Trust Architecture refer to security concepts and threat model that no longer assumes that actors, systems or services operating from within the security perimeter should be automatically trusted, and instead must verify anything and everything trying to connect to its systems before granting access.
+### Zero Trust and Service Mesh
+Zero Trust, Zero Trust Network, or Zero Trust Architecture refer to security concepts and threat models that does not assume that actors, systems or services operating from within the security perimeter should be automatically trusted. Instead it require that services must verify explicitly, use least privileged access and assume breaches before granting access to a service or application.
+
+The zero trust concept would be a preferred concept for securing shared services, and especially for services shared across instituions and borders. Considerations when implementing a zero-trust concept for your services should be related to identification of who the users are and to what their actions should be during the session. Other issues would be related to traffic visibility and context for monitoring and verification of traffic across users, device, location and applications.
+
+~~References:~~
+~~- [What is a Zero Trust Architecture?](https://www.infradata.com/resources/what-is-a-zero-trust-architecture/)~~
+~~- [BeyondProd](https://cloud.google.com/security/beyondprod)~~
+~~- [BeyondCorp](https://cloud.google.com/beyondcorp)~~
+~~- [BeyondTrust](https://www.beyondtrust.com/blog/entry/why-zero-trust-is-an-unrealistic-security-model)~~
 
 Service mesh is often considered as an important infrastructure component for facilitating Zero Trust in a micro service architecture.
 
-References:
-- [What is a Zero Trust Architecture?](https://www.infradata.com/resources/what-is-a-zero-trust-architecture/)
-- [BeyondProd](https://cloud.google.com/security/beyondprod)
-- [BeyondCorp](https://cloud.google.com/beyondcorp)
-- [BeyondTrust](https://www.beyondtrust.com/blog/entry/why-zero-trust-is-an-unrealistic-security-model)
+In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services. Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
 
-### Service Mesh
-In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services, often using a sidecar proxy.
+~~References:~~
+~~- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)~~
+~~- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)~~
 
-Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
-
-References:
-- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)
-- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)
-
-### User administration and authentication
+### User administration, authentication and authorization
 Authentication is the process of verifying a users identity.
 
-*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*
+~~*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*~~
 
-### Authorization
 Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.
 
-Access control in applications running in BIP should be implemented using a role based access control system. But it is possible that Attribute based access control (ABAC) is used to some extent, especially when it comes to data ownership.
+~~Access control in applications running in BIP should be implemented using a role based access control system. But it is possible that Attribute based access control (ABAC) is used to some extent, especially when it comes to data ownership.~~
 
 ### Logging and Monitoring
 Logging is important in any security model for auditing and forensics.
@@ -223,45 +238,38 @@ The role of automated configuration management is to maintain systems in a desir
 
 Terraform, Ansible and declarative manifests for describing system and application state and GIT for change management and traceability is often used.
 
-### Managing secrets
+## Securing and protecting your source code
+
+### Strategies for sealing and managing secrets
 Secrets like passwords, certificates and keys are probably the hardest assets to manage in any system, but also the most important asset. Leaked keys can lead to unauthorized access to sensitive data and have severe consequences for the organizations trust, reputation and reliability.
 
 Examples of tools is Secret Manager, Berglas and Sealed secrets. 
 
-### Protecting your source code
-
-..
-
-
 ### Security by obscurity
-
-..
+"... hiding or concealing its security flaws".
 
 ### Scanning code
-
 ..
 
 ### Utilizing GitHub and DependaBot 
-
 ..
 
 ### Scanning containers
-
 ..
 
 ### Utilizing tools like 
-
 ..
 
-### Strategies for sealing secrets
+### Prerequisite and considerations (WAS: Implications)
+Security ...
 
-..
+## Concluding remarks
+This document describes the basic infrastructure neeed for implementing a cloud platform for the ESSnet, using modern application architecture patterns for building a platform for enabling "Integrated Shared Services for Statistics" following the CSPA standards and principles and the Integration and architecture guidelines delivered in WP2.
 
+In the Implementation of blueprint we demonstrate how the infrastructure is documented as code, enabling NSIs to easily create their own modern infrastructure. The implementation shows the implementation of a container-based platform using cloud infrastructure and is validated and proved as I3S has deployed the services developed in WP1. This is also validated and proved as we have "Retro-fitted" and modularized PXweb and deployed it on the platform. 
 
+The blueprint gives an overall description of security issues related to establishing the platform and implementing services, however ...
 
-## Considerations
-
-...
 
 # Appendix
 
