@@ -1,5 +1,8 @@
 # I3S ESSnet Lisbon workshop draft agenda
 
+This is the agenda of the I3S final meeting as it was envisioned before the meeting was moved online.
+This agenda is now obsolete. See also [Visual agenda in Miro](https://miro.com/app/board/o9J_lb4VPS0=/).
+
 ## Day 1, April 26th
  
 ### [10:00-12:30] Consortium meeting (resp. FR)
