@@ -33,11 +33,24 @@ Presentation of Work Package 3 results.
 
 Presentation of Work Package 1 results.
 
+Implementing new services from existing solutions
+
 #### [14:30-15:15] Part 1
+[15 min] ARC 
+[10 min] Relais
+[10 min] PXWeb
+[10 min] VTL Tool
 
 #### [15:15-15:30] Break
 
 #### [15:30-16:15] Part 2
+
+Service reuse and lessons learnt
+
+[15 min] Istat reusing ARC service
+[10 min] Insee reusing Relais service
+[10 min] PXWeb reuse cases
+[10 min] Lessons learnt
 
 ### [16:15-16:30] Break
 
