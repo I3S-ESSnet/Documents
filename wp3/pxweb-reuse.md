@@ -32,7 +32,7 @@ the Web server or remote in a SQL server in a database having the Common Nordic 
 PX-Web is also able to combine the two types of data sources.
 
 ### Links (code, documentation...)
-* Souce code
+* Source code
    * https://github.com/statisticssweden/PxWeb
 * Documentation
   * https://www.scb.se/en/services/statistical-programs-for-px-files/px-web/
@@ -78,11 +78,11 @@ Access to source code is essential. PxWeb was not open source at the time we sta
 
 To depend on closed source when you have your own developers can be a drawback especially when the software in question has a relatively small number of users. On the other hand, a small number of users makes it easier to request new features.
 
-Regardless we would probably not have chosen PxWeb without access to the source code. The need to customize beyond the excisting plugins and configurations options were to great.
+Regardless we would probably not have chosen PxWeb without access to the source code. The need to customize beyond the existing plugins and configurations options were too great.
 
 Starting august 2019 PxWeb is completely open source at https://github.com/statisticssweden/PxWeb
 
-##### Puplic API
+##### Public API
 PxWeb contains a standalone server called PxWebApi. This was very interesting for us since with this we could expose all the contents of our Statbank. PxWebApi supports custom queries several output formats.
 
 [Documentation and video examples](https://www.ssb.no/en/omssb/tjenester-og-verktoy/api/px-api)
@@ -104,7 +104,7 @@ Source: [Welcome presentation 2019](https://www.scb.se/contentassets/c6c00c769d8
 
 In the meeting in Copenhagen 2014 we announced that we would switch to PxWeb.
 
-From around 2015 the Norwegian and Swedish developers have had weekly short Google Hangouts every friday. These meetings contain
+From around 2015 the Norwegian and Swedish developers have had weekly short Google Hangouts every Friday. These meetings contain
 
 * information sharing, what we are working on locally
 * discussion of new features
@@ -168,7 +168,7 @@ Complete list of .Net Standard 2.0 libraries:
 
 #### Technical details
 ##### JSON-stat
-One of our other contributions to PxWeb has been implementation of the  JSON-stat Dataset output format. I was the format we chose for our first api i 2013 and both JSON-stat v1.2 and 2.0 are available in PxWeb.
+One of our other contributions to PxWeb has been implementation of the  JSON-stat Dataset output format. I was the format we chose for our first api in 2013 and both JSON-stat v1.2 and 2.0 are available in PxWeb.
 
 * https://json-stat.org/
 
