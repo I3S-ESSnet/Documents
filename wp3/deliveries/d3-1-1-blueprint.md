@@ -222,6 +222,12 @@ Hiding you source code does not make it more secure.
 Security ...~~
 
 ### Prerequisite and considerations
+* Needs for confidentiality actions on information in order to establish the right mechanisms for protecting information. Encryption at-rest and in-transit, securing personal and organizational information, disclosure controls.
+* Non-repudiation
+* Authentication, consider authentication requirements for service discovery and service delivery. Carefully consider trust-models for "chaining" services in a production line. 
+* Trust domains, between services and platforms
+* Resource-level authorization, assumes role-based access to resources
+* Risk assessment, mitigate the risk that a CSPA Service or the data it controls is misused.
 
 
 ## Considerations OR Concluding remarks
