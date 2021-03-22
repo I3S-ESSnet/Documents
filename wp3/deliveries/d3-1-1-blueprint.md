@@ -209,9 +209,24 @@ References:
 
 Hiding you source code does not make it more secure. 
 
-### Scanning code
+### Scanning code / Source code analysis 
+Automaticly scanning your code is a good practice. There are many scanners to choose from
+and a lot of them are free for open source code. There are also different kinds of scanner
+and some of them covers several categories.  
 
-..
+* Code quality
+* Code review
+* Dependency management
+* Security
+
+We have some experience with these, but there at so many more.
+
+* Depandabot (Github)
+* Snyk
+* SonarCube
+* CodeQL (Github)
+* Code Climate
+* Codecov
 
 ### Utilizing GitHub and DependaBot 
 
