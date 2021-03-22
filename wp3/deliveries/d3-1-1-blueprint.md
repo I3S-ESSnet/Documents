@@ -195,12 +195,10 @@ The figure shows an example on technical implementation of the zero-trust concep
 ~~- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)~~
 
 ### User administration, authentication and authorization
-Authentication is the process of verifying a users identity.
 Authentication is the process of verifying a users identity. Authentication should be based on open standards for instance OpenID connect (OIDC) and OAuth2 for authorization. When implementing an IdP-solution one should consider the OIDC compability, multi-factor authentication, self-serviced password reset, real-time logging, password-policy features.
 
 ~~*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*~~
 
-Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.
 ~~Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.~~
 
 ~~Access control in applications running in BIP should be implemented using a role based access control system. But it is possible that Attribute based access control (ABAC) is used to some extent, especially when it comes to data ownership.~~
