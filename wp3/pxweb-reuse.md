@@ -7,9 +7,9 @@ Statistics Norway (SSB)
 ### Unit
 702 Division for IT-Architecture
 ### Report version
-v0.0.2
+v1.0.0
 ### Report date
-2021-01-12
+2021-03-22
 ### Contact mail
 
 ## 2. Service reused
@@ -51,32 +51,32 @@ PxWeb comes from the PC-Axis
 
 Statistics Norway (SSB) has been using and contributing to PC-Axis for a long time. We were also was part of developing the Common Nordic Meta Model (CNMM) in early 2000.
 
-In march 2001 we launched our public Statbank service. This was an Oracle database implementing CNMM and a webapplication written in Active Server Pages (ASP). The webapplication was based on the Statistics Denmarks Statbank.
+In March 2001 we launched our public Statbank service. This was an Oracle database implementing CNMM and a web application written in Active Server Pages (ASP). The web application was based on the Statistics Denmark's Statbank.
 
-Our Statbank has been a success ever since. After at complete rewrite of the ssb.no website in 2013 the Stabank is the only "channel" to disseminate tables/datasets.
+Our Statbank has been a success ever since. After a complete rewrite of the ssb.no website in 2013 the Stabank is the only "channel" to disseminate tables/datasets.
 
-Back in 2011 Statistics Sweden (SCB) developed the .Net version of PxWeb. The solution was split up in severel libraries and SSB contributed with a .Net implementation of the SQL connector to CNMM. The soruce code was hosted in subversion at Assembla.com
+Back in 2011 Statistics Sweden (SCB) developed the .Net version of PxWeb. The solution was split up in several libraries and SSB contributed with a .Net implementation of the SQL connector to CNMM. The source code was hosted in subversion at Assembla.com
 
-We also made our first pubic API for Statbank in 2013 based on some of these .Net libraries. But this API only exposed a small part of the Statbank.
+We also made our first public API for Statbank in 2013 based on some of these .Net libraries. But this API only exposed a small part of the Statbank.
 
-However our Statbank struggled to keep up with technical debt and around 2014 we looked to do some upgrading and decided to make the switch to PxWeb.
+However, our Statbank struggled to keep up with technical debt and around 2014 we looked to do some upgrading and decided to make the switch to PxWeb.
 
 ### Business case
 > Issue to address, problems with current solution (or lack of), etc.
 
-In Statistics Norway we have a disimitation policy that says every table/dataset should be made availible in the Statbank. This requires that the statistical departments provide a minimum of metadata and it makes data easier to find knowing that everything is in the Statbank. On the other hand having a central/common(?) solutions like this demands smooth operation and no bottlenecks. 
+In Statistics Norway we have a dissemination policy that says every table/dataset should be made available in the Statbank. This requires that the statistical departments provide a minimum of metadata and it makes data easier to find knowing that everything is in the Statbank. On the other hand, having a central/common(?) solutions like this demands smooth operation and no bottlenecks. 
 
 We also like to provide as much as possible through public APIs as open data.
 
 ### Service reuse
 
 #### General description
-There were many reasons for us to choose PxWeb but these are some of the main ones.
+There were many reasons for us to choose PxWeb, but these are some of the main ones.
 
 ##### Open source
-Access to source code is essential. PxWeb was not open source at the time we started using it, but as we were a contributing party we already had access to the source code.
+Access to source code is essential. PxWeb was not open source at the time we started using it, but as we were a contributing party, we already had access to the source code.
 
-To depend on closed source when you have your own developers can be a drawback especially when the software in question has a relative small number of users. On the other hand a small number of users makes it easier to request new features.
+To depend on closed source when you have your own developers can be a drawback especially when the software in question has a relatively small number of users. On the other hand, a small number of users makes it easier to request new features.
 
 Regardless we would probably not have chosen PxWeb without access to the source code. The need to customize beyond the excisting plugins and configurations options were to great.
 
@@ -88,13 +88,13 @@ PxWeb contains a standalone server called PxWebApi. This was very interesting fo
 [Documentation and video examples](https://www.ssb.no/en/omssb/tjenester-og-verktoy/api/px-api)
 
 ##### Modern Tech
-In 2014 PxWeb was still "modern tech" especially compared to our old  solution. Today ASP.NET Web Forms is not so modern, but all of the libraries the webapplication is depending on has in 2020 been ported to the conform to .NET Standard 2.0 and the next generation PxWeb and PxWebApi application are being developed.
+In 2014 PxWeb was still "modern tech" especially compared to our old  solution. Today ASP.NET Web Forms is not so modern, but all of the libraries the web application is depending on has in 2020 been ported to the conform to .NET Standard 2.0 and the next generation PxWeb and PxWebApi application are being developed.
 
 ##### Collaboration
-As mentioned we already had close relations with the Nordics NSOs (NSIs?) from working with the CNMM and the .Net libraries. We also realised that
+As mentioned, we already had close relations with the Nordics NSOs (NSIs?) from working with the CNMM and the .Net libraries. We also realized that
 
 * it's very difficult to create a complete web solution from scratch when you have few developers
-* it's much easier to build and customise something that already exists
+* it's much easier to build and customize something that already exists
 
 There is also an annual "International PX meeting" (prev. Pc-Axis reference group meeting) that we attend.
 
@@ -104,20 +104,20 @@ Source: [Welcome presentation 2019](https://www.scb.se/contentassets/c6c00c769d8
 
 In the meeting in Copenhagen 2014 we announced that we would switch to PxWeb.
 
-From arround 2015 the Norwegian og Swedish developers have had weekly short Google Hangouts every friday. These meetings contain
+From around 2015 the Norwegian and Swedish developers have had weekly short Google Hangouts every friday. These meetings contain
 
 * information sharing, what we are working on locally
 * discussion of new features
-* problem solving, eg. bugs, performance issues
+* problem solving, e.g., bugs, performance issues
 * feedback from users on the forum
 
-There has also been a few trips to in SCBs offices in Örebro and Stockholm and visits from SCB to our offices in Oslo and Kongsvinger.
+There have also been a few trips to in SCBs offices in Örebro and Stockholm and visits from SCB to our offices in Oslo and Kongsvinger.
 Some of these meetings have been pure technical where we do big code merges.
 
-To get most out out the collaboration the social element is key.
+To get most out of the collaboration the social element is key.
 
 ##### Launch
-To play safe we split the launch in to parts
+To play safe we split the launch in two parts
 * PxWebApi was launched in May 2016 as a new application
 * PxWeb was launched in January 2018 replacing our StatbankWeb
 
@@ -130,9 +130,9 @@ During 2020 all the PxFramework libraries in the illustration below where ported
 ![PxWeb future](pxweb-tobe-arch.png)
 Source: [PxWeb 2020 presentation](https://www.scb.se/globalassets/vara-tjanster/px-programmen/pxweb_2020v2_micke-petros.pdf)
 
-The nice thing about having the libraries in .Net Standard 2.0 is that they can be used in both Windows-only and cross-platform framworks.
+The nice thing about having the libraries in .Net Standard 2.0 is that they can be used in both Windows-only and cross-platform frameworks.
 
-* .Net Framwork 4.6+
+* .Net Framework 4.6+
 * .Net Core 2.0+
 * .Net 5
 
@@ -142,7 +142,7 @@ The current PxWeb ASP.NET application (2020 v2, released 18. January 2021) is st
 
 A cross-platform ASP.NET Core version of the PxWebApi application was planned for 2020 in Statistics Sweden but has been postponed.
 
-The source code for each library is also availible at https://github.com/statisticssweden/ 
+The source code for each library is also available at https://github.com/statisticssweden/ 
 
 Complete list of .Net Standard 2.0 libraries:
 * PCAxis.Common
@@ -238,28 +238,28 @@ Example showing Consumer Price Index 12-month rate (per cent) as JSON-stat
 #### Organizational impact
 > Integration of the service in the process flow.
 
-The main organizational impact is rather technical. Our previous application (from Statitics Denmark) and PxWeb are rather similar from an enduser standpoint. So our gratest benefit was removal of technical dept. Secondly moving to more modern technology made it easier to further develop our website.  
+The main organizational impact is rather technical. Our previous application (from Statistics Denmark) and PxWeb are rather similar from an end-user standpoint. So, our greatest benefit was removal of technical dept. Secondly moving to more modern technology made it easier to further develop our website.  
 
 #### Project management
 As mentioned in the [general description](#launch) we split the launch in two. 
-Both launches was done by our small team of developers already responsible for the entire Statbank solution.
+Both launches were done by our small team of developers already responsible for the entire Statbank solution.
 They have long experience working as a Scrum team, and for the first launch it was just a matter of prioritizing the new tasks in the current workflow.
 
-For the second lauch the team was included in a larger project (Kostra). The team had the task of finalizing PxWeb two months prior the main prosject lauch, which they did. The main project was large with three seperate developer teams and a deadline that could not be moved. 
+For the second launch the team was included in a larger project (Kostra). The team had the task of finalizing PxWeb two months prior the main project launch, which they did. The main project was large with three separate developer teams and a deadline that could not be moved. 
 
 #### Other aspects (e.g. financial)
 #### Results achieved
 
-To focus on the achievments during this I3S project we would mention these
+To focus on the achievements during this I3S project we would mention these
 
 ##### Web Content Accessibility Guidelines (WCAG)
-During 2019 and 2020 Statistics Norway took the leed role in making PxWeb meet the WCAG 2.0 requirements. Most of this was made availible i PxWeb 2020 v2 and more is comming in future versions.
+During 2019 and 2020 Statistics Norway took the lead role in making PxWeb meet the WCAG 2.0 requirements. Most of this was made available in PxWeb 2020 v2 and more is coming in future versions.
 
 ##### Open Source
-PxWeb was made open source under the Apache 2.0 licence in August 2019. It's avilible at https://github.com/statisticssweden/PxWeb
+PxWeb was made open source under the Apache 2.0 license in August 2019. It's available at https://github.com/statisticssweden/PxWeb
 
 ##### Cross-platform
-During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architectures](#as-is-and-to-do-architectures) where ported to .Net Standard 2.0 and published on NuGet https://www.nuget.org/profiles/pc-axis 
+During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architectures](#as-is-and-to-do-architectures) were ported to .Net Standard 2.0 and published on NuGet https://www.nuget.org/profiles/pc-axis 
 
 ## 4. Lessons learned
 
@@ -269,8 +269,8 @@ During 2020 all the PxFramework libraries mentioned in [As-Is and To-Do architec
 
 ## 5. Conclusions and next steps
 
-Containarizing and packaging existing monolithic applications have some particular challenges. The ability to handle scaleability (pets vs. cattle) is hard, since it's a single application where all the functionality is rolled into one piece of software. Still, the ability to provision an instance of PxWeb (with all it's functionality), by using containers is very easy, and will make it a lot easier to test the solution, without having to install it on a server.
+Containerizing and packaging existing monolithic applications have some particular challenges. The ability to handle scalability (pets vs. cattle) is hard, since it's a single application where all the functionality is rolled into one piece of software. Still, the ability to provision an instance of PxWeb (with all it's functionality), by using containers is very easy, and will make it a lot easier to test the solution, without having to install it on a server.
 
 #### Next steps
 
-PxWeb could be split up into more discrete funcitonal pieces that would make it easier to take advantage of modern cloud based infrastructure. 
+PxWeb could be split up into more discrete functional pieces that would make it easier to take advantage of modern cloud based infrastructure. 
