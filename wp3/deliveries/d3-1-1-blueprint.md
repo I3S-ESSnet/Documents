@@ -215,16 +215,20 @@ Service mesh is often considered as an important infrastructure component for fa
 
 In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services. Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
 
+![image](https://user-images.githubusercontent.com/47101258/111982173-ed2bc500-8b08-11eb-9f5a-d9b266074e9d.png)
+
+The figure shows an example on technical implementation of the zero-trust concept using service mesh to deliver functionality for authentication and authorization of network flow and access proxy for user and device authentication. 
+
 ~~References:~~
 ~~- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)~~
 ~~- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)~~
 
 ### User administration, authentication and authorization
-Authentication is the process of verifying a users identity.
+Authentication is the process of verifying a users identity. Authentication should be based on open standards for instance OpenID connect (OIDC) and OAuth2 for authorization. When implementing an IdP-solution one should consider the OIDC compability, multi-factor authentication, self-serviced password reset, real-time logging, password-policy features.
 
 ~~*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*~~
 
-Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.
+~~Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.~~
 
 ~~Access control in applications running in BIP should be implemented using a role based access control system. But it is possible that Attribute based access control (ABAC) is used to some extent, especially when it comes to data ownership.~~
 
