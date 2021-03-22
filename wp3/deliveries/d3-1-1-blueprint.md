@@ -75,9 +75,8 @@ Service developers build services and applications to be implemented on a platfo
 These building blocks and components are elaborated, described and rationalized further in the next chapters, and proven and validated in the deliverable "Implementing the blueprint". 
 
 ## Providing services
-Shared and resuable services has several beneficial effects to NSIs, both from a business and technological perspective. Establishing the capability and environment for establishing shared services as some prerequisites, and considerations to be taken into account. 
 
-?? Discoverability, governance, deployment and collaboration, scalability and accessability, security capabilites. 
+Shared and resuable services has several beneficial effects to NSIs, both from a business and technological perspective. Establishing the capability and environment for establishing shared services as some prerequisites, and considerations to be taken into account. The reason for
 
 ### Scaling capabilities for services
 
@@ -85,19 +84,10 @@ The design of a service greatly impacts the ability for a service to scale. One 
 
 Horizontal scaling means the ability to duplicate the service to increase f.ex. response time, throughput, and processing. This requires easy duplication of services. This is where containers are important. The duplication of services requires a way of treating those services in a disposable way; Destroying one instance of a service as part of a hundreds wont impact your system. One of the caveats for scaling horizontaly is related to your down stream dependencies, like storage, session handling etc. The scaleabilty of your service is hampered if you have down stream dependency on a single instance relational database. It is extremly important when designing services that have down stream dependencies to also take into account your scaling pattern. Public cloud vendors provide you with scalable infrastructure services that alliviate this. Sessions and state should also not be handled in a way that hampers your scalability. Make sure sessions are not tied to ephemeral storage, and have the ability to be instantly syncronized across services. 
 
-Your infrastructure should be able to handle the load-balancing, and orchestration of services (spinning containers up and down depending on your needs)
+Your infrastructure should be able to handle the load-balancing, and orchestration of services (spinning containers up and down depending on your needs).
 
-[Dependencies and Data Sharing](https://web.archive.org/web/20210322114020/https://auth0.com/blog/introduction-to-microservices-part-4-dependencies/)
-
-### Bottlenecks
-..
-
-Consider if bottlenecks is resolvable through refactoring before considering
-* Horizontally scaling of service
-* Increase resource allocation for component
-
-Identifying bottlenecks
-Key performance indicators (tecnical): request/sec, latency, request duration, cpu-time, memory usage, heap usage, garbage collection etc. One should also consider external metrics like business metrics.
+References:
+- [Dependencies and Data Sharing](https://web.archive.org/web/20210322114020/https://auth0.com/blog/introduction-to-microservices-part-4-dependencies/)
 
 ### Containerization
 There are several container initiatives, but the one that has been there longest, and have the largest adoption is Docker.  The container format is being standardized as part of the OCI (Open Container Initiative). Containerization is basically a way of creating a small virtual computer, that contains only the virtualized hardware required for the application you want to run, so it works as a way of transporting services without your application having to know anything about the environment around it. This is also its greatest challenge. In WP2 there will be described a lot of architectural guidelines for how you should design your application to make it scalable, and secure, so this document will only reference that work. A container is basically a virtual machine, but with as little or as much as you need to be able to run your application.
@@ -124,6 +114,7 @@ For starting to build services that you want to containerize, you will need a ma
 In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
 
 ## Developing services
+
 ### Why Open Source matters
 The use of open source provides greater freedom to choose both products and technology that are right for your organization. It makes it easier to choose as little or as much as one needs at any given time. It also gives your organization the freedom to choose vendors and expertise in the market. 
 
@@ -159,8 +150,8 @@ A license that requires the use of the code to retain the same license as the co
 
 Examples:
 
-* [GPL/LGPL] (https://opensource.org/licenses/gpl-license)
-* [EUPL] (https://opensource.org/licenses/EUPL-1.2)
+* [GPL/LGPL](https://opensource.org/licenses/gpl-license)
+* [EUPL](https://opensource.org/licenses/EUPL-1.2)
 
 #### Permissive Open Source license
 
@@ -214,10 +205,6 @@ Authentication is the process of verifying a users identity.
 ![image](https://user-images.githubusercontent.com/47101258/111982173-ed2bc500-8b08-11eb-9f5a-d9b266074e9d.png)
 
 The figure shows an example on technical implementation of the zero-trust concept using service mesh to deliver functionality for authentication and authorization of network flow and access proxy for user and device authentication. 
-
-~~References:~~
-~~- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)~~
-~~- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)~~
 
 ### User administration, authentication and authorization
 Authentication is the process of verifying a users identity. Authentication should be based on open standards for instance OpenID connect (OIDC) and OAuth2 for authorization. When implementing an IdP-solution one should consider the OIDC compability, multi-factor authentication, self-serviced password reset, real-time logging, password-policy features.
