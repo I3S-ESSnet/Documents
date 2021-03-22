@@ -200,6 +200,8 @@ Terraform, Ansible and declarative manifests for describing system and applicati
 Secrets like passwords, certificates and keys are probably the hardest assets to manage in any system, but also the most important asset. Leaked keys can lead to unauthorized access to sensitive data and have severe consequences for the organizations trust, reputation and reliability.
 
 Examples of tools is Secret Manager, Berglas and Sealed secrets. 
+References:
+- [OWASP Key Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html#Key_Management_Lifecycle_Best_Practices)
 
 ### Protecting your source code
 
