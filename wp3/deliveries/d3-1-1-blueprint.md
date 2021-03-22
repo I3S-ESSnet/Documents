@@ -177,11 +177,7 @@ Exposing and sharing services between organizations and users need to be build o
 ### Zero Trust and Service Mesh
 Zero Trust, Zero Trust Network, or Zero Trust Architecture refer to security concepts and threat models that does not assume that actors, systems or services operating from within the security perimeter should be automatically trusted. Instead it require that services must verify explicitly, use least privileged access and assume breaches before granting access to a service or application.
 The zero trust concept would be a preferred concept for securing shared services, and especially for services shared across instituions and borders. Considerations when implementing a zero-trust concept for your services should be related to identification of who the users are and to what their actions should be during the session. Other issues would be related to traffic visibility and context for monitoring and verification of traffic across users, device, location and applications.
-~~References:~~
-~~- [What is a Zero Trust Architecture?](https://www.infradata.com/resources/what-is-a-zero-trust-architecture/)~~
-~~- [BeyondProd](https://cloud.google.com/security/beyondprod)~~
-~~- [BeyondCorp](https://cloud.google.com/beyondcorp)~~
-~~- [BeyondTrust](https://www.beyondtrust.com/blog/entry/why-zero-trust-is-an-unrealistic-security-model)~~
+
 Service mesh is often considered as an important infrastructure component for facilitating Zero Trust in a micro service architecture.
 
 In software architecture, a service mesh is a dedicated infrastructure layer for facilitating service-to-service communications between micro services. Having such a dedicated communication layer can provide a number of benefits, such as providing observability into communications, providing secure connections, or automating retries and backoff for failed requests.
@@ -190,18 +186,13 @@ In software architecture, a service mesh is a dedicated infrastructure layer for
 
 The figure shows an example on technical implementation of the zero-trust concept using service mesh to deliver functionality for authentication and authorization of network flow and access proxy for user and device authentication. 
 
-~~References:~~
-~~- [Service mesh](https://en.wikipedia.org/wiki/Service_mesh)~~
-~~- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)~~
+References:
+- [BeyondCorp - Google's implementation of the zero trust model](https://cloud.google.com/beyondcorp)
+- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)
+
 
 ### User administration, authentication and authorization
 Authentication is the process of verifying a users identity. Authentication should be based on open standards for instance OpenID connect (OIDC) and OAuth2 for authorization. When implementing an IdP-solution one should consider the OIDC compability, multi-factor authentication, self-serviced password reset, real-time logging, password-policy features.
-
-~~*Azure AD is used as the identity provider for SSB users. Users and groups are managed in an on prem AD and synchronized to Azure AD. Keycloak is used for providing OAuth 2 and OIDC support to applications running in Google Kubernetes Engine (GKE). Read more about authentication in BIP in the Authentication services documentation.*~~
-
-~~Role-based access control (RBAC) is a method of restricting access to data and operations a user can perform based on the users role in the Organization.~~
-
-~~Access control in applications running in BIP should be implemented using a role based access control system. But it is possible that Attribute based access control (ABAC) is used to some extent, especially when it comes to data ownership.~~
 
 ### Logging and Monitoring
 Logging is important in any security model for auditing and forensics.
