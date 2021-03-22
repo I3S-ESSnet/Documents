@@ -223,11 +223,10 @@ Security ...~~
 
 ### Prerequisite and considerations
 * Needs for confidentiality actions on information in order to establish the right mechanisms for protecting information. Encryption at-rest and in-transit, securing personal and organizational information, disclosure controls.
-* Non-repudiation
+* Consider security concepts for cloud services, for instance zero-trust model. 
 * Authentication, consider authentication requirements for service discovery and service delivery. Carefully consider trust-models for "chaining" services in a production line. 
-* Trust domains, between services and platforms
-* Resource-level authorization, assumes role-based access to resources
-* Risk assessment, mitigate the risk that a CSPA Service or the data it controls is misused.
+* Trust domains, when building chained production lines be aware that shared services could be based on different security models that need to be handled
+* Risk assessment, mitigate the risk that a CSPA Service or the data it controls is misused, be especially aware of chained services.
 
 
 ## Considerations OR Concluding remarks
