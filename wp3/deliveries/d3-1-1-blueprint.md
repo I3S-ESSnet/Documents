@@ -108,7 +108,7 @@ For test purposes it should be sufficient to use a standard Docker installation 
 
 There is a plethora of other services that will ease the use of these public cloud vendors, like Pivotal's CloudFoundry, which will give you "serverless" functionality that can run on any of the large public cloud vendors. 
 
-### Prerequisite and considerations (WAS: Prerequisite)
+### Prerequisite and considerations
 For starting to build services that you want to containerize, you will need a machine that can run Docker as a minimum, or a virtual machine that runs docker. There are also several online options for running containerized services. They greatly vary in price and functionality but can be used as a test for running simple services in the cloud (or on premise).
 
 In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
@@ -124,7 +124,7 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 * Open Source contributes to innovation
 * Open Source is more than reusing code GitHub
 * Focus on internal and external sharing
-* Transparency rather than closed
+* Open rather than closed
 * Transparency promotes quality
 * Transparency promotes security
 
