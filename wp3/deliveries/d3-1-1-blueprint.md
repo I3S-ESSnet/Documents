@@ -196,7 +196,7 @@ The role of automated configuration management is to maintain systems in a desir
 
 Terraform, Ansible and declarative manifests for describing system and application state and GIT for change management and traceability is often used.
 
-### Managing secrets
+### Strategies for sealing and managing secrets
 Secrets like passwords, certificates and keys are probably the hardest assets to manage in any system, but also the most important asset. Leaked keys can lead to unauthorized access to sensitive data and have severe consequences for the organizations trust, reputation and reliability.
 
 Examples of tools is Secret Manager, Berglas and Sealed secrets. 
@@ -217,18 +217,18 @@ Hiding you source code does not make it more secure.
 
 ..
 
-### Strategies for sealing secrets
+~~### Strategies for sealing secrets
+???
+Security ...~~
+
+### Prerequisite and considerations
 
 
-Security ...
-
-## Concluding remarks
+## Considerations OR Concluding remarks
 This document describes the basic infrastructure neeed for implementing a cloud platform for the ESSnet, using modern application architecture patterns for building a platform for enabling "Integrated Shared Services for Statistics" following the CSPA standards and principles and the Integration and architecture guidelines delivered in WP2.
 
 In the Implementation of blueprint we demonstrate how the infrastructure is documented as code, enabling NSIs to easily create their own modern infrastructure. The implementation shows the implementation of a container-based platform using cloud infrastructure and is validated and proved as I3S has deployed the services developed in WP1. This is also validated and proved as we have "Retro-fitted" and modularized PXweb and deployed it on the platform. 
 
-## Considerations
-...
 
 # Appendix
 
