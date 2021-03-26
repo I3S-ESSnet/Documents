@@ -3,7 +3,6 @@
 Table of Contents
 =================
 
-* [Blueprint for I3S](#blueprint-for-i3s)
 * [Table of Contents](#table-of-contents)
   * [Background](#background)
     * [Why we need a different infrastructure platform](#why-we-need-a-different-infrastructure-platform)
@@ -12,25 +11,23 @@ Table of Contents
     * [Containerization](#containerization)
     * [Environment](#environment)
     * [Cloud](#cloud)
-    * [Prerequisite and considerations](#prerequisite-and-considerations)
+    * [Considerations](#considerations)
   * [Developing services](#developing-services)
     * [Why Open Source matters](#why-open-source-matters)
     * [Open Source makes your software better](#open-source-makes-your-software-better)
     * [Law &amp; Order](#law--order)
-    * [Prerequisite and considerations](#prerequisite-and-considerations-1)
+    * [Considerations](#considerations-1)
   * [Overall security and logging](#overall-security-and-logging)
     * [Zero Trust and Service Mesh](#zero-trust-and-service-mesh)
     * [User administration, authentication and authorization](#user-administration-authentication-and-authorization)
     * [Logging and Monitoring](#logging-and-monitoring)
     * [Automated Configuration Management](#automated-configuration-management)
-    * [Managing secrets](#managing-secrets)
-    * [Protecting your source code](#protecting-your-source-code)
-    * [Scanning code](#scanning-code)
+    * [Strategies for sealing and managing secrets](#strategies-for-sealing-and-managing-secrets)
+    * [Scanning code / Source code analysis](#scanning-code--source-code-analysis)
     * [Utilizing GitHub and DependaBot](#utilizing-github-and-dependabot)
     * [Scanning containers](#scanning-containers)
-    * [Strategies for sealing secrets](#strategies-for-sealing-secrets)
+    * [Considerations](#considerations-2)
   * [Concluding remarks](#concluding-remarks)
-  * [Considerations](#considerations)
 * [Appendix](#appendix)
   * [Security checklists](#security-checklists)
     * [Quality level checklist](#quality-level-checklist)
@@ -188,8 +185,8 @@ Logging is important in any security model for auditing and forensics.
 Log scraping should be done for alle Applications. It is especially important that access related information is logged by applications to assist with auditing.
 
 References:
-- [OWASP Logging Guide](https://owasp.org/www-pdf-archive/OWASP_Logging_Guide.pdf)
-- [Logging Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
+- [OWASP Logging Guide](https://web.archive.org/web/20210122093917/https://owasp.org/www-pdf-archive/OWASP_Logging_Guide.pdf)
+- [Logging Cheat Sheet](https://web.archive.org/web/20210326120544/https://cheatsheetseries.owasp.org/cheatsheets/Logging_Cheat_Sheet.html)
 
 ### Automated Configuration Management
 The role of automated configuration management is to maintain systems in a desired state in order to reduce cost, complexity and errors. This is especially important in a Zero Trust architecture where configuration transparency, traceability and consistency in a system is essential for security.
