@@ -202,8 +202,8 @@ Secrets like passwords, certificates and keys are probably the hardest assets to
 Examples of tools is Secret Manager, Berglas and Sealed secrets. 
 
 References:
-- [OWASP Key Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html#Key_Management_Lifecycle_Best_Practices)
-- [TechBeacon: Top resources for cloud native secrets management](https://techbeacon.com/security/top-resources-cloud-native-secrets-management)
+- [OWASP Key Management Cheat Sheet](https://web.archive.org/web/20210326115605/https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html#Key_Management_Lifecycle_Best_Practices)
+- [TechBeacon: Top resources for cloud native secrets management](https://web.archive.org/web/20210326115840/https://techbeacon.com/security/top-resources-cloud-native-secrets-management)
 
 ### Scanning code / Source code analysis 
 Automaticly scanning your code is a good practice. There are many scanners to choose from
