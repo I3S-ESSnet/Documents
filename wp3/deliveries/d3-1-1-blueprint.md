@@ -96,7 +96,7 @@ For test purposes it should be sufficient to use a standard Docker installation 
 
 There is a plethora of other services that will ease the use of these public cloud vendors, like Pivotal's CloudFoundry, which will give you "serverless" functionality that can run on any of the large public cloud vendors. 
 
-### Prerequisite and considerations
+### Considerations
 For starting to build services that you want to containerize, you will need a machine that can run Docker as a minimum, or a virtual machine that runs docker. There are also several online options for running containerized services. They greatly vary in price and functionality but can be used as a test for running simple services in the cloud (or on premise).
 
 In general it’s hard to establish and maintain an on-premise, container platform from scratch, depending on your organizations maturity. But there are several good on premise platform-products that will help you with things like security and hardware provisioning, like Apache Mesos, and RedHat OpenShift.
@@ -151,7 +151,7 @@ Examples:
 * [BSD License](https://opensource.org/licenses/BSD-3-Clause)
 * [MIT License](https://opensource.org/licenses/MIT)
 
-### Prerequisite and considerations
+### Considerations
 * The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing
 * In order to share code internationally, English should (must?) be used as a development language
 * Make sure that code is decomposed so that specific business logic is separated from the code that may be of general interest
@@ -205,10 +205,6 @@ References:
 - [OWASP Key Management Cheat Sheet](https://cheatsheetseries.owasp.org/cheatsheets/Key_Management_Cheat_Sheet.html#Key_Management_Lifecycle_Best_Practices)
 - [TechBeacon: Top resources for cloud native secrets management](https://techbeacon.com/security/top-resources-cloud-native-secrets-management)
 
-### Protecting your source code
-
-Hiding you source code does not make it more secure. 
-
 ### Scanning code / Source code analysis 
 Automaticly scanning your code is a good practice. There are many scanners to choose from
 and a lot of them are free for open source code. There are also different kinds of scanner
@@ -219,36 +215,30 @@ and some of them covers several categories.
 * Dependency management
 * Security
 
-We have some experience with these, but there at so many more.
+References:
 
-* Depandabot (Github)
-* Snyk
-* SonarCube
-* CodeQL (Github)
-* Code Climate
-* Codecov
+* [Depandabot (Github)](https://web.archive.org/web/20210326114130/https://dependabot.com/)
+* [Snyk](https://web.archive.org/web/20210326114329/https://snyk.io/)
+* [SonarQube](https://web.archive.org/web/20210324131046/https://www.sonarqube.org/)
+* [Code Climate](https://web.archive.org/web/20210326114743/https://codeclimate.com/)
+* [Codecov](https://web.archive.org/web/20210326114915/https://about.codecov.io/)
 
 ### Utilizing GitHub and DependaBot 
 
-..
+DependaBot is a service that was recently aquired by GitHub for scanning code repo's in different languages for known vurnerabilities. Depending on your configuration DependaBot will also create Pull Requests that will fix security-issues related to vurnerable dependencies in your code. It's an easy feature to turn on, and it will start to create reports on your repository.
 
 ### Scanning containers
 
-..
+Scanning containers is similar to scanning for vurnerabilities in dependecies in code. Several services will scan containers for underlying image dependencies that have security issues
 
-~~### Strategies for sealing secrets
-???
-Security ...~~
-
-### Prerequisite and considerations
+### Considerations
 * Needs for confidentiality actions on information in order to establish the right mechanisms for protecting information. Encryption at-rest and in-transit, securing personal and organizational information, disclosure controls.
 * Consider security concepts for cloud services, for instance zero-trust model. 
 * Authentication, consider authentication requirements for service discovery and service delivery. Carefully consider trust-models for "chaining" services in a production line. 
 * Trust domains, when building chained production lines be aware that shared services could be based on different security models that need to be handled
 * Risk assessment, mitigate the risk that a CSPA Service or the data it controls is misused, be especially aware of chained services.
 
-
-## Considerations OR Concluding remarks
+## Concluding remarks
 This document describes the basic infrastructure neeed for implementing a cloud platform for the ESSnet, using modern application architecture patterns for building a platform for enabling "Integrated Shared Services for Statistics" following the CSPA standards and principles and the Integration and architecture guidelines delivered in WP2.
 
 In the Implementation of blueprint we demonstrate how the infrastructure is documented as code, enabling NSIs to easily create their own modern infrastructure. The implementation shows the implementation of a container-based platform using cloud infrastructure and is validated and proved as I3S has deployed the services developed in WP1. This is also validated and proved as we have "Retro-fitted" and modularized PXweb and deployed it on the platform. 
