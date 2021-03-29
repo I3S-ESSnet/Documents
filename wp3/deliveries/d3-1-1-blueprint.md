@@ -158,7 +158,9 @@ Examples:
 ## Overall security and logging
 The description provides a brief documentation with an overview of relevant concepts to support a security modell for establishing services in  cloud environments. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. The deliverable "Implementing the blueprint" describes the security components used in the implementation of the I3S platform. 
 A fundamental principle is security (CSPA064): *"Maintain community trust and information security. Conduct all levels of business in a manner which build the community's trust. This includes the community's trust and confidence in the statistical organization's decision making and practices and their ability to preserve the integrity, quality, security and confidentiality of the information provided."*
+
 Exposing and sharing services between organizations and users need to be build on trust. Security issues are amongst other related service security, confidentaiality and user administration in order to establish capabilities for policy management and service governance. The document "Guidelines for describing statistical service definitions" discusses different levels of service exposure. For the deliverables in I3S one should consider service security at level Inter-institional and Public level, in addition to security considerations one need to consider service lifecyle management, governance of cloud platform etc.  
+
 ### Zero Trust and Service Mesh
 Zero Trust, Zero Trust Network, or Zero Trust Architecture refer to security concepts and threat models that does not assume that actors, systems or services operating from within the security perimeter should be automatically trusted. Instead it require that services must verify explicitly, use least privileged access and assume breaches before granting access to a service or application.
 The zero trust concept would be a preferred concept for securing shared services, and especially for services shared across instituions and borders. Considerations when implementing a zero-trust concept for your services should be related to identification of who the users are and to what their actions should be during the session. Other issues would be related to traffic visibility and context for monitoring and verification of traffic across users, device, location and applications.
@@ -229,11 +231,10 @@ DependaBot is a service that was recently aquired by GitHub for scanning code re
 Scanning containers is similar to scanning for vurnerabilities in dependecies in code. Several services will scan containers for underlying image dependencies that have security issues
 
 ### Considerations
-* Needs for confidentiality actions on information in order to establish the right mechanisms for protecting information. Encryption at-rest and in-transit, securing personal and organizational information, disclosure controls.
-* Consider security concepts for cloud services, for instance zero-trust model. 
-* Authentication, consider authentication requirements for service discovery and service delivery. Carefully consider trust-models for "chaining" services in a production line. 
-* Trust domains, when building chained production lines be aware that shared services could be based on different security models that need to be handled
-* Risk assessment, mitigate the risk that a CSPA Service or the data it controls is misused, be especially aware of chained services.
+* Establish confidentiality actions in order to establish the right mechanisms for protecting information. Encryption at-rest and in-transit, securing personal and organizational information, disclosure controls.
+* Consider security concepts for cloud services, like the zero-trust model. 
+* Consider authentication requirements for service discovery and service delivery. Be aware of the challenges related to trust-models for chained services in a statistical production line, as shared services could be based on different security models that need to be handled
+* Risk assessment, mitigate the risk that a CSPA Service or the data it controls is misused.
 
 ## Concluding remarks
 This document describes the basic infrastructure neeed for implementing a cloud platform for the ESSnet, using modern application architecture patterns for building a platform for enabling "Integrated Shared Services for Statistics" following the CSPA standards and principles and the Integration and architecture guidelines delivered in WP2.
