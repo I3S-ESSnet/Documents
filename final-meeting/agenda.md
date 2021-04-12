@@ -10,6 +10,8 @@ The final workshop of the I3S ESSnet will take place online on the afternoons (C
 
 Overview of the ESSnet, structure and organisation of the meeting.
 
+Welcome address by Mr Emanuele Baldacci (Eurostat).
+
 ### [14:30-16:15] Session 1 - Architecture (resp. SE)
 
 Presentation of Work Package 2 results.
@@ -36,10 +38,11 @@ Presentation of Work Package 1 results.
 Implementing new services from existing solutions
 
 #### [14:30-15:15] Part 1
-[15 min] ARC 
-[10 min] Relais
-[10 min] PXWeb
-[10 min] VTL Tool
+
+  * [15 min] ARC 
+  * [10 min] Relais
+  * [10 min] PXWeb
+  * [10 min] VTL Tool
 
 #### [15:15-15:30] Break
 
@@ -47,10 +50,10 @@ Implementing new services from existing solutions
 
 Service reuse and lessons learnt
 
-[15 min] Istat reusing ARC service
-[10 min] Insee reusing Relais service
-[10 min] PXWeb reuse cases
-[10 min] Lessons learnt
+  * [15 min] Istat reusing ARC service
+  * [10 min] Insee reusing Relais service
+  * [10 min] PXWeb reuse cases
+  * [10 min] Lessons learnt
 
 ### [16:15-16:30] Break
 
