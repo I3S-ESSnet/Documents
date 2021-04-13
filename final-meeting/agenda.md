@@ -16,11 +16,11 @@ Welcome address by Mr Emanuele Baldacci (Eurostat).
 
 Presentation of Work Package 2 results.
 
-#### [14:30-15:15] Part 1
+#### [14:30-15:15] "Why and What" - Business drivers and concepts for the architecture guidance. 
 
 #### [15:15-15:30] Break
 
-#### [15:30-16:15] Part 2
+#### [15:30-16:15] "How" - A description of how to implement the architecture and a presentation/demo of the "cookbook" (ie code examples)
 
 ### [16:15-16:30] Break
 
