@@ -14,7 +14,7 @@ Welcome address by Mr Emanuele Baldacci (Eurostat).
 
 ### [14:30-16:15] Session 1 - Architecture (resp. SE)
 
-Presentation of Work Package 2 results.
+Presentation of Work Package 2 results with Matjaz Jug as discussant. 
 
 #### [14:30-15:15] "Why and What" - Business drivers and concepts for the architecture guidance. 
 
