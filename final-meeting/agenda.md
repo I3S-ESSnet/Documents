@@ -59,6 +59,11 @@ Service reuse and lessons learnt
 
 ### [16:30-17:30] Session 4 - Success stories (resp. PT)
 
-Presentation of Work Package 4 results.
+Service reuse how to enhance
+
+  * [15 min] Survey results 
+  * [15 min] New approach on available service awareness
+  * [15 min] Communication kitt
+  * [15 min] Discussion on communication
 
 ### [17:30-17:45] Conclusion (resp. FR)
