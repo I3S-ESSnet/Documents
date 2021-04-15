@@ -1,0 +1,506 @@
+1
+00:00:05.49 --> 00:00:10.530
+ARC est une application informatique développée 
+à l'Insee et mise en production en 2013 
+
+2
+00:00:10.53 --> 00:00:13.410
+et dont l'acronyme signifie 
+Accueil, Réception, Contrôle. 
+
+3
+00:00:13.41 --> 00:00:17.080
+ARC propose une implémentation de 
+la partie "Accueil de fichiers". 
+
+4
+00:00:22.04 --> 00:00:27.650
+En fonctionnement, ARC couvre les cinq 
+premiers processus du process GSBPM.
+
+5
+00:00:27.65 --> 00:00:31.580
+Cela veut dire que ARC sait intégrer 
+les données d'un fichier,  
+
+6
+00:00:31.58 --> 00:00:33.530
+les corriger, faire la correction, les contrôles 
+
+7
+00:00:33.53 --> 00:00:36.440
+du recodage jusqu'à la création des 
+unités statistiques élémentaires 
+
+8
+00:00:36.44 --> 00:00:42.170
+Une caractéristique de ARC est de laisser 
+la main à l'utilisateur statisticien.
+
+9
+00:00:42.17 --> 00:00:45.890
+C'est lui qui écrit ses règles pour configurer 
+les traitements effectués par l'application 
+
+10
+00:00:45.89 --> 00:00:49.850
+et aussi pour conditionner l'utilisation 
+de ces traitements selon des fichiers reçus. 
+
+11
+00:00:51.89 --> 00:00:54.470
+Cette fonctionnalité est assez intéressante 
+parce que cela veut dire que plusieurs 
+
+12
+00:00:54.47 --> 00:00:57.515
+versions des traitements peuvent 
+cohabiter au sein de l'application ARC. 
+
+13
+00:00:57.515 --> 00:01:02.330
+Ce qui permet donc à ARC de pouvoir accueillir 
+simultanément des fichiers qui ont des versions 
+
+14
+00:01:02.33 --> 00:01:04.760
+ou des natures différentes et de 
+les traiter de la manière adéquate. 
+
+15
+00:01:04.76 --> 00:01:10.670
+Dans le processus final, l'utilisateur 
+flèche les données des fichiers 
+
+16
+00:01:10.67 --> 00:01:13.430
+vers un ou plusieurs modèles 
+d'unités statistiques élémentaires, 
+
+17
+00:01:13.43 --> 00:01:16.640
+c'est l'utilisateur qui maîtrise la 
+structure de ces modèles et leur évolution. 
+
+18
+00:01:16.64 --> 00:01:22.490
+ARC propose aussi des espaces isolés qu'on 
+appelle des bacs à sable et qui permettent 
+
+19
+00:01:22.49 --> 00:01:29.090
+aux utilisateurs de tester leurs règles sur 
+des jeux de règles ou sur des petits fichiers. 
+
+20
+00:01:29.09 --> 00:01:33.220
+Et lorsque l'utilisateur est satisfait de 
+ses règles, il peut les basculer et les  
+
+21
+00:01:33.22 --> 00:01:37.400
+utiliser en mode production.
+L'ensemble des fonctionnalités  
+
+22
+00:01:37.4 --> 00:01:39.800
+de ARC que je viens de décrire, c'est 
+à dire le paramétrage des traitements, 
+
+23
+00:01:39.8 --> 00:01:43.520
+l'exécution du processus ou 
+la mise des résultats dans des  
+
+24
+00:01:43.52 --> 00:01:48.110
+modèles d'unités statistiques élémentaires
+sont aussi accessibles par web services si  
+
+25
+00:01:48.11 --> 00:01:50.450
+l'on veut utiliser ARC dans une 
+architecture de machine à machine. 
+
+26
+00:01:50.45 --> 00:01:55.130
+Enfin, ARC propose une 
+implémentation batch des services 
+
+27
+00:01:55.13 --> 00:01:59.450
+permettant de traiter des flux massifs de 
+fichiers ou des données très volumineuses. 
+
+28
+00:02:03.83 --> 00:02:08.180
+Les utilisateurs de ARC actuellement à 
+l'Insee sont exclusivement, pour l'instant, 
+
+29
+00:02:08.18 --> 00:02:11.540
+des grands systèmes d'information, un 
+petit peu les grandes maîtrises d'ouvrages. 
+
+30
+00:02:11.54 --> 00:02:14.990
+Le premier qu'on peut citer, c'est le SIERA,  
+
+31
+00:02:14.99 --> 00:02:17.810
+le système d'information de 
+l'emploi et des revenus d'activité 
+
+32
+00:02:17.81 --> 00:02:20.570
+qui appartient au DERA, donc 
+le Département du même nom. 
+
+33
+00:02:21.41 --> 00:02:24.860
+Le DERA, c'est la maîtrise d'ouvrage 
+historique à l'origine de la création de ARC. 
+
+34
+00:02:24.86 --> 00:02:28.100
+Dans le SIERA, on va trouver 
+plusieurs instances de ARC, 
+
+35
+00:02:28.1 --> 00:02:30.890
+à la fois des instances en 
+entrée du système d'information 
+
+36
+00:02:30.89 --> 00:02:33.770
+qui vont nous permettre d'accueillir 
+les fichiers provenant de l'extérieur, 
+
+37
+00:02:33.77 --> 00:02:37.460
+comme par exemple les 2,2 
+millions de déclarations employeur 
+
+38
+00:02:37.46 --> 00:02:41.750
+qui s'appellent les déclarations sociales 
+nominatives (DSN) que l'on reçoit tous les mois.
+
+39
+00:02:41.75 --> 00:02:45.770
+Et on va aussi trouver des instances de 
+ARC au milieu du système d'information 
+
+40
+00:02:45.77 --> 00:02:50.660
+qui elles vont concentrer les 
+différents fichiers produits 
+
+41
+00:02:50.66 --> 00:02:53.030
+par les différentes chaînes 
+du système d'information  
+
+42
+00:02:53.03 --> 00:02:57.800
+et les exposer à des chaînes en aval.
+Là ici on utilise ARC comme une interface, 
+
+43
+00:02:59.6 --> 00:03:01.940
+ce qui permet de rendre le 
+système d'information plus robuste 
+
+44
+00:03:01.94 --> 00:03:04.460
+aux évolutions des différentes 
+chaînes de traitement. 
+
+45
+00:03:04.46 --> 00:03:09.489
+Un autre système d'information qui 
+utilise ARC à l'Insee, c'est ESANE. 
+
+46
+00:03:09.489 --> 00:03:14.570
+Là, ARC est utilisé pour réaliser 
+l'accueil des fichiers fiscaux. 
+
+47
+00:03:14.57 --> 00:03:17.420
+Ce sont des fichiers qui sont à la 
+fois très lourds, très volumineux, 
+
+48
+00:03:17.42 --> 00:03:20.750
+et plutôt très complexes, avec une 
+nomenclature fiscale très fournie. 
+
+49
+00:03:20.75 --> 00:03:28.850
+Un autre système d'information qui utilise ARC à 
+l'Insee, c'est le système d'information Sirene 4, 
+
+50
+00:03:28.85 --> 00:03:32.120
+où là on s'éloigne un petit peu du cas 
+nominal d'utilisation d'accueil de fichiers, 
+
+51
+00:03:32.12 --> 00:03:37.910
+et on va plutôt utiliser ARC 
+pour ses fonctionnalités avancées  
+
+52
+00:03:37.91 --> 00:03:42.740
+de contrôle de fichiers XML.
+Donc, dans le cas de Sirene 4,  
+
+53
+00:03:42.74 --> 00:03:47.150
+une instance de ARC est invoquée par web service 
+
+54
+00:03:47.15 --> 00:03:50.630
+pour effectuer une partie des contrôles 
+sur les immatriculations Sirene 
+
+55
+00:03:50.63 --> 00:03:55.490
+qui proviennent du fichier unique 
+et qui sont transmises à l'Insee. 
+
+56
+00:03:55.49 --> 00:03:59.390
+Il y a d'autres utilisateurs 
+qui émergent pour ARC,  
+
+57
+00:03:59.39 --> 00:04:08.960
+ce sont les méthodologues et les statisticiens.
+On commence à proposer ARC pour ces utilisateurs. 
+
+58
+00:04:08.96 --> 00:04:13.400
+Ça, c'est vraiment sous l'impulsion 
+d'Istat qui a choisi de réutiliser ARC 
+
+59
+00:04:14.36 --> 00:04:23.450
+dans le cadre du projet européen ESSnet I3S
+dans le cadre de son processus de  
+
+60
+00:04:23.45 --> 00:04:26.090
+production statistique.
+Un petit peu l'équivalent de  
+
+61
+00:04:26.09 --> 00:04:32.780
+ce qu'on fait à l'Insee au niveau des SES.
+Tout cela est facilité par l'intégration  
+
+62
+00:04:32.78 --> 00:04:36.410
+récente de ARC dans l'atelier de 
+travail italien qui s'appelle IS2 
+
+63
+00:04:36.41 --> 00:04:42.800
+et qui va contenir d'autres outils statistiques
+de traitement de fichiers.
+
+64
+00:04:42.8 --> 00:04:47.690
+Comme par exemple l'outil RELAIS
+qui est un outil qui permet de faire  
+
+65
+00:04:47.69 --> 00:04:50.810
+de l'appariement probabiliste 
+ou déterministe de fichiers. 
+
+66
+00:04:50.81 --> 00:04:54.800
+Donc on peut très bien imaginer, 
+avec cet atelier de travail IS2, 
+
+67
+00:04:55.46 --> 00:05:03.530
+de pouvoir proposer au statisticien d'utiliser 
+ARC pour pouvoir charger leurs fichiers, 
+
+68
+00:05:03.53 --> 00:05:06.710
+retravailler les données, les mettre 
+dans des modèles comme ils le souhaitent, 
+
+69
+00:05:06.71 --> 00:05:11.060
+et d'utiliser ensuite, ces fichiers 
+une fois chargés dans des modèles, 
+
+70
+00:05:11.06 --> 00:05:15.950
+d'utiliser l'outil RELAIS pour pouvoir 
+apparier par exemple les données qu'il  
+
+71
+00:05:15.95 --> 00:05:19.850
+a chargées entre elles.
+
+
+72
+00:05:24.26 --> 00:05:27.740
+On y répondait principalement avec de la 
+ressource de développement ou de maintenance. 
+
+73
+00:05:27.74 --> 00:05:31.640
+Chaque application, chaque système 
+d'information, développaient leur  
+
+74
+00:05:31.64 --> 00:05:35.720
+propre système d'accueil de fichiers
+et le faisaient évoluer au fil  
+
+75
+00:05:35.72 --> 00:05:36.260
+des besoins.
+ 
+
+76
+00:05:43.38 --> 00:05:47.390
+ARC permet déjà de pallier une implémentation 
+un peu disparate de l'accueil des fichiers 
+
+77
+00:05:47.39 --> 00:05:52.340
+et de bien dissocier la 
+partie "accueil des fichiers" 
+
+78
+00:05:52.34 --> 00:05:55.730
+des traitements statistiques 
+qui sont effectués en aval. 
+
+79
+00:05:55.73 --> 00:05:59.360
+Pourquoi ? Parce que ARC 
+propose une implémentation  
+
+80
+00:05:59.36 --> 00:06:01.190
+un peu standardisée de ces fonctionnalités, 
+
+81
+00:06:01.19 --> 00:06:04.370
+même pour les fichiers complexes à intégrer 
+comme par exemple les fichiers XML. 
+
+82
+00:06:04.37 --> 00:06:12.230
+Autre problème que permet de résoudre ARC,
+c'est que ARC permet d'absorber plus facilement  
+
+83
+00:06:12.23 --> 00:06:17.210
+tout ce qui est changement de norme
+ou changement de structure des fichiers en entrée, 
+
+84
+00:06:17.21 --> 00:06:21.170
+et il permet aussi de temporiser 
+l'impact de ces évolutions 
+
+85
+00:06:21.17 --> 00:06:26.930
+sur les chaînes aval de traitement statistique.
+En effet, avec ARC on n'a  
+
+86
+00:06:26.93 --> 00:06:30.890
+pas besoin de faire évoluer
+les modèles d'unités statistiques directement. 
+
+87
+00:06:30.89 --> 00:06:35.960
+L'utilisateur va plutôt écrire des règles pour 
+pouvoir accueillir les fichiers qui évoluent 
+
+88
+00:06:35.96 --> 00:06:39.740
+et les faire rentrer dans le 
+modèle statistique actuel.
+
+89
+00:06:39.74 --> 00:06:45.290
+Donc cela laisse le temps au statisticien
+de faire évoluer au rythme qu'il souhaite 
+
+90
+00:06:45.29 --> 00:06:47.600
+les chaînes qui viennent se 
+greffer en sortie de ARC. 
+
+91
+00:06:47.6 --> 00:06:54.620
+Et cela a pour effet de réduire drastiquement
+les coûts de maintenance adaptative. 
+
+92
+00:06:54.62 --> 00:07:02.660
+Enfin, lorsqu'on a des bugs ou des évolutions,
+avec ARC on n'a pas besoin de développer et de  
+
+93
+00:07:02.66 --> 00:07:06.860
+relivrer une nouvelle application.
+L'utilisateur va simplement écrire de nouvelles  
+
+94
+00:07:06.86 --> 00:07:11.810
+règles, il va les tester sur les bacs à sable,
+et les déployer en production  
+
+95
+00:07:11.81 --> 00:07:15.530
+lorsqu'il en est satisfait.
+Il a la main pour cela, et cela réduit du coup 
+
+96
+00:07:15.53 --> 00:07:19.220
+à la fois le temps mais aussi 
+les ressources impliquées 
+
+97
+00:07:19.22 --> 00:07:21.560
+dans les cycles de vie de 
+production de l'application. 
+
+98
+00:07:30.51 --> 00:07:35.680
+Oui, dans le cadre du projet ESSnet I3S,
+nous avons déployé l'application ARC sur  
+
+99
+00:07:35.68 --> 00:07:37.840
+une infrastructure "cloud"
+qui est donc accessible à  
+
+100
+00:07:37.84 --> 00:07:43.660
+ceux qui souhaitent l'utiliser
+et on peut aussi essayer ARC 
+
+101
+00:07:43.66 --> 00:07:48.970
+dans l'atelier italien d'outils 
+statistiques qui s'appelle IS2 
+
+102
+00:07:48.97 --> 00:07:51.370
+et qui a été aussi déployé 
+sur cette même infrastructure.
+
