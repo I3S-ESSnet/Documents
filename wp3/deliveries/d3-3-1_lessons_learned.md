@@ -12,6 +12,10 @@ Even though there has been challenges and obstacles in the process we do think t
 * Technology change
 * Granularity of documentation
 
+Other existing artefacts related to the blueprint.
+
 ## Experience with deployathons
 
 ## Security issues
+
+## Concluding remarks
