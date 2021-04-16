@@ -26,7 +26,12 @@ Presentation of Work Package 2 results with Matjaz Jug as discussant.
 
 ### [16:30-17:30] Session 2 - Deployment (resp. NO)
 
-Presentation of Work Package 3 results.
+Presentation of Work Package 3 results with Joni Karanka as discussant.
+
+#### [16:30-16:35] Introduction
+#### [16:35-17:00] Live demo (Establish platform and implement service(s))
+#### [17:00-17:15] Lessons learned
+#### [17:15-17:30] Discussant
 
 
 ## Day 2, April 28th
