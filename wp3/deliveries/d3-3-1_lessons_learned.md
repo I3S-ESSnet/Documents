@@ -15,6 +15,8 @@ Even though there has been challenges and obstacles in the process we do think t
 Other existing artefacts related to the blueprint.
 
 ## Experience with deployathons
+* Windows containters
+* Add from document Implementing blueprint
 
 ## Security issues
 
