@@ -37,7 +37,7 @@ Presentation of Work Package 3 results - Discussant: Joni Karanka
 
 ## Day 2, April 28th
 
-### [14:00-15:45] Session 3 - Examples (resp. IT)
+### [14:00-15:45] Session 3 - Experiences (resp. IT)
 
 Presentation of Work Package 1 results - Discussant: Tomaz Speh
 
