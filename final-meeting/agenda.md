@@ -76,4 +76,4 @@ How to enhance service reuse
 
 ### [17:00-17:15] Conclusion (resp. FR)
 
-Concluding remarks by Mr Emanuele Baldacci (Eurostat).
+Concluding remarks and final discussion.
