@@ -1,10 +1,6 @@
 # Cloud Platform Implementing the Blueprint
 
-Table of Contents
-=================
-
-* [Cloud Platform Implementing the Blueprint](#cloud-platform-implementing-the-blueprint)
-  * [From project description](#from-project-description)
+ * [From project description](#from-project-description)
   * [Containers](#containers)
     * [IS2 example](#is2-example)
     * [Application containerization](#application-containerization)
@@ -17,7 +13,16 @@ Table of Contents
       * [Continuous integration](#continuous-integration-1)
         * [Travis CI](#travis-ci-1)
       * [Pipeline](#pipeline)
-  * [Platform](#platform)
+  * [Platform Deployathons](#platform-deployathons)
+    * [Participants](#participants)
+    * [Building the platform](#building-the-platform)
+      * [Terraform](#terraform)
+      * [Google Kubernetes Engine (GKE) Pricing](#google-kubernetes-engine-gke-pricing)
+      * [Service account](#service-account)
+      * [Running the scripts](#running-the-scripts)
+      * [Notes](#notes)
+      * [Authenticating to the Kubernetes API server](#authenticating-to-the-kubernetes-api-server)
+    * [Deploying the services](#deploying-the-services)
   * [Try the platform yourself](#try-the-platform-yourself)
     * [Create project and service\-account](#create-project-and-service-account)
     * [Create Kubernetes cluster](#create-kubernetes-cluster)
@@ -26,9 +31,6 @@ Table of Contents
       * [Prerequisites](#prerequisites)
     * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes-1)
       * [Prerequisites](#prerequisites-1)
-    * [GCP Free Tier](#gcp-free-tier)
-      * [Google Kubernetes Engine](#google-kubernetes-engine)
-      * [Compute Engine](#compute-engine)
     * [SSL](#ssl)
       * [Adding TLS](#adding-tls)
       * [Renew certificates](#renew-certificates)
@@ -225,7 +227,7 @@ deploy:
 ## Platform Deployathons
 We arranged a series of events called "Deployathons" to make a real platform and deploy [IS2](https://github.com/mecdcme/is2) and [ARC](https://github.com/InseeFr/ARC) using state of the art solutions.
 
-:information_source:[Notes from deployathons](https://web.archive.org/web/20210423075000/https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A)
+:information_source: Here are the [original notes from deployathons](https://web.archive.org/web/20210423075000/https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A) 
 
 ### Participants
 
@@ -235,11 +237,7 @@ We arranged a series of events called "Deployathons" to make a real platform and
 
 ### Building the platform
 The first part of the job is to set up a container platform. We make the easy choice: [Kubernetes](https://web.archive.org/web/20210423075000/https://kubernetes.io/). Moreover, it will be Kubernetes (a.k.a k8s or Kube) on [GCP](https://web.archive.org/web/20210423075000/https://cloud.google.com/) using Google's managed Kubernetes service : [GKE](https://web.archive.org/web/20210423075000/https://cloud.google.com/kubernetes-engine/).  Managed Kubernetes means that the cloud provider handles most of the configuration. Kubernetes is also installable on-premise with a little more work not covered here (see [Kubespray](https://web.archive.org/web/20210423075000/https://github.com/kubernetes-sigs/kubespray) or [Openshift](https://web.archive.org/web/20210423075000/https://www.openshift.com/) for on-premise alternatives).
-
-
-
-### Terraform
-
+#### Terraform
 [Terraform](https://web.archive.org/web/20210423075000/https://www.terraform.io/) is one of the leading [infrastructure-as-code](https://web.archive.org/web/20210423075000/https://en.wikipedia.org/wiki/Infrastructure_as_code) solution nowadays.
 
 The GKE managed service takes care of the master nodes. We only have to create and provision worker nodes.
@@ -268,9 +266,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
   }
 }
 ```  
-
-
-### Google Kubernetes Engine (GKE) Pricing
+#### Google Kubernetes Engine (GKE) Pricing
 Pricing can be confucing so we will try to explain it. 
 
 Google offers [Free Tier](https://web.archive.org/web/20210423075000/https://cloud.google.com/free) but Kubernetes Node pools of `f1-micro` machines are not supported due to insufficient memory. What is free, is the cluster management fee for your first cluster.
@@ -285,7 +281,39 @@ Google offers [Free Tier](https://web.archive.org/web/20210423075000/https://clo
 
 FYI in february 2021 after the last deployaton, Google launched [GKE Autopilot](https://web.archive.org/web/20210423075000/https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot). Examples in this document uses GKE Standard 
 
+#### Service account
+Terraform needs a GCP service account to create and modify the infrastructure.  
+The exact required permissions were not defined clearly so we opted for the easy (but less secure) way : creating a service account with `Project owner` role.  
+#### Running the scripts
+```
+terraform init  
+terraform apply
+```
+#### Notes
+- Each time terraform operates, it creates or updates a file called `terraform.tfstate`. This file should be stored and kept up to date. If you ever lose it, you won't be able to make any changes to your infrastructure anymore using terraform (sometimes refered to as `orphaned infrastructure`). Some hackys workarounds exist to manually recover a lost tfstate file : https://medium.com/@abtreece/recovering-terraform-state-69c9966db71e
+- Basic way to store the tfstate file would be a private git repository (tfstate usually contains secrets). For a large project, it is useful to store the [state](https://www.terraform.io/docs/state/index.html) of the infra using a [remotely available tfstate](https://www.terraform.io/docs/state/remote.html) file.
 
+#### Authenticating to the Kubernetes API server
+Now that the cluster is up, we can interact with the API server.  
+This requires authentication.  
+GKE only supports google authentication mechanism (`gcloud container clusters get-credentials my-gke-cluster --region europe-west1-b` creates the kubectl config file with credentials).  
+Once authenticated to the cluster, we chose to create a service account (using `kubectl`) and gave it `cluster-admin` permissions to that anyone with the corresponding token could interact with the cluster. This is a basic usage of the `RBAC` authorization system built-in Kubernetes (see [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)).
+
+At Insee, authentication to the cluster is done using `openidconnect`. As this is not supported on `GKE` clusters (whereas it's supported out of the box on on-premise clusters), a workaround is to install a proxy apiserver. See [Jetstack oidc proxy](https://github.com/jetstack/kube-oidc-proxy) and https://github.com/InseeFrLab/cloud-scripts/tree/master/gke/postinstall/oidc  
+This is a step forward consistent authentication across multiple clusters regardless of their status (cloud-managed or on-premise).
+### Deploying the services
+Using the created GKE cluster, we deploy [the IS2 application](https://github.com/mecdcme/is2).
+
+We use the two existing Docker :whale: images created in the first capter of this document 
+- is2: https://hub.docker.com/repository/docker/mecdcme/is2
+- is2-postgres: https://hub.docker.com/repository/docker/mecdcme/is2-postgres
+
+#### Best practices
+A by-product of deploying an existing app to a container orchestrator is that some enhancements appear to make it more cloud-native. Here are the best practices suggested for IS2:
+
+- the web app should be able to run solo (without a database). `h2` (https://www.h2database.com/html/main.html) is a good way to achieve this and is supported by default by spring-boot. 
+- The database should rely on the default postgres image instead of maintaining a specific is2 database image and execute one or several scripts at runtime using the underlying orchestrator capabilities (docker volumes, docker compose, kubernetes init containers...). Database schema could also be provided by the application itself. Various libraries and frameworks such as [Flyway](https://flywaydb.org/) help achieve this.  
+- The app should aim at being as stateless as possible so that it can scale well horizontally.
 
 
 ## Try the platform yourself
