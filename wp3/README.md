@@ -6,7 +6,7 @@
 
 This directory is used to store various materials used and produced by the WP3 team.
 
-- [Blueprint for I3S](deliveries/deliveries/d3-1-1-blueprint.md)
+- [Blueprint for I3S](deliveries/d3-1-1-blueprint.md)
 - [Implementing blueprint](deliveries/d3-1-2_impl_blueprint.md)
 - [Lessons learned](deliveries/d3-3-1_lessons_learned.md)
 
