@@ -1,4 +1,4 @@
-<img align="right" src="Documents/communication/i3s-logo-1-small.png" alt="I3S logo"/>
+<img align="right" src="https://github.com/I3S-ESSnet/Documents/communication/i3s-logo-1-small.png" alt="I3S logo"/>
 
 # WP3 Documents
 
