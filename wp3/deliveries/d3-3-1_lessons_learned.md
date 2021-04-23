@@ -27,3 +27,9 @@ To keep track over two years (projects). Important elements when started the pro
 
 Other existing artefacts related to the blueprint.
 
+IT architecture evolve in agile enviroment and organizations; the concepts, frames and strategies (autonomy and value boundary)
+
+Physical meetings vs virtual meetings and deployathons. 
+
+
+
