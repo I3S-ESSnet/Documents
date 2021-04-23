@@ -28,11 +28,6 @@ Table of Contents
     * [Scanning containers](#scanning-containers)
     * [Considerations](#considerations-2)
   * [Concluding remarks](#concluding-remarks)
-* [Appendix](#appendix)
-  * [Security checklists](#security-checklists)
-    * [Quality level checklist](#quality-level-checklist)
-    * [Security checklist](#security-checklist)
-    * [Loggin checklist](#loggin-checklist)
 
 ## Background
 Based on the deliverable related to the definition of integration and architecture guidelines in WP2, and using modern application architecture patterns we want to create a blueprint. The blueprint is describing a reference runtime environment for modern, sharable services following CSPA standards/principles using containers. However, it will not give any guidance on how to develop shared services, as the focus will be on the runtime environment for the services. The deliverable will describe the basic infrastructure needed, and implement a cloud instance for the needs of the ESSnet. The infrastructure will be documented as code, which will give to its users the opportunity to version it, and fork it. Typical products implementing this pattern would be Ansible Playbook or Terraform. One advantage with the “infrastructure as a code” model approach is that it enables NSIs to easily create their own modern infrastructure on their premises. As part of the deliverable we will provide a simple container-based platform using a cloud infrastructure, which will allow us to validate the blueprint and to perform functional tests on the services developed as deliverables in WP1 - Develop new services. This also enables the service developers to validate their packaging and installation.
@@ -241,34 +236,3 @@ This document describes the basic infrastructure neeed for implementing a cloud 
 
 In the Implementation of blueprint we demonstrate how the infrastructure is documented as code, enabling NSIs to easily create their own modern infrastructure. The implementation shows the implementation of a container-based platform using cloud infrastructure and is validated and proved as I3S has deployed the services developed in WP1. This is also validated and proved as we have "Retro-fitted" and modularized PXweb and deployed it on the platform. 
 
-
-# Appendix
-
-## Security checklists
-### Quality level checklist
-* Consider authentication requirements for exposed endpoints
-* Consider encryption of data "at rest" based on classification levels, and at least encryption with the key provided by the service provider
-* Ensure that configuration and secrets outside the container is safe and encrypted
-* Consider using a standard for assessing the severity of computer system security vulnerabilities (for instance CVSS)
-
-### Security checklist
-* Ensure that events and transactions that are logged are possible to trace
-* Ensure that any secrets and configurations are safely stored
-* Ensure that the container for the service does not run as root
-* Ensure that services that should be exposed are available with HTTPS on a public domain
-* Ensure that any service accounts has the least necessary priviliges
-* Consider high availability and automatic scaling configuration for the service
-* Ensure that a vulnerability scanning of the container for the service is performed
-* Ensure that any known vulnerabilities of the service are documented
-* Ensure that the logs are stored safely
-
-### Loggin checklist
-* Never log sensitive information
-* Define for how long the logs should be valid and stored
-* Ensure that the logs are deleted when they are not longer valid
-* Ensure that the logs are structured and have a defined format
-* Ensure that the logs are machine readable
-* Ensure that the logs are available for any developers that needs them
-* Ensure that the logs are available for privileged users (how?)
-* Ensure that the logs are backed up
-* Ensure that you log at the appropriate level and context
