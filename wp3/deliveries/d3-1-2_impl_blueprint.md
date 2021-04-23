@@ -190,7 +190,7 @@ deploy:
 
 ## Platform
 
-
+When building containers and testing them locally we used Docker Compose. Compose is great and it is simple to learn, but when we want to create at Cloud Platform...
 
 ## Try the platform yourself
 
@@ -318,7 +318,15 @@ There is also the new GKE Autopilot https://cloud.google.com/blog/products/conta
 >
 > 1 GB network egress from North America to all region destinations (excluding China and Australia) per month
 
+### SSL
 
+#### Adding TLS
+...
+#### Renew certificates
+````sh
+$ kubectl delete secret wildcard -n nginx-ingress
+$ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
+````
 
 ### PxWeb
 
@@ -334,4 +342,5 @@ Windows container require some more parameters.
 
 
 ## Links
-* Notes from deployathons: https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A
+* Notes from deployathons: https://web.archive.org/web/20210423075000/https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A
+* https://web.archive.org/web/20210422234949/https://docs.docker.com/compose/
