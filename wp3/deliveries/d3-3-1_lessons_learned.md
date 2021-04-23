@@ -7,22 +7,23 @@ In the following sections of this document we will discuss some of the identifie
 
 Even though there has been challenges and obstacles in the process we do think that we have met the objectives as described in the project description. The collaboration with WP 1 and WP 2 has been important, both for binding the overall architecture descriptions to the technical architecture description in the blueprint og implementing the blueprint as well as the collaboration (discussions and deployathons) as proof-of-concepts and improvement of the processes to provide a platform for implementing shared services.
 
-## Documenting blueprint for implementation purpose
-* Concepts
-* Technology change
-* Granularity of documentation
+## Document and implement blueprint
+Documenting and managing architecture in an environment where innovation and technology is constantly changing and evolving challenges the way we describe and document architecture and perform architectual design. From the initiation of the I3S project towards the end of this project we have experienced that defining the "sandbox platform" beforehand would limit the boundaries and innovation for implementing services on the platform. It would also result in an outdated blueprint by the end of the project. However, the overall international concepts, strategies and frameworks for NSIs have been used to describe and document important elements when establishing a cloud platform for shared services. The document is interconnected with the work of WP 2 describing the architectural guidelins and cookbook and the WP 3 deliverable implmentation of the blueprint as a proof-of-concept. From the planning of the project to finalise the deliveries the blueprint has to some extent changed in relation to granularity, which means that it does not document and describe technology artefact but focus on technology concepts and strategic approaches to consider.
 
-CD, governance, management. Theoretical approach. 
-Challenges related to shared platform and governance, management. 
+The implementation of blueprint is a volatile document that serves as a proof-of-concept and guideline for establishing a platform in the cloud and implement shared services. One of the key successes for the deliveries in WP3 has been the collaboration with WP2 related to the blueprint both for agreeing on the content of deliverables but also to interconnect the architectural guidelines with the blueprint. Another success have been the deployathons and hackatons with members from the other work packages, these gatherings had an agile approach with highly skilled members to perform proof-of-concepts of shared services based on the concepts and descriptions in the blueprint. 
 
-To keep track over two years (projects). Important elements when started the project has changed over time. Fail fast, change.
+Our main purpose of implementing the blueprint has been to implement a platform with the capability of establishing shared services. Through the deployathons we have gathered experience and proven the ability to establish shared services on the platform. 
 
-Other existing artefacts related to the blueprint.
+Implementing the blueprint has been focusing on the technical aspects of establishing the platform and shared services, we have not been able to work on the governance, management and security issues related to establish and manage cloud platforms for sharing services across NSIs. Sharing common platforms across organizations would require the capabilites to govern, manage and secure collaboration platforms for keeping up with the emerging technological change to reduce risks. The implementation of blueprint provides guidelines and examples for NSIs to establish platforms and services for sharing, that would not need to have governance bodies to handle collaboration between national borders. 
 
-## Experience with deployathons
+## Experience with implementation of blueprint and deployathons
 * "Agile approach", not sufficient to apply guidelines and requirements. Agile and team approach.
 * Windows containters
 * Add from document Implementing blueprint
 * Security issues
 
 ## Concluding remarks
+To keep track over two years (projects). Important elements when started the project has changed over time. Fail fast, change.
+
+Other existing artefacts related to the blueprint.
+
