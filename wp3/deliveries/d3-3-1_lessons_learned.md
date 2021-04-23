@@ -12,12 +12,17 @@ Even though there has been challenges and obstacles in the process we do think t
 * Technology change
 * Granularity of documentation
 
+CD, governance, management. Theoretical approach. 
+Challenges related to shared platform and governance, management. 
+
+To keep track over two years (projects). Important elements when started the project has changed over time. Fail fast, change.
+
 Other existing artefacts related to the blueprint.
 
 ## Experience with deployathons
+* "Agile approach", not sufficient to apply guidelines and requirements. Agile and team approach.
 * Windows containters
 * Add from document Implementing blueprint
-
-## Security issues
+* Security issues
 
 ## Concluding remarks
