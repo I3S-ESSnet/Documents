@@ -224,6 +224,9 @@ deploy:
 
 ## Platform Deployathons
 We arranged a series of events called "Deployathons" to make a real platform and deploy [IS2](https://github.com/mecdcme/is2) and [ARC](https://github.com/InseeFr/ARC) using state of the art solutions.
+
+:information_source:[Notes from deployathons](https://web.archive.org/web/20210423075000/https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A)
+
 ### Participants
 
 * France: Oliver Levitt, Donatien Enneman, Romain Tailhurat, Manu Soulier
@@ -231,22 +234,22 @@ We arranged a series of events called "Deployathons" to make a real platform and
 * Italy: Mauro Bruno, Francesco Amato
 
 ### Building the platform
-The first part of the job is to set up a container platform. We make the easy choice: [Kubernetes](https://kubernetes.io/). Moreover, it will be Kubernetes (a.k.a k8s or Kube) on [GCP](https://cloud.google.com/) using Google's managed Kubernetes service : [GKE](https://cloud.google.com/kubernetes-engine/).  Managed Kubernetes means that the cloud provider handles most of the configuration. Kubernetes is also installable on-premise with a little more work not covered here (see [Kubespray](https://github.com/kubernetes-sigs/kubespray) or [Openshift](https://www.openshift.com/) for on-premise alternatives).
+The first part of the job is to set up a container platform. We make the easy choice: [Kubernetes](https://web.archive.org/web/20210423075000/https://kubernetes.io/). Moreover, it will be Kubernetes (a.k.a k8s or Kube) on [GCP](https://web.archive.org/web/20210423075000/https://cloud.google.com/) using Google's managed Kubernetes service : [GKE](https://web.archive.org/web/20210423075000/https://cloud.google.com/kubernetes-engine/).  Managed Kubernetes means that the cloud provider handles most of the configuration. Kubernetes is also installable on-premise with a little more work not covered here (see [Kubespray](https://web.archive.org/web/20210423075000/https://github.com/kubernetes-sigs/kubespray) or [Openshift](https://web.archive.org/web/20210423075000/https://www.openshift.com/) for on-premise alternatives).
 
 
 
 ### Terraform
 
-[Terraform](https://www.terraform.io/) is one of the leading [infrastructure-as-code](https://en.wikipedia.org/wiki/Infrastructure_as_code) solution nowadays.
+[Terraform](https://web.archive.org/web/20210423075000/https://www.terraform.io/) is one of the leading [infrastructure-as-code](https://web.archive.org/web/20210423075000/https://en.wikipedia.org/wiki/Infrastructure_as_code) solution nowadays.
 
 The GKE managed service takes care of the master nodes. We only have to create and provision worker nodes.
 Because the worker nodes are the ones that are use for computation they must be rightfully sized. 
 
 Here, we choose a pool of three worker nodes. 
 
-:warning: Those are preemptible nodes, i.e. that are short-lived and could be recycled at any times. See [running preemptible VMs](https://cloud.google.com/kubernetes-engine/docs/how-to/preemptible-vms) for more details. This is less of an issue than you may anticipate as resilience is done at scale on a Kubernetes cluster. Nonetheless, production-grade clusters should probably avoid running only preemptible nodes.
+:warning: Those are preemptible nodes, i.e. that are short-lived and could be recycled at any times. See [running preemptible VMs](https://web.archive.org/web/20210423075000/https://cloud.google.com/kubernetes-engine/docs/how-to/preemptible-vms) for more details. This is less of an issue than you may anticipate as resilience is done at scale on a Kubernetes cluster. Nonetheless, production-grade clusters should probably avoid running only preemptible nodes.
 
-```javascript=
+```YAML
 resource "google_container_node_pool" "primary_preemptible_nodes" {
   name       = "my-node-pool"
   location   = "europe-west1-b"
@@ -270,7 +273,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
 ### Google Kubernetes Engine (GKE) Pricing
 Pricing can be confucing so we will try to explain it. 
 
-Google offers [Free Tier](https://cloud.google.com/free) but Kubernetes Node pools of `f1-micro` machines are not supported due to insufficient memory. What is free, is the cluster management fee for your first cluster.
+Google offers [Free Tier](https://web.archive.org/web/20210423075000/https://cloud.google.com/free) but Kubernetes Node pools of `f1-micro` machines are not supported due to insufficient memory. What is free, is the cluster management fee for your first cluster.
 
 > **One Autopilot or Zonal cluster per month**
 >
@@ -280,7 +283,7 @@ Google offers [Free Tier](https://cloud.google.com/free) but Kubernetes Node poo
 > For clusters created in Autopilot mode, pods are billed per second for vCPU, memory, and > disk resource requests
 > For clusters created in Standard mode, each user node is charged at standard Compute Engine pricing
 
-FYI in february 2021 after the last deployaton, Google launched [GKE Autopilot](https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot). Examples in this document uses GKE Standard 
+FYI in february 2021 after the last deployaton, Google launched [GKE Autopilot](https://web.archive.org/web/20210423075000/https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot). Examples in this document uses GKE Standard 
 
 
 
@@ -288,8 +291,8 @@ FYI in february 2021 after the last deployaton, Google launched [GKE Autopilot](
 ## Try the platform yourself
 
 * Fork this repo on Github https://github.com/I3S-ESSnet/Platform
-* Sign up for free on https://cloud.google.com/
-* install Google Cloud SDK https://cloud.google.com/sdk/docs/install
+* Sign up for free on https://web.archive.org/web/20210423075000/https://cloud.google.com/
+* install Google Cloud SDK https://web.archive.org/web/20210423075000/https://cloud.google.com/sdk/docs/install
 
 ### Create project and service-account
 
@@ -304,7 +307,7 @@ gcloud iam service-accounts keys create account.json --iam-account "terraform@i3
 
 ### Create Kubernetes cluster
 
-* install Terraform CLI https://www.terraform.io/downloads.html
+* install Terraform CLI https://web.archive.org/web/20210423075000/https://www.terraform.io/downloads.html
 
 ```sh
 $ terraform version
@@ -321,7 +324,7 @@ Even if it is FREE it requires av billing account.
 
 ### Test Kubernetes cluster
 
-* install kubectl https://kubernetes.io/docs/tasks/tools/#kubectl
+* install kubectl https://web.archive.org/web/20210423075000/https://kubernetes.io/docs/tasks/tools/#kubectl
 
 ````sh
 $ gcloud container clusters get-credentials i3s-standard-cluster --region europe-west1-b
@@ -335,7 +338,7 @@ gke-i3s-standard-clus-first-node-pool-82c76e25-cm76   Ready    <none>   23m   v1
 ### Install IS2 with Helm on Kubernetes
 
 #### Prerequisites
-* install helm https://helm.sh/docs/intro/install/
+* install helm https://web.archive.org/web/20210423075000/https://helm.sh/docs/intro/install/
 * clone https://github.com/mecdcme/is2
 
 
@@ -363,7 +366,7 @@ $ echo $NGINX_INGRESS_IP
 
 ### Install IS2 with Helm on Kubernetes
 #### Prerequisites
-* install helm https://helm.sh/docs/intro/install/
+* install helm https://web.archive.org/web/20210423075000/https://helm.sh/docs/intro/install/
 * clone https://github.com/InseeFr/ARC
 
 ````sh
@@ -400,7 +403,6 @@ Windows container require some more parameters.
 
 
 ## Links
-* Notes from deployathons: https://web.archive.org/web/20210423075000/https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A
 * https://web.archive.org/web/20210422234949/https://docs.docker.com/compose/
 * https://github.com/InseeFrLab/cloud-scripts/tree/master/gke
 
