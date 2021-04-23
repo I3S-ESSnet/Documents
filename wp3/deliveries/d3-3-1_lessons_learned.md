@@ -18,8 +18,7 @@ Implementing the blueprint has been focusing on the technical aspects of establi
 
 ## Experience with implementation of blueprint and deployathons
 * "Agile approach", not sufficient to apply guidelines and requirements. Agile and team approach.
-* Windows containters
-* Add from document Implementing blueprint
+* Containerisation of services and applications - Windows containters
 * Security issues
 
 ## Concluding remarks
