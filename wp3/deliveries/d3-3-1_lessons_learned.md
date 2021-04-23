@@ -17,9 +17,10 @@ Our main purpose of implementing the blueprint has been to implement a platform 
 Implementing the blueprint has been focusing on the technical aspects of establishing the platform and shared services, we have not been able to work on the governance, management and security issues related to establish and manage cloud platforms for sharing services across NSIs. Sharing common platforms across organizations would require the capabilites to govern, manage and secure collaboration platforms for keeping up with the emerging technological change to reduce risks. The implementation of blueprint provides guidelines and examples for NSIs to establish platforms and services for sharing, that would not need to have governance bodies to handle collaboration between national borders. 
 
 ## Experience with implementation of blueprint and deployathons
-* "Agile approach", not sufficient to apply guidelines and requirements. Agile and team approach.
-* Containerisation of services and applications - Windows containters
-* Security issues
+- "Agile approach", not sufficient to apply guidelines and requirements. Agile and team approach.
+- Containerisation of services and applications - Windows containters
+- Security issues
+  - Next step: would have been securing applications and services using platform capabilities ...
 
 ## Concluding remarks
 To keep track over two years (projects). Important elements when started the project has changed over time. Fail fast, change.
