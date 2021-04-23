@@ -226,9 +226,9 @@ deploy:
 We arranged a series of events called "Deployathons" to make a real platform and deploy [IS2](https://github.com/mecdcme/is2) and [ARC](https://github.com/InseeFr/ARC) using state of the art solutions.
 ### Participants
 
-* France: Oliver Levitt, Donatien Enneman, Romain Tailhurat, Manu Soulier
-* Norway: Rune Johansen, Trygve Falch
-* Italy: Mauro Bruno, Francesco Amato
+:flag-fr: Oliver Levitt, Donatien Enneman, Romain Tailhurat, Manu Soulier
+:flag-no: Rune Johansen, Trygve Falch
+:flag-it: Mauro Bruno, Francesco Amato
 
 ### Building the platform
 The first part of the job is to set up a container platform. We make the easy choice: [Kubernetes](https://kubernetes.io/). Moreover, it will be Kubernetes (a.k.a k8s or Kube) on [GCP](https://cloud.google.com/) using Google's managed Kubernetes service : [GKE](https://cloud.google.com/kubernetes-engine/).  Managed Kubernetes means that the cloud provider handles most of the configuration. Kubernetes is also installable on-premise with a little more work not covered here (see [Kubespray](https://github.com/kubernetes-sigs/kubespray) or [Openshift](https://www.openshift.com/) for on-premise alternatives).
