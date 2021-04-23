@@ -1,5 +1,39 @@
 # Cloud Platform Implementing the Blueprint
 
+Table of Contents
+=================
+
+* [Cloud Platform Implementing the Blueprint](#cloud-platform-implementing-the-blueprint)
+  * [From project description](#from-project-description)
+  * [Containers](#containers)
+    * [IS2 example](#is2-example)
+    * [Application containerization](#application-containerization)
+    * [Docker Compose](#docker-compose)
+    * [Continuous integration](#continuous-integration)
+      * [Travis CI](#travis-ci)
+      * [Dockerhub](#dockerhub)
+    * [PxWeb Example](#pxweb-example)
+      * [Container](#container)
+      * [Continuous integration](#continuous-integration-1)
+        * [Travis CI](#travis-ci-1)
+      * [Pipeline](#pipeline)
+  * [Platform](#platform)
+  * [Try the platform yourself](#try-the-platform-yourself)
+    * [Create project and service\-account](#create-project-and-service-account)
+    * [Create Kubernetes cluster](#create-kubernetes-cluster)
+    * [Test Kubernetes cluster](#test-kubernetes-cluster)
+    * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
+      * [Prerequisites](#prerequisites)
+    * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes-1)
+      * [Prerequisites](#prerequisites-1)
+    * [GCP Free Tier](#gcp-free-tier)
+      * [Google Kubernetes Engine](#google-kubernetes-engine)
+      * [Compute Engine](#compute-engine)
+    * [SSL](#ssl)
+      * [Adding TLS](#adding-tls)
+      * [Renew certificates](#renew-certificates)
+    * [PxWeb](#pxweb)
+  * [Links](#links)
 ## From project description
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform.
 
