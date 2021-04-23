@@ -1,0 +1,74 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>I3S final meeting - Session 3 - VTL Tools</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.min.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/theme/white.min.css">
+		<!-- <link rel="stylesheet" href="https://i3s-essnet.github.io/Documents/communication/i3s.css">-->
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/highlight/monokai.min.css">
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<section data-background-image="https://i3s-essnet.github.io/Documents/communication/i3s-logo-2-medium.png" data-background-size="auto" data-background-position="bottom"></section>
+					<h1>I3S Final meeting</h1>
+					<h2>Session 3</h2>
+					<h3>VTL Tools</h3>
+				</section>
+				<section>
+					<h2>What is VTL?</h2>
+					<p>The Validation and Transformation Language (VTL) allows the formal expression of treatments to:</p>
+					<ul>
+						<li>validate statistical data</li>
+						<li>calculate derived data</li>
+					</ul>
+					<p>VTL is an SDMX standard</p>
+					<p>Its grammar is formally defined (EBNF)</p>
+					<p>VTL is user oriented and provides a technology-neutral and standard view of statistical processes at the business level</p>
+					<p>VTL is strongly supported by Eurostat, the ECB and others</p>
+				</section>
+				<section>
+					<h2>What tools for VTL?</h2>
+					<p>VTL is a language, so it has to be edited (-> <b>editor</b>)</p>
+					<p>VTL expressions or rules can be managed and shared (-> <b>rule manager</b>)</p>
+					<p>VTL is technology-neutral, so has to be translated to an executable language (-> <b>execution engines</b>)</p>
+					<p>EBNF helps hugely to build tools for VTL thanks to <a href="https://www.antlr.org/">Antlr</a></p>
+				</section>
+				<section>
+					<h2>What was done in I3S?</h2>
+					<h3>Context</h3>
+					<p>Eurostat developing a rule manager and editor</p>
+					<p>SSB had developed a Java execution engine for VTL 1.1</p>
+					<p>Insee developing JavaScript engine and editor</p>
+				</section>
+				<section>
+					<h2>What was done in I3S?</h2>
+					<h3>Achievements</h3>
+					<p>Eurostat-Insee meeting for technical alignment of editors</p>
+					<p>Eurostat open sources its VTL editors</p>
+					<p>Insee adopts Eurostat's editor and prepares contributions</p>
+					<p>Insee develops Trevas, Java engine for VTL 2.0, SSB contributes</p>
+					<p>Trevas added to the I3S deliverables</p>
+				</section>
+				<section>
+					<h2>Zoom on Trevas</h2>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/reveal.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/4.1.0/plugin/markdown/markdown.min.js"></script>
+		<script>
+			Reveal.initialize({
+				plugins: [ RevealMarkdown ]
+			});
+		</script>
+	</body>
+</html>
