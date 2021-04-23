@@ -187,15 +187,6 @@ deploy:
 #### Pipeline
 ![alt text](pxweb1.png "PxWeb pipeline")
 
-#### Terraform
-
-We want to use [Terraform](https://www.terraform.io/) to provision hardware.
-The first example is working great. Se second is not working yet, because the
-Windows container require some more parameters.
-
-* [Azure App Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/app-service)
-* [Azure Kubernetes Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/kubernetes)
-
 
 ## Platform
 
@@ -326,6 +317,19 @@ There is also the new GKE Autopilot https://cloud.google.com/blog/products/conta
 > * Belgium: europe-west1
 >
 > 1 GB network egress from North America to all region destinations (excluding China and Australia) per month
+
+
+
+### PxWeb
+
+THIS NEEDS REWRITE
+
+We want to use [Terraform](https://www.terraform.io/) to provision hardware.
+The first example is working great. Se second is not working yet, because the
+Windows container require some more parameters.
+
+* [Azure App Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/app-service)
+* [Azure Kubernetes Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/kubernetes)
 
 
 
