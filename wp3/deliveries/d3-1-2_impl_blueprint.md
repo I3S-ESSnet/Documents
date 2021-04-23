@@ -222,9 +222,68 @@ deploy:
 ![alt text](pxweb1.png "PxWeb pipeline")
 
 
-## Platform
+## Platform Deployathons
+We arranged a series of events called "Deployathons" to make a real platform and deploy [IS2](https://github.com/mecdcme/is2) and [ARC](https://github.com/InseeFr/ARC) using state of the art solutions.
+### Participants
 
-When building containers and testing them locally we used Docker Compose. Compose is great and it is simple to learn, but when we want to create at Cloud Platform...
+* France: Oliver Levitt, Donatien Enneman, Romain Tailhurat, Manu Soulier
+* Norway: Rune Johansen, Trygve Falch
+* Italy: Mauro Bruno, Francesco Amato
+
+### Building the platform
+The first part of the job is to set up a container platform. We make the easy choice: [Kubernetes](https://kubernetes.io/). Moreover, it will be Kubernetes (a.k.a k8s or Kube) on [GCP](https://cloud.google.com/) using Google's managed Kubernetes service : [GKE](https://cloud.google.com/kubernetes-engine/).  Managed Kubernetes means that the cloud provider handles most of the configuration. Kubernetes is also installable on-premise with a little more work not covered here (see [Kubespray](https://github.com/kubernetes-sigs/kubespray) or [Openshift](https://www.openshift.com/) for on-premise alternatives).
+
+
+
+### Terraform
+
+[Terraform](https://www.terraform.io/) is one of the leading [infrastructure-as-code](https://en.wikipedia.org/wiki/Infrastructure_as_code) solution nowadays.
+
+The GKE managed service takes care of the master nodes. We only have to create and provision worker nodes.
+Because the worker nodes are the ones that are use for computation they must be rightfully sized. 
+
+Here, we choose a pool of three worker nodes. 
+
+:warning: Those are preemptible nodes, i.e. that are short-lived and could be recycled at any times. See [running preemptible VMs](https://cloud.google.com/kubernetes-engine/docs/how-to/preemptible-vms) for more details. This is less of an issue than you may anticipate as resilience is done at scale on a Kubernetes cluster. Nonetheless, production-grade clusters should probably avoid running only preemptible nodes.
+
+```javascript=
+resource "google_container_node_pool" "primary_preemptible_nodes" {
+  name       = "my-node-pool"
+  location   = "europe-west1-b"
+  cluster    = google_container_cluster.primary.name
+  node_count = 3
+  management {
+     auto_repair = true
+     auto_upgrade = true
+  }
+
+  node_config {
+    preemptible  = true
+    machine_type = "e2-small"
+    
+    [...]
+  }
+}
+```  
+
+
+### Google Kubernetes Engine (GKE) Pricing
+Pricing can be confucing so we will try to explain it. 
+
+Google offers [Free Tier](https://cloud.google.com/free) but Kubernetes Node pools of `f1-micro` machines are not supported due to insufficient memory. What is free, is the cluster management fee for your first cluster.
+
+> **One Autopilot or Zonal cluster per month**
+>
+> One-click container orchestration via Kubernetes clusters, managed by Google.
+>
+> No cluster management fee for one Autopilot or Zonal cluster per billing account
+> For clusters created in Autopilot mode, pods are billed per second for vCPU, memory, and > disk resource requests
+> For clusters created in Standard mode, each user node is charged at standard Compute Engine pricing
+
+FYI in february 2021 after the last deployaton, Google launched [GKE Autopilot](https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot). Examples in this document uses GKE Standard 
+
+
+
 
 ## Try the platform yourself
 
@@ -315,42 +374,7 @@ helm install --create-namespace --namespace arc arc .
 
 ````
 
-### GCP Free Tier
 
-https://cloud.google.com/free
-Kubernetes Node pools of `f1-micro` machines are not supported due to insufficient memory.
-
-There is also the new GKE Autopilot https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot
-
-#### Google Kubernetes Engine
-
-> **One Autopilot or Zonal cluster per month**
->
-> One-click container orchestration via Kubernetes clusters, managed by Google.
->
-> No cluster management fee for one Autopilot or Zonal cluster per billing account
-> For clusters created in Autopilot mode, pods are billed per second for vCPU, memory, and > disk resource requests
-> For clusters created in Standard mode, each user node is charged at standard Compute Engine pricing
-
-#### Compute Engine
-> **1 F1-micro instance per month**
->
-> Scalable, high-performance virtual machines.
->
-> 1 non-preemptible f1-micro VM instance per month in one of the following US regions:
-> * Oregon: us-west1
-> * Iowa: us-central1
-> * South Carolina: us-east1
-> * 30 GB-months HDD
->
-> 5 GB-month snapshot storage in the following regions:
-> * Oregon: us-west1
-> * Iowa: us-central1
-> * South Carolina: us-east1
-> * Taiwan: asia-east1
-> * Belgium: europe-west1
->
-> 1 GB network egress from North America to all region destinations (excluding China and Australia) per month
 
 ### SSL
 
@@ -378,3 +402,5 @@ Windows container require some more parameters.
 ## Links
 * Notes from deployathons: https://web.archive.org/web/20210423075000/https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A
 * https://web.archive.org/web/20210422234949/https://docs.docker.com/compose/
+* https://github.com/InseeFrLab/cloud-scripts/tree/master/gke
+
