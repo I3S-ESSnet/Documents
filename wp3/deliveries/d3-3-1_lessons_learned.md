@@ -31,5 +31,10 @@ IT architecture evolve in agile enviroment and organizations; the concepts, fram
 
 Physical meetings vs virtual meetings and deployathons. 
 
+Sharing strategies - different expectations and requirements for governance, management and security
+- Sharing platform
+- Sharing services and applications
+- Sharing code (infrastructure as code, services and applications)
+
 
 
