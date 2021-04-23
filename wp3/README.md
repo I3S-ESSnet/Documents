@@ -1,3 +1,5 @@
+<img align="right" src="communication/i3s-logo-1-small.png" alt="I3S logo"/>
+
 # WP3 Documents
 
 ## Blueprint 
