@@ -7,17 +7,7 @@ The platform will use a standard solution like, for example, Amazon Web Services
 
 
 
-https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A
-
-
-
-# Appendix
-
-## Terraform examples 
-
-...
-
-## Container examples
+## Containers
 
 ### IS2 example
 During the Rome hackathon the Istat application IS2 was containerized. IS2 is a standard Java, Spring Boot web application with a PostgrSQL database. https://github.com/mecdcme/is2
@@ -197,7 +187,142 @@ deploy:
 #### Pipeline
 ![alt text](pxweb1.png "PxWeb pipeline")
 
-#### Terraform
+
+## Platform
+
+
+
+## Try the platform yourself
+
+* Fork this repo on Github https://github.com/I3S-ESSnet/Platform
+* Sign up for free on https://cloud.google.com/
+* install Google Cloud SDK https://cloud.google.com/sdk/docs/install
+
+### Create project and service-account
+
+```sh
+gcloud auth login
+gcloud projects create i3s-ninja
+gcloud config set project i3s-ninja
+gcloud iam service-accounts create terraform
+gcloud projects add-iam-policy-binding i3s-ninja --member "serviceAccount:terraform@i3s-$ $ ninja.iam.gserviceaccount.com" --role "roles/owner"
+gcloud iam service-accounts keys create account.json --iam-account "terraform@i3s-$ ninja.iam.gserviceaccount.com"
+```
+
+### Create Kubernetes cluster
+
+* install Terraform CLI https://www.terraform.io/downloads.html
+
+```sh
+$ terraform version
+Terraform v0.14.8
++ provider registry.terraform.io/hashicorp/google v3.59.0
++ provider registry.terraform.io/hashicorp/kubernetes v2.0.2
+
+$ terraform init
+$ terraform plan -out "run.plan"
+$ terraform apply "run.plan"
+```
+flow links in initial error messages to enable "Kubernetes Engine API"
+Even if it is FREE it requires av billing account.
+
+### Test Kubernetes cluster
+
+* install kubectl https://kubernetes.io/docs/tasks/tools/#kubectl
+
+````sh
+$ gcloud container clusters get-credentials i3s-standard-cluster --region europe-west1-b
+
+$ kubectl get nodes                                                                     
+NAME                                                  STATUS   ROLES    AGE   VERSION
+gke-i3s-standard-clus-first-node-pool-82c76e25-4cqk   Ready    <none>   23m   v1.18.16-gke.502
+gke-i3s-standard-clus-first-node-pool-82c76e25-cm76   Ready    <none>   23m   v1.18.16-gke.502
+````
+
+### Install IS2 with Helm on Kubernetes
+
+#### Prerequisites
+* install helm https://helm.sh/docs/intro/install/
+* clone https://github.com/mecdcme/is2
+
+
+
+
+````sh
+$ cd is2/helm
+$ helm install --create-namespace --namespace is2 is2 .
+````
+
+````sh
+$ cd apps/nginx-ingress
+$ helm dependencies update
+$ helm install --create-namespace --namespace nginx-ingress nginx-ingress .
+
+$ export NGINX_INGRESS_IP=$(kubectl get service -n nginx-ingress nginx-ingress-ingress-nginx-controller -ojson | jq -r '.status.loadBalancer.ingress[].ip')\n
+$ echo $NGINX_INGRESS_IP
+34.78.199.11
+
+ helm upgrade -n is2 is2 . -f values.yaml
+ helm get values -n is2 is2
+ helm uninstall -n is2 is2 
+ 
+````
+
+### Install IS2 with Helm on Kubernetes
+#### Prerequisites
+* install helm https://helm.sh/docs/intro/install/
+* clone https://github.com/InseeFr/ARC
+
+````sh
+cd ARC/helm
+# adjust values.yaml
+helm install --create-namespace --namespace arc arc .
+
+
+````
+
+### GCP Free Tier
+
+https://cloud.google.com/free
+Kubernetes Node pools of `f1-micro` machines are not supported due to insufficient memory.
+
+There is also the new GKE Autopilot https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot
+
+#### Google Kubernetes Engine
+
+> **One Autopilot or Zonal cluster per month**
+>
+> One-click container orchestration via Kubernetes clusters, managed by Google.
+>
+> No cluster management fee for one Autopilot or Zonal cluster per billing account
+> For clusters created in Autopilot mode, pods are billed per second for vCPU, memory, and > disk resource requests
+> For clusters created in Standard mode, each user node is charged at standard Compute Engine pricing
+
+#### Compute Engine
+> **1 F1-micro instance per month**
+>
+> Scalable, high-performance virtual machines.
+>
+> 1 non-preemptible f1-micro VM instance per month in one of the following US regions:
+> * Oregon: us-west1
+> * Iowa: us-central1
+> * South Carolina: us-east1
+> * 30 GB-months HDD
+>
+> 5 GB-month snapshot storage in the following regions:
+> * Oregon: us-west1
+> * Iowa: us-central1
+> * South Carolina: us-east1
+> * Taiwan: asia-east1
+> * Belgium: europe-west1
+>
+> 1 GB network egress from North America to all region destinations (excluding China and Australia) per month
+
+
+
+### PxWeb
+
+THIS NEEDS REWRITE
 
 We want to use [Terraform](https://www.terraform.io/) to provision hardware.
 The first example is working great. Se second is not working yet, because the
@@ -205,3 +330,8 @@ Windows container require some more parameters.
 
 * [Azure App Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/app-service)
 * [Azure Kubernetes Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/kubernetes)
+
+
+
+## Links
+* Notes from deployathons: https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A
