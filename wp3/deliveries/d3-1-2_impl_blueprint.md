@@ -1,6 +1,5 @@
 # Cloud Platform Implementing the Blueprint
 
- * [From project description](#from-project-description)
   * [From project description](#from-project-description)
   * [Containers](#containers)
     * [IS2 example](#is2-example)
