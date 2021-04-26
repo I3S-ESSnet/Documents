@@ -1,6 +1,7 @@
 # Cloud Platform Implementing the Blueprint
 
  * [From project description](#from-project-description)
+  * [From project description](#from-project-description)
   * [Containers](#containers)
     * [IS2 example](#is2-example)
     * [Application containerization](#application-containerization)
@@ -23,6 +24,12 @@
       * [Notes](#notes)
       * [Authenticating to the Kubernetes API server](#authenticating-to-the-kubernetes-api-server)
     * [Deploying the services](#deploying-the-services)
+      * [Best practices](#best-practices)
+      * [Deployment](#deployment)
+      * [Service](#service)
+      * [Ingress](#ingress)
+      * [DB deployment](#db-deployment)
+      * [Connecting the tomcat to the DB](#connecting-the-tomcat-to-the-db)
   * [Try the platform yourself](#try-the-platform-yourself)
     * [Create project and service\-account](#create-project-and-service-account)
     * [Create Kubernetes cluster](#create-kubernetes-cluster)
