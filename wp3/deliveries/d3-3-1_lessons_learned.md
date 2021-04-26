@@ -17,8 +17,11 @@ Our main purpose of implementing the blueprint has been to implement a platform 
 Implementing the blueprint has been focusing on the technical aspects of establishing the platform and shared services, we have not been able to work on the governance, management and security issues related to establish and manage cloud platforms for sharing services across NSIs. Sharing common platforms across organizations would require the capabilites to govern, manage and secure collaboration platforms for keeping up with the emerging technological change to reduce risks. The implementation of blueprint provides guidelines and examples for NSIs to establish platforms and services for sharing, that would not need to have governance bodies to handle collaboration between national borders. 
 
 ## Experience with implementation of blueprint and deployathons
-- "Agile approach", not sufficient to apply guidelines and requirements. Agile and team approach.
-- Containerisation of services and applications - Windows containters
+- Containerisation of services and applications - Windows containers
+  - Some legacy applications require running on Windows operating system. Docker supports Windows containers so there is not really a problem. But when you give it a try you soon discover how large the containers are. Just building a .NET 4.x application require a 10GB SDK image. The image for running the applicaton inside an IIS (internet information server) is 6.8GB. This means building av deploying windows applicatons take longer time than thypical Linux containers and the lightweight experience you expect with containers are missing. The Windows containers also require Windows host so just running an image to test an application will not work on other operating systems. 
+
+  - We also testet managed Kubernetes on Azure (AKS) in 2020. Kubernetes clusters with  Windows worker nodes are supported but some features are still in preview as of 2021.
+
 - Security issues
   - Next step: would have been securing applications and services using platform capabilities ...
 

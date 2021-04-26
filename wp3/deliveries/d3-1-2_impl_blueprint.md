@@ -1,6 +1,6 @@
 # Cloud Platform Implementing the Blueprint
 
- * [From project description](#from-project-description)
+  * [From project description](#from-project-description)
   * [Containers](#containers)
     * [IS2 example](#is2-example)
     * [Application containerization](#application-containerization)
@@ -23,6 +23,12 @@
       * [Notes](#notes)
       * [Authenticating to the Kubernetes API server](#authenticating-to-the-kubernetes-api-server)
     * [Deploying the services](#deploying-the-services)
+      * [Best practices](#best-practices)
+      * [Deployment](#deployment)
+      * [Service](#service)
+      * [Ingress](#ingress)
+      * [DB deployment](#db-deployment)
+      * [Connecting the tomcat to the DB](#connecting-the-tomcat-to-the-db)
   * [Try the platform yourself](#try-the-platform-yourself)
     * [Create project and service\-account](#create-project-and-service-account)
     * [Create Kubernetes cluster](#create-kubernetes-cluster)
@@ -314,6 +320,90 @@ A by-product of deploying an existing app to a container orchestrator is that so
 - the web app should be able to run solo (without a database). `h2` (https://www.h2database.com/html/main.html) is a good way to achieve this and is supported by default by spring-boot. 
 - The database should rely on the default postgres image instead of maintaining a specific is2 database image and execute one or several scripts at runtime using the underlying orchestrator capabilities (docker volumes, docker compose, kubernetes init containers...). Database schema could also be provided by the application itself. Various libraries and frameworks such as [Flyway](https://flywaydb.org/) help achieve this.  
 - The app should aim at being as stateless as possible so that it can scale well horizontally.
+
+#### Deployment
+
+The first Kubernetes object we handle is the [__Deployment__](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/). It describe the creation and updates of a pod (and all its [replicas](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)).
+
+Here, we create a deployment for IS2:
+
+`deployment.yml`:
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: is2
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: is2
+  template:
+    metadata:
+      labels:
+        app: is2
+    spec:
+      containers:
+      - name: is2
+        image: mecdcme/is2
+        ports:
+        - containerPort: 8080
+
+```
+
+This won't work (`CrashLoopBackOff`), we know it because no DB is existing ((see improvement above: making the webapp runnable without db e.g with in-memory db)). 
+
+We can check logs of the ~~container~~ pod (`kubectl logs <podid>`).
+
+For now : change image to a basic Tomcat in order to have a running deployment. Pods are running fine :)
+
+```yaml=
+[...]
+spec:
+      containers:
+      - name: is2
+        image: mecdcme/is2
+        ports:
+        - containerPort: 8080
+[...]
+```
+
+Each pod get an ephemeral cluster-internal IP which we can't rely on as it changes on each pod failure / restart (which will happen). Next step is to provide a more robust way of addressing the pod.
+
+Debugging tips :
+- `kubectl exec` (equivalent to `docker exec`) lets you run commands (most of the time `/bin/sh`) in any running pod.
+- `kubectl port-forward` let's you tunnel a connection from a port of your machine to any port of any pod / service.
+
+#### Service
+
+Introducing a new object, the [Service](https://kubernetes.io/docs/concepts/services-networking/service/), which role is to provide a stable way to expose a set of pods.
+
+Different types of services exist, we use the default : `ClusterIP`. It is a static cluster-internal IP that load-balances to the pods.  
+
+`service.yml`:
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: is2
+spec:
+  ports:
+    - name: http
+      targetPort: 8080
+      port: 80
+  selector:
+    app: is2
+```  
+
+`kubectl get service` gives you the cluster-internal IP.  
+
+Bonus : each service gets a cluster-internal DNS name : `serviceid.namespace.clustername`.  
+
+Note that you can omit implicit parts of the DNS name. For example, from any pod of the same namespace : `is2` will resolve to the service IP.  
+
+From a pod from another namespace : `is2.i3s` will resolve fine.  
 
 
 ## Try the platform yourself
