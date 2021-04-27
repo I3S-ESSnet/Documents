@@ -37,7 +37,7 @@ Retro-fitted, and modularized existing services will also be tested on the platf
 ### Why we need a different infrastructure platform
 Traditional infrastructure is rigid, costly and not suited for supporting the rapid change in technology and agile processes. Even with the advent of virtualization, and the ability to run hyper convergent infrastructure on premise, we tend to hit struggle with high complexity of our infrastructure, and high management cost of infrastructure. With high complexity, managing adequate security is also an issue. Containers hide some of this complexity, especially when it comes to managing software compatibility between software projects. Implementing a cloud infrastructure help us manage underlying infrastructure complexity by using managed infrastructure that can scale depending on the need of the organization.
 
-![I3S - WP3 - Structure deliverables - Skisse til konseptuell modell for blueprint](https://user-images.githubusercontent.com/47101258/109776463-e3e2c300-7c02-11eb-952a-67516a033e8e.jpg)
+![I3S - WP3 - Structure deliverables - conceptual model for the blueprint](https://user-images.githubusercontent.com/47101258/109776463-e3e2c300-7c02-11eb-952a-67516a033e8e.jpg)
 
 To enable agile business processes, and support the implementation of reusable and shared services 
 The blueprint is describing an approach and patterns in order to support the implementation of reusable and shared services, and the capability of enabling agile processes for developing, implementing and govern business services.
@@ -54,9 +54,7 @@ Service developers build services and applications to be implemented on a platfo
 
 These building blocks and components are elaborated, described and rationalized further in the next chapters, and proven and validated in the deliverable "Implementing the blueprint". 
 
-## Providing services
-
-Shared and reusable services have several beneficial effects to NSIs, both from a business and technological perspective. Establishing the capability and environment for establishing shared services as some prerequisites, and considerations to be taken into account. The reason for
+Sharing services can be more than just running another NSI's service, it can be sharing and re-use in the context of sharing and reusing code. It is sometimes hard to make a service that will satisfy all needs. It is important to think of the scale and scope of the service, and the amount of business logic it provides. Sharing through code libaries is also something that should be encouraged. This will provide you with the possibility of sharing functionality as a function or statistical method in a code environment like Jupyter Notebooks.
 
 ### Scaling capabilities for services
 
