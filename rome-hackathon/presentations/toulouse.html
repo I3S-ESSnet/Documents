@@ -1,0 +1,92 @@
+<!doctype html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+		<title>I3S presentation</title>
+
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css">
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.css">
+		<link rel="stylesheet" href="https://i3s-essnet.github.io/Documents/communication/i3s.css">
+
+		<!-- Theme used for syntax highlighting of code -->
+		<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/css/monokai.css">
+
+		<!-- Printing and PDF exports -->
+		<script>
+			var link = document.createElement( 'link' );
+			link.rel = 'stylesheet';
+			link.type = 'text/css';
+			link.href = window.location.search.match( /print-pdf/gi ) ? 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/pdf.css' : 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/paper.css';
+			document.getElementsByTagName( 'head' )[0].appendChild( link );
+		</script>
+	</head>
+	<body>
+		<div class="reveal">
+			<div class="slides">
+				<section>
+					<h1>Toulouse hackathon</h1>
+					<img src="https://img.icons8.com/color/96/000000/bread.png">
+					<img src="https://img.icons8.com/color/96/000000/france.png">
+					<img src="https://img.icons8.com/color/96/000000/noodles.png">
+				</section>
+				<section>
+					<h2>When ?</h2>
+					<p>January, probably</p>
+					<p>5 days (as is tradition)</p>
+				</section>
+				<section>
+					<h2>Material</h2>
+					<p>
+						<ul>
+							<li>WP1: reuse cases implementation <img src="https://img.icons8.com/color/48/000000/error.png">
+								<ul>
+									<li>Relais: standalone application</li>
+									<li>ARC and Relais: use case(s) validated, needed datasets</li>
+								</ul>
+							</li>
+							<li>WP2: deliverables (architecture guidelines, cookbook)</li>
+							<li>WP3: containerization of services (already done ?)</li>
+							<li>WP4: results from the survey / consultations</li>
+						</ul>
+					</p>
+				</section>
+				<section>
+					<h2>Expectations</h2>
+					<p>
+						<ul>
+							<li>Validation and implementation of the reuse case(s) for ARC and Relais</li>
+							<li>Platform (WP3)</li>
+							<li>PX 2020</li>
+							<li>Notebooks VTL integration (& process design pattern)</li>
+							<li>Roadmap for integration patterns</li>
+						</ul>
+					</p>
+				</section>
+			</div>
+		</div>
+
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
+
+		<script>
+			// More info about config & dependencies:
+			// - https://github.com/hakimel/reveal.js#configuration
+			// - https://github.com/hakimel/reveal.js#dependencies
+			Reveal.initialize({
+				controls: true,
+				progress: true,
+				history: true,
+				center: true,
+				// Optional libraries used to extend on reveal.js
+				dependencies: [
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js', condition: function() { return !!document.querySelector( '[data-markdown]' ); } },
+                    { src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js', async: true, callback: function() { hljs.initHighlightingOnLoad(); } },
+					{ src: 'https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.js', async: true }
+				]
+			});
+		</script>
+	</body>
+</html>

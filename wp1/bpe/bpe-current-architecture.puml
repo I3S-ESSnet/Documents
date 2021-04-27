@@ -1,0 +1,58 @@
+@startuml
+
+' Users ----------
+
+:BPE user: as USER
+
+' Components ----------
+
+package "Upstream SAS programs" as SAS_AMONT {
+    component "Geographic data initialization *"
+    component "Equipement initialization ^"
+    component "Source data import *"
+    component "Variables tinkering *"
+    component "Observations grouping *"
+    component "GPS to Lambert93 conversion°"
+    component "Counts and frequencies °"
+    component "Transcoding °"
+}
+
+package "Online SAS programs" as SAS_LIGNE {
+    component "Loaded sources management °"
+    component "Quality measurement °"
+    component "Detailed localization °"
+    component "Dissemination °"
+}
+
+node "Web application" as APPLI_WEB {
+    component "UI"
+}
+
+database "BPE database" as BPE_DB {
+
+}
+
+artifact "Source file" as SOURCE
+artifact "Source file (applishare)" as SOURCE_FTP
+
+' Links ----------
+SOURCE -down-> SAS_AMONT
+SAS_AMONT -down-> BPE_DB
+SOURCE_FTP -left-> SAS_LIGNE
+SAS_LIGNE -left-> BPE_DB
+APPLI_WEB -up-> BPE_DB
+
+USER --down--> SAS_AMONT: "Designs and launches"
+USER --down--> APPLI_WEB: "Uses"
+USER --down--> SAS_LIGNE: "Triggers through file upload" 
+
+' Notes ----------
+
+' Legend ----------
+legend
+ * rewrite with ARC
+ ^ rewrite with Relais
+ ° rewrite with R
+endlegend
+
+@enduml

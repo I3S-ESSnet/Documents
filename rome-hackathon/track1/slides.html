@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
+    />
+
+    <title>I3S presentation</title>
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reset.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/reveal.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/theme/white.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://i3s-essnet.github.io/Documents/communication/i3s.css"
+    />
+
+    <!-- Theme used for syntax highlighting of code -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/lib/css/monokai.css"
+    />
+
+    <!-- Printing and PDF exports -->
+    <script>
+      var link = document.createElement("link");
+      link.rel = "stylesheet";
+      link.type = "text/css";
+      link.href = window.location.search.match(/print-pdf/gi)
+        ? "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/pdf.css"
+        : "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/css/print/paper.css";
+      document.getElementsByTagName("head")[0].appendChild(link);
+    </script>
+  </head>
+  <body>
+    <div class="reveal">
+      <div class="slides">
+        <section>
+          <h1>Track One debrief</h1>
+          <h2>Rome hackathon - may 2019</h2>
+        </section>
+        <section>
+          <h1>The Team</h1>
+          <ul>
+            <li>The italian team!</li>
+            <li>Henrick</li>
+            <li>
+              Rüne
+              <img src="https://img.icons8.com/color/48/000000/superman.png" />
+            </li>
+            <li>Trygve</li>
+            <li>
+              Rémi
+              <img src="https://img.icons8.com/color/48/000000/batman.png" />
+            </li>
+            <li>Romain</li>
+          </ul>
+        </section>
+        <section>
+          <section>
+            <h1>The plan</h1>
+            <img
+              src="https://resizing.flixster.com/BsQS9ynWtLc8wa2eSDOD3OYrZCY=/206x305/v1.bTsxMjA5ODEzOTtqOzE4MDUwOzEyMDA7OTAwOzEyMDA"
+            />
+          </section>
+          <section>
+            <ul>
+              <li>
+                Dockerize the IS2 application:
+                <ul>
+                  <li>a first container for the Spring Boot application</li>
+                  <li>a second one for the database</li>
+                </ul>
+              </li>
+              <li>
+                Deploy both containers in a calm and orderly fashion:
+                <ul>
+                  <li>
+                    Target platforms could be Compose, a cloud provider, etc.
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>The execution</h1>
+          </section>
+          <section>
+            <ul>
+              <li>
+                Containerization of both the DB and the application was done
+                quite quickly...
+              </li>
+              <li>...having the two containers talk to each other was not.</li>
+            </ul>
+          </section>
+          <section>
+            <ul>
+              <li>We needed to update the way the app reach the database</li>
+              <li>
+                Using Docker compose, we need to configure the composition of
+                containers in order for the application to wait for the DB to be
+                ready
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Architecture</h2>
+            <img src="schema.png" />
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>The results</h1>
+          </section>
+          <section>
+            <h2>We manage!</h2>
+            <ul>
+              <li>to deploy using Docker compose</li>
+              <li>to deploy on the DCOS Insee platform</li>
+              <li>in both cases using images pushed to Docker Hub</li>
+              <li>
+                also as a by product, to update the version of Spring boot
+              </li>
+            </ul>
+            <p>
+              Everything is
+              <a href="https://github.com/I3S-ESSnet/is2">on GitHub!</a> and on
+              <a href="https://cloud.docker.com/u/i3sessnet/repository/list"> Docker hub!</a>
+            </p>
+          </section>
+          <section>
+            <p>Demo time!</p>
+            <p>
+              <img src="https://img.icons8.com/color/96/000000/r2-d2.png" />
+            </p>
+          </section>
+        </section>
+        <section>
+          <section>
+            <h1>The aftermath</h1>
+          </section>
+          <section>
+            <h2>Things to do</h2>
+            <ul>
+              <li>integrate the Spring boot update to the code base</li>
+              <li>deploy on a cloud provider, using Kubernetes</li>
+              <li>
+                document the work and the lessons learned for WP3?
+                <img
+                  src="https://img.icons8.com/color/48/000000/filled-star.png"
+                />
+              </li>
+            </ul>
+          </section>
+          <section>
+            <h2>Outstanding questions</h2>
+            <ul>
+              <li>
+                Initial target was Relais, we ended up with IS2
+                <ul>
+                  <li>Relais to be proposed as a standalone service ?</li>
+                </ul>
+              </li>
+              <li>
+                ARC was already dockerized before the hackathon
+                <ul>
+                  <li>
+                    Compare the work done ? Extract some common elements /
+                    guide? (Compose / Marathon / Kubernetes)
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </section>
+        </section>
+        <section>
+          <h1>Thank you!</h1>
+          <p>
+            <img src="https://img.icons8.com/color/96/000000/pizza.png" />
+            <img src="https://img.icons8.com/color/96/000000/italy.png" />
+            <img src="https://img.icons8.com/color/96/000000/coliseum.png" />
+          </p>
+        </section>
+      </div>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/js/reveal.js"></script>
+
+    <script>
+      // More info about config & dependencies:
+      // - https://github.com/hakimel/reveal.js#configuration
+      // - https://github.com/hakimel/reveal.js#dependencies
+      Reveal.initialize({
+        controls: true,
+        progress: true,
+        history: true,
+        center: true,
+        // Optional libraries used to extend on reveal.js
+        dependencies: [
+          {
+            src:
+              "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/marked.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src:
+              "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/markdown/markdown.js",
+            condition: function() {
+              return !!document.querySelector("[data-markdown]");
+            }
+          },
+          {
+            src:
+              "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/highlight/highlight.js",
+            async: true,
+            callback: function() {
+              hljs.initHighlightingOnLoad();
+            }
+          },
+          {
+            src:
+              "https://cdnjs.cloudflare.com/ajax/libs/reveal.js/3.8.0/plugin/notes/notes.js",
+            async: true
+          }
+        ]
+      });
+    </script>
+  </body>
+</html>

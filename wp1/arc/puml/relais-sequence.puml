@@ -1,0 +1,36 @@
+@startuml relais-seqence
+
+title Using RELAIS in IS2
+actor User
+
+== Initialize ==
+
+User -> RELAIS: Authentication Request
+User <-- RELAIS: Authentication Response
+
+User <- RELAIS: List of business functions
+User -> RELAIS: Choose business function
+note right: Would be 'Record Linking' for RELAIS
+
+User <- RELAIS: List existing sessions
+User -> RELAIS: Create or choose session
+
+== Configure record linkage ==
+
+User <- RELAIS: RELAIS dashboard
+loop Datasets A and B
+User -> RELAIS: Specify Dataset
+note right: See detailed diagram
+end
+User -> RELAIS: Specify Process
+note right: See detailed diagram
+User <-- RELAIS: Record linkage specified
+
+== Run and get results ==
+
+User -> RELAIS: Run record linkage
+User <-- RELAIS: Record linkage performed
+User -> RELAIS: Request results
+User <- RELAIS: Record linkage results
+
+@enduml

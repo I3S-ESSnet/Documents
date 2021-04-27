@@ -1,0 +1,8 @@
+body {
+	background-image: url("https://i3s-essnet.github.io/Documents/communication/i3s-logo-1-small.png");
+	background-repeat:no-repeat;
+}
+.reveal section img {
+    border: none;
+    box-shadow: none;
+}
