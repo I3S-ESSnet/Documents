@@ -555,6 +555,21 @@ spec:
         ports:
         - containerPort: 8080
 ```
+### Packaging
+
+Those 5 `yaml` files mix contracts and environment-specific values. We should separate them.
+
+Best practice is creating a package for the contracts and using placeholder instead of values. Current standard package manager is [Helm](https://helm.sh/). Side note : Helm version 2 is EOL, make sure to use version 3. Helm is a binary : https://github.com/helm/helm/releases. It reuses the kubectl configuration. You have a working kubectl configuration = you have a working helm :)  
+
+Charts are packages that can be installed on any Kubernetes cluster. Charts are stored in repositories. Either locally (a folder = a chart) or exposed on the internet (public repositories). For example : 
+
+- https://github.com/bitnami/charts : lots of charts  
+- https://github.com/inseefrlab/helm-charts : Various charts used at INSEE  
+- https://github.com/inseefrlab/helm-charts-datascience : datascience focused charts used in the INSEE datalab (Onyxia)  
+
+https://artifacthub.io/ is a hub of such charts.
+
+TODO
 
 ## Try the platform yourself
 
