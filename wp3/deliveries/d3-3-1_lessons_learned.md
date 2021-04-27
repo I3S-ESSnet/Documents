@@ -38,6 +38,7 @@ Sharing strategies - different expectations and requirements for governance, man
 - Sharing platform
 - Sharing services and applications
 - Sharing code (infrastructure as code, services and applications)
+- Replicated (vs shared)
 
 
 
