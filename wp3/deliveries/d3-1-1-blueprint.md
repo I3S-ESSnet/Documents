@@ -117,6 +117,8 @@ Sharing code nationally and internationally improve quality and encourage reuse 
 * Showing your work (transparancies, governmental services), including publuc trust
 * Security
 
+We strongly recommend NSO's to adopt an Open Source strategy when developing services.
+
 ### Law & Order 
 
 Choosing the right license for your project is important. It will have implications, both to how your code can be shared with individuals, organizations and coorperations, but also what kind of re-use you can give permission to. Roughly speaking there are two main types of Open Source licenses that can be applied to your code. There are variations 
