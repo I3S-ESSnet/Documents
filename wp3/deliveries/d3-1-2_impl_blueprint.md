@@ -405,48 +405,209 @@ Note that you can omit implicit parts of the DNS name. For example, from any pod
 
 From a pod from another namespace : `is2.i3s` will resolve fine.  
 
+#### Ingress
+
+Last step : exposing the service to the outside world. This requires an `Ingress Controller` installed in the cluster.  Vanilla installation of k8s does not come with an Ingress controller. GKE comes with one, but you probably want to setup your own (at least to be as much cloud agnostic as possible). 
+
+Following https://cloud.google.com/community/tutorials/nginx-ingress-gke
+
+````sh
+helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+helm repo update
+helm install ingress-nginx ingress-nginx/ingress-nginx --set rbac.create=true --set controller.publishService.enabled=true --set controller.service.loadBalancerIP=<reserved-ip-address> --set controller.extraArgs.default-ssl-certificate="default/wildcard"
+````
+
+TODO: add more on ssl/tls
+
+Creating an `ingress` resource to map the URL to the corresponding service (`ingress.yml`):  
+
+```yaml
+apiVersion: extensions/v1beta1
+kind: Ingress
+metadata:
+  name: is2
+  annotations:
+    kubernetes.io/ingress.class: nginx
+spec:
+  tls:
+    - hosts:
+        - is2.is3.ninja
+  rules:
+    - host: is2.is3.ninja
+      http:
+        paths:
+          - path: /
+            backend:
+              serviceName: is2
+              servicePort: http
+```  
+
+Debugging tips :  
+- always debug each part separatly, starting from the pod (get / describe / exec / port-forward), the service (get / describe / port-forward) and then the ingress (get / describe)
+
+#### DB deployment
+
+Same kind of deployment file.
+
+We need to provide an environment variable for password. Best practice : use `ConfigMap` to externalize the configuration. Quickest practice : use `env`
+
+We used once again debugging tips (see an upper section).
+
+We want a static IP for the DB, we create the proper YAML file: `service-db.yml`
+
+Then, providing startup script for the DB container in order to provide data. We wouldn't use directly the command key. Instead we'll use the [init container pattern](https://www.magalix.com/blog/kubernetes-patterns-the-init-container-pattern) for downloading a SQL script and share it with the real DB container, using a shared volume.
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: is2-db
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: is2-db
+  template:
+    metadata:
+      labels:
+        app: is2-db
+    spec:
+      initContainers:
+          - name: download-sql
+            image: curlimages/curl
+            command: ["curl"]
+            args: ["-o","/dump/init.sql","https://raw.githubusercontent.com/mecdcme/is2/master/db/is2-dump.sql"]
+            volumeMounts:
+              - mountPath: /dump
+                name: dump
+      containers:
+      - name: is2-db
+        image: postgres:11
+        env:
+            - name: POSTGRES_PASSWORD
+              value: toto
+        ports:
+        - containerPort: 5432
+        volumeMounts:
+              - mountPath: /docker-entrypoint-initdb.d
+                name: dump
+      volumes:
+        - emptyDir: {}
+          name: dump
+```
+
+Using this [one big SQL script](https://github.com/mecdcme/is2/blob/master/db/is2-dump.sql).  
+
+Create an service (ClusterIP) for the database with `service-db.yml`:  
+
+```yaml
+apiVersion: v1
+kind: Service
+metadata:
+  name: is2-db
+spec:
+  ports:
+    - name: postgres
+      targetPort: 5432
+      port: 5432
+  selector:
+    app: is2-db
+```  
+
+#### Connecting the tomcat to the DB  
+
+Using the DB `ClusterIP` service DNS name : `is2-db` :  
+
+```yaml
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: is2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: is2
+  template:
+    metadata:
+      labels:
+        app: is2
+    spec:
+      containers:
+      - name: is2
+        image: mecdcme/is2
+        env:
+          - name: SPRING_DATASOURCE_URL
+            value: "jdbc:postgresql://is2-db:5432/postgres?currentSchema=is2"
+          - name: SPRING_DATASOURCE_USERNAME
+            value: "postgres"
+          - name: SPRING_DATASOURCE_PASSWORD
+            value: "toto"
+          - name: SPRING_DATASOURCE_DRIVERCLASSNAME
+            value: "org.postgresql.Driver"
+          - name: SPRING_DATASOURCE_PLATFORM
+            value: "postgresql"
+        ports:
+        - containerPort: 8080
+```
 
 ## Try the platform yourself
 
-* Fork this repo on Github https://github.com/I3S-ESSnet/Platform
+### Create Google cloud project and service-account
+#### Prerequisites
+
 * Sign up for free on https://web.archive.org/web/20210423075000/https://cloud.google.com/
 * install Google Cloud SDK https://web.archive.org/web/20210423075000/https://cloud.google.com/sdk/docs/install
+* Fork this repo on Github https://github.com/I3S-ESSnet/platform-demo
 
-### Create project and service-account
 
 ```sh
-gcloud auth login
-gcloud projects create i3s-ninja
-gcloud config set project i3s-ninja
-gcloud iam service-accounts create terraform
-gcloud projects add-iam-policy-binding i3s-ninja --member "serviceAccount:terraform@i3s-$ $ ninja.iam.gserviceaccount.com" --role "roles/owner"
-gcloud iam service-accounts keys create account.json --iam-account "terraform@i3s-$ ninja.iam.gserviceaccount.com"
+$ cd gke
+$ gcloud auth login
+$ gcloud projects create i3s-ninja
+$ gcloud config set project i3s-ninja
+$ gcloud iam service-accounts create terraform
+$ gcloud projects add-iam-policy-binding i3s-ninja --member "serviceAccount:terraform@i3s-$ $ ninja.iam.gserviceaccount.com" --role "roles/owner"
+$ gcloud iam service-accounts keys create account.json --iam-account "terraform@i3s-$ ninja.iam.gserviceaccount.com"
 ```
 
-### Create Kubernetes cluster
+Output : 
+* `account.json`: key file for next step
 
-* install Terraform CLI https://web.archive.org/web/20210423075000/https://www.terraform.io/downloads.html
+### Create Kubernetes cluster
+#### Prerequisites
+
+* Install Terraform CLI https://web.archive.org/web/20210423075000/https://www.terraform.io/downloads.html
+
 
 ```sh
 $ terraform version
-Terraform v0.14.8
-+ provider registry.terraform.io/hashicorp/google v3.59.0
-+ provider registry.terraform.io/hashicorp/kubernetes v2.0.2
+Terraform v0.15.0
+on darwin_amd64
++ provider registry.terraform.io/hashicorp/google v3.65.0
 
 $ terraform init
 $ terraform plan -out "run.plan"
-$ terraform apply "run.plan"
+$ terraform apply "run.plan"      #(wait approx 10 minutes)
 ```
-flow links in initial error messages to enable "Kubernetes Engine API"
-Even if it is FREE it requires av billing account.
+:information_source: follow links in initial error messages to enable "Kubernetes Engine API". Even if it is FREE it requires av billing account.
+
+Output : 
+* `master ip`: the `apiserver` IP 
+* `reserved_ip_address`: the ip that will be used for the reverse proxy
 
 ### Test Kubernetes cluster
 
-* install kubectl https://web.archive.org/web/20210423075000/https://kubernetes.io/docs/tasks/tools/#kubectl
+#### Prerequisites
+* Install `kubectl` https://web.archive.org/web/20210423075000/https://kubernetes.io/docs/tasks/tools/#kubectl
 
+Get credentials for `kubectl`
 ````sh
 $ gcloud container clusters get-credentials i3s-standard-cluster --region europe-west1-b
+````
 
+List cluster nodes
+````sh
 $ kubectl get nodes                                                                     
 NAME                                                  STATUS   ROLES    AGE   VERSION
 gke-i3s-standard-clus-first-node-pool-82c76e25-4cqk   Ready    <none>   23m   v1.18.16-gke.502
@@ -457,32 +618,48 @@ gke-i3s-standard-clus-first-node-pool-82c76e25-cm76   Ready    <none>   23m   v1
 
 #### Prerequisites
 * install helm https://web.archive.org/web/20210423075000/https://helm.sh/docs/intro/install/
-* clone https://github.com/mecdcme/is2
-
-
-
+* clone https://github.com/mecdcme/is2 (since we don't have en I3S helm catalog)
 
 ````sh
 $ cd is2/helm
 $ helm install --create-namespace --namespace is2 is2 .
 ````
 
+Create `myValues.yaml` with this contents and replace with your `reserved_ip_address`
 ````sh
-$ cd apps/nginx-ingress
-$ helm dependencies update
-$ helm install --create-namespace --namespace nginx-ingress nginx-ingress .
-
-$ export NGINX_INGRESS_IP=$(kubectl get service -n nginx-ingress nginx-ingress-ingress-nginx-controller -ojson | jq -r '.status.loadBalancer.ingress[].ip')\n
-$ echo $NGINX_INGRESS_IP
-34.78.199.11
-
- helm upgrade -n is2 is2 . -f values.yaml
- helm get values -n is2 is2
- helm uninstall -n is2 is2 
- 
+env:
+  ARC_WEBSERVICE_URI: http://arc-ws.arc:8080/
+  SPRING_DATASOURCE_DRIVERCLASSNAME: org.postgresql.Driver
+  SPRING_DATASOURCE_PASSWORD: toto
+  SPRING_DATASOURCE_PLATFORM: postgresql
+  SPRING_DATASOURCE_URL: jdbc:postgresql://is2-db:5432/postgres?currentSchema=is2
+  SPRING_DATASOURCE_USERNAME: postgres
+ingress:
+  annotations:
+    kubernetes.io/ingress.class: nginx
+  enabled: true
+  hosts:
+  - host: is2.<reserved_ip_address>.xip.io
+    paths:
+    - /
 ````
 
-### Install IS2 with Helm on Kubernetes
+:information_source: this example does not cover real DNS and TLS certificates, we just use https://xip.io/ which is a free wildcards DNS service.
+
+Apply your values
+````sh
+ $ helm upgrade --namespace is2 is2 . -f myValues.yaml
+```` 
+
+### Install reverse proxy nginx-ingress
+Switch back to this repo.
+````sh
+cd apps/nginx-ingress
+helm dependencies update
+helm install --create-namespace --namespace nginx-ingress nginx-ingress .
+`````
+
+### Install ARC with Helm on Kubernetes
 #### Prerequisites
 * install helm https://web.archive.org/web/20210423075000/https://helm.sh/docs/intro/install/
 * clone https://github.com/InseeFr/ARC
@@ -495,7 +672,7 @@ helm install --create-namespace --namespace arc arc .
 
 ````
 
-
+## Misc.
 
 ### SSL
 
