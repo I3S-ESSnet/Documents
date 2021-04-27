@@ -30,13 +30,18 @@
       * [DB deployment](#db-deployment)
       * [Connecting the tomcat to the DB](#connecting-the-tomcat-to-the-db)
   * [Try the platform yourself](#try-the-platform-yourself)
-    * [Create project and service\-account](#create-project-and-service-account)
-    * [Create Kubernetes cluster](#create-kubernetes-cluster)
-    * [Test Kubernetes cluster](#test-kubernetes-cluster)
-    * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
+    * [Create Google cloud project and service\-account](#create-google-cloud-project-and-service-account)
       * [Prerequisites](#prerequisites)
-    * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes-1)
+    * [Create Kubernetes cluster](#create-kubernetes-cluster)
       * [Prerequisites](#prerequisites-1)
+    * [Test Kubernetes cluster](#test-kubernetes-cluster)
+      * [Prerequisites](#prerequisites-2)
+    * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
+      * [Prerequisites](#prerequisites-3)
+    * [Install reverse proxy nginx\-ingress](#install-reverse-proxy-nginx-ingress)
+    * [Install ARC with Helm on Kubernetes](#install-arc-with-helm-on-kubernetes)
+      * [Prerequisites](#prerequisites-4)
+  * [Misc\.](#misc)
     * [SSL](#ssl)
       * [Adding TLS](#adding-tls)
       * [Renew certificates](#renew-certificates)
@@ -699,5 +704,6 @@ Windows container require some more parameters.
 
 ## Links
 * https://web.archive.org/web/20210422234949/https://docs.docker.com/compose/
-* https://github.com/InseeFrLab/cloud-scripts/tree/master/gke
+* https://github.com/InseeFrLab/cloud-scripts/
+* https://web.archive.org/web/20210422234949/https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
 
