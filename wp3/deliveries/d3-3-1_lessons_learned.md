@@ -13,24 +13,23 @@ Documenting and managing architecture in an environment where innovation and tec
 
 The implementation of blueprint is a volatile document that serves as a proof-of-concept and guideline for establishing a platform in the cloud and implement shared services. One of the key successes for the deliveries in WP3 has been the collaboration with WP2 related to the blueprint both for agreeing on the content of deliverables but also to interconnect the architectural guidelines with the blueprint. Another success has been the deployathons and hackathons with members from the other work packages, these gatherings had an agile approach with highly skilled members to perform proof-of-concepts of shared services based on the concepts and descriptions in the blueprint.
 
-Our main purpose of implementing the blueprint has been to implement a platform with the capability of establishing shared services. Through the deployathons we have gathered experience and proven the ability to establish shared services on the platform.
+Our main purpose of implementing the blueprint has been to implement a platform with the capability of establishing shared services. Through the deployathons we have gathered experience and proven the ability to establish shared services on the platform. In this process we have experienced some technical and implementation issues that should be addressed: 
+
+- Containerisation of services and applications - Windows containers
+  - Some legacy applications require running on Windows operating system. Docker supports Windows containers so there is not really a problem. But when you give it a try you soon discover how large the containers are. Just building a .NET 4.x application require a 10GB SDK image. The image for running the applicaton inside an IIS (internet information server) is 6.8GB. This means building av deploying windows applicatons take longer time than thypical Linux containers and the lightweight experience you expect with containers are missing. The Windows containers also require Windows host so just running an image to test an application will not work on other operating systems. 
+  - We also testet managed Kubernetes on Azure (AKS) in 2020. Kubernetes clusters with  Windows worker nodes are supported but some features are still in preview as of 2021.
+- Authentication and authorization of developers has proven as a challenge when using existing user directories setup for other purposes. One need to consider how shared platforms can govern and manage users for access to platform capabilities and collaboration in developing capabilities and shared services. 
+- Securing shared services and platforms need to be considered related to concepts and patterns, shared services across NSIs would have implementations using different security concepts and implementations that would have implications for reuse of services and building pipelines of services.  
 
 Implementing the blueprint has been focusing on the technical aspects of establishing the platform and shared services, we have not been able to work on the governance, management and security issues related to establish and manage cloud platforms for sharing services across NSIs. Sharing common platforms across organizations would require the capabilities to govern, manage and secure collaboration platforms for keeping up with the emerging technological change to reduce risks. The implementation of blueprint provides guidelines and examples for NSIs to establish platforms and services for sharing, that would not need to have governance bodies to handle collaboration between national borders.
 
-## Experience with implementation of blueprint and deployathons
-- Containerisation of services and applications - Windows containers
-  - Some legacy applications require running on Windows operating system. Docker supports Windows containers so there is not really a problem. But when you give it a try you soon discover how large the containers are. Just building a .NET 4.x application require a 10GB SDK image. The image for running the applicaton inside an IIS (internet information server) is 6.8GB. This means building av deploying windows applicatons take longer time than thypical Linux containers and the lightweight experience you expect with containers are missing. The Windows containers also require Windows host so just running an image to test an application will not work on other operating systems. 
-
-  - We also testet managed Kubernetes on Azure (AKS) in 2020. Kubernetes clusters with  Windows worker nodes are supported but some features are still in preview as of 2021.
-
-- Security issues
-  - Next step: would have been securing applications and services using platform capabilities ...
-
 ## Concluding remarks
 To keep track over two years (projects). Important elements when started the project has changed over time. Fail fast, change.
-Other existing artefacts related to the blueprint.
+
 IT architecture evolve in agile environment and organizations; the concepts, frames and strategies (autonomy and value boundary)
+
 Physical meetings vs virtual meetings and deployathons.
+
 Sharing strategies - different expectations and requirements for governance, management and security
 -	Sharing platform (collaboration)
 -	Sharing services and applications ("distributed" platforms (NSIs))
@@ -38,3 +37,6 @@ Sharing strategies - different expectations and requirements for governance, man
 -	Replicated (vs shared)
 
 Next steps
+- sharing - ESS Expert group on sharing
+- CSPA Service catalogue
+- Communication and collaboration
