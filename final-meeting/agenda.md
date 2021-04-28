@@ -45,10 +45,10 @@ Implementing new services from existing solutions
 
 #### [14:00-14:45] Part 1
 
-  * [15 min] ARC (Presenter: Manuel Soulier)
+  * [15 min] [ARC](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/SyrKYiALu#/) (Presenter: Manuel Soulier)
   * [10 min] Relais (Presenter: Mauro Bruno)
   * [10 min] PXWeb (Presenter: Hakim Sjöström)
-  * [10 min] VTL Tools (Presenters: Nicolas Laval and Franck Cotton)
+  * [10 min] [VTL Tools](vtl.html) (Presenters: Nicolas Laval and Franck Cotton)
 
 #### [14:45-15:00] Break
 
@@ -57,7 +57,7 @@ Implementing new services from existing solutions
 Service reuse and lessons learned
 
   * [15 min] Istat reusing ARC service (Presenter: Giuseppina Ruocco)
-  * [10 min] Insee reusing Relais service (Presenters: Manuel Soulier and Franck Cotton)
+  * [10 min] Insee [reusing Relais](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/SJWlilNw_#/) service (Presenters: Manuel Soulier and Franck Cotton)
   * [10 min] PXWeb reuse cases (Presenter: Rune Johansen)
   * [10 min] Lessons learned (Presenter: Mauro Bruno)
 
