@@ -1,4 +1,4 @@
-# I3S ESSnet Final meeting draft agenda
+# I3S ESSnet Final meeting agenda
 
 The final workshop of the I3S ESSnet will take place online on the afternoons (CET) of 27 and 28 April 2021.
 
@@ -43,7 +43,7 @@ Presentation of Work Package 1 results - Discussant: Tomaz Speh
 
 Implementing new services from existing solutions
 
-#### [14:00-14:45] Part 1
+#### [14:00-14:45] Part 1 ([recording](http://shared-statistical-services.org/videos/i3s-final-s31.mp4))
 
   * [15 min] [ARC](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/SyrKYiALu#/) (Presenter: Manuel Soulier)
   * [10 min] Relais (Presenter: Mauro Bruno)
