@@ -36,3 +36,5 @@ Sharing strategies - different expectations and requirements for governance, man
 -	Sharing services and applications ("distributed" platforms (NSIs))
 -	Sharing code (infrastructure as code, services and applications)
 -	Replicated (vs shared)
+
+Next steps
