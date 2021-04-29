@@ -58,7 +58,7 @@ Service reuse and lessons learned
 
   * [15 min] Istat reusing ARC service (Presenter: Giuseppina Ruocco)
   * [10 min] Insee [reusing Relais](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/SJWlilNw_#/) service (Presenters: Manuel Soulier and Franck Cotton)
-  * [10 min] PXWeb reuse cases (Presenter: Rune Johansen)
+  * [10 min] [PXWeb reuse cases](https://i3s-essnet.github.io/Documents/wp3/pres_pxweb-reuse.html#/) (Presenter: Rune Johansen)
   * [10 min] Lessons learned (Presenter: Mauro Bruno)
 
 ### [15:45-16:00] Break
