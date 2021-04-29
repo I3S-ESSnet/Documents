@@ -10,7 +10,7 @@ The final workshop of the I3S ESSnet will take place online on the afternoons (C
 
 Overview of the ESSnet, structure and organisation of the meeting.
 
-### [14:15-16:00] Session 1 - Architecture (resp. SE)
+### [14:15-16:00] Session 1 - [Architecture](https://miro.com/app/board/o9J_lGjWOx4=/) (resp. SE)
 
 Presentation of Work Package 2 results - Discussant: Matjaž Jug 
 
