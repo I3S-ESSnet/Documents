@@ -47,7 +47,7 @@ Implementing new services from existing solutions
 
   * [15 min] [ARC](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/SyrKYiALu#/) (Presenter: Manuel Soulier)
   * [10 min] Relais (Presenter: Mauro Bruno)
-  * [10 min] PXWeb (Presenter: Hakim Sjöström)
+  * [10 min] [PXWeb](https://github.com/I3S-ESSnet/Documents/blob/master/wp1/PXWeb%20I3S%202021%20Presentation.pdf) (Presenter: Hakim Sjöström)
   * [10 min] [VTL Tools](presentations/vtl.html) (Presenters: Nicolas Laval and Franck Cotton)
 
 #### [14:45-15:00] Break
