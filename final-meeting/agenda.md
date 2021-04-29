@@ -22,7 +22,7 @@ Presentation of Work Package 2 results - Discussant: Matjaž Jug
 
 ### [16:00-16:15] Break
 
-### [16:15-17:15] Session 2 - Deployment (resp. NO)
+### [16:15-17:15] Session 2 - [Deployment](https://i3s-essnet.github.io/Documents/final-meeting/presentations/pres_finalmeet_depl.html#/) (resp. NO)
 
 Presentation of Work Package 3 results - Discussant: Joni Karanka
 
