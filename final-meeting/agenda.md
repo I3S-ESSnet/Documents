@@ -67,7 +67,7 @@ Service reuse and lessons learned
 
 Presentation of Work Package 4 results - Discussant: Taeke Gjaltema
 
-How to enhance service reuse
+How to enhance service reuse(https://github.com/I3S-ESSnet/Documents/blob/2b56851a5f7b778c31c0bd5fe152664b3fe74481/final-meeting/presentations/CommunicationPresentation.pptx)
 
   * [15 min] Survey results 
   * [15 min] New approach on available service awareness
