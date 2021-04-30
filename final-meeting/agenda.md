@@ -46,7 +46,7 @@ Implementing new services from existing solutions
 #### [14:00-14:45] Part 1 ([recording](http://shared-statistical-services.org/videos/i3s-final-s31.mp4))
 
   * [15 min] [ARC](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/SyrKYiALu#/) (Presenter: Manuel Soulier)
-  * [10 min] Relais (Presenter: Mauro Bruno)
+  * [10 min] [Relais](https://github.com/I3S-ESSnet/Documents/blob/2b56851a5f7b778c31c0bd5fe152664b3fe74481/final-meeting/presentations/Relais_implementation_rev5.pptx) (Presenter: Mauro Bruno)
   * [10 min] [PXWeb](https://github.com/I3S-ESSnet/Documents/blob/master/wp1/PXWeb%20I3S%202021%20Presentation.pdf) (Presenter: Hakim Sjöström)
   * [10 min] [VTL Tools](presentations/vtl.html) (Presenters: Nicolas Laval and Franck Cotton)
 
@@ -56,10 +56,10 @@ Implementing new services from existing solutions
 
 Service reuse and lessons learned
 
-  * [15 min] Istat reusing ARC service (Presenter: Giuseppina Ruocco)
+  * [15 min] Istat [reusing ARC service](https://github.com/I3S-ESSnet/Documents/blob/2b56851a5f7b778c31c0bd5fe152664b3fe74481/final-meeting/presentations/ARC_reuse_rev3.pptx) (Presenter: Giuseppina Ruocco)
   * [10 min] Insee [reusing Relais](https://hackmd.io/@EgVaFRsUQ-ywTiFcXIsWig/SJWlilNw_#/) service (Presenters: Manuel Soulier and Franck Cotton)
   * [10 min] [PXWeb reuse cases](https://i3s-essnet.github.io/Documents/wp3/pres_pxweb-reuse.html#/) (Presenter: Rune Johansen)
-  * [10 min] Lessons learned (Presenter: Mauro Bruno)
+  * [10 min] [Lessons learned](https://github.com/I3S-ESSnet/Documents/blob/2b56851a5f7b778c31c0bd5fe152664b3fe74481/final-meeting/presentations/ARC_reuse_rev3.pptx) (Presenter: Mauro Bruno)
 
 ### [15:45-16:00] Break
 
