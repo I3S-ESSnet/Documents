@@ -636,6 +636,38 @@ gke-i3s-standard-clus-first-node-pool-5f706ef9-5gdh   Ready    <none>   7m42s   
 gke-i3s-standard-clus-first-node-pool-5f706ef9-s6r1   Ready    <none>   7m43s   v1.18.16-gke.502
 ````
 
+### Install reverse proxy nginx-ingress with `Helm`
+
+````sh
+$ cd ../apps/nginx-ingress
+$ helm dependencies update
+````
+
+Replace `<reserved_ip_address>`in `values.yaml`with the correct ip-address.
+
+````sh
+$ cat values.yaml
+ingress-nginx:
+ controller:
+  publishService:
+    enabled: true
+  service:
+    loadBalancerIP: <reserved_ip_address>
+ rbac:
+  create: true
+````
+
+````sh
+$ helm install --create-namespace --namespace nginx-ingress nginx-ingress .
+
+NAME: nginx-ingress
+LAST DEPLOYED: Tue Apr 27 10:52:58 2021
+NAMESPACE: nginx-ingress
+STATUS: deployed
+REVISION: 1
+TEST SUITE: None
+````
+
 ### Install IS2 with Helm on Kubernetes
 
 #### Prerequisites
@@ -683,29 +715,8 @@ STATUS: deployed
 REVISION: 2
 ```` 
 
-### Install reverse proxy nginx-ingress
-
-Switch back to the `platform-demo`repo fork
-
-````sh
-$ cd apps/nginx-ingress
-$ helm dependencies update
-````
-
-Replace `<reserved_ip_address>`in `values.yaml`with the correct ip-address.
-
-````sh
-$ helm install --create-namespace --namespace nginx-ingress nginx-ingress .
-
-NAME: nginx-ingress
-LAST DEPLOYED: Tue Apr 27 10:52:58 2021
-NAMESPACE: nginx-ingress
-STATUS: deployed
-REVISION: 1
-TEST SUITE: None
-````
-
 Now you can vist `http://i2.<reserved_ip_address>.xip.io/is2/` Default username/password are posted in  [is2 README](https://github.com/mecdcme/is2/blob/master/README.md)
+
 ### Install ARC with Helm on Kubernetes
 #### Prerequisites
 * install helm https://web.archive.org/web/20210423075000/https://helm.sh/docs/intro/install/
