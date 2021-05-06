@@ -36,6 +36,8 @@ Sharing strategies - different expectations and requirements for governance, man
 -	Sharing code (infrastructure as code, services and applications)
 -	Replicated (vs shared)
 
+?? Something about the work package, "guestimates". Is this useful? We do not have official numbers to support this, it is based on a guesswork. Implementing blueprint (and collaboration with developers in WP1) 35%, Blueprint (and collaboration with WP2) 25%, administrative tasks and consortium meetings 10%, hackathons (physical meetings) 30%.  
+
 Next steps
 - sharing - ESS Expert group on sharing
 - CSPA Service catalogue
