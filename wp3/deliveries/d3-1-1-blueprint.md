@@ -144,11 +144,12 @@ Examples:
 * [MIT License](https://opensource.org/licenses/MIT)
 
 ### Considerations
-* The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing
-* In order to share code internationally, English should (must?) be used as a development language
-* Make sure that code is decomposed so that specific business logic is separated from the code that may be of general interest
-* When suspending all or part of the development, must your organization ensure that you have the copyright to the code being developed and/or ensure that the source code can be shared under an open license
-* There may be reasons why one chooses products/solutions that are not open source, but then quality, scope and degree to which the product provides for strong links to the architecture must be assessed and documented
+* Use a tool like [JLA](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/about)(Joinup Licencing Assistant) allowing everyone to compare and select open licences based on their content.
+* The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing.
+* In order to share code internationally, English should be used as the development language.
+* Make sure that code is decomposed so that specific business logic is separated from the code that may be of interest to the general public.
+* At all times, make sure that you have the right to the code being developed in-house and/or that the source code is  shared under an open license.
+* There may be reasons why one chooses products/solutions that are not open source, but then quality, scope and degree to which the product provides for strong links to the architecture must be assessed and documented.
 
 ## Overall security and logging
 The description provides a brief documentation with an overview of relevant concepts to support a security model for establishing services in  cloud environments. The documentation is based on the description of the security model in Statistics Norway (SSB Developer Guide) and documentation of deliverables in WP1, WP2 and WP3 in I3S. The deliverable "Implementing the blueprint" describes the security components used in the implementation of the I3S platform. 
