@@ -144,7 +144,7 @@ Examples:
 * [MIT License](https://opensource.org/licenses/MIT)
 
 ### Considerations
-* Use a tool like [JLA](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/about)(Joinup Licencing Assistant) allowing everyone to compare and select open licences based on their content.
+* Use a tool like [JLA](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/about) (Joinup Licencing Assistant) allowing everyone to compare and select open licences based on their content.
 * The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing.
 * In order to share code internationally, English should be used as the development language.
 * Make sure that code is decomposed so that specific business logic is separated from the code that may be of interest to the general public.
