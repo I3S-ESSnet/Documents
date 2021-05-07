@@ -139,12 +139,16 @@ As the name implies, this license will have some, or no requirements for re-use,
 
 Examples:
 
-* [Apache License 2.0](https://opensource.org/licenses/Apache-2.0)
-* [BSD License](https://opensource.org/licenses/BSD-3-Clause)
-* [MIT License](https://opensource.org/licenses/MIT)
+* [Apache License 2.0](https://web.archive.org/web/20210505215229/https://opensource.org/licenses/Apache-2.0)
+* [BSD License](https://web.archive.org/web/20210506185805/https://opensource.org/licenses/BSD-3-Clause)
+* [MIT License](https://web.archive.org/web/20210507122818/https://opensource.org/licenses/MIT)
 
 ### Considerations
-* Use a tool like [JLA](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/about) (Joinup Licencing Assistant) allowing everyone to compare and select open licences based on their content.
+
+![Joinup Licencing Assistant](https://web.archive.org/web/20210425142159im_/https://joinup.ec.europa.eu/sites/default/files/inline-images/JLA.jpg)
+
+* Use a tool like [JLA](https://web.archive.org/web/20210425142156/https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/about) (Joinup Licencing Assistant) allowing everyone to compare and select open licences based on their content.
+
 * The right competence to choose the right products for the right purposes, in addition to basic knowledge of open source licensing.
 * In order to share code internationally, English should be used as the development language.
 * Make sure that code is decomposed so that specific business logic is separated from the code that may be of interest to the general public.
@@ -170,8 +174,8 @@ In software architecture, a service mesh is a dedicated infrastructure layer for
 The figure shows an example on technical implementation of the zero-trust concept using service mesh to deliver functionality for authentication and authorization of network flow and access proxy for user and device authentication. 
 
 References:
-- [BeyondCorp - Google's implementation of the zero trust model](https://cloud.google.com/beyondcorp)
-- [What is Istio?](https://istio.io/latest/docs/concepts/what-is-istio/)
+- [BeyondCorp - Google's implementation of the zero trust model](https://web.archive.org/web/20210507123413/https://cloud.google.com/beyondcorp)
+- [What is Istio?](https://web.archive.org/web/20210507123355/https://istio.io/latest/docs/concepts/what-is-istio/)
 
 ### User administration, authentication and authorization
 Authentication is the process of verifying a user’s identity. Authentication should be based on open standards for instance OpenID connect (OIDC) and OAuth2 for authorization. When implementing an IdP-solution one should consider the OIDC compatibility, multi-factor authentication, self-serviced password reset, real-time logging, password-policy features.
