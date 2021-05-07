@@ -32,6 +32,8 @@
     * [Connecting the tomcat to the DB](#connecting-the-tomcat-to-the-db)
   * [Packaging](#packaging)
   * [Accessing the cluster](#accessing-the-cluster)
+    * [Setting up reverse proxy (ingress controller)](#setting-up-reverse-proxy-ingress-controller)
+    * [Adding DNS](#adding-dns)
     * [Adding TLS](#adding-tls)
     * [Renew certificates](#renew-certificates)
 * [Try the platform yourself](#try-the-platform-yourself)
@@ -574,13 +576,68 @@ In the future, we may want to publish charts in a repository. An easy solution w
 
 ### Accessing the cluster
 
-#### Adding TLS
-...
-#### Renew certificates
+Now we have created cluster using Terraform, and we can deploy on the Kubernetes, but no ingress controller (reverse proxy) is installed so nobody can access the appilcations from outside. Technically, Terraform can be used to install the ingress controller (using a kubectl provider) but it is not recommended. The prefered way would be to use directly kubectl, for example using GitOps tools.
+
+#### Setting up reverse proxy (ingress controller)  
+
+Two ways of making applications visible from the outside: 
+
+- using a load balancer service
+- using an ingress controller
+
+We'll use the second.
+
+For that, we need to create an Ingress controller first, then use it with ingress object.
+
+Using NGINX: https://kubernetes.github.io/ingress-nginx/deploy/
+
+`terraform output` will provide the reserved IP address for the Kube cluster 
 ````sh
+$ terraform output | grep reserved
+reserved_ip_address = 35.195.69.38
+````
+
+Using that IP address for the helm ingress controller command:
+
+````sh
+$ kubectl create namespace nginx-ingress
+$ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
+$ helm repo update
+$ helm install -n nginx-ingress ingress-nginx ingress-nginx/ingress-nginx \
+--set rbac.create=true --set controller.publishService.enabled=true \
+--set controller.service.loadBalancerIP=35.195.69.38 
+````
+#### Adding DNS
+TODO 
+#### Adding TLS
+
+Generate a wildcard certificate (Certbot documentation : https://certbot.eff.org/) :  
+
+```sh
+$ certbot certonly --manual
+``` 
+
+Import it as a Kubernetes secret :  
+
+```sh
+$ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
+
+```
+
+Install using Helm
+
+```
+$ helm install -n nginx-ingress ingress-nginx ingress-nginx/ingress-nginx \
+--set rbac.create=true --set controller.publishService.enabled=true \
+--set controller.service.loadBalancerIP=35.195.69.38  \
+--set controller.extraArgs.default-ssl-certificate="default/wildcard"
+```
+
+#### Renew certificates
+```sh
 $ kubectl delete secret wildcard -n nginx-ingress
 $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
-````
+```
 
 ## Try the platform yourself
 
