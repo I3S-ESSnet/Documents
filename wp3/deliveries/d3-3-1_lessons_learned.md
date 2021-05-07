@@ -1,6 +1,13 @@
 # Report on lessons learned
 WP 3 has as overall objectives provide a blueprint and implementing the blueprint to be able to establish and build a sandbox environment and test available services in a containerized environment. The environment has been used to perform functional tests of services (see WP 1) and validate their packaging and installation.
 
+From the proposal ( ) for WP3 – Build a sandbox and test available services - containerise
+* Platform: A blueprint for putting together a technical cloud ready platform for on premise, or in a public cloud. It will also consist of technical components like a container runtime and orchestration like Kubernetes. We will demonstrate the platform on a small on premise server and on a public cloud offering. Including a simple IAM solution. (Identity Access Management)
+* Software: Ready to user container images for key parts of the platform. Including messaging capabilities, service mesh and other standard components based on the requirements from WP2.
+* Software: Integrated services built for WP2, and demonstrate that they can run on both the on premise server and the public cloud server, setting up the environment with f.ex. Ansible
+Playbook.
+* Report: Advantages and drawbacks of containerisation. Lessons learnt.
+
 Methods and technologies for containerization has been studied and guidelines (D3.1.1. - Blueprint) and resources (D3.1.2. - Implementing the blueprint) has been delivered. The blueprint document provides an overall description for establishing a runtime environment for implementing modern sharable services following the CSPA standards and principles as containers. Within the document we have described the concepts, guidelines and considerations for providing and developing services, as well describing some considerations related to security and logging. Implementing the blueprint provides examples on implementations using the concept of "Infrastructure as code" as well as how to implement sharable services on these platforms.
 
 In the following sections of this document we will discuss some of the identified challenges related to establishing an environment for implementation of sharable services and give examples of success.
@@ -24,19 +31,19 @@ Our main purpose of implementing the blueprint has been to implement a platform 
 Implementing the blueprint has been focusing on the technical aspects of establishing the platform and shared services, we have not been able to work on the governance, management and security issues related to establish and manage cloud platforms for sharing services across NSIs. Sharing common platforms across organizations would require the capabilities to govern, manage and secure collaboration platforms for keeping up with the emerging technological change to reduce risks. The implementation of blueprint provides guidelines and examples for NSIs to establish platforms and services for sharing, that would not need to have governance bodies to handle collaboration between national borders.
 
 ## Concluding remarks
-The established sandbox platforms has proven the ability the sharing of services, as the WP1 and WP3 deliveries have implemented both platforms and services running on the platform. Implmenting the blueprint (D3.1.2) has documented the technology used and the steps to build the platform, containerize and deploying the services. It also include a "Try it yourself" chapter. 
+The established sandbox platforms has proven the sharing of services, as the WP1 and WP3 deliveries have implemented both platforms and services running on the platform. Implmenting the blueprint (D3.1.2) has documented the technology used and the steps to build the platform, containerize and deploying the services. It also include a "Try it yourself" chapter. 
 
 Documenting the blueprint provides the important considerations for establishing shared services and linking this to the Cookbook and Architecture guidelines describing the architecture possibilities for sharing and integrating services. The blueprint document describes and discuss technical capabilities related to providing services, developing services as well as considerations related to security and logging. Altough technologies changes and emerge the concept and considerations described in the blueprint should be relevant and valid over time, as the technical architecture descriptions should be developed and maintained as part of the platform and documentation of the shared services. 
 
-Physical meetings vs virtual meetings and deployathons.
+Above all the deliverables in WP 3 has been a collaboration with the members in the other Work Pacakges in I3S, especially for the implementation part of the deliverable the highly skilled technical expertice has proven to be valuable and important for the end result. As earlier mentioned the "deployathons", with an agile approach, where developers meet online and work with the tasks of establishing the platform and implement services has both been an efficient approach and given valuable input to the WP3 deliverables. Even though one would have prefered to meet physically, virtual meetings has some limits and downsides as for example lack of informal discussions, collaboration and discussions around overall sketches and solutions. However, there are upsides as for example you can decide to meet on short notice to discuss and solve problems and challenges.
+
+?? Something about the work package, "guestimates". Is this useful? We do not have official numbers to support this, it is based on a guesswork. Implementing blueprint (and collaboration with developers in WP1) 35%, Blueprint (and collaboration with WP2) 25%, administrative tasks and consortium meetings 10%, hackathons (physical meetings) 30%.  
 
 Sharing strategies - different expectations and requirements for governance, management and security
 -	Sharing platform (collaboration)
 -	Sharing services and applications ("distributed" platforms (NSIs))
 -	Sharing code (infrastructure as code, services and applications)
 -	Replicated (vs shared)
-
-?? Something about the work package, "guestimates". Is this useful? We do not have official numbers to support this, it is based on a guesswork. Implementing blueprint (and collaboration with developers in WP1) 35%, Blueprint (and collaboration with WP2) 25%, administrative tasks and consortium meetings 10%, hackathons (physical meetings) 30%.  
 
 Next steps
 - sharing - ESS Expert group on sharing
