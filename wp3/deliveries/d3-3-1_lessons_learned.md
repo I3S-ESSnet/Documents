@@ -24,9 +24,9 @@ Our main purpose of implementing the blueprint has been to implement a platform 
 Implementing the blueprint has been focusing on the technical aspects of establishing the platform and shared services, we have not been able to work on the governance, management and security issues related to establish and manage cloud platforms for sharing services across NSIs. Sharing common platforms across organizations would require the capabilities to govern, manage and secure collaboration platforms for keeping up with the emerging technological change to reduce risks. The implementation of blueprint provides guidelines and examples for NSIs to establish platforms and services for sharing, that would not need to have governance bodies to handle collaboration between national borders.
 
 ## Concluding remarks
-To keep track over two years (projects). Important elements when started the project has changed over time. Fail fast, change.
+The established sandbox platforms has proven the ability the sharing of services, as the WP1 and WP3 deliveries have implemented both platforms and services running on the platform. Implmenting the blueprint (D3.1.2) has documented the technology used and the steps to build the platform, containerize and deploying the services. It also include a "Try it yourself" chapter. 
 
-IT architecture evolve in agile environment and organizations; the concepts, frames and strategies (autonomy and value boundary)
+Documenting the blueprint provides the important considerations for establishing shared services and linking this to the Cookbook and Architecture guidelines describing the architecture possibilities for sharing and integrating services. The blueprint document describes and discuss technical capabilities related to providing services, developing services as well as considerations related to security and logging. Altough technologies changes and emerge the concept and considerations described in the blueprint should be relevant and valid over time, as the technical architecture descriptions should be developed and maintained as part of the platform and documentation of the shared services. 
 
 Physical meetings vs virtual meetings and deployathons.
 
@@ -35,6 +35,8 @@ Sharing strategies - different expectations and requirements for governance, man
 -	Sharing services and applications ("distributed" platforms (NSIs))
 -	Sharing code (infrastructure as code, services and applications)
 -	Replicated (vs shared)
+
+?? Something about the work package, "guestimates". Is this useful? We do not have official numbers to support this, it is based on a guesswork. Implementing blueprint (and collaboration with developers in WP1) 35%, Blueprint (and collaboration with WP2) 25%, administrative tasks and consortium meetings 10%, hackathons (physical meetings) 30%.  
 
 Next steps
 - sharing - ESS Expert group on sharing

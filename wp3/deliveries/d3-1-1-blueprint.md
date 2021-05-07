@@ -1,3 +1,4 @@
+<img align="right" src="../../communication/i3s-logo-1-small.png" alt="I3S logo"/>
 # Blueprint for I3S
 
 Table of Contents
