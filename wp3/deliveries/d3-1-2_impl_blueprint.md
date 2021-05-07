@@ -1,4 +1,3 @@
-![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117439392-11b1f400-af33-11eb-9891-96f1ecfbdbef.JPG)
 <img align="right" src="../../communication/i3s-logo-1-small.png" alt="I3S logo"/>
 # Cloud Platform Implementing the Blueprint
 
@@ -54,7 +53,7 @@ The platform will use a standard solution like, for example, Amazon Web Services
 
 (Structure and eventually reference to delivery slip for "infrastructure as code")
 
-![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117439413-1676a800-af33-11eb-8d7d-b501f2286398.JPG)
+![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117439392-11b1f400-af33-11eb-9891-96f1ecfbdbef.JPG)
 
 ## Containers
 
