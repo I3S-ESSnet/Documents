@@ -2,7 +2,7 @@
 # Cloud Platform Implementing the Blueprint
 
 * [From project description](#from-project-description)
-* [Containers](#containers)
+* [1\. Containers](#1-containers)
   * [IS2 example](#is2-example)
   * [Application containerization](#application-containerization)
   * [Docker Compose](#docker-compose)
@@ -14,7 +14,7 @@
     * [Continuous integration](#continuous-integration-1)
       * [Travis CI](#travis-ci-1)
     * [Pipeline](#pipeline)
-* [Platform Deployathons](#platform-deployathons)
+* [2\. Platform Deployathons](#2-platform-deployathons)
   * [Participants](#participants)
   * [Building the platform](#building-the-platform)
     * [Terraform](#terraform)
@@ -36,7 +36,7 @@
     * [Adding DNS](#adding-dns)
     * [Adding TLS](#adding-tls)
     * [Renew certificates](#renew-certificates)
-* [Try the platform yourself](#try-the-platform-yourself)
+* [3\. Try the platform yourself](#3-try-the-platform-yourself)
   * [Create Google cloud project and service\-account](#create-google-cloud-project-and-service-account)
     * [Prerequisites](#prerequisites)
   * [Create Kubernetes cluster](#create-kubernetes-cluster)
@@ -56,7 +56,7 @@ The platform will use a standard solution like, for example, Amazon Web Services
 
 ![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117439392-11b1f400-af33-11eb-9891-96f1ecfbdbef.JPG)
 
-## Containers
+## 1. Containers
 
 ### IS2 example
 During the Rome hackathon the Istat application IS2 was containerized. IS2 is a standard Java, Spring Boot web application with a PostgrSQL database. https://github.com/mecdcme/is2
@@ -236,8 +236,9 @@ deploy:
 #### Pipeline
 ![alt text](pxweb1.png "PxWeb pipeline")
 
+---
 
-## Platform Deployathons
+## 2. Platform Deployathons
 We arranged a series of events called "Deployathons" to make a real platform and deploy [IS2](https://github.com/mecdcme/is2) and [ARC](https://github.com/InseeFr/ARC) using state of the art solutions.
 
 :information_source: Here are the [original notes from deployathons](https://web.archive.org/web/20210423075000/https://hackmd.io/1aWd6CawSyKSI0fiMCkD2A) 
@@ -648,7 +649,9 @@ $ kubectl delete secret wildcard -n nginx-ingress
 $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
 ```
 
-## Try the platform yourself
+---
+
+## 3. Try the platform yourself
 
 ### Create Google cloud project and service-account
 #### Prerequisites
@@ -657,7 +660,7 @@ $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n n
 * install Google Cloud SDK https://cloud.google.com/sdk/docs/install
 * Fork this repo on Github https://github.com/I3S-ESSnet/platform-demo
 
-```sh
+````sh
 $ cd gke
 $ gcloud auth login
 $ gcloud projects create i3s-ninja
@@ -665,7 +668,7 @@ $ gcloud config set project i3s-ninja
 $ gcloud iam service-accounts create terraform
 $ gcloud projects add-iam-policy-binding i3s-ninja --member "serviceAccount:terraform@i3s-$ $ ninja.iam.gserviceaccount.com" --role "roles/owner"
 $ gcloud iam service-accounts keys create account.json --iam-account "terraform@i3s-$ ninja.iam.gserviceaccount.com"
-```
+````
 
 Output : 
 * `account.json`: key file for next step
@@ -676,7 +679,7 @@ Output :
 * Install Terraform CLI https://www.terraform.io/downloads.html
 
 
-```sh
+````sh
 $ terraform version
 Terraform v0.15.0
 on darwin_amd64
@@ -686,7 +689,7 @@ on darwin_amd64
 $ terraform init
 $ terraform plan -out "run.plan"
 $ terraform apply "run.plan"      #(wait approx 10 minutes)
-```
+````
 :information_source: follow links in initial error messages to enable "Kubernetes Engine API". Even if it is FREE it requires av billing account.
 
 Output : 
