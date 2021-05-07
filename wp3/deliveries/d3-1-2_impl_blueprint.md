@@ -592,26 +592,34 @@ For that, we need to create an Ingress controller first, then use it with ingres
 Using NGINX: https://kubernetes.github.io/ingress-nginx/deploy/
 
 `terraform output` will provide the reserved IP address for the Kube cluster 
-````sh
+```sh
 $ terraform output | grep reserved
 reserved_ip_address = 35.195.69.38
-````
+```
 
 Using that IP address for the helm ingress controller command:
 
-````sh
+```sh
 $ kubectl create namespace nginx-ingress
 $ helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
 $ helm repo update
 $ helm install -n nginx-ingress ingress-nginx ingress-nginx/ingress-nginx \
 --set rbac.create=true --set controller.publishService.enabled=true \
 --set controller.service.loadBalancerIP=35.195.69.38 
-````
+```
+
+Test with `$ curl -i http://35.195.69.38/` expected response is `HTTP 404` from NGINX
+
+
 #### Adding DNS
-TODO 
+
+We bought the domain name `ì3s.ninja` from [gandi.net](https://www.gandi.net/)
+
+Test with `$ curl -i http://i3s.ninja/` expected response is `HTTP 404` from NGINX
+
 #### Adding TLS
 
-Generate a wildcard certificate (Certbot documentation : https://certbot.eff.org/) :  
+Generate a wildcard certificate `*.i3s.ninja` (Certbot documentation : https://certbot.eff.org/) :  
 
 ```sh
 $ certbot certonly --manual
@@ -621,7 +629,6 @@ Import it as a Kubernetes secret :
 
 ```sh
 $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
-
 ```
 
 Install using Helm
@@ -632,6 +639,8 @@ $ helm install -n nginx-ingress ingress-nginx ingress-nginx/ingress-nginx \
 --set controller.service.loadBalancerIP=35.195.69.38  \
 --set controller.extraArgs.default-ssl-certificate="default/wildcard"
 ```
+
+Test with `$ curl --head https://arc-web.i3s.ninja/` expected response is `HTTP 200` from NGINX
 
 #### Renew certificates
 ```sh
