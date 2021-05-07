@@ -14,7 +14,7 @@
   * [Deploying the services](#deploying-the-services)
   * [Packaging](#packaging)
   * [Accessing the cluster](#accessing-the-cluster)
-* [3\. PxWeb](#3-pxweb)
+* [3\. PxWeb on Azure](#3-pxweb-on-azure)
 * [4\. Try the platform yourself](#4-try-the-platform-yourself)
   * [Create Google cloud project and service\-account](#create-google-cloud-project-and-service-account)
   * [Create Kubernetes cluster](#create-kubernetes-cluster)
@@ -24,6 +24,7 @@
 * [5\. Links](#5-links)
 ## From project description
 :warning: THIS NEEDS REWRITE
+
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform.
 
 (Structure and eventually reference to delivery slip for "infrastructure as code")
