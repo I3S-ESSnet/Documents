@@ -39,15 +39,12 @@ Documenting the blueprint provides the important considerations for establishing
 
 Above all the deliverables in WP 3 has been a collaboration with the members in the other Work Pacakges in I3S, especially for the implementation part of the deliverable the highly skilled technical expertice has proven to be valuable and important for the end result. As earlier mentioned the "deployathons", with an agile approach, where developers meet online and work with the tasks of establishing the platform and implement services has both been an efficient approach and given valuable input to the WP3 deliverables. Even though one would have prefered to meet physically, virtual meetings has some limits and downsides as for example lack of informal discussions, collaboration and discussions around overall sketches and solutions. However, there are upsides as for example you can decide to meet on short notice to discuss and solve problems and challenges.
 
-?? Something about the work package, "guestimates". Is this useful? We do not have official numbers to support this, it is based on a guesswork. Implementing blueprint (and collaboration with developers in WP1) 35%, Blueprint (and collaboration with WP2) 25%, administrative tasks and consortium meetings 10%, hackathons (physical meetings) 30%.  
+Remaining parts: 
+?!! Something about the work package, "guestimates". We do not have official numbers to support this, it is based on a guesswork. Implementing blueprint (and collaboration with developers in WP1) 35%, Blueprint (and collaboration with WP2) 25%, administrative tasks and consortium meetings 10%, hackathons (physical meetings) 30%.  
 
-Sharing strategies - different expectations and requirements for governance, management and security
--	Sharing platform (collaboration)
--	Sharing services and applications ("distributed" platforms (NSIs))
--	Sharing code (infrastructure as code, services and applications)
--	Replicated (vs shared)
+- different expectations and requirements for governance, management and security
 
-Next steps
-- sharing - ESS Expert group on sharing
-- CSPA Service catalogue
-- Communication and collaboration
+"Next steps" ...
+- sharing - ESS Expert group on sharing (useful for advisory and sharing experience)
+- CSPA Service catalogue (identify and use shared services)
+- Communication and collaboration (virtual capabilities)
