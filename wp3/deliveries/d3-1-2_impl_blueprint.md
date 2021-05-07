@@ -1,3 +1,4 @@
+<img align="right" src="../../communication/i3s-logo-1-small.png" alt="I3S logo"/>
 # Cloud Platform Implementing the Blueprint
 
   * [From project description](#from-project-description)
