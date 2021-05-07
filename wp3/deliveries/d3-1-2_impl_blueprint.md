@@ -1,53 +1,52 @@
 <img align="right" src="../../communication/i3s-logo-1-small.png" alt="I3S logo"/>
 # Cloud Platform Implementing the Blueprint
 
-  * [From project description](#from-project-description)
-  * [Containers](#containers)
-    * [IS2 example](#is2-example)
-    * [Application containerization](#application-containerization)
-    * [Docker Compose](#docker-compose)
-    * [Continuous integration](#continuous-integration)
-      * [Travis CI](#travis-ci)
-      * [Dockerhub](#dockerhub)
-    * [PxWeb Example](#pxweb-example)
-      * [Container](#container)
-      * [Continuous integration](#continuous-integration-1)
-        * [Travis CI](#travis-ci-1)
-      * [Pipeline](#pipeline)
-  * [Platform Deployathons](#platform-deployathons)
-    * [Participants](#participants)
-    * [Building the platform](#building-the-platform)
-      * [Terraform](#terraform)
-      * [Google Kubernetes Engine (GKE) Pricing](#google-kubernetes-engine-gke-pricing)
-      * [Service account](#service-account)
-      * [Running the scripts](#running-the-scripts)
-      * [Notes](#notes)
-      * [Authenticating to the Kubernetes API server](#authenticating-to-the-kubernetes-api-server)
-    * [Deploying the services](#deploying-the-services)
-      * [Best practices](#best-practices)
-      * [Deployment](#deployment)
-      * [Service](#service)
-      * [Ingress](#ingress)
-      * [DB deployment](#db-deployment)
-      * [Connecting the tomcat to the DB](#connecting-the-tomcat-to-the-db)
-  * [Try the platform yourself](#try-the-platform-yourself)
-    * [Create Google cloud project and service\-account](#create-google-cloud-project-and-service-account)
-      * [Prerequisites](#prerequisites)
-    * [Create Kubernetes cluster](#create-kubernetes-cluster)
-      * [Prerequisites](#prerequisites-1)
-    * [Test Kubernetes cluster](#test-kubernetes-cluster)
-      * [Prerequisites](#prerequisites-2)
-    * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
-      * [Prerequisites](#prerequisites-3)
-    * [Install reverse proxy nginx\-ingress](#install-reverse-proxy-nginx-ingress)
-    * [Install ARC with Helm on Kubernetes](#install-arc-with-helm-on-kubernetes)
-      * [Prerequisites](#prerequisites-4)
-  * [Misc\.](#misc)
-    * [SSL](#ssl)
-      * [Adding TLS](#adding-tls)
-      * [Renew certificates](#renew-certificates)
-    * [PxWeb](#pxweb)
-  * [Links](#links)
+* [From project description](#from-project-description)
+* [Containers](#containers)
+  * [IS2 example](#is2-example)
+  * [Application containerization](#application-containerization)
+  * [Docker Compose](#docker-compose)
+  * [Continuous integration](#continuous-integration)
+    * [Travis CI](#travis-ci)
+    * [Dockerhub](#dockerhub)
+  * [PxWeb Example](#pxweb-example)
+    * [Container](#container)
+    * [Continuous integration](#continuous-integration-1)
+      * [Travis CI](#travis-ci-1)
+    * [Pipeline](#pipeline)
+* [Platform Deployathons](#platform-deployathons)
+  * [Participants](#participants)
+  * [Building the platform](#building-the-platform)
+    * [Terraform](#terraform)
+    * [Google Kubernetes Engine (GKE) Pricing](#google-kubernetes-engine-gke-pricing)
+    * [Service account](#service-account)
+    * [Running the scripts](#running-the-scripts)
+    * [Notes](#notes)
+    * [Authenticating to the Kubernetes API server](#authenticating-to-the-kubernetes-api-server)
+  * [Deploying the services](#deploying-the-services)
+    * [Best practices](#best-practices)
+    * [Deployment](#deployment)
+    * [Service](#service)
+    * [Ingress](#ingress)
+    * [DB deployment](#db-deployment)
+    * [Connecting the tomcat to the DB](#connecting-the-tomcat-to-the-db)
+  * [Packaging](#packaging)
+  * [Accessing the cluster](#accessing-the-cluster)
+    * [Adding TLS](#adding-tls)
+    * [Renew certificates](#renew-certificates)
+* [Try the platform yourself](#try-the-platform-yourself)
+  * [Create Google cloud project and service\-account](#create-google-cloud-project-and-service-account)
+    * [Prerequisites](#prerequisites)
+  * [Create Kubernetes cluster](#create-kubernetes-cluster)
+    * [Prerequisites](#prerequisites-1)
+  * [Test Kubernetes cluster](#test-kubernetes-cluster)
+    * [Prerequisites](#prerequisites-2)
+  * [Install reverse proxy nginx\-ingress with Helm](#install-reverse-proxy-nginx-ingress-with-helm)
+  * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
+    * [Prerequisites](#prerequisites-3)
+* [Misc\.](#misc)
+  * [PxWeb](#pxweb)
+* [Links](#links)
 ## From project description
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform.
 
@@ -570,7 +569,18 @@ Charts are packages that can be installed on any Kubernetes cluster. Charts are 
 
 https://artifacthub.io/ is a hub of such charts.
 
-TODO
+In the future, we may want to publish charts in a repository. An easy solution would be put it all on Github with Actions (see https://github.com/helm/chart-releaser-action) Pages and Packages.
+
+
+### Accessing the cluster
+
+#### Adding TLS
+...
+#### Renew certificates
+````sh
+$ kubectl delete secret wildcard -n nginx-ingress
+$ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
+````
 
 ## Try the platform yourself
 
@@ -718,30 +728,8 @@ REVISION: 2
 
 Now you can vist `http://i2.<reserved_ip_address>.xip.io/is2/` Default username/password are posted in  [is2 README](https://github.com/mecdcme/is2/blob/master/README.md)
 
-### Install ARC with Helm on Kubernetes
-#### Prerequisites
-* install helm https://web.archive.org/web/20210423075000/https://helm.sh/docs/intro/install/
-* clone https://github.com/InseeFr/ARC
-
-````sh
-cd ARC/helm
-# adjust values.yaml
-helm install --create-namespace --namespace arc arc .
-
-
-````
 
 ## Misc.
-
-### SSL
-
-#### Adding TLS
-...
-#### Renew certificates
-````sh
-$ kubectl delete secret wildcard -n nginx-ingress
-$ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
-````
 
 ### PxWeb
 
