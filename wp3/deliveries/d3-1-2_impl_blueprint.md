@@ -7,49 +7,23 @@
   * [Application containerization](#application-containerization)
   * [Docker Compose](#docker-compose)
   * [Continuous integration](#continuous-integration)
-    * [Travis CI](#travis-ci)
-    * [Dockerhub](#dockerhub)
   * [PxWeb Example](#pxweb-example)
-    * [Container](#container)
-    * [Continuous integration](#continuous-integration-1)
-      * [Travis CI](#travis-ci-1)
-    * [Pipeline](#pipeline)
 * [2\. Platform Deployathons](#2-platform-deployathons)
   * [Participants](#participants)
   * [Building the platform](#building-the-platform)
-    * [Terraform](#terraform)
-    * [Google Kubernetes Engine (GKE) Pricing](#google-kubernetes-engine-gke-pricing)
-    * [Service account](#service-account)
-    * [Running the scripts](#running-the-scripts)
-    * [Notes](#notes)
-    * [Authenticating to the Kubernetes API server](#authenticating-to-the-kubernetes-api-server)
   * [Deploying the services](#deploying-the-services)
-    * [Best practices](#best-practices)
-    * [Deployment](#deployment)
-    * [Service](#service)
-    * [Ingress](#ingress)
-    * [DB deployment](#db-deployment)
-    * [Connecting the tomcat to the DB](#connecting-the-tomcat-to-the-db)
   * [Packaging](#packaging)
   * [Accessing the cluster](#accessing-the-cluster)
-    * [Setting up reverse proxy (ingress controller)](#setting-up-reverse-proxy-ingress-controller)
-    * [Adding DNS](#adding-dns)
-    * [Adding TLS](#adding-tls)
-    * [Renew certificates](#renew-certificates)
-* [3\. Try the platform yourself](#3-try-the-platform-yourself)
+* [3\. PxWeb](#3-pxweb)
+* [4\. Try the platform yourself](#4-try-the-platform-yourself)
   * [Create Google cloud project and service\-account](#create-google-cloud-project-and-service-account)
-    * [Prerequisites](#prerequisites)
   * [Create Kubernetes cluster](#create-kubernetes-cluster)
-    * [Prerequisites](#prerequisites-1)
   * [Test Kubernetes cluster](#test-kubernetes-cluster)
-    * [Prerequisites](#prerequisites-2)
   * [Install reverse proxy nginx\-ingress with Helm](#install-reverse-proxy-nginx-ingress-with-helm)
   * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
-    * [Prerequisites](#prerequisites-3)
-* [Misc\.](#misc)
-  * [PxWeb](#pxweb)
-* [Links](#links)
+* [5\. Links](#5-links)
 ## From project description
+:warning: THIS NEEDS REWRITE
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform.
 
 (Structure and eventually reference to delivery slip for "infrastructure as code")
@@ -644,6 +618,8 @@ $ helm install -n nginx-ingress ingress-nginx ingress-nginx/ingress-nginx \
 Test with `$ curl --head https://arc-web.i3s.ninja/` expected response is `HTTP 200` from NGINX
 
 #### Renew certificates
+Certificates are only valid for a given period (and they sould not last too long eather). When they expire this is how you update on Kubernets.
+
 ```sh
 $ kubectl delete secret wildcard -n nginx-ingress
 $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n nginx-ingress
@@ -651,7 +627,20 @@ $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n n
 
 ---
 
-## 3. Try the platform yourself
+## 3. PxWeb on Azure
+
+:warning: THIS NEEDS REWRITE
+
+We want to use [Terraform](https://www.terraform.io/) to provision hardware.
+The first example is working great. Se second is not working yet, because the
+Windows container require some more parameters.
+
+* [Azure App Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/app-service)
+* [Azure Kubernetes Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/kubernetes)
+
+---
+
+## 4. Try the platform yourself
 
 ### Create Google cloud project and service-account
 #### Prerequisites
@@ -798,22 +787,10 @@ REVISION: 2
 Now you can vist `http://i2.<reserved_ip_address>.xip.io/is2/` Default username/password are posted in  [is2 README](https://github.com/mecdcme/is2/blob/master/README.md)
 
 
-## Misc.
 
-### PxWeb
+## 5. Links
+:warning: THIS NEEDS REWRITE
 
-THIS NEEDS REWRITE
-
-We want to use [Terraform](https://www.terraform.io/) to provision hardware.
-The first example is working great. Se second is not working yet, because the
-Windows container require some more parameters.
-
-* [Azure App Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/app-service)
-* [Azure Kubernetes Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/kubernetes)
-
-
-
-## Links
 * https://web.archive.org/web/20210422234949/https://docs.docker.com/compose/
 * https://github.com/InseeFrLab/cloud-scripts/
 * https://web.archive.org/web/20210422234949/https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
