@@ -4,7 +4,7 @@
 WP 3 has as overall objectives provide a blueprint and implementing the blueprint to be able to establish and build a sandbox environment and test available services in a containerized environment. The environment has been used to perform functional tests of services (see WP 1) and validate their packaging and installation.
 
 From the proposal (B3171-2017-ESSnet-SERV-2 - proposal id: 831733) for WP3 – Build a sandbox and test available services - containerize
-* Platform: A blueprint for putting together a technical cloud ready platform for on-premise, or in a public cloud. It will also consist of technical components like a container runtime and orchestration like Kubernetes. We will demonstrate the platform on a small on premise server and on a public cloud offering. Including a simple IAM solution. (Identity Access Management)
+* Platform: A blueprint for putting together a technical cloud ready platform for on-premise, or in a public cloud. It will also consist of technical components like a container runtime and orchestration like Kubernetes. We will demonstrate the platform on a small on-premise server and on a public cloud offering. Including a simple IAM solution. (Identity Access Management)
 * Software: Ready to user container images for key parts of the platform. Including messaging capabilities, service mesh and other standard components based on the requirements from WP2.
 * Software: Integrated services built for WP2 and demonstrate that they can run on both the on-premise server and the public cloud server, setting up the environment with for example Ansible
 Playbook.
