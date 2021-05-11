@@ -33,11 +33,11 @@ The focus of WP3 was to establish a sandbox platform for implementation of share
 
 Although this document serves as a guideline for implementing the infrastructure, it is also implemented using the "infrastructure as code" model. This enable developers to version and fork the infrastructure and enable NSIs to create their own modern infrastructure in their own ecosystem. 
 
-This document and "infrastructre as code" describes how the I3S-project has containerized and implemented three applications as shared statistical services on two service providers of cloud platforms. The IS2 example is established on a Google Cloud Platform (GCP) instance, and Travis and PXWeb are established on Microsoft Azure instances.
+This document and "infrastructre as code" describes how the I3S-project has containerized and implemented two of the applications as shared statistical services on two service providers of cloud platforms. The IS2 example is established on a Google Cloud Platform (GCP) instance, and PXWeb are established on a Microsoft Azure instance.
 
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform. Technologies used for the building and implementation of the shared services is showed in the figure below. 
 
-![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117439392-11b1f400-af33-11eb-9891-96f1ecfbdbef.JPG)
+![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117813434-5d320e00-b263-11eb-85e5-dfd43d6807a6.JPG)
 
 :warning: (Structure and eventually reference to delivery slip for "infrastructure as code")
 
