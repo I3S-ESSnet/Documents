@@ -32,15 +32,13 @@ The focus of WP3 was to establish a sandbox platform for implementation of share
 Although this document serves as a guideline for implementing the infrastructure, it is also implemented using the "infrastructure as code" model. This enable developers to version and fork the infrastructure and enable NSIs to create their own modern infrastructure in their own ecosystem. 
 
 This document and "infrastructure as code" describes how the I3S-project has containerized and implemented the applications as shared statistical services on two service providers of cloud platforms. The following services was part of delivery: 
-- [D3.2.1 ARC](https://ec.europa.eu/eurostat/cros/content/i3s-d321-package-container-service-1_en) Google Cloud Platform (GCP)
-- [D3.2.2 PXWeb](https://ec.europa.eu/eurostat/cros/content/i3s-d322-package-container-service-2_en) Microsoft Azure
-- [D3.2.3 Relais (IS2)](https://ec.europa.eu/eurostat/cros/content/i3s-d323-package-container-service-3_en) Google Cloud Platform (GCP)
-
-The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform. Technologies used for the building and implementation of the shared services is showed in the figure below. 
+- [D3.2.1 ARC](https://ec.europa.eu/eurostat/cros/content/i3s-d321-package-container-service-1_en)
+- [D3.2.2 PXWeb](https://ec.europa.eu/eurostat/cros/content/i3s-d322-package-container-service-2_en)
+- [D3.2.3 Relais (IS2)](https://ec.europa.eu/eurostat/cros/content/i3s-d323-package-container-service-3_en)
 
 ![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117828486-21eb0b80-b272-11eb-9c35-b4b86d98a473.JPG)
 
-:warning: (Structure and eventually reference to delivery slip for "infrastructure as code")
+The platform will use standard solutions, technologies used for the building and implementation of the shared services is showed in the figure above. 
 
 ## 1. Containers
 
