@@ -283,7 +283,7 @@ Terraform needs a GCP service account to create and modify the infrastructure.
 The exact required permissions were not defined clearly so we opted for the easy (but less secure) way : creating a service account with `Project owner` role.  
 
 #### Running the scripts
-```
+```sh
 terraform init  
 terraform apply
 ```
@@ -559,6 +559,10 @@ https://artifacthub.io/ is a hub of such charts.
 
 In the future, we may want to publish charts in a repository. An easy solution would be put it all on Github with Actions (see https://github.com/helm/chart-releaser-action) Pages and Packages.
 
+At the moment the charts are here
+- https://github.com/mecdcme/is2/blob/ac901794af650ea52cc79915a3d90d0b4121f97d/helm
+- https://github.com/InseeFr/ARC/blob/19ba21bfd1e3c6f267a1d9c1a7bd7476fbd462c6/helm 
+
 
 ### Accessing the cluster
 
@@ -642,12 +646,151 @@ $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n n
 
 :warning: THIS NEEDS REWRITE
 
-We want to use [Terraform](https://www.terraform.io/) to provision hardware.
-The first example is working great. Se second is not working yet, because the
-Windows container require some more parameters.
+During the project we also wanted to test PxWeb on Azure. Since PxWeb still is windows-only we thought Azure would be the best bet. 
 
-* [Azure App Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/app-service)
-* [Azure Kubernetes Service](https://github.com/I3S-ESSnet/PxWeb/tree/master/terraform/azurerm/kubernetes)
+The containerizaton was described in [Chapter 1 PxWeb Example](#pxweb-example) and also mentioned in [Lessons learned](d3-3-1_lessons_learned.md)
+
+> - Containerization of services and applications - Windows containers
+>   - Some legacy applications require running on Windows operating system. Docker supports Windows containers so there is not really a problem. But when you give it a try you soon discover how large the containers are. Just building a .NET 4.x application require a 10GB SDK image. The image for running the application inside an IIS (internet information server) is 6.8GB. This means building av deploying windows applications take longer time than typical Linux containers and the lightweight experience you expect with containers are missing. The Windows containers also require Windows host so just running an image to test an application will not work on other operating systems. 
+
+We wanted to use [Terraform](https://www.terraform.io/) to provision hardware on Azure also.
+
+### Azure Kubernetes Service (AKS)
+The code below is from [github.com/I3S-ESSnet/PxWeb](https://github.com/I3S-ESSnet/PxWeb/blob/2ed3f0aa156a48b6c04293c52e489e3d432c9ca0/terraform/azurerm/kubernetes)
+#### Set up Terraform access to Azure
+
+Follow the guide at https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure
+
+```Shell
+az login
+az account list --query "[].{name:name, subscriptionId:id, tenantId:tenantId}"
+az account set --subscription="${SUBSCRIPTION_ID}"
+az ad sp create-for-rbac --role="Contributor" --scopes="/subscriptions/${SUBSCRIPTION_ID}"
+```
+#### Configure Terraform environment variables
+
+```Shell
+export ARM_SUBSCRIPTION_ID=your_subscription_id
+export ARM_CLIENT_ID=your_appId
+export ARM_CLIENT_SECRET=your_password
+export ARM_TENANT_ID=your_tenant_id
+```
+##### Additional environment variables for the this project
+```Shell
+export TF_VAR_client_id=${ARM_CLIENT_ID}
+export TF_VAR_client_secret=${ARM_CLIENT_SECRET}
+```
+#### Enable AKS preview features
+```Shell
+az extension add --name aks-preview
+az feature  register --name WindowsPreview --namespace Microsoft.ContainerService
+az feature  register --name MultiAgentpoolPreview --namespace Microsoft.ContainerService
+az provider register --name Microsoft.ContainerService
+```
+
+#### Edit Terraform files
+```YAML
+...
+resource "azurerm_kubernetes_cluster" "k8s" {
+  name                = "${var.cluster_name}"
+  location            = "${azurerm_resource_group.k8s.location}"
+  resource_group_name = "${azurerm_resource_group.k8s.name}"
+  dns_prefix          = "${var.dns_prefix}"
+
+  network_profile {
+    network_plugin = "azure"
+    network_policy = "azure"
+  }
+
+  agent_pool_profile {
+    name            = "linuxpool"
+    count           = 1
+    vm_size         = "Standard_DS1_v2"
+    os_type         = "Linux"
+    os_disk_size_gb = 30
+  }
+
+  agent_pool_profile {
+    name            = "windows"
+    count           = 1
+    vm_size         = "Standard_DS1_v2"
+    type            = "VirtualMachineScaleSets"
+    os_type         = "Windows"
+    os_disk_size_gb = 30
+  }
+}
+...
+
+```
+#### Run Terraform
+
+```Shell
+terraform init
+terraform apply
+```
+#### Results
+We did not get this to work properly in 2019. Maybe it was becasuse of the preview features we had to enable.
+Going back now in 2021, Kubernetes clusters with Windows worker nodes are supported, but some features are still in preview.
+
+### Azure App Service with Docker
+The code below is from [github.com/I3S-ESSnet/PxWeb](https://github.com/I3S-ESSnet/PxWeb/blob/c6ac8ef2934b4ba50843f4ef726a42364c0e3171/terraform/azurerm/app-service)
+
+#### Set up Terraform access to Azure
+Just as we did with AKS in previous chapter
+#### Configure Terraform environment variables
+Just as we did with AKS in previous chapter
+
+#### Edit Terraform files
+```YAML
+variable "prefix" {
+  description = "The prefix used for all resources in this example"
+  default     = "pxweb-docker"
+}
+
+resource "azurerm_resource_group" "example" {
+  name     = "${var.prefix}-resources"
+  location = "westeurope"
+}
+
+resource "azurerm_app_service_plan" "example" {
+  name                = "${var.prefix}-asp"
+  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.example.name
+  kind                = "xenon"
+  is_xenon            = true
+
+  sku {
+    tier = "PremiumContainer"
+    size = "PC2"
+  }
+}
+
+resource "azurerm_app_service" "example" {
+  name                = "${var.prefix}-appservice"
+  location            = azurerm_resource_group.example.location
+  resource_group_name = azurerm_resource_group.example.name
+  app_service_plan_id = azurerm_app_service_plan.example.name
+
+  site_config {
+    windows_fx_version = "DOCKER|runejo/pxweb:windowsservercore-1803"
+  }
+
+  app_settings = {
+    "DOCKER_REGISTRY_SERVER_URL" = "https://index.docker.io",
+  }
+}
+
+output "website_url" {
+  value = azurerm_app_service.example.default_site_hostname
+}
+```
+#### Results
+This worked right out of the box. PxWeb image was pulled from Dockerhub and deployd on Ázure
+Every 
+
+### Azure App Service with Github
+The code below is from [github.com/I3S-ESSnet/PxWeb](https://github.com/I3S-ESSnet/PxWeb/blob/dbfd498cd28869712b6a0d5ab6ae419c87721de2/terraform/azurerm/app-service-code)
+
 
 ---
 
