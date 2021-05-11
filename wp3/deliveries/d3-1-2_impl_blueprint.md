@@ -2,7 +2,6 @@
 
 # Cloud Platform Implementing the Blueprint
 
-* [Cloud Platform Implementing the Blueprint](#cloud-platform-implementing-the-blueprint)
   * [From project description](#from-project-description)
   * [1\. Containers](#1-containers)
     * [IS2 example](#is2-example)
@@ -26,7 +25,6 @@
     * [Test Kubernetes cluster](#test-kubernetes-cluster)
     * [Install reverse proxy nginx\-ingress with Helm](#install-reverse-proxy-nginx-ingress-with-helm)
     * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
-  * [5\. Links](#5-links)
 
 ## From project description
 The focus of WP3 was to establish a sandbox platform for implementation of shared statistical services as a delivery in WP1 in order to perform functional tests and validate the packaging and installation of shared services. Methods and technologies for containerizing services has been studied and implemented. This document describes the necessary technical capabilites for a basic infrastructure and implementation of cloud instances and serves as the foundation for WP1 deliveries. 
@@ -49,7 +47,7 @@ During the Rome hackathon the Istat application IS2 was containerized. IS2 is a 
 We forked the application and created [Dockerfiles](https://docs.docker.com/engine/reference/builder/) for the database and application.
 
 Database containerization
-The `db.Dockerfile` is very simple. The initdb script was already in the existing repository.
+The `db.Dockerfile` is very simple. The `initdb` script was already in the existing repository.
 
 ```Dockerfile
 FROM postgres:11
@@ -146,11 +144,11 @@ script:
 Results at https://travis-ci.org/github/mecdcme/is2
 
 #### Dockerhub
-Docker also offer a free service for open source prosjects. We have set up automatic building of images on Dockerhub https://cloud.docker.com/u/mecdcme/
+Docker also offer a free service for open source projects. We have set up automatic building of images on Dockerhub https://cloud.docker.com/u/mecdcme/
 
 ### PxWeb Example
 
-The current version of PxWeb is a legacy ASP.NET 4.6 application. SCB wil port it to ASP.NET Core but until then we wanted to try containerize the current verison. PxWeb was open sourced in August 2019 https://github.com/statisticssweden/PxWeb and forked to https://github.com/I3S-ESSnet/PxWeb 
+The current version of PxWeb is a legacy ASP.NET 4.6 application. SCB wil port it to ASP.NET Core but until then we wanted to try containerize the current version. PxWeb was open sourced in August 2019 https://github.com/statisticssweden/PxWeb and forked to https://github.com/I3S-ESSnet/PxWeb 
 
 #### Container
 Since PxWeb is a ASP.NET 4.X application the docker image must be build and run on a Windows host.
@@ -280,7 +278,7 @@ Google offers [Free Tier](https://web.archive.org/web/20210423075000/https://clo
 > For clusters created in Autopilot mode, pods are billed per second for vCPU, memory, and > disk resource requests
 > For clusters created in Standard mode, each user node is charged at standard Compute Engine pricing
 
-FYI in february 2021 after the last deployaton, Google launched [GKE Autopilot](https://web.archive.org/web/20210423075000/https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot). Examples in this document uses GKE Standard 
+FYI in february 2021 after the last deployathon, Google launched [GKE Autopilot](https://web.archive.org/web/20210423075000/https://cloud.google.com/blog/products/containers-kubernetes/introducing-gke-autopilot). Examples in this document uses GKE Standard 
 
 #### Service account
 Terraform needs a GCP service account to create and modify the infrastructure.  
@@ -307,7 +305,7 @@ This is a step forward consistent authentication across multiple clusters regard
 ### Deploying the services
 Using the created GKE cluster, we deploy [the IS2 application](https://github.com/mecdcme/is2).
 
-We use the two existing Docker :whale: images created in the first capter of this document 
+We use the two existing Docker :whale: images created in the first chapter of this document 
 - is2: https://hub.docker.com/repository/docker/mecdcme/is2
 - is2-postgres: https://hub.docker.com/repository/docker/mecdcme/is2-postgres
 
@@ -636,8 +634,6 @@ $ kubectl create secret tls wildcard --key privkey.pem --cert fullchain.pem -n n
 
 ## 3. PxWeb on Azure
 
-:warning: THIS NEEDS REWRITE
-
 During the project we also wanted to test PxWeb on Azure. Since PxWeb still is windows-only we thought Azure would be the best bet. 
 
 The containerizaton was described in [Chapter 1 PxWeb Example](#pxweb-example) and also mentioned in [Lessons learned](d3-3-1_lessons_learned.md)
@@ -789,9 +785,9 @@ Same as previous exammle, but we did not get the terraform file to work properly
 ##### Results
 We now could skip both Travis CI and Docker Hub and simply pull the code directly from Github. 
 
-:information_source: The default build provider in early 2020 was `Kudu` it has later been changed to `GitHub Actions`.
+:information_source: The default build provider on App Serivce in early 2020 was `Kudu` it has later been changed to `GitHub Actions`.
 
-![alt text](azure1.png "PxWeb pipeline")
+![Azure App Service pipeline](azure1.png "PxWeb pipeline")
 
 
 ---
@@ -942,10 +938,4 @@ REVISION: 2
 
 Now you can vist `http://i2.<reserved_ip_address>.xip.io/is2/` Default username/password are posted in  [is2 README](https://github.com/mecdcme/is2/blob/master/README.md)
 
-## 5. Links
-:warning: THIS NEEDS REWRITE
-
-* https://web.archive.org/web/20210422234949/https://docs.docker.com/compose/
-* https://github.com/InseeFrLab/cloud-scripts/
-* https://web.archive.org/web/20210422234949/https://medium.com/@saurabh6790/generate-wildcard-ssl-certificate-using-lets-encrypt-certbot-273e432794d7
-
+---
