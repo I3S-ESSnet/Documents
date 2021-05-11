@@ -27,11 +27,11 @@
     * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
 
 ## From project description
-The focus of WP3 was to establish a sandbox platform for implementation of shared statistical services as a delivery in WP1 in order to perform functional tests and validate the packaging and installation of shared services. Methods and technologies for containerizing services has been studied and implemented. This document describes the necessary technical capabilites for a basic infrastructure and implementation of cloud instances and serves as the foundation for WP1 deliveries. 
+The focus of WP3 was to establish a sandbox platform for implementation of shared statistical services as a delivery in WP1 in order to perform functional tests and validate the packaging and installation of shared services. Methods and technologies for containerizing services has been studied and implemented. This document describes the necessary technical capabilities for a basic infrastructure and implementation of cloud instances and serves as the foundation for WP1 deliveries. 
 
 Although this document serves as a guideline for implementing the infrastructure, it is also implemented using the "infrastructure as code" model. This enable developers to version and fork the infrastructure and enable NSIs to create their own modern infrastructure in their own ecosystem. 
 
-This document and "infrastructre as code" describes how the I3S-project has containerized and implemented three of the applications as shared statistical services on two service providers of cloud platforms. The following services was part of delivery D3.2.1, D3.2.2 and D3.2.3: [IS2 (ARC)](https://ec.europa.eu/eurostat/cros/content/i3s-d321-package-container-service-1_en) example is established on a Google Cloud Platform (GCP) instance, [PXWeb](https://ec.europa.eu/eurostat/cros/content/i3s-d322-package-container-service-2_en) is established on a Microsoft Azure instance, and the [Relais](https://ec.europa.eu/eurostat/cros/content/i3s-d323-package-container-service-3_en). The latter one is not described further in this document, and was containerized as part of delivery in WP1 and implemented on an on-prem infrastructure.
+This document and "infrastructure as code" describes how the I3S-project has containerized and implemented three of the applications as shared statistical services on two service providers of cloud platforms. The following services was part of delivery D3.2.1, D3.2.2 and D3.2.3: [IS2 (ARC)](https://ec.europa.eu/eurostat/cros/content/i3s-d321-package-container-service-1_en) example is established on a Google Cloud Platform (GCP) instance, [PXWeb](https://ec.europa.eu/eurostat/cros/content/i3s-d322-package-container-service-2_en) is established on a Microsoft Azure instance, and the [Relais](https://ec.europa.eu/eurostat/cros/content/i3s-d323-package-container-service-3_en). The latter one is not described further in this document, and was containerized as part of delivery in WP1 and implemented on an on-prem infrastructure.
 
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform. Technologies used for the building and implementation of the shared services is showed in the figure below. 
 
@@ -44,7 +44,7 @@ The platform will use a standard solution like, for example, Amazon Web Services
 ### IS2 example
 During the Rome hackathon the Istat application IS2 was containerized. IS2 is a standard Java, Spring Boot web application with a PostgrSQL database. https://github.com/mecdcme/is2
 
-We forked the application and created [Dockerfiles](https://docs.docker.com/engine/reference/builder/) for the database and application.
+We forked the application and created [Dockerfiles](https://web.archive.org/web/20210423075000/https://docs.docker.com/engine/reference/builder/) for the database and application.
 
 Database containerization
 The `db.Dockerfile` is very simple. The `initdb` script was already in the existing repository.
@@ -62,7 +62,7 @@ docker run -p 5432:5432 mecdcme/is2-postgres
 ```
 
 ### Application containerization
-For the application we take advantage of the [multi-stage build feature in Docker](https://docs.docker.com/develop/develop-images/multistage-build/).  With this Dockerfile we both build the IS2 application with maven AND we create the docker image
+For the application we take advantage of the [multi-stage build feature in Docker](https://web.archive.org/web/20210423075000/https://docs.docker.com/develop/develop-images/multistage-build/).  With this Dockerfile we both build the IS2 application with maven AND we create the docker image
 
 ```Dockerfile
 FROM maven:3.6-jdk-11 AS build
@@ -85,7 +85,7 @@ docker run -p 8080:8080 mecdcme/is2
 ```
 
 ### Docker Compose
-The IS2 application is now a multi-container application. To run these two containers and enable them to talk to each other we use [Docker Compose](https://docs.docker.com/compose/). The docker-compose.yml file looks like this:
+The IS2 application is now a multi-container application. To run these two containers and enable them to talk to each other we use [Docker Compose](https://web.archive.org/web/20210423075000/https://docs.docker.com/compose/). The docker-compose.yml file looks like this:
 
 ```YAML
 version: '3'
@@ -144,7 +144,7 @@ script:
 Results at https://travis-ci.org/github/mecdcme/is2
 
 #### Dockerhub
-Docker also offer a free service for open source projects. We have set up automatic building of images on Dockerhub https://cloud.docker.com/u/mecdcme/
+Docker also offer a free service for open source projects. We have set up automatic building of images on [Dockerhub/mecdme](https://cloud.docker.com/u/mecdcme/) 
 
 ### PxWeb Example
 
@@ -185,7 +185,7 @@ Github Actions only support Windows Server 2019 and Windows Server 2016 R2
 You have to be  aware of this when choosing online services.
 
 
-The username and password for Dockerhub is encrypted and will break when the repository is forked on GitHub. For more details see https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml
+The username and password for Dockerhub is encrypted and will break when the repository is forked on GitHub. For more details see [defining-encrypted-variables-in-travisyml](https://web.archive.org/web/20210423075000/https://docs.travis-ci.com/user/environment-variables/#defining-encrypted-variables-in-travisyml)
 
 .travis.yml
 ```YAML
@@ -266,7 +266,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
 ```  
 
 #### Google Kubernetes Engine (GKE) Pricing
-Pricing can be confucing so we will try to explain it. 
+Pricing can be confusing so we will try to explain it. 
 
 Google offers [Free Tier](https://web.archive.org/web/20210423075000/https://cloud.google.com/free) but Kubernetes Node pools of `f1-micro` machines are not supported due to insufficient memory. What is free, is the cluster management fee for your first cluster.
 
@@ -290,14 +290,14 @@ terraform init
 terraform apply
 ```
 #### Notes
-- Each time terraform operates, it creates or updates a file called `terraform.tfstate`. This file should be stored and kept up to date. If you ever lose it, you won't be able to make any changes to your infrastructure anymore using terraform (sometimes refered to as `orphaned infrastructure`). Some hackys workarounds exist to manually recover a lost tfstate file : https://medium.com/@abtreece/recovering-terraform-state-69c9966db71e
-- Basic way to store the tfstate file would be a private git repository (tfstate usually contains secrets). For a large project, it is useful to store the [state](https://www.terraform.io/docs/state/index.html) of the infra using a [remotely available tfstate](https://www.terraform.io/docs/state/remote.html) file.
+- Each time terraform operates, it creates or updates a file called `terraform.tfstate`. This file should be stored and kept up to date. If you ever lose it, you won't be able to make any changes to your infrastructure anymore using terraform (sometimes referred to as `orphaned infrastructure`). Some hackys workarounds exist to manually recover a lost tfstate file : [recovering-terraform-state](https://web.archive.org/web/20210423075000/https://medium.com/@abtreece/recovering-terraform-state-69c9966db71e)
+- Basic way to store the `tfstate` file would be a private git repository (tfstate usually contains secrets). For a large project, it is useful to store the [state](https://web.archive.org/web/20210423075000/https://www.terraform.io/docs/state/index.html) of the infra using a [remotely available tfstate](https://web.archive.org/web/20210423075000/https://www.terraform.io/docs/state/remote.html) file.
 
 #### Authenticating to the Kubernetes API server
 Now that the cluster is up, we can interact with the API server.  
 This requires authentication.  
 GKE only supports google authentication mechanism (`gcloud container clusters get-credentials my-gke-cluster --region europe-west1-b` creates the kubectl config file with credentials).  
-Once authenticated to the cluster, we chose to create a service account (using `kubectl`) and gave it `cluster-admin` permissions to that anyone with the corresponding token could interact with the cluster. This is a basic usage of the `RBAC` authorization system built-in Kubernetes (see [Kubernetes RBAC](https://kubernetes.io/docs/reference/access-authn-authz/rbac/)).
+Once authenticated to the cluster, we chose to create a service account (using `kubectl`) and gave it `cluster-admin` permissions to that anyone with the corresponding token could interact with the cluster. This is a basic usage of the `RBAC` authorization system built-in Kubernetes (see [Kubernetes RBAC](https://web.archive.org/web/20210423075000/https://kubernetes.io/docs/reference/access-authn-authz/rbac/)).
 
 At Insee, authentication to the cluster is done using `openidconnect`. As this is not supported on `GKE` clusters (whereas it's supported out of the box on on-premise clusters), a workaround is to install a proxy apiserver. See [Jetstack oidc proxy](https://github.com/jetstack/kube-oidc-proxy) and https://github.com/InseeFrLab/cloud-scripts/tree/master/gke/postinstall/oidc  
 This is a step forward consistent authentication across multiple clusters regardless of their status (cloud-managed or on-premise).
@@ -312,13 +312,13 @@ We use the two existing Docker :whale: images created in the first chapter of th
 #### Best practices
 A by-product of deploying an existing app to a container orchestrator is that some enhancements appear to make it more cloud-native. Here are the best practices suggested for IS2:
 
-- the web app should be able to run solo (without a database). `h2` (https://www.h2database.com/html/main.html) is a good way to achieve this and is supported by default by spring-boot. 
-- The database should rely on the default postgres image instead of maintaining a specific is2 database image and execute one or several scripts at runtime using the underlying orchestrator capabilities (docker volumes, docker compose, kubernetes init containers...). Database schema could also be provided by the application itself. Various libraries and frameworks such as [Flyway](https://flywaydb.org/) help achieve this.  
+- the web app should be able to run solo (without a database). [h2](https://web.archive.org/web/20210423075000/https://www.h2database.com/html/main.html) is a good way to achieve this and is supported by default by spring-boot. 
+- The database should rely on the default postgres image instead of maintaining a specific is2 database image and execute one or several scripts at runtime using the underlying orchestrator capabilities (docker volumes, docker compose, kubernetes init containers...). Database schema could also be provided by the application itself. Various libraries and frameworks such as [Flyway](https://web.archive.org/web/20210423075000/https://flywaydb.org/) help achieve this.  
 - The app should aim at being as stateless as possible so that it can scale well horizontally.
 
 #### Deployment
 
-The first Kubernetes object we handle is the [__Deployment__](https://kubernetes.io/docs/concepts/workloads/controllers/deployment/). It describe the creation and updates of a pod (and all its [replicas](https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)).
+The first Kubernetes object we handle is the [__Deployment__](https://web.archive.org/web/20210423075000/https://kubernetes.io/docs/concepts/workloads/controllers/deployment/). It describe the creation and updates of a pod (and all its [replicas](https://web.archive.org/web/20210423075000/https://kubernetes.io/docs/concepts/workloads/controllers/replicaset/)).
 
 Here, we create a deployment for IS2:
 
@@ -372,7 +372,7 @@ Debugging tips :
 
 #### Service
 
-Introducing a new object, the [Service](https://kubernetes.io/docs/concepts/services-networking/service/), which role is to provide a stable way to expose a set of pods.
+Introducing a new object, the [Service](https://web.archive.org/web/20210423075000/https://kubernetes.io/docs/concepts/services-networking/service/), which role is to provide a stable way to expose a set of pods.
 
 Different types of services exist, we use the default : `ClusterIP`. It is a static cluster-internal IP that load-balances to the pods.  
 
@@ -438,7 +438,7 @@ We used once again debugging tips (see an upper section).
 
 We want a static IP for the DB, we create the proper YAML file: `service-db.yml`
 
-Then, providing startup script for the DB container in order to provide data. We wouldn't use directly the command key. Instead we'll use the [init container pattern](https://www.magalix.com/blog/kubernetes-patterns-the-init-container-pattern) for downloading a SQL script and share it with the real DB container, using a shared volume.
+Then, providing startup script for the DB container in order to provide data. We wouldn't use directly the command key. Instead we'll use the [init container pattern](https://web.archive.org/web/20210423075000/https://www.magalix.com/blog/kubernetes-patterns-the-init-container-pattern) for downloading a SQL script and share it with the real DB container, using a shared volume.
 
 ```yaml
 apiVersion: apps/v1
@@ -537,17 +537,17 @@ spec:
 
 Those 5 `yaml` files mix contracts and environment-specific values. We should separate them.
 
-Best practice is creating a package for the contracts and using placeholder instead of values. Current standard package manager is [Helm](https://helm.sh/). Side note : Helm version 2 is EOL, make sure to use version 3. Helm is a binary : https://github.com/helm/helm/releases. It reuses the kubectl configuration. You have a working kubectl configuration = you have a working helm :)  
+Best practice is creating a package for the contracts and using placeholder instead of values. Current standard package manager is [Helm](https://web.archive.org/web/20210423075000/https://helm.sh/). Side note : Helm version 2 is EOL, make sure to use version 3. Helm is a binary : https://github.com/helm/helm/releases. It reuses the kubectl configuration. You have a working kubectl configuration = you have a working helm :)  
 
 Charts are packages that can be installed on any Kubernetes cluster. Charts are stored in repositories. Either locally (a folder = a chart) or exposed on the internet (public repositories). For example : 
 
-- https://github.com/bitnami/charts : lots of charts  
-- https://github.com/inseefrlab/helm-charts : Various charts used at INSEE  
-- https://github.com/inseefrlab/helm-charts-datascience : datascience focused charts used in the INSEE datalab (Onyxia)  
+- [github.com/bitnami/charts](https://web.archive.org/web/20210423075000/https://github.com/bitnami/charts) : lots of charts  
+- [github.com/inseefrlab/helm-charts](https://web.archive.org/web/20210423075000/https://github.com/inseefrlab/helm-charts) : Various charts used at INSEE  
+- [github.com/inseefrlab/helm-charts-datascience](https://web.archive.org/web/20210423075000/https://github.com/inseefrlab/helm-charts-datascience) : datascience focused charts used in the INSEE datalab (Onyxia)  
 
-https://artifacthub.io/ is a hub of such charts.
+[artifacthub.io](https://web.archive.org/web/20210423075000/https://artifacthub.io/) is a hub of such charts.
 
-In the future, we may want to publish charts in a repository. An easy solution would be put it all on Github with Actions (see https://github.com/helm/chart-releaser-action) Pages and Packages.
+In the future, we may want to publish charts in a repository. An easy solution would be put it all on Github with `Actions` (see [github.com/helm/chart-releaser-action](https://web.archive.org/web/20210423075000/https://github.com/helm/chart-releaser-action)) `Pages` and `Packages`.
 
 At the moment the charts are here
 - https://github.com/mecdcme/is2/blob/ac901794af650ea52cc79915a3d90d0b4121f97d/helm
@@ -569,7 +569,7 @@ We'll use the second.
 
 For that, we need to create an Ingress controller first, then use it with ingress object.
 
-Using NGINX: https://kubernetes.github.io/ingress-nginx/deploy/
+Using NGINX: [kubernetes.github.io/ingress-nginx/deploy](https://web.archive.org/web/20210423075000/https://kubernetes.github.io/ingress-nginx/deploy/)
 
 `terraform output` will provide the reserved IP address for the Kube cluster 
 ```sh
@@ -593,13 +593,13 @@ Test with `$ curl -i http://35.195.69.38/` expected response is `HTTP 404` from 
 
 #### Adding DNS
 
-We bought the domain name `ì3s.ninja` from [gandi.net](https://www.gandi.net/)
+We bought the domain name `ì3s.ninja` from [gandi.net](https://web.archive.org/web/20210423075000/https://www.gandi.net/)
 
 Test with `$ curl -i http://i3s.ninja/` expected response is `HTTP 404` from NGINX
 
 #### Adding TLS
 
-Generate a wildcard certificate `*.i3s.ninja` (Certbot documentation : https://certbot.eff.org/) :  
+Generate a wildcard certificate `*.i3s.ninja` (Certbot documentation : [certbot.eff.org](https://web.archive.org/web/20210423075000/https://certbot.eff.org/))
 
 ```sh
 $ certbot certonly --manual
@@ -641,13 +641,13 @@ The containerizaton was described in [Chapter 1 PxWeb Example](#pxweb-example) a
 > - Containerization of services and applications - Windows containers
 >   - Some legacy applications require running on Windows operating system. Docker supports Windows containers so there is not really a problem. But when you give it a try you soon discover how large the containers are. Just building a .NET 4.x application require a 10GB SDK image. The image for running the application inside an IIS (internet information server) is 6.8GB. This means building av deploying windows applications take longer time than typical Linux containers and the lightweight experience you expect with containers are missing. The Windows containers also require Windows host so just running an image to test an application will not work on other operating systems. 
 
-We wanted to use [Terraform](https://www.terraform.io/) to provision hardware on Azure also.
+We wanted to use [Terraform](https://web.archive.org/web/20210423075000/https://www.terraform.io/) to provision hardware on Azure also.
 
 ### Azure Kubernetes Service (AKS)
 The code below is from [github.com/I3S-ESSnet/PxWeb](https://github.com/I3S-ESSnet/PxWeb/blob/2ed3f0aa156a48b6c04293c52e489e3d432c9ca0/terraform/azurerm/kubernetes)
 #### Set up Terraform access to Azure
 
-Follow the guide at https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure
+Follow the guide at [terraform-install-configure](https://web.archive.org/web/20210423075000/https://docs.microsoft.com/en-us/azure/virtual-machines/linux/terraform-install-configure)
 
 ```Shell
 az login
