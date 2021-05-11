@@ -783,6 +783,16 @@ Every
 ### Azure App Service with Github
 The code below is from [github.com/I3S-ESSnet/PxWeb](https://github.com/I3S-ESSnet/PxWeb/blob/dbfd498cd28869712b6a0d5ab6ae419c87721de2/terraform/azurerm/app-service-code)
 
+#### Terraform
+Same as previous exammle, but we did not get the terraform file to work properly. However it was simple to set up the pipeline in the `App Service Deplyment Center`.  
+
+##### Results
+We now could skip both Travis CI and Docker Hub and simply pull the code directly from Github. 
+
+:information_source: The default build provider in early 2020 was `Kudu` it has later been changed to `GitHub Actions`.
+
+![alt text](azure1.png "PxWeb pipeline")
+
 
 ---
 
