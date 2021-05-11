@@ -1,4 +1,5 @@
 <img align="right" src="../../communication/i3s-logo-1-small.png" alt="I3S logo"/>
+
 # Cloud Platform Implementing the Blueprint
 
 * [From project description](#from-project-description)
@@ -22,14 +23,19 @@
   * [Install reverse proxy nginx\-ingress with Helm](#install-reverse-proxy-nginx-ingress-with-helm)
   * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
 * [5\. Links](#5-links)
+
 ## From project description
-:warning: THIS NEEDS REWRITE
+The focus of WP3 was to establish a sandbox platform for implementation of shared statistical services as a delivery in WP1 in order to perform functional tests and validate the packaging and installation of shared services. Methods and technologies for containerizing services has been studied and implemented. This document describes the necessary technical capabilites for a basic infrastructure and implementation of cloud instances and serves as the foundation for WP1 deliveries. 
 
-The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform.
+Although this document serves as a guideline for implementing the infrastructure, it is also implemented using the "infrastructure as code" model. This enable developers to version and fork the infrastructure and enable NSIs to create their own modern infrastructure in their own ecosystem. 
 
-(Structure and eventually reference to delivery slip for "infrastructure as code")
+This document and "infrastructre as code" describes how the I3S-project has containerized and implemented three applications as shared statistical services on two service providers of cloud platforms. The IS2 example is established on a Google Cloud Platform (GCP) instance, and Travis and PXWeb are established on Microsoft Azure instances.
+
+The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform. Technologies used for the building and implementation of the shared services is showed in the figure below. 
 
 ![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117439392-11b1f400-af33-11eb-9891-96f1ecfbdbef.JPG)
+
+:warning: (Structure and eventually reference to delivery slip for "infrastructure as code")
 
 ## 1. Containers
 
@@ -226,6 +232,7 @@ We arranged a series of events called "Deployathons" to make a real platform and
 
 ### Building the platform
 The first part of the job is to set up a container platform. We make the easy choice: [Kubernetes](https://web.archive.org/web/20210423075000/https://kubernetes.io/). Moreover, it will be Kubernetes (a.k.a k8s or Kube) on [GCP](https://web.archive.org/web/20210423075000/https://cloud.google.com/) using Google's managed Kubernetes service : [GKE](https://web.archive.org/web/20210423075000/https://cloud.google.com/kubernetes-engine/).  Managed Kubernetes means that the cloud provider handles most of the configuration. Kubernetes is also installable on-premise with a little more work not covered here (see [Kubespray](https://web.archive.org/web/20210423075000/https://github.com/kubernetes-sigs/kubespray) or [Openshift](https://web.archive.org/web/20210423075000/https://www.openshift.com/) for on-premise alternatives).
+
 #### Terraform
 [Terraform](https://web.archive.org/web/20210423075000/https://www.terraform.io/) is one of the leading [infrastructure-as-code](https://web.archive.org/web/20210423075000/https://en.wikipedia.org/wiki/Infrastructure_as_code) solution nowadays.
 
@@ -255,6 +262,7 @@ resource "google_container_node_pool" "primary_preemptible_nodes" {
   }
 }
 ```  
+
 #### Google Kubernetes Engine (GKE) Pricing
 Pricing can be confucing so we will try to explain it. 
 
@@ -273,6 +281,7 @@ FYI in february 2021 after the last deployaton, Google launched [GKE Autopilot](
 #### Service account
 Terraform needs a GCP service account to create and modify the infrastructure.  
 The exact required permissions were not defined clearly so we opted for the easy (but less secure) way : creating a service account with `Project owner` role.  
+
 #### Running the scripts
 ```
 terraform init  
@@ -290,6 +299,7 @@ Once authenticated to the cluster, we chose to create a service account (using `
 
 At Insee, authentication to the cluster is done using `openidconnect`. As this is not supported on `GKE` clusters (whereas it's supported out of the box on on-premise clusters), a workaround is to install a proxy apiserver. See [Jetstack oidc proxy](https://github.com/jetstack/kube-oidc-proxy) and https://github.com/InseeFrLab/cloud-scripts/tree/master/gke/postinstall/oidc  
 This is a step forward consistent authentication across multiple clusters regardless of their status (cloud-managed or on-premise).
+
 ### Deploying the services
 Using the created GKE cluster, we deploy [the IS2 application](https://github.com/mecdcme/is2).
 
@@ -400,7 +410,7 @@ helm repo update
 helm install ingress-nginx ingress-nginx/ingress-nginx --set rbac.create=true --set controller.publishService.enabled=true --set controller.service.loadBalancerIP=<reserved-ip-address> --set controller.extraArgs.default-ssl-certificate="default/wildcard"
 ````
 
-TODO: add more on ssl/tls
+:warning: TODO: add more on ssl/tls
 
 Creating an `ingress` resource to map the URL to the corresponding service (`ingress.yml`):  
 
@@ -786,8 +796,6 @@ REVISION: 2
 ```` 
 
 Now you can vist `http://i2.<reserved_ip_address>.xip.io/is2/` Default username/password are posted in  [is2 README](https://github.com/mecdcme/is2/blob/master/README.md)
-
-
 
 ## 5. Links
 :warning: THIS NEEDS REWRITE
