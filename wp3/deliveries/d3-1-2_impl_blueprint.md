@@ -19,7 +19,7 @@
     * [Azure Kubernetes Service (AKS)](#azure-kubernetes-service-aks)
     * [Azure App Service with Docker](#azure-app-service-with-docker)
     * [Azure App Service with Github](#azure-app-service-with-github)
-  * [4\. Try the platform yourself](#4-try-the-platform-yourself)
+  * [4\. Try the GCP platform yourself](#4-try-the-gcp-platform-yourself)
     * [Create Google cloud project and service\-account](#create-google-cloud-project-and-service-account)
     * [Create Kubernetes cluster](#create-kubernetes-cluster)
     * [Test Kubernetes cluster](#test-kubernetes-cluster)
@@ -31,7 +31,10 @@ The focus of WP3 was to establish a sandbox platform for implementation of share
 
 Although this document serves as a guideline for implementing the infrastructure, it is also implemented using the "infrastructure as code" model. This enable developers to version and fork the infrastructure and enable NSIs to create their own modern infrastructure in their own ecosystem. 
 
-This document and "infrastructure as code" describes how the I3S-project has containerized and implemented three of the applications as shared statistical services on two service providers of cloud platforms. The following services was part of delivery D3.2.1, D3.2.2 and D3.2.3: [IS2 (ARC)](https://ec.europa.eu/eurostat/cros/content/i3s-d321-package-container-service-1_en) example is established on a Google Cloud Platform (GCP) instance, [PXWeb](https://ec.europa.eu/eurostat/cros/content/i3s-d322-package-container-service-2_en) is established on a Microsoft Azure instance, and the [Relais](https://ec.europa.eu/eurostat/cros/content/i3s-d323-package-container-service-3_en). The latter one is not described further in this document, and was containerized as part of delivery in WP1 and implemented on an on-prem infrastructure.
+This document and "infrastructure as code" describes how the I3S-project has containerized and implemented the applications as shared statistical services on two service providers of cloud platforms. The following services was part of delivery: 
+- [D3.2.1 ARC](https://ec.europa.eu/eurostat/cros/content/i3s-d321-package-container-service-1_en) Google Cloud Platform (GCP)
+- [D3.2.2 PXWeb](https://ec.europa.eu/eurostat/cros/content/i3s-d322-package-container-service-2_en) Microsoft Azure
+- [D3.2.3 Relais (IS2)](https://ec.europa.eu/eurostat/cros/content/i3s-d323-package-container-service-3_en) Google Cloud Platform (GCP)
 
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform. Technologies used for the building and implementation of the shared services is showed in the figure below. 
 
@@ -773,8 +776,7 @@ output "website_url" {
 }
 ```
 #### Results
-This worked right out of the box. PxWeb image was pulled from Dockerhub and deployd on Ázure
-Every 
+This worked right out of the box. PxWeb image was pulled from Dockerhub and deployd on Ázure.
 
 ### Azure App Service with Github
 The code below is from [github.com/I3S-ESSnet/PxWeb](https://github.com/I3S-ESSnet/PxWeb/blob/dbfd498cd28869712b6a0d5ab6ae419c87721de2/terraform/azurerm/app-service-code)
@@ -792,7 +794,7 @@ We now could skip both Travis CI and Docker Hub and simply pull the code directl
 
 ---
 
-## 4. Try the platform yourself
+## 4. Try the GCP platform yourself
 
 ### Create Google cloud project and service-account
 #### Prerequisites
