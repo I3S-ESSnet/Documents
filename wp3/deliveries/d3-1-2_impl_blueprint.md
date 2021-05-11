@@ -404,19 +404,7 @@ From a pod from another namespace : `is2.i3s` will resolve fine.
 
 #### Ingress
 
-Last step : exposing the service to the outside world. This requires an `Ingress Controller` installed in the cluster.  Vanilla installation of k8s does not come with an Ingress controller. GKE comes with one, but you probably want to setup your own (at least to be as much cloud agnostic as possible). 
-
-Following https://cloud.google.com/community/tutorials/nginx-ingress-gke
-
-````sh
-helm repo add ingress-nginx https://kubernetes.github.io/ingress-nginx
-helm repo update
-helm install ingress-nginx ingress-nginx/ingress-nginx --set rbac.create=true --set controller.publishService.enabled=true --set controller.service.loadBalancerIP=<reserved-ip-address> --set controller.extraArgs.default-ssl-certificate="default/wildcard"
-````
-
-:warning: TODO: add more on ssl/tls
-
-Creating an `ingress` resource to map the URL to the corresponding service (`ingress.yml`):  
+Last step : exposing the service to the outside world. This requires an `Ingress Controller` installed in the cluster which we will install in the [next chapter](#accessing-the-cluster), but first we create an `ingress` resource to map the URL to the corresponding service (`ingress.yml`):  
 
 ```yaml
 apiVersion: extensions/v1beta1
