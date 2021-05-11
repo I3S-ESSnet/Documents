@@ -38,7 +38,7 @@ This document and "infrastructure as code" describes how the I3S-project has con
 
 The platform will use a standard solution like, for example, Amazon Web Services, Microsoft Azure or Google Cloud Platform. Technologies used for the building and implementation of the shared services is showed in the figure below. 
 
-![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117817082-86549d80-b267-11eb-9ba8-f4287e375f41.JPG)
+![i3s_concept_with_tech](https://user-images.githubusercontent.com/47101258/117828486-21eb0b80-b272-11eb-9c35-b4b86d98a473.JPG)
 
 :warning: (Structure and eventually reference to delivery slip for "infrastructure as code")
 
