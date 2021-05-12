@@ -938,7 +938,7 @@ REVISION: 2
 
 Now you can vist `http://i2.<reserved_ip_address>.xip.io/is2/` Default username/password are posted in  [is2 README](https://github.com/mecdcme/is2/blob/master/README.md)
 
-## Concluding remarks
-
-This document is the result of all the practical work being done the past two years. On the technology side it reflects the current, and most used technologies at the time of the writing. The goal of this document have been to demonstrate how the ifrastructure for a cloud based runtime environment for services can look like. This can be used as a spring board for establishing your own infrastructure on any of the hyper scale cloud providers. 
 ---
+
+## Concluding remarks
+This document is the result of all the practical work being done the past two years. On the technology side it reflects the current, and most used technologies at the time of the writing. The goal of this document have been to demonstrate how the ifrastructure for a cloud based runtime environment for services can look like. This can be used as a spring board for establishing your own infrastructure on any of the hyper scale cloud providers. 
