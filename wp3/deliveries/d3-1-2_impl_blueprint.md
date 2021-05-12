@@ -2,6 +2,7 @@
 
 # Cloud Platform Implementing the Blueprint
 
+* [Cloud Platform Implementing the Blueprint](#cloud-platform-implementing-the-blueprint)
   * [From project description](#from-project-description)
   * [1\. Containers](#1-containers)
     * [IS2 example](#is2-example)
@@ -25,6 +26,7 @@
     * [Test Kubernetes cluster](#test-kubernetes-cluster)
     * [Install reverse proxy nginx\-ingress with Helm](#install-reverse-proxy-nginx-ingress-with-helm)
     * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
+    * [Concluding remarks](#concluding-remarks)
 
 ## From project description
 The focus of WP3 was to establish a sandbox platform for implementation of shared statistical services as a delivery in WP1 in order to perform functional tests and validate the packaging and installation of shared services. Methods and technologies for containerizing services has been studied and implemented. This document describes the necessary technical capabilities for a basic infrastructure and implementation of cloud instances and serves as the foundation for WP1 deliveries. 
@@ -940,4 +942,3 @@ Now you can vist `http://i2.<reserved_ip_address>.xip.io/is2/` Default username/
 
 ## Concluding remarks
 This document is the result of all the practical work being done the past two years. On the technology side it reflects the current, and most used technologies at the time of the writing. The goal of this document have been to demonstrate how the ifrastructure for a cloud based runtime environment for services can look like. This can be used as a spring board for establishing your own infrastructure on any of the hyper scale cloud providers. 
----
