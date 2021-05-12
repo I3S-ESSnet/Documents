@@ -26,7 +26,7 @@
     * [Test Kubernetes cluster](#test-kubernetes-cluster)
     * [Install reverse proxy nginx\-ingress with Helm](#install-reverse-proxy-nginx-ingress-with-helm)
     * [Install IS2 with Helm on Kubernetes](#install-is2-with-helm-on-kubernetes)
-    * [Concluding remarks](#concluding-remarks)
+  * [Concluding remarks](#concluding-remarks)
 
 ## From project description
 The focus of WP3 was to establish a sandbox platform for implementation of shared statistical services as a delivery in WP1 in order to perform functional tests and validate the packaging and installation of shared services. Methods and technologies for containerizing services has been studied and implemented. This document describes the necessary technical capabilities for a basic infrastructure and implementation of cloud instances and serves as the foundation for WP1 deliveries. 
