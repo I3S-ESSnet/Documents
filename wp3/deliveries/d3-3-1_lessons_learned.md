@@ -1,5 +1,11 @@
 <img align="right" src="../../communication/i3s-logo-1-small.png" alt="I3S logo"/>
 
+* [Report on lessons learned](#report-on-lessons-learned)
+  * [Document and implement blueprint](#document-and-implement-blueprint)
+  * [Concluding remarks](#concluding-remarks)
+
+---
+
 # Report on lessons learned
 WP 3 has as overall objectives provide a blueprint and implementing the blueprint to be able to establish and build a sandbox environment and test available services in a containerized environment. The environment has been used to perform functional tests of services (see WP 1) and validate their packaging and installation.
 
