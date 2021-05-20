@@ -32,7 +32,7 @@ Both the Toulouse and Rome hackathons served as important meetings for the deliv
 
 ## Task 3-2: Service containerization
 
-> Consider a general description on service containerization and eventually refer to other relevant documents 
+> Description on service containerization (keywords: Platform capabilites as foundation, support in containerization of services etc) eventually refer to other relevant documents 
 
 * D3.2.1 - Package container for Service 1 (ARC)
 * D3.2.2 - Package container for Service 2 (PXWeb)
