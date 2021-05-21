@@ -36,9 +36,14 @@ Both the Toulouse and Rome hackathons served as important meetings for the deliv
 
 > Description on service containerization (keywords: Platform capabilites as foundation, support in containerization of services etc) eventually refer to other relevant documents 
 
-* D3.2.1 - Package container for Service 1 (ARC)
-* D3.2.2 - Package container for Service 2 (PXWeb)
-* D3.2.3 - Package container for Service 3 (Relais)
+For the deliverables in task 3-2 are build on the platform capabilities for containerizing services in a cloud environment. It has been a collaboration with members from WP1 in order to containerize the services, and configure and deploy them on the cloud platforms. The collaboration has been a mixture of physical hackathons meetings and virtual deployathons meetings. Platform capabilities and process descriptions is described in [Cloud platform implementing the Blueprint](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-1-2_final.pdf). 
+
+The following services are containerized and delivered as part of task 3-2: 
+* [D3.2.1 - Package container for Service 1 (ARC)](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-2-1_0.pdf)
+* [D3.2.2 - Package container for Service 2 (PXWeb)](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-2-2.pdf)
+* [D3.2.3 - Package container for Service 3 (Relais)](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-2-3.pdf)
+
+These deliveries are related to the service description and report on reuse in WP1: D1.2.1, D1.2.2, D1.3.1, D1.3.2, D1.4.1 and D.1.4.2.
 
 ## Task 3.3: Reporting
 This delivery is a report on lessons learned based on the work and deliveries in Task 3.1 and 3.2 as well as the relation to deliveries in WP1 and WP2. This delivery discusses the process and how the deliveries has evolved, collaboration with deliveries in the other WPs. In the conclusions of the lessons learned we emphasize the importance and needs related to security issues as well as governance and management of shared cloud platforms. For further readings [Report on lessons learned](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-3_final.pdf)
