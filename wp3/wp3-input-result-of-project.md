@@ -1,7 +1,7 @@
 # WP3 - Build a sandbox and test available services - containerize
 
 > Insert initial description
-> This draft is probably to long, consider content in chapter 3.1.1. However, chapter 3.2 would probably not be long.
+> This draft might be to long, consider content in chapter 3.1.1.
 
 The deliverables in WP3 has proven the ability to establish shared statistical services as containers in a cloud infrastructure. Using the blueprint and implementing the blueprint NSIs should be able to implement shared services in their own ecosystem as well. 
 
