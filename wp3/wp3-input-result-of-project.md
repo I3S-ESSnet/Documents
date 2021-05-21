@@ -1,7 +1,7 @@
 # WP3 - Build a sandbox and test available services - containerize
 
 > Insert initial description
-> This draft might be to long, consider content in chapter 3.1.1.
+> This draft might be too long, consider content in chapter 3.1.1.
 
 The deliverables in WP3 has proven the ability to establish shared statistical services as containers in a cloud infrastructure. Using the blueprint and implementing the blueprint NSIs should be able to implement shared services in their own ecosystem as well. 
 
@@ -33,7 +33,7 @@ The document produces covers the following issues:
 Both the Toulouse and Rome hackathons served as important meetings for the delivery to implementing the blueprint, in addition we arranged several deployathons in the autumn of 2020 in which developers met and solved technical issues related to the implementation of the platform and the shared statistical services. Some technical issues and the how we experienced the collaboration between WPs in containerizing services is documented in [Report on lessons learned](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-3_final.pdf) and the platform deployathon chapter of the document [Cloud platform implementing the Blueprint](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-1-2_final.pdf).
 
 ## Task 3-2: Service containerization
-For the deliverables in task 3-2 are build on the platform capabilities for containerizing services in a cloud environment. It has been a collaboration with members from WP1 in order to containerize the services, and configure and deploy them on the cloud platforms. The collaboration has been a mixture of physical hackathons meetings and virtual deployathons meetings. Platform capabilities and process descriptions is described in [Cloud platform implementing the Blueprint](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-1-2_final.pdf). 
+For the deliverables in task 3-2 are built on the platform capabilities for containerizing services in a cloud environment. It has been a collaboration with members from WP1 in order to containerize the services, configure and deploy them on the cloud platforms. The collaboration has been a mixture of physical hackathons meetings and virtual deployathons meetings. Platform capabilities and process descriptions is described in [Cloud platform implementing the Blueprint](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-1-2_final.pdf). 
 
 The following services are containerized and delivered as part of task 3-2: 
 * [D3.2.1 - Package container for Service 1 (ARC)](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-2-1_0.pdf)
@@ -43,4 +43,4 @@ The following services are containerized and delivered as part of task 3-2:
 These deliveries are related to the service description and report on reuse in WP1: D1.2.1, D1.2.2, D1.3.1, D1.3.2, D1.4.1 and D.1.4.2.
 
 ## Task 3.3: Reporting
-This delivery is a report on lessons learned based on the work and deliveries in Task 3.1 and 3.2 as well as the relation to deliveries in WP1 and WP2. This delivery discusses the process and how the deliveries has evolved, collaboration with deliveries in the other WPs. In the conclusions of the lessons learned we emphasize the importance and needs related to security issues as well as governance and management of shared cloud platforms. For further readings [Report on lessons learned](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-3_final.pdf)
+This delivery is a report on lessons learned based on the work and deliveries in Task 3.1 and 3.2 as well as the relation to deliveries in WP1 and WP2. This delivery discusses the process and how the deliveries has evolved, collaboration with deliveries in the other WPs. In the conclusions of the lessons learned we emphasize the importance and needs related to security issues as well as governance and management of shared cloud platforms. For further readings [Report on lessons learned](https://ec.europa.eu/eurostat/cros/system/files/i3s_-_d3-3_final.pdf).
