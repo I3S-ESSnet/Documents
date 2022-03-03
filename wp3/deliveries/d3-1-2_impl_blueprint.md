@@ -359,8 +359,8 @@ For now : change image to a basic Tomcat in order to have a running deployment. 
 [...]
 spec:
       containers:
-      - name: is2
-        image: mecdcme/is2
+      - name: tomcat
+        image: tomcat
         ports:
         - containerPort: 8080
 [...]
