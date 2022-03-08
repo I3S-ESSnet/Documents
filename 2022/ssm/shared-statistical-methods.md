@@ -28,9 +28,6 @@ Some of the areas ESSNet I3S explored was techniques related to automating build
 
 In the Data science world, there are principles like [FAIR](https://en.wikipedia.org/wiki/FAIR_data). Although these principles are used for data, it could also be used as a guiding principle for Statistical Method Implementations:
 
-* Findable
-* Accessible
-* Interoperable
-* Reusable
+![FAIR](fair.png)
 
 We propose to add to each of these principles how one should go about handling the stewardship of Statistical Method implementations. The proposal is to focus on one or two use cases related to specific Statistical Methods implementation like __TauArgus__ f.ex., where we would contribute and help to implement things like automated builds, deployments and test. And maybe even suggest best of breed software engineering principles when designing _Statistical Methods_. Here we would use all the experience we have accumulated through the work on CSPA, ESSNet SCFE & ESSNet I3S and apply them to increase the technical quality of the software that have a lot of users in the Statistical community. One result of this work could also be a set of technical quality criterieas that could be used to asses Statistical software that is show cased in the list of [_Awesome official statistics software_](https://github.com/SNStatComp/awesome-official-statistics-software).
