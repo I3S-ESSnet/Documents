@@ -1,4 +1,4 @@
-# Shared Statistical Methods
+# Shared Statistical Method implementations (SMI's)
 
 #### Background
 
@@ -12,9 +12,9 @@ The challenge is still that these _Statistical Methods_ some times lack the soft
 
 Some things have changed dramatically over the last 5-10 years though. The adoption of _Open Source_ in Statistical offices have increased. The willingess to share code have also increased, and with that a more open and collabarative environment. 
 
-#### Statistical Methods
+#### Statistical Method implementations
 
-_Statistial Methods_ are in this document losely defined as a collection of algorithms expressed in software and used in a Statistical Production. [Citation needed.. :-)].
+_Statistial Method implementation_ are in this document losely defined as a collection of algorithms implemented in software and used in a Statistical Production.
 
 Software like JDMetra and TauArgus are great tools for Seasonal adjustment and Discloure Control and have been widely adopted. Both are Open Source, and especially JDMetra is greatly supported, and have a relativley active development community. TauArgus is being supported, but is lacking out-of-the-box multi-plattform support. 
 
@@ -22,7 +22,7 @@ Both software packages (and this is based on it's current releases) could be mor
 
 #### The problem
 
-Some of the areas ESSNet I3S explored was techniques related to automating builds, packaging and continous deployment, but also best practices around software design, so we are able to create services that can be used by NSI's regardless of technology plattforms. There are fundamentally two areas where software and services which can help increased access to software, and better integration. One is the area around building and deploying software, and the other are is the software architecture itself. We have issues with a lot of existing Statistical Methods in the Open Source community that lacks in both areas. For the software architecture side, CSPA 2.0 describes different aproaches that can make software more shareable. Examples of software architecture principles are things like [SOLID](https://en.wikipedia.org/wiki/SOLID)-principles that should be considered. The lack of attention to these to areas is increasingly at odds with the way modern, cloud native computing is done, and makes it harder to utilize otherwize great quality Statistical Methods.  
+Some of the areas ESSNet I3S explored was techniques related to automating builds, packaging and continous deployment, but also best practices around software design, so we are able to create services that can be used by NSI's regardless of technology plattforms. There are fundamentally two areas where software and services which can help increased access to software, and better integration. One is the area around building and deploying software, and the other are is the software architecture itself. We have issues with a lot of existing Statistical Method implementation in the Open Source community that lacks in both areas. For the software architecture side, CSPA 2.0 describes different aproaches that can make software more shareable. Examples of software architecture principles are things like [SOLID](https://en.wikipedia.org/wiki/SOLID)-principles that should be considered. The lack of attention to these to areas is increasingly at odds with the way modern, cloud native computing is done, and makes it harder to utilize otherwize great quality Statistical Methods.  
 
 #### The solution
 
