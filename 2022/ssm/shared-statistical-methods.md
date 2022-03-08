@@ -6,7 +6,7 @@ Over the years, initiatives like __CSPA__ (UNECE), __ESSNet SCFE (Sharing common
 
 One area that usually have a lot of focus is the area around _Statistical Methods Implementations)_. These are being promoted f.ex. through _The awesome list_ (link), and are increasingly released to the public domain through various _Open Source_ licenses. 
 
-The challenge is still that these _Statistical Methods_ some times lack the software craftmanship of other types of modern software. The methods themselves are from a methodology perspective of very high quality.  From a software perspective, things like non-functional requirements, portability, testability etc. are not always taken into account. CSPA 2.0 tried to lay out a path for adresseing some common software architectual issues surrounding services in general. 
+The challenge is still that these _Statistical Method Implementations_ some times lack the software craftmanship of other types of modern software. The methods themselves are from a methodology perspective of very high quality.  From a software perspective, things like non-functional requirements, portability, testability etc. are not always taken into account. CSPA 2.0 tried to lay out a path for adresseing some common software architectual issues surrounding services in general. 
 
 ![CSPA 2.0](cspa.png)
 
