@@ -74,6 +74,6 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 |---|---|---|
 | 9:00-9:30 | Common session | Common session |
 |   | Stand-up meeting | Stand-up meeting |
-| 9:30-17:00  | Finalization of deliverables | Implementation of use cases |
-| 17:00-18:00 | Common session | Common session |
+| 9:30-15:00  | Finalization of deliverables | Implementation of use cases |
+| 15:00-16:00 | Common session | Common session |
 |   | Cross-presentations and way forward | Cross-presentations and way forward |
