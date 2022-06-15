@@ -30,7 +30,7 @@ The goal is to contribute to the reflections going on in the ESS on how to share
 ### References
 
 * [Preliminary reflections](../ssm/shared-statistical-methods.md) by Trygve provide a base for the discussions.
-* Also interesting are the [recommandations](https://joinup.ec.europa.eu/collection/interoperable-europe/news/official-expert-recommendations-new-interoperability-policy) recently made by the Expert group on the Interoperability of European Public Services
+* Also interesting are the [recommendations](https://joinup.ec.europa.eu/collection/interoperable-europe/news/official-expert-recommendations-new-interoperability-policy) recently made by the Expert group on the Interoperability of European Public Services
 
 
 ## Development
