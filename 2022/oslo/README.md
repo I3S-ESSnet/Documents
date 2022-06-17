@@ -10,7 +10,7 @@ In order to avoid an overly theoretical approach, the reflection will be based o
 
 The meeting will thus cover two main topics:
 
-* Brain-storming on how to organize sustainable sharing of solutions in the ESS based on open source
+* Brain-storming on how to organize sustainable sharing of solutions in the ESS based on Open Source
 * Further development of I3S tools, specifically [Trevas](https://github.com/InseeFr/Trevas) and [lab](https://github.com/InseeFrLab/VTL-Lab)) in the light of the ideas produced by the brain-storming.
 
 
@@ -22,10 +22,12 @@ The goal is to contribute to the reflections going on in the ESS on how to share
 
 * lessons learned and case studies 
 * governance and communication
+* use of GitHub and Open Source principles for collaboration
 * roles, in particular for Eurostat
 * assessment of solutions quality
 * architectural guidelines
-* etc.
+
+Use case for this session can be the sharing and co-development of statistical methods.
 
 ### References
 
