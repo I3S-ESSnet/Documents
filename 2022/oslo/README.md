@@ -52,8 +52,8 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 |---|---|---|
 | 10:00-11:00 | Common session | Common session |
 |   | Objectives and deliverables | Objectives and deliverables |
-| 11:00-12:00  | State of play | State of play |
-| 14:00-17:00  | Stock-taking & stategy | Use cases and roadmap |
+| 11:00-12:00  | Statistical open-source landscape | State of play |
+| 14:00-17:00  | OSS practice for statistical methods | Use cases and roadmap |
 | 17:00-18:00 | Common session | Common session |
 |   | Cross-presentations and agenda for tomorrow | Cross-presentations and agenda for tomorrow |
 
@@ -64,7 +64,7 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 |---|---|---|
 | 9:00-9:30 | Common session | Common session |
 |   | Stand-up meeting | Stand-up meeting |
-| 9:30-17:00  | Collaborative writing | Development |
+| 9:30-17:00  | Collaborative writing: Statistical open source best practice / guidelines | Development |
 | 17:00-18:00 | Common session | Common session |
 |   | Cross-presentations and agenda for tomorrow | Cross-presentations and agenda for tomorrow |
 
@@ -77,5 +77,6 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 | 9:00-9:30 | Common session | Common session |
 |   | Stand-up meeting | Stand-up meeting |
 | 9:30-15:00  | Finalization of deliverables | Implementation of use cases |
+|   | (interlude) DIME ITDG open source discussion aftermath | |
 | 15:00-16:00 | Common session | Common session |
 |   | Cross-presentations and way forward | Cross-presentations and way forward |
