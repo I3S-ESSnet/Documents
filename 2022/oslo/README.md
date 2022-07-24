@@ -50,6 +50,7 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 
 |   | Brain-storming | Development |
 |---|---|---|
+| 09:30-10:00 | Physical coffee | Physical coffee |
 | 10:00-11:00 | Common session | Common session |
 |   | Objectives and deliverables | Objectives and deliverables |
 | 11:00-12:00  | Statistical open-source landscape | State of play |
