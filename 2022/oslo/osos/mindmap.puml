@@ -1,0 +1,29 @@
+@startmindmap OSOS
+
+title Open source for Official statistics
+
++ OSOS
+-- <b>Why</b>
+--- Transparency
+--- User needs
+---- Reproducible
+---- Comparable
+--- Sharing
+---- Cut Costs
+'---- Increase quality
+'---- Competence
+++ <b>What</b>
++++ Apps
++++ Methods
++++ Study/Research
+++ <b>How</b>
++++ Culture
+++++ Community building MGMT
+++++ Engineering principles
++++ Capabilities
++++ Use cases
++++ Sponsorship
+++++ Resources
+++++ Funding
+
+@endmindmap
