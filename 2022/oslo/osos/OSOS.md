@@ -58,6 +58,7 @@ Reuse cases!
 
 DRAFT
 ### Insee good-better-best
+[INSEE: Exigences_detailles](https://github.com/I3S-ESSnet/Documents/blob/81014b0baf66c781f358379a1c83d5356a9abdc6/2022/oslo/osos/insee_exigences_detaillees.png)
 
 - Absolute requirements
 -- The code is interesting
