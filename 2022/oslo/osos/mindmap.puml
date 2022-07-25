@@ -1,3 +1,7 @@
+Mindmap - Open source for Official statistics
+
+<div hidden>
+```
 @startmindmap OSOS
 
 title Open source for Official statistics
@@ -27,3 +31,7 @@ title Open source for Official statistics
 ++++ Funding
 
 @endmindmap
+```
+</div>
+
+![](firstDiagram.svg)
