@@ -54,7 +54,7 @@ Reuse cases!
 
 [https://ropensci.org](https://ropensci.org) -> Excellent community
 
-## Principles and reccomendations
+## Principles and recommendations
 
 DRAFT
 ### Insee good-better-best
