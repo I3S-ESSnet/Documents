@@ -1,3 +1,3 @@
 Mindmap - OSOS
 
-!include OSOS.svg
+![Mindmap](https://raw.githubusercontent.com/I3S-ESSnet/Documents/master/2022/oslo/osos/OSOS.svg)
