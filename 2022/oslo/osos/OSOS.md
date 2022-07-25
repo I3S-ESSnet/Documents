@@ -58,21 +58,21 @@ Reuse cases!
 
 DRAFT
 ### Insee good-better-best
-[INSEE: Exigences_detailles](https://github.com/I3S-ESSnet/Documents/blob/81014b0baf66c781f358379a1c83d5356a9abdc6/2022/oslo/osos/insee_exigences_detaillees.png)
+![image](https://github.com/I3S-ESSnet/Documents/blob/81014b0baf66c781f358379a1c83d5356a9abdc6/2022/oslo/osos/insee_exigences_detaillees.png)
 
-- Absolute requirements
--- The code is interesting
--- Only test data is provided
--- The license is open source
--- Code versioning is managed by git
--- A documentation is provided
--- Intellectual property is respected
--- Security is handled
-- Highly recommended 
--- Portable code
--- The open source code is the unique source of truth
-- Recommended
--- Contribution rules are explicit
--- English is the main language
--- High quality code
+* Absolute requirements
+  * The code is interesting
+  * Only test data is provided
+  * The license is open source
+  * Code versioning is managed by git
+  * A documentation is provided
+  * Intellectual property is respected
+  * Security is handled
+* Highly recommended 
+  * Portable code
+  * The open source code is the unique source of truth
+* Recommended
+  * Contribution rules are explicit
+  * English is the main language
+  * High quality code
 
