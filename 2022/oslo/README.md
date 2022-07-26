@@ -63,9 +63,11 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 
 |   | Brain-storming | Development |
 |---|---|---|
-| 9:00-9:30 | Common session | Common session |
+| 9:00-9:30 | Physical Coffee | Physical Coffee |
 |   | Stand-up meeting | Stand-up meeting |
-| 9:30-17:00  | Collaborative writing: Statistical open source best practice / guidelines | Development |
+| 9:30-11:30  | Collaborative writing: Statistical open source best practice / guidelines | Development |
+| 11:30-12:30  | Lunch | Lunch |
+| 12:30-17:00  | Collaborative writing: Statistical open source best practice / guidelines | Development |
 | 17:00-18:00 | Common session | Common session |
 |   | Cross-presentations and agenda for tomorrow | Cross-presentations and agenda for tomorrow |
 
@@ -75,7 +77,7 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 
 |   | Brain-storming | Development |
 |---|---|---|
-| 9:00-9:30 | Common session | Common session |
+| 9:00-9:30 | Physical Coffee session | Physical Coffee |
 |   | Stand-up meeting | Stand-up meeting |
 | 9:30-15:00  | Finalization of deliverables | Implementation of use cases |
 |   | (interlude) DIME ITDG open source discussion aftermath | |
