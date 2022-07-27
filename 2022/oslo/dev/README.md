@@ -8,7 +8,7 @@
 Two new versions [published](https://mvnrepository.com/artifact/fr.insee.trevas/trevas-parent).
 
 * v0.4.2: fix access to PosgreSQL data
-* v0.4.3: analytic operators, Jupyter integration, etc.
+* v0.4.3: analytic operators, Jupyter client, custom functions, etc.
 
 ### Analytic operators
 
@@ -27,9 +27,9 @@ See [tests](https://github.com/InseeFr/Trevas/blob/develop/vtl-spark/src/test/ja
 
 PosgreSQL and Parquet
 
-### Jupyter integration
+### Jupyter client
 
-Voir [code sur GitHub](https://github.com/InseeFrLab/Trevas-Jupyter)
+See [code on GitHub](https://github.com/InseeFrLab/Trevas-Jupyter)
 
 Demo!
 
