@@ -35,4 +35,4 @@ Demo!
 
 ### Documentation
 
-* Creation of the [documentation site](http://trevas.info/site/)
+Creation of the [documentation site](http://trevas.info/site/)

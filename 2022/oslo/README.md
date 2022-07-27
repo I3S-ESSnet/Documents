@@ -83,3 +83,8 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 |   | (interlude) DIME ITDG open source discussion aftermath | |
 | 15:00-16:00 | Common session | Common session |
 |   | Cross-presentations and way forward | Cross-presentations and way forward |
+
+
+## Results
+
+* Development track [final presentation](dev/README.md)
