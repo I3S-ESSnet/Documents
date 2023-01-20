@@ -1,9 +1,9 @@
 # <a name='ProposalforESSOpenSourcestrategyimplementationroadmap'></a>Proposal for ESS Open Source strategy implementation roadmap
 _v1.0 Oslo 25-27 July 2022_
 
-_Authors: Harri Lehtinen <<harri.lehtinen@stat.fi>>, Romain Tailhurat <<romain.tailhurat@insee.fr>>, Jon Folkedal <<jon.folkedal@ssb.no>>, Neville De Mendonca <<neville.demendonca@ons.gov.uk>>, Trygve Falch <<trygve.falch@ssb.no>>_
+_Authors: Harri Lehtinen <harri.lehtinen@stat.fi>, Romain Tailhurat <romain.tailhurat@insee.fr>, Jon Folkedal <jon.folkedal@ssb.no>, Neville De Mendonca <neville.demendonca@ons.gov.uk>, Trygve Falch <trygve.falch@ssb.no>_
 
-_Original Google Docs document is here: https://docs.google.com/document/d/1IdANdMFZigtkykAoGvxvtyv3ILjILdnutoe6PdQ1d5A/edit?usp=sharing_
+_Original Google Docs document is here: [https://docs.google.com/document/d/1IdANdMFZigtkykAoGvxvtyv3ILjILdnutoe6PdQ1d5A/edit?usp=sharing](https://docs.google.com/document/d/1IdANdMFZigtkykAoGvxvtyv3ILjILdnutoe6PdQ1d5A/edit?usp=sharing)_
 
 ## <a name='TableofContents'></a>Table of Contents
 ---
