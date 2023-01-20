@@ -39,7 +39,7 @@ _Original Google Docs document is here: https://docs.google.com/document/d/1IdAN
 <!-- /vscode-markdown-toc -->
 
 ## <a name='Goal'></a>Goal
-A draft proposal for an ESS open strategy (https://ec.europa.eu/eurostat/cros/system/files/03._os_ess.docx) has been presented at the DIME-ITDG meeting in june 2022. The participants of the meeting have validated the strategy and proposed that an informal group or a task force be created to convey additional work on the subject.
+A draft proposal for an ESS open strategy [(https://ec.europa.eu/eurostat/cros/system/files/03._os_ess.docx)](https://ec.europa.eu/eurostat/cros/system/files/03._os_ess.docx) has been presented at the DIME-ITDG meeting in june 2022. The participants of the meeting have validated the strategy and proposed that an informal group or a task force be created to convey additional work on the subject.
 
 The goal of this document is to provide a very short summary of the strategy and to propose a roadmap for the task force.
 
@@ -49,7 +49,7 @@ This roadmap is presented as a non prioritized list of topics that could be addr
 * the process that will govern the ESS-OSS (European Statistical System - Open Source Software)
 * the technical foundation of the projects.
 
-As much as possible, this roadmap will point to existing documentation and references that will be starting points to the actions taken by the task force. This document will also specifically make recommendations on different topics that should be taken into consideration when moving forward. The recommendations are based on industry wide best practices, but also rely on previous work from various ESS-Net projects, like SCFE (https://ec.europa.eu/eurostat/cros/content/projects-deliverables_en) and I3S (https://ec.europa.eu/eurostat/cros/content/projects-deliverables-0_en), as well as from extensive work done by the UNECE community, specifically CSPA (https://statswiki.unece.org/display/CSPA).
+As much as possible, this roadmap will point to existing documentation and references that will be starting points to the actions taken by the task force. This document will also specifically make recommendations on different topics that should be taken into consideration when moving forward. The recommendations are based on industry wide best practices, but also rely on previous work from various ESS-Net projects, like SCFE [(https://ec.europa.eu/eurostat/cros/content/projects-deliverables_en)](https://ec.europa.eu/eurostat/cros/content/projects-deliverables_en) and I3S [(https://ec.europa.eu/eurostat/cros/content/projects-deliverables-0_en)](https://ec.europa.eu/eurostat/cros/content/projects-deliverables-0_en), as well as from extensive work done by the UNECE community, specifically CSPA [(https://statswiki.unece.org/display/CSPA)](https://statswiki.unece.org/display/CSPA).
 
 ## <a name='Summaryofthestrategy'></a>Summary of the strategy
 
@@ -66,7 +66,7 @@ _We believe that going Open Source in general and for the ESS in particular is o
 * Give examples of open cultures and organization: in order to provide a clear and shared understanding of what is an open cultures
 * Clarify current status in the ESS, UNECE, NSI’s and create a way forward
 * Reach out to existing pre ESS-OSS works and projects (ONS, Insee, Statistics Norway) 
-* Elaborate on what is “Coding in the open” (see https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/ )
+* Elaborate on what is “Coding in the open” (see [https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/](https://gds.blog.gov.uk/2017/09/04/the-benefits-of-coding-in-the-open/) )
 
 ### <a name='Communication'></a>Communication
 _The ESS-OSS strategy will benefit from an integrated communication capability, meaning that it will manage to promote the strategy itself at different levels and communicate results (e.g. reuse and collaboration)._
@@ -84,7 +84,7 @@ _Fostering here means helping non Open Source savvy people get on the train and 
 
 ## <a name='Process'></a>Process
 ### <a name='Governance'></a>Governance
-* Build the governance model: Central, top-down ESS governance VS distributed and bottom up organization. For example: GitHub Guide (https://opensource.guide/leadership-and-governance/) 
+* Build the governance model: Central, top-down ESS governance VS distributed and bottom up organization. For example: GitHub Guide [(https://opensource.guide/leadership-and-governance/)](https://opensource.guide/leadership-and-governance/) 
 * Describe the role of Eurostat
 * Describe the role of NSI’s including non-ESS NSIs
 * Describe the role of UNECE
@@ -110,8 +110,8 @@ _Open Source projects could benefit from opening their management, which may inc
 ### <a name='Peerreviewprocess'></a>Peer review process
 _We propose that some kind of peer review process should be part of the ESS-OSS in order to build trust especially regarding statistical packages._
 
-* Establish a peer review process where applicable. Should be considered as mandatory for Statistical Methods. See (https://ropensci.org/software-review/ )
-* Make validation/certification visible and fun! “Gamification” using GitHub badges f.ex. (https://img.shields.io/badge/ESS--OSS-Validated!-success, https://img.shields.io/badge/ESS--OSS-Assessing-blueviolet )
+* Establish a peer review process where applicable. Should be considered as mandatory for Statistical Methods. See [(https://ropensci.org/software-review/)](https://ropensci.org/software-review/)
+* Make validation/certification visible and fun! “Gamification” using GitHub badges f.ex. [https://img.shields.io/badge/ESS--OSS-Validated!-success](https://img.shields.io/badge/ESS--OSS-Validated!-success), [https://img.shields.io/badge/ESS--OSS-Assessing-blueviolet](https://img.shields.io/badge/ESS--OSS-Assessing-blueviolet))
 * Establish other quality related guidelines 
 
 ### <a name='Documentation'></a>Documentation
@@ -132,7 +132,7 @@ Propose a list of possible Open Source project platforms (Only GitHub? Or any pl
 
 ### <a name='Repositorystructure'></a>Repository structure
 * Treat your public code repository with as much love as your homepage. A tidy repository will make it easier to attract people to your projects, but it will also be easier for potential collaborators to pick up and join projects. This includes an easy to find documentation, product descriptions etc.
-* Consider the structure of the project, and arrange your repository accordingly, depending on the project type. Examples could be Monorepo (https://en.wikipedia.org/wiki/Monorepo) or Poly Repo/Multi-repo if you have loose coupling between main project and modules and/or utilities.
+* Consider the structure of the project, and arrange your repository accordingly, depending on the project type. Examples could be Monorepo [https://en.wikipedia.org/wiki/Monorepo](https://en.wikipedia.org/wiki/Monorepo) or Poly Repo/Multi-repo if you have loose coupling between main project and modules and/or utilities.
 
 ### <a name='Handlingchanges'></a>Handling changes
 _ESS OSS projects should handle evolution with care and keep users from dealing with breaking changes._
@@ -146,7 +146,7 @@ _ESS OSS projects should handle evolution with care and keep users from dealing 
 * Make sure changes can be submitted to the project using the repositories built in mechanisms
 * Make sure there is a proper review policy in place to review code contributions
 * Have clear guidelines and rules for the project on code contribution and review process 
-* Explicit code of conduct and contributing guide (https://github.com/tidyverse/dplyr/blob/main/.github/CODE_OF_CONDUCT.md,  https://dplyr.tidyverse.org/CONTRIBUTING.html )
+* Explicit code of conduct and contributing guide [https://github.com/tidyverse/dplyr/blob/main/.github/CODE_OF_CONDUCT.md](https://github.com/tidyverse/dplyr/blob/main/.github/CODE_OF_CONDUCT.md),  [https://dplyr.tidyverse.org/CONTRIBUTING.html](https://dplyr.tidyverse.org/CONTRIBUTING.html))
 
 
 ### <a name='Buildinganddistributing'></a>Building and distributing
@@ -156,22 +156,22 @@ _ESS OSS projects should handle evolution with care and keep users from dealing 
 * Project should be cross platform (if applicable)
 * Binaries should be distributed using well known distribution channels depending on the project (f.ex. CRAN, MavenCentral, PyPi, Docker HUB or similar).
 * Projects should have automated builds using CI/CD tools that run tests and quality measurements of the code.
-* Consider defaulting to a permissive license instead of a “Copyleft” license, as it gives you more freedom. Regardless it should be decided to have one default permissive license (Apache 2.0/MIT) and “Copyleft” license (EUPL) (See https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses) 	
+* Consider defaulting to a permissive license instead of a “Copyleft” license, as it gives you more freedom. Regardless it should be decided to have one default permissive license (Apache 2.0/MIT) and “Copyleft” license (EUPL) (See [https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses](https://joinup.ec.europa.eu/collection/eupl/solution/joinup-licensing-assistant/jla-find-and-compare-software-licenses)) 	
 
 ### <a name='Architecturalprinciples'></a>Architectural principles
 
 _These principles are proposals, and are listed in no particular order. They should  be strongly considered, as they represent the best practices used in the IT industry._
 
 * Consider modularising software for different modalities; Separate the UI from the business logic of the software and make sure the functionality (of the application/module/library)  can be instrumented through code. 
-* All services should be secure by design in that they will perform the required functionality but be resistant to misuse or exposing data to unauthorized parties whilst supporting operational management and diagnostics. (https://www.ncsc.gov.uk/collection/cyber-security-design-principles, 
-https://www.oreilly.com/content/dont-build-death-star-security/)
+* All services should be secure by design in that they will perform the required functionality but be resistant to misuse or exposing data to unauthorized parties whilst supporting operational management and diagnostics. ([https://www.ncsc.gov.uk/collection/cyber-security-design-principles](https://www.ncsc.gov.uk/collection/cyber-security-design-principles), [https://www.oreilly.com/content/dont-build-death-star-security/](
+https://www.oreilly.com/content/dont-build-death-star-security/))
 
-* Use principles like “API first” when building products (https://swagger.io/resources/articles/adopting-an-api-first-approach/) 
+* Use principles like “API first” when building products [(https://swagger.io/resources/articles/adopting-an-api-first-approach/)](https://swagger.io/resources/articles/adopting-an-api-first-approach/) 
 Strive for simplicity and robustness in the code (readable, testable, extendable)
 
-* Use Domain Driven Design principles when designing services and components. (https://martinfowler.com/bliki/DomainDrivenDesign.html) 
+* Use Domain Driven Design principles when designing services and components. [(https://martinfowler.com/bliki/DomainDrivenDesign.html)](https://martinfowler.com/bliki/DomainDrivenDesign.html) 
 
-* Create user interfaces that follow accessibility guidelines, and requirements. (https://www.w3.org/standards/webdesign/accessibility ) 
+* Create user interfaces that follow accessibility guidelines, and requirements. [(https://www.w3.org/standards/webdesign/accessibility)](https://www.w3.org/standards/webdesign/accessibility) 
 
-* Follow the SOLID principles when designing software where applicable (https://en.wikipedia.org/wiki/SOLID) 
-* Make sure user interfaces can be multilingual and easy to extend to more languages (https://unece.org/fileadmin/DAM/stats/publications/BuildingMultilingualApplications.pdf)
+* Follow the SOLID principles when designing software where applicable [(https://en.wikipedia.org/wiki/SOLID)](https://en.wikipedia.org/wiki/SOLID) 
+* Make sure user interfaces can be multilingual and easy to extend to more languages [(https://unece.org/fileadmin/DAM/stats/publications/BuildingMultilingualApplications.pdf)](https://unece.org/fileadmin/DAM/stats/publications/BuildingMultilingualApplications.pdf)
