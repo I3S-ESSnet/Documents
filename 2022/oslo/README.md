@@ -1,8 +1,14 @@
 # Oslo 2022 meeting
 
+## Results
+
+* Development track [final presentation](dev/README.md)
+* Brain-storming track [final document](osos/os4os-oslo-document.md)
+
+---
+
 ### Date: 25-27 July 2022
 ### Venue: SSB
-
 
 The meeting aims to look back and prolong the work done during the I3S ESSnet. More than one year after the end of the project, it is useful to assess the progress made and elaborate on the conclusions drawn, especially in the light of the growing effort going on in Europe around [interoperability](https://joinup.ec.europa.eu/collection/interoperable-europe).
 
@@ -85,6 +91,3 @@ As indicated, two main streams will structure the meeting: one oriented towards 
 |   | Cross-presentations and way forward | Cross-presentations and way forward |
 
 
-## Results
-
-* Development track [final presentation](dev/README.md)
